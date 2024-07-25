@@ -22,7 +22,7 @@ const awards = [
 
 export default function Hero() {
   return (
-    <div className="flex flex-col justify-center items-center ">
+    <div className="flex flex-col justify-center items-center pt-72 md:pt-20 lg:pt-10 xl:pt-6 ">
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-sm-12">
