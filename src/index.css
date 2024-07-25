@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ---------- */
+@keyframes bounce {
+  0%,
+  28%,
+  70%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* ------------------------ */
+
+/* Nav Responsive */
+.navResponsive {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 770px) {
+  .socialIcons {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 543px) {
+  .dropdownMenu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .navResponsive {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .belowNav {
+    display: none;
+  }
+}
