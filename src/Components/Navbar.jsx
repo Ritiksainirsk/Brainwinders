@@ -8,6 +8,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 import { PiPhoneCallFill } from "react-icons/pi";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
 
 import "animate.css";
 
@@ -233,6 +235,26 @@ export default function Navbar() {
         </ul>
       </nav>
       {/*<<<<<<<<<<---------------------  */}
+
+      {/*  */}
+      <SignupBanner />
+      {/*  */}
+      {/*  */}
+      <div className="fixed bottom-5 right-5 z-50 cursor-pointer">
+        <IoLogoWhatsapp className="text-5xl text-[#25D366]" />
+      </div>
+      {/*  */}
+    </div>
+  );
+}
+
+function SignupBanner() {
+  return (
+    <div className="fixed right-[-239px] top-80 transform rotate-[-90deg] origin-bottom-left z-50">
+      <div className="bg-[#022F46] text-white px-4 py-5 rounded-t-lg shadow-lg flex items-center gap-3">
+        <MdEmail />{" "}
+        <p className="text-sm font-semibold">Sign up & Get Rs. 500* OFF</p>
+      </div>
     </div>
   );
 }

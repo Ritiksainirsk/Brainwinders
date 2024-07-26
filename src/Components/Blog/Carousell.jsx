@@ -27,7 +27,7 @@ const brands = [
 
 export default function Carousell() {
   return (
-    <div>
+    <div className="pt-60 md:pt-20 lg:pt-5">
       <CarouselCustomNavigation />
       <BrandLogos />
     </div>

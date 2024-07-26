@@ -5,6 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { MdEmail } from "react-icons/md";
+
+
 const awards = [
   {
     title: "Excellence in Career Counselling",
@@ -101,8 +104,8 @@ export default function Hero() {
       <br />
 
       <div className="flex items-center justify-center w-full bg-[#F7F5FF] px-10">
-      <Card />
-    </div>
+        <Card />
+      </div>
 
     </div>
   );
@@ -112,9 +115,12 @@ const Card = () => {
   return (
     <div className="w-full overflow-hidden flex flex-col md:flex-row ">
       <div className="md:w-2/3 p-6 flex flex-col justify-center items-center">
-        <h2 className="text-2xl font-bold text-gray-800">The World's Most Accurate Career Test</h2>
+        <h2 className="text-2xl font-bold text-gray-800">
+          The World's Most Accurate Career Test
+        </h2>
         <p className="mt-4 text-gray-600 text-center">
-          Take our well researched, accurate DMIT test to make the right education, skill and career choice.
+          Take our well researched, accurate DMIT test to make the right
+          education, skill and career choice.
         </p>
         <button className="mt-6 px-6 py-2 text-[14px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d]">
           Read More
@@ -132,7 +138,6 @@ const Card = () => {
     </div>
   );
 };
-
 
 const Carousel = () => {
   const settings = {
@@ -174,14 +179,12 @@ const Carousel = () => {
     <div className="max-w-screen-lg w-full ">
       <Slider {...settings}>
         {awards.map((award, index) => (
-            <AwardCard key={index} title={award.title} desc={award.subtitle} />
+          <AwardCard key={index} title={award.title} desc={award.subtitle} />
         ))}
       </Slider>
     </div>
   );
 };
-
-
 
 const AwardCard = ({ title, desc }) => {
   return (
