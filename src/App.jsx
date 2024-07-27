@@ -11,6 +11,7 @@ import Franchise from "./Pages/Franchise";
 import Gallery from "./Pages/Gallery";
 import AboutUs from "./Pages/AboutUs";
 import Blog from "./Pages/Blog";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs/>} />
           <Route path="/blog" element={<Blog/>} />
         </Routes>
+        <Footer/>
       </div>
     </>
   );
