@@ -110,7 +110,7 @@ export default function Services() {
         <h1 className="text-3xl font-semibold my-14 px-8 lg:px-80 text-center">
           How does Brainwonders services help you to sucess in your career?
         </h1>
-        <HoverEffectCard />
+        <HoverEffectCard/>
         <Carousel />
       </div>
       {/* Carousel */}
@@ -223,13 +223,13 @@ const Banner = () => {
   );
 };
 
-const HoverEffectCard = () => {
+const HoverEffectCard = ({bgcolor}) => {
   return (
     <div className="flex justify-center flex-col md:flex-row mx-9 rounded-2xl border-gray-200 border-2 mb-14 shadow-md ">
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`py-10 relative flex flex-col hover:${card.hoverBackground} hover:text-white fff overflow-hidden group justify-between p-6 border-gray-300 border-[1px] transition-all duration-300 w-full sm:w-1/2 md:w-1/4`}
+          className={`py-10 relative flex flex-col hover:text-white fff overflow-hidden group justify-between p-6 border-gray-300 border-[1px] transition-all duration-300 w-full sm:w-1/2 md:w-1/4`}
         >
           <div>
             <div className="flex flex-col mb-4 gap-7">
