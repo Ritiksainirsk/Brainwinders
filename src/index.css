@@ -57,3 +57,11 @@
     display: none;
   }
 }
+
+
+.fff:hover{
+    width: 380px;
+    /* background-color: lightgray; */
+    transition: all 0.9s ease, transform 0.9s ease;
+  }
+  

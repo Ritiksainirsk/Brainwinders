@@ -5,8 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { MdEmail } from "react-icons/md";
-
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 const awards = [
   {
@@ -23,63 +23,50 @@ const awards = [
   },
 ];
 
+const achievements = [
+  {
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOnASZ9BEKu4hUZVVyW3AwxQictINHqswS0EbF-LA4vQnY-Oze",
+    count: 250000,
+    label: "Students Guided",
+  },
+  {
+    icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2TeWt2WLV3N4x_SOF7_T_9gvMD78S1SDkz_MMv2TSBou5YUvV",
+    count: 120,
+    label: "Admission in Top Colleges",
+  },
+  {
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQexoxRRVtRJwjk3RSTl0_KqWt1SoKSvCwA0ZC_CjcasR_oem2R",
+    count: 40000,
+    label: "Scholarships",
+  },
+  {
+    icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsDIToc2NCNgyEKOkCqe0CBv-cZdYU2rr0NqKEPadcLbflczxa",
+    count: 250,
+    label: "Diverse Careers",
+  },
+];
 export default function Hero() {
+
   return (
     <div className="flex flex-col justify-center items-center pt-72 md:pt-20 lg:pt-10 xl:pt-6 ">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12 col-sm-12">
-            <img
-              alt="dmit-and-career-counselling-company"
-              src="https://www.brainwonders.in/images/banner-image-bw-home.webp"
-              data-src="https://www.brainwonders.in/images/banner-image-bw-home.webp"
-              width="100%"
-              data-done="Loaded"
-            />
+        <BannerComponent />
+
+        {/*  */}
+        <div className="pt-5 text-center">
+          <h2 className="text-3xl font-bold mb-8">BRAINWONDERS ACHIEVEMENTS</h2>
+          <div className="flex overflow-x-scroll justify-center">
+            {achievements.map((achievement, index) => (
+              <AchievementCard
+                key={index}
+                icon={achievement.icon}
+                count={achievement.count}
+                label={achievement.label}
+              />
+            ))}
           </div>
         </div>
-
-        <div className="grid gap-6 md:grid-cols-3 mt-[-20px]">
-          <div className="bg-[#022F46] px-10 py-10  rounded-bl-[49px]">
-            <div className="text-white flex flex-col items-center gap-4 justify-center">
-              <div className="stars flex gap-5">
-                <FaStar className="text-2xl" />
-                <FaStar className="text-2xl" />
-                <FaStar className="text-2xl" />
-              </div>
-              <p className="text-xl text-center">
-                Only company in the world to have U.S Patent for DMIT{" "}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-[#022F46] px-10 py-10 rounded-bl-[49px]">
-            <div className="text-white flex flex-col items-center gap-4 justify-center">
-              <div className="stars flex gap-5">
-                <FaStar className="text-2xl" />
-                <FaStar className="text-2xl" />
-                <FaStar className="text-2xl" />
-              </div>
-              <h1 className="text-xl text-center">
-                India’s largest Career Counselling and Guidance Company{" "}
-              </h1>
-            </div>
-          </div>
-
-          <div className="bg-[#022F46] px-10 py-10 rounded-bl-[49px]">
-            <div className="text-white flex flex-col items-center gap-4 justify-center">
-              <div className="stars flex gap-5">
-                <FaStar className="text-2xl" />
-                <FaStar className="text-2xl" />
-                <FaStar className="text-2xl" />
-              </div>
-              <p className="text-xl text-center">
-                Product Quality Audit Certificate by Early Childhood Association
-                of India{" "}
-              </p>
-            </div>
-          </div>
-        </div>
+        {/*  */}
 
         {/* Carousel */}
         <div className="flex flex-col items-center">
@@ -106,7 +93,6 @@ export default function Hero() {
       <div className="flex items-center justify-center w-full bg-[#F7F5FF] px-10">
         <Card />
       </div>
-
     </div>
   );
 }
@@ -220,5 +206,58 @@ const AwardCard = ({ title, desc }) => {
         />
       </div>
     </>
+  );
+};
+
+const BannerComponent = () => {
+  return (
+    <div className="flex flex-col md:flex-row items-center justify-center gap-9 md:gap-56 p-6 bg-white">
+      <div className="max-w-md">
+        <p className="text-sm text-gray-500">TRUSTED BY 4,30,000+ USERS</p>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#022F46] mt-2">
+          TO ACHIEVE OUR GOALS WE MUST KNOW OUR STRENGTHS!
+        </h1>
+        <p className="text-lg text-gray-700 mt-4">
+          Become self aware. A DMIT Test helps you to identify your Personality,
+          Areas of Interest, and Aptitude level and IQ.
+        </p>
+        <div className="flex space-x-4 mt-6">
+          <button className="bg-[#022F46] text-white px-4 py-2 rounded">
+            Get Your DMIT Test now
+          </button>
+          <button className="bg-[#022F46] text-white px-4 py-2 rounded">
+            Connect Us
+          </button>
+        </div>
+      </div>
+      <div className="md:w-96 lg:w-56">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGZQQObCw82zB9DPtPkJYkOuPvHY4Qu_UeaUkOhMyb6uFQAUux" // Replace with your image URL
+          alt="Banner"
+          className="w-full"
+        />
+      </div>
+    </div>
+  );
+};
+
+const AchievementCard = ({ icon, count, label }) => {
+
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
+
+  return (
+    <div className="bg-white shadow-lg rounded-lg p-6 m-4 flex justify-center items-center gap-3">
+      <div className="mb-4">
+        <img src={icon} alt={label} className="w-12 h-12" />
+      </div>
+      <div className="flex flex-col items-start">
+        <h3 className="text-2xl font-bold " ref={ref}>{inView ? <CountUp start={0} end={count} duration={7} /> : '0'}</h3>
+        <p className="text-gray-600">{label}</p>
+      </div>
+    </div>
   );
 };

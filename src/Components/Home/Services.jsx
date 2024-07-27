@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Man from "../../assets/mansmiles.png";
 const items = [
   {
     title: "DMIT Test",
@@ -55,6 +56,52 @@ const items = [
   },
 ];
 
+const cards = [
+  {
+    title: "Pool of 550+ career choices",
+    description: "Find the perfect career pathway that's just right for you",
+    buttonText: "Know More",
+    backgroundColor: "bg-yellow-200",
+    icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/straight.webp", // Replace with actual icon URL
+    hoverBackground: "bg-yellow-400",
+    hoverContent: "Explore Now",
+    iconColor: "bg-white",
+  },
+  {
+    title: "Personalised Assessment",
+    description:
+      "Helps you to identify your , Areas of Interest and Aptitude Level.",
+    buttonText: "Know Yourself Better",
+    backgroundColor: "bg-blue-200",
+    icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/evaluation.webp", // Replace with actual icon URL
+    hoverBackground: "bg-blue-400",
+    hoverContent: "Know Yourself Better",
+    iconColor: "bg-white",
+  },
+  {
+    title: "Chat With Real Experts",
+    description:
+      "Interact with Real Counselors, not Bots. Get answers for your quick career-related questions.",
+    buttonText: "Professional Guidance",
+    backgroundColor: "bg-pink-200",
+    icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/help-1.webp", // Replace with actual icon URL
+    hoverBackground: "bg-pink-400",
+    hoverContent: "Professional Guidance",
+    iconColor: "bg-white",
+  },
+  {
+    title: "Pick The Right College",
+    description:
+      "We’ll help you choose the perfect college fit in India or Abroad.",
+    buttonText: "India or Abroad",
+    backgroundColor: "bg-purple-200",
+    icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/graduate.webp", // Replace with actual icon URL
+    hoverBackground: "bg-purple-400",
+    hoverContent: "India or Abroad",
+    iconColor: "bg-white",
+  },
+];
+
 export default function Services() {
   return (
     <div>
@@ -63,6 +110,7 @@ export default function Services() {
         <h1 className="text-3xl font-semibold my-14 px-8 lg:px-80 text-center">
           How does Brainwonders services help you to sucess in your career?
         </h1>
+        <HoverEffectCard />
         <Carousel />
       </div>
       {/* Carousel */}
@@ -72,7 +120,6 @@ export default function Services() {
         <Banner />
       </div>
       {/*  midel form banner */}
-
     </div>
   );
 }
@@ -173,5 +220,235 @@ const Banner = () => {
         />
       </div>
     </div>
+  );
+};
+
+const HoverEffectCard = () => {
+  return (
+    <div className="flex justify-center flex-col md:flex-row mx-9 rounded-2xl border-gray-200 border-2 mb-14 shadow-md ">
+      {cards.map((card, index) => (
+        <div
+          key={index}
+          className={`py-10 relative flex flex-col hover:${card.hoverBackground} hover:text-white fff overflow-hidden group justify-between p-6 border-gray-300 border-[1px] transition-all duration-300 w-full sm:w-1/2 md:w-1/4`}
+        >
+          <div>
+            <div className="flex flex-col mb-4 gap-7">
+              <div
+                className={`${card.backgroundColor} w-[69px] py-5 px-5 rounded-full text-center`}
+              >
+                <img src={card.icon} alt="" className="" />
+              </div>
+              <h2 className="text-lg font-semibold">{card.title}</h2>
+            </div>
+            <p className="">{card.description}</p>
+          </div>
+          <div className="mt-4">
+            <button className="py-2 tracking-wider">
+              {card.buttonText}
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+// rough beutyfull card with png images --------------------------------------------------------------->>
+
+// const CourseSelectionCard = () => {
+//   return (
+//     <div className="relative bg-purple-200 rounded-xl p-6 w-80 shadow-lg h-56">
+//       <div className=" z-10">
+//         <h2 className="text-white text-xl font-bold">Class 11th & 12th</h2>
+//         <p className="text-white mt-2">Guidance for</p>
+//         <p className="text-white font-semibold">Course & College selection</p>
+//       </div>
+//       <div className="absolute bottom-0 right-0 transform translate-x-1/4 ">
+//         <img
+//           src={Man} // Replace with actual image URL
+//           alt="Excited Student"
+//           className="h-40"
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+const Hhh = () => {
+  return (
+    <>
+      <section class="custom-carosal">
+        <div class="section-wrap">
+          <div class="right-sect">
+            <div class="single-card active" onmouseover="toggleActive(this)">
+              <div>
+                <div class="img-wrapper">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/straight.webp"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                </div>
+                <h3>Pool of 550+ career choices</h3>
+                <p>Find the perfect career pathway that's just right for you</p>
+              </div>
+              <div className="course-btn">
+                <p> Know More</p>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://d8it4huxumps7.cloudfront.net/uploads/images/6568198c68d08_chevron_right.svg"
+                  width="26"
+                  height="26"
+                  alt=""
+                />
+              </div>
+              <div className="btn-container">
+                <a
+                  href="https://app.idreamcareer.com/?utm_source=homepage_cta&amp;utm_medium=hp_cta&amp;utm_campaign=homepage_cj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <button className="start-btn">
+                    <span>Explore Now</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="single-card" onmouseover="toggleActive(this)">
+              <div>
+                <div className="img-wrapper">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/evaluation.webp"
+                    width="30"
+                    height="30"
+                    alt="Interview Icon"
+                  />
+                </div>
+                <h3>Personalised Psychometric Assessment</h3>
+                <p>
+                  Helps you to identify your Personality, Areas of Interest and
+                  Aptitude Level.
+                </p>
+              </div>
+              <div className="course-btn">
+                <p>Know Yourself Better</p>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://d8it4huxumps7.cloudfront.net/uploads/images/6568198c68d08_chevron_right.svg"
+                  width="26"
+                  height="26"
+                  alt=""
+                />
+              </div>
+              <div className="btn-container">
+                <a
+                  href="https://idreamcareer.com/psychometric-career-assessment-test/?utm_source=homepage_cta&amp;utm_medium=hp_cta&amp;utm_campaign=homepage_psychometric"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <button className="start-btn">
+                    <span>Explore Now</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="single-card" onmouseover="toggleActive(this)">
+              <div>
+                <div className="img-wrapper">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/help-1.webp"
+                    width="30"
+                    height="30"
+                    alt="Unstop Project Icon"
+                  />
+                </div>
+                <h3>Chat With Real Experts</h3>
+                <p>
+                  Interact with Real Counselors, not Bots. Get answers for your
+                  quick career-related questions.
+                </p>
+              </div>
+              <div className="course-btn">
+                <p> Professional Guidance</p>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://d8it4huxumps7.cloudfront.net/uploads/images/6568198c68d08_chevron_right.svg"
+                  width="26"
+                  height="26"
+                  alt="right arrow"
+                />
+              </div>
+              <div className="btn-container">
+                <a
+                  href="https://app.idreamcareer.com/queries?utm_source=homepage_cta&amp;utm_medium=hp_cta&amp;utm_campaign=homepage_cj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <button className="start-btn">
+                    <span>Explore Now</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="single-card" onmouseover="toggleActive(this)">
+              <div>
+                <div className="img-wrapper">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/graduate.webp"
+                    width="30"
+                    height="30"
+                    alt="Mock Test Icon"
+                  />
+                </div>
+                <h3>Pick The Right College</h3>
+                <p>
+                  We’ll help you choose the perfect college fit in India or
+                  Abroad.
+                </p>
+              </div>
+              <div className="course-btn">
+                <p>India or Abroad</p>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://d8it4huxumps7.cloudfront.net/uploads/images/6568198c68d08_chevron_right.svg"
+                  width="26"
+                  height="26"
+                  alt=""
+                />
+              </div>
+              <div className="btn-container">
+                <a
+                  href="https://idreamcareer.com/study-abroad/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <button className="start-btn">
+                    <span>Explore Now</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      ;
+    </>
   );
 };

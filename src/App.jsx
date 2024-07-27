@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 
-import { Route,Routes } from "react-router-dom";
+import { Route,Routes, useLocation } from "react-router-dom";
 import Home from "./Pages/Home";
 import Dmit from "./Pages/Dmit";
 import CareerCounselling from "./Pages/CareerCounselling";
@@ -12,12 +12,18 @@ import Gallery from "./Pages/Gallery";
 import AboutUs from "./Pages/AboutUs";
 import Blog from "./Pages/Blog";
 import Footer from "./Components/Footer";
+import Admin from "./Pages/Admin";
+import CreatePage from "./Components/Admin/CreatePage/CreatePage";
+import AdminNavbar from "./Components/Admin/Navbar/Navbar";
+import ViewPage from "./Components/Admin/ViewPage/ViewPage";
 
 function App() {
+  const loc = useLocation()
+
   return (
     <>
       <div className="">
-        <Navbar />
+        {loc.pathname === "/admin" ? <AdminNavbar/> : "" || loc.pathname === "/createpage" ? <AdminNavbar/> : "" || loc.pathname === "/viewpage" ? <AdminNavbar/> :<Navbar />}        
         <Routes>
           <Route path="/" exact element={<Home/>} />
           <Route path="/dmit" element={<Dmit/>} />
@@ -28,8 +34,11 @@ function App() {
           <Route path="/gallary" element={<Gallery/>} />
           <Route path="/aboutus" element={<AboutUs/>} />
           <Route path="/blog" element={<Blog/>} />
+          <Route path="/admin" element={<Admin/>} />
+          <Route path='/createpage' element={<CreatePage/>}/>
+          <Route path='/viewpage' element={<ViewPage/>}/>
         </Routes>
-        <Footer/>
+        {loc.pathname === "/admin" ? "" : "" || loc.pathname === "/createpage" ? "" : "" || loc.pathname === "/viewpage" ? "" :<Footer/>}        
       </div>
     </>
   );
