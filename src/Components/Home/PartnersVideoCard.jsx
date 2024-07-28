@@ -44,13 +44,13 @@ const PartnerSection = () => (
       <PartnerCard
         image="https://imageresizer.static9.net.au/13fNzDxrjHZvqYm-s0AYoaGU4us=/396x0/https%3A%2F%2Fprod.static9.net.au%2Ffs%2Fb673699e-7e92-40c7-b61f-eaba8cf45704"
         title="Universities"
-        description="Partner with us for our unique services"
+        description="Partner with us for our unique services "
         btcolor={"#5730f4"}
       />
       <PartnerCard
         image="https://www.shutterstock.com/shutterstock/videos/11246702/thumb/1.jpg?ip=x480"
         title="Counsellors"
-        description="Collaborate with us for career transformations"
+        description="Collaborate with us for career transformations "
         btcolor={"#f66231"}
       />
     </div>
