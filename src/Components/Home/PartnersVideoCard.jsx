@@ -17,8 +17,8 @@ const PartnerCard = ({ image, title, description,btcolor }) => (
     />
     <div className="flex">
       <div className="p-4">
-        <h3 className="text-lg font-bold text-start">{title}</h3>
-        <p className="text-gray-600 mt-2 text-start">{description}</p>
+        <h3 className="text-lg font-bold text-start ">{title}</h3>
+        <p className="text-gray-600 mt-2 text-start ">{description}</p>
       </div>
       <div className="p-4 pt-10">
         <button style={{background:`${btcolor}`}} className={`bg-[#f66231] text-white rounded-full h-10 w-10 `}>▶</button>
