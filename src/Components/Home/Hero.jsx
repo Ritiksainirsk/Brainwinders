@@ -5,8 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import Marquee from "react-fast-marquee";
 
 const awards = [
   {
@@ -46,15 +47,16 @@ const achievements = [
   },
 ];
 export default function Hero() {
-
   return (
     <div className="flex flex-col justify-center items-center pt-72 md:pt-20 lg:pt-10 xl:pt-6 ">
       <div className="container">
         <BannerComponent />
 
         {/*  */}
-        <div className="pt-5 text-center">
-          <h2 className="text-3xl font-bold mb-8">BRAINWONDERS ACHIEVEMENTS</h2>
+        <div className="pt-5 px-5">
+          <h2 className=" text-2xl md:text-3xl font-bold mb-2 text-center">
+            BRAINWONDERS ACHIEVEMENTS
+          </h2>
           <div className="flex overflow-x-scroll justify-center">
             {achievements.map((achievement, index) => (
               <AchievementCard
@@ -69,11 +71,25 @@ export default function Hero() {
         {/*  */}
 
         {/* Carousel */}
-        <div className="flex flex-col items-center">
-          <h1 className="text-3xl font-semibold my-14">
-            Awards and Recognition
-          </h1>
-          <Carousel />
+        <div className="mb-7">
+          <div className="text-center">
+            <h1 className="text-2xl md:text-3xl font-semibold my-14">
+              Awards and Recognition
+            </h1>
+          </div>
+          <div className="px-8 md:px-20">
+            <Marquee speed={50} direction="left">
+              <div className="flex justify-center">
+                {awards.map((award, index) => (
+                  <AwardCard
+                    key={index}
+                    title={award.title}
+                    desc={award.subtitle}
+                  />
+                ))}
+              </div>
+            </Marquee>
+          </div>
         </div>
         {/* Carousel */}
 
@@ -162,7 +178,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="max-w-screen-lg w-full ">
+    <div className="max-w-screen-lg w-full">
       <Slider {...settings}>
         {awards.map((award, index) => (
           <AwardCard key={index} title={award.title} desc={award.subtitle} />
@@ -175,7 +191,7 @@ const Carousel = () => {
 const AwardCard = ({ title, desc }) => {
   return (
     <>
-      <div className="flex justify-center items-center text-center ml-8">
+      <div className="flex justify-center items-center text-center ml-8 w-72">
         <img
           decoding="async"
           width="60"
@@ -222,10 +238,10 @@ const BannerComponent = () => {
           Areas of Interest, and Aptitude level and IQ.
         </p>
         <div className="flex space-x-4 mt-6">
-          <button className="bg-[#022F46] text-white px-4 py-2 rounded">
+          <button className="bg-[#022F46] text-white px-2 md:px-4 py-2 rounded">
             Get Your DMIT Test now
           </button>
-          <button className="bg-[#022F46] text-white px-4 py-2 rounded">
+          <button className="bg-[#022F46] text-white px-2 md:px-4 py-2 rounded">
             Connect Us
           </button>
         </div>
@@ -242,21 +258,21 @@ const BannerComponent = () => {
 };
 
 const AchievementCard = ({ icon, count, label }) => {
-
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.5,
   });
 
-
   return (
-    <div className="bg-white shadow-lg rounded-lg p-6 m-4 flex justify-center items-center gap-3">
-      <div className="mb-4">
-        <img src={icon} alt={label} className="w-12 h-12" />
+    <div className="bg-white shadow-lg rounded-lg p-4 lg:p-6 m-4 flex flex-col lg:flex-row justify-center items-center gap-3">
+      <div className="mb-2 lg:mb-0">
+        <img src={icon} alt={label} className="w-10 h-10 lg:w-10 lg:h-10" />
       </div>
-      <div className="flex flex-col items-start">
-        <h3 className="text-2xl font-bold " ref={ref}>{inView ? <CountUp start={0} end={count} duration={7} /> : '0'}</h3>
-        <p className="text-gray-600">{label}</p>
+      <div className="flex flex-col items-start lg:text-left">
+        <h3 className=" lg:text-2xl font-bold" ref={ref}>
+          {inView ? <CountUp start={0} end={count} duration={7} /> : "0"}
+        </h3>
+        <p className="text-gray-600 text-sm lg:text-lg">{label}</p>
       </div>
     </div>
   );

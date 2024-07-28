@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 
+/* body{
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 /* ---------- */
 @keyframes bounce {
   0%,
@@ -59,10 +66,11 @@
 }
 
 
+/* yah hover services ke liye hai */
 .fff:hover{
     width: 380px;
     /* background-color: lightgray; */
     transition: all 0.9s ease, transform 0.9s ease;
     background-color: #AB47BC;
   }
-  
+  /*  */

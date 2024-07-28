@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 text-gray-800">
       <div className="container mx-auto py-8 px-4">
-        <div className="flex flew justify-between items-center mb-8">
+        <div className="flex flex-wrap gap-9 justify-between items-center mb-8">
           <img
             src="https://www.brainwonders.in/images/logo.webp"
             alt="Brainwonders Logo"
