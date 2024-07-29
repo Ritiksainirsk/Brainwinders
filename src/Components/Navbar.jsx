@@ -177,13 +177,6 @@ export default function Navbar() {
             Home
           </NavItem>
           <NavItem
-            to="/blog"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            Blog
-          </NavItem>
-          <NavItem
             to="/dmit"
             setActivePage={setActivePage}
             activePage={activePage}
@@ -224,6 +217,13 @@ export default function Navbar() {
             activePage={activePage}
           >
             Gallery
+          </NavItem>
+          <NavItem
+            to="/blog"
+            setActivePage={setActivePage}
+            activePage={activePage}
+          >
+            Blog
           </NavItem>
           <NavItem
             to="/aboutus"

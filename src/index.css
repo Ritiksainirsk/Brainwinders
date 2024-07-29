@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 
-/* body{
-  overflow: scroll;
-  margin: 0;
+body{
+  /* margin: 0;
   padding: 0;
-  box-sizing: border-box;
-} */
+  box-sizing: border-box; */
+  font-family: 'Arial', sans-serif;
+}
 
 /* ---------- */
 @keyframes bounce {
@@ -74,3 +74,4 @@
     background-color: #AB47BC;
   }
   /*  */
+

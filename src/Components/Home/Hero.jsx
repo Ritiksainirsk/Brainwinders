@@ -48,68 +48,74 @@ const achievements = [
 ];
 export default function Hero() {
   return (
-    <div className="flex flex-col justify-center items-center pt-72 md:pt-20 lg:pt-10 xl:pt-6 ">
-      <div className="container">
-        <BannerComponent />
+    <>
+      {/* this is hidden div of navbar */}
+      <div className="topSpaceDiv"></div>
+      {/* <<<<<<<< */}
+      
+      <div className="flex flex-col justify-center items-center">
+        <div className="container">
+          <BannerComponent />
 
-        {/*  */}
-        <div className="pt-5 px-5">
-          <h2 className=" text-2xl md:text-3xl font-bold mb-2 text-center">
-            BRAINWONDERS ACHIEVEMENTS
-          </h2>
-          <div className="flex overflow-x-scroll justify-center">
-            {achievements.map((achievement, index) => (
-              <AchievementCard
-                key={index}
-                icon={achievement.icon}
-                count={achievement.count}
-                label={achievement.label}
-              />
-            ))}
+          {/*  */}
+          <div className="pt-5 px-5">
+            <h2 className=" text-2xl md:text-3xl font-bold mb-2 text-center">
+              BRAINWONDERS ACHIEVEMENTS
+            </h2>
+            <div className="flex overflow-x-scroll justify-center">
+              {achievements.map((achievement, index) => (
+                <AchievementCard
+                  key={index}
+                  icon={achievement.icon}
+                  count={achievement.count}
+                  label={achievement.label}
+                />
+              ))}
+            </div>
+          </div>
+          {/*  */}
+
+          {/* Carousel */}
+          <div className="mb-7">
+            <div className="text-center">
+              <h1 className="text-2xl md:text-3xl font-semibold my-14">
+                Awards and Recognition
+              </h1>
+            </div>
+            <div className="px-8 md:px-20">
+              <Marquee speed={50} direction="left">
+                <div className="flex justify-center">
+                  {awards.map((award, index) => (
+                    <AwardCard
+                      key={index}
+                      title={award.title}
+                      desc={award.subtitle}
+                    />
+                  ))}
+                </div>
+              </Marquee>
+            </div>
+          </div>
+          {/* Carousel */}
+
+          {/*  */}
+          <div className="text-center text-[22px] font-bold py-[5%] px-[15%] leading-[38px]">
+            <p className="">
+              We at Brainwonders, India's Largest Career Counselling and DMIT
+              Company, strive to help you make an informed decision about your
+              career. Based on the analysis you opt for, we assist you in
+              understanding your or your child's capabilities better.{" "}
+            </p>
           </div>
         </div>
         {/*  */}
+        <br />
 
-        {/* Carousel */}
-        <div className="mb-7">
-          <div className="text-center">
-            <h1 className="text-2xl md:text-3xl font-semibold my-14">
-              Awards and Recognition
-            </h1>
-          </div>
-          <div className="px-8 md:px-20">
-            <Marquee speed={50} direction="left">
-              <div className="flex justify-center">
-                {awards.map((award, index) => (
-                  <AwardCard
-                    key={index}
-                    title={award.title}
-                    desc={award.subtitle}
-                  />
-                ))}
-              </div>
-            </Marquee>
-          </div>
-        </div>
-        {/* Carousel */}
-
-        {/*  */}
-        <div className="text-center text-[22px] font-bold py-[5%] px-[15%] leading-[38px]">
-          <p className="">
-            We at Brainwonders, India's Largest Career Counselling and DMIT
-            Company, strive to help you make an informed decision about your
-            career. Based on the analysis you opt for, we assist you in
-            understanding your or your child's capabilities better.{" "}
-          </p>
+        <div className="flex items-center justify-center w-full bg-[#F7F5FF] px-10">
+          <Card />
         </div>
       </div>
-      {/*  */}
-      <br />
-
-      <div className="flex items-center justify-center w-full bg-[#F7F5FF] px-10">
-        <Card />
-      </div>
-    </div>
+    </>
   );
 }
 
@@ -131,7 +137,7 @@ const Card = () => {
       <div className="md:w-[50%] p-6 aspect-w-16 aspect-h-9 h-72">
         <iframe
           className="w-full h-full"
-          src="https://www.youtube.com/embed/wyq1QXPfTOk"
+          src="https://www.youtube.com/embed/Uh_-gRHLo6k"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

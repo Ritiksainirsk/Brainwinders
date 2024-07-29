@@ -27,10 +27,16 @@ const brands = [
 
 export default function Carousell() {
   return (
-    <div className="pt-60 md:pt-20 lg:pt-5">
+    <>
+    {/* this is hidden div of navbar */}
+    <div className="topSpaceDiv">  
+    </div>
+    {/* <<<<<<<< */}
+    <div className="">
       <CarouselCustomNavigation />
       <BrandLogos />
     </div>
+    </>
   );
 }
 
