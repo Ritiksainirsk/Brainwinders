@@ -99,7 +99,7 @@ const Card = () => {
       <div className="lg:w-[50%] p-6 aspect-w-16 aspect-h-9 h-80 mb-6">
         <iframe
           className="w-full h-72 rounded-xl"
-          src="https://www.youtube.com/embed/Uh_-gRHLo6k"
+          src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

@@ -55,7 +55,7 @@ const DMTITestComponent = () => (
       <div className="w-full lg:w-1/2">
         <iframe
           className="w-full h-64 rounded-lg"
-          src="https://www.youtube.com/embed/Uh_-gRHLo6k"
+          src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="DMIT Test Video"
           allowFullScreen
         ></iframe>
