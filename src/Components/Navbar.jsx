@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import React, { useRef, useState } from "react";
+
+import { IoMenu } from "react-icons/io5";
 
 import { Link, useLocation } from "react-router-dom";
 
@@ -13,15 +10,24 @@ import { MdEmail } from "react-icons/md";
 
 import "animate.css";
 
-const NavItem = ({ to, children, setActivePage, activePage }) => {
+const NavItem = ({
+  to,
+  children,
+  setActivePage,
+  activePage,
+  handleItemClick,
+}) => {
   const location = useLocation();
 
   return (
     <li>
       <Link
         to={to}
-        onClick={() => setActivePage(to)}
-        className={` px-5 py-2 rounded-lg ${
+        onClick={() => {
+          setActivePage(to);
+          handleItemClick();
+        }}
+        className={` px-3 py-2 rounded-lg ${
           activePage === to ? "bg-[#022F46] text-white" : "text-[#022F46]"
         }`}
       >
@@ -34,6 +40,19 @@ const NavItem = ({ to, children, setActivePage, activePage }) => {
 export default function Navbar() {
   const [activePage, setActivePage] = useState(window.location.pathname);
 
+  // this for dropdown menu
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleItemClick = () => {
+    // Close the dropdown when an item is clicked
+    setIsOpen(false);
+  };
+  // <<<<<<<<------------------
+
   return (
     <div>
       <div className="navbar bg-base-100 px-10 navResponsive shadow-lg fixed z-50">
@@ -43,69 +62,105 @@ export default function Navbar() {
           </a>
         </div>
 
-        <div className="flex justify-center socialIcons ">
-          <div className="flex text-center items-center lg:gap-12 px-7 w-auto text-sm flex-col lg:flex-row gap-0">
-            <a href="/" className="hover:underline font-bold">
-              +914565859568
-            </a>
-            <button className="bg-[#022F46] text-white py-1 w-44 rounded-lg">
-              Book an Appointment
-            </button>
-          </div>
-          <div className="flex">
-            <button className="btn btn-ghost btn-circle">
-              <FaFacebook />
-            </button>
-            <button className="btn btn-ghost btn-circle">
-              <FaTwitter />
-            </button>
-            <button className="btn btn-ghost btn-circle">
-              <FaInstagram />
-            </button>
-            <button className="btn btn-ghost btn-circle">
-              <FaYoutube />
-            </button>
-            <button className="btn btn-ghost btn-circle">
-              <FaLinkedin />
-            </button>
-          </div>
+        {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
+        <nav className="p-4 flex justify-center belowNav">
+          <ul className="flex">
+            <NavItem
+              to="/"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Home
+            </NavItem>
+            <NavItem
+              to="/dmit"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Dmit
+            </NavItem>
+            <NavItem
+              to="/careercounselling"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Career Counselling
+            </NavItem>
+            <NavItem
+              to="/psychometrictest"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Psychometric Test
+            </NavItem>
+            <NavItem
+              to="/interesttest"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Interest Test
+            </NavItem>
+            <NavItem
+              to="/franchise"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Franchise
+            </NavItem>
+            <NavItem
+              to="/gallery"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Gallery
+            </NavItem>
+            <NavItem
+              to="/blog"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Blog
+            </NavItem>
+            <NavItem
+              to="/aboutus"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              About Us
+            </NavItem>
+          </ul>
+        </nav>
+        {/*<<<<<<<<<<---------------------  */}
+
+        <div className="flex text-center items-center lg:gap-12 w-auto text-sm flex-col lg:flex-row gap-0">
+          <button className="bg-[#022F46] text-white py-1 w-44 rounded-lg bookAnAppointment ">
+            Book an Appointment
+          </button>
         </div>
 
         {/*  */}
-
         <PiPhoneCallFill className="text-2xl bounce hidden lg:block fixed top-7 right-8" />
 
-        {/*  */}
-        <div className="navbar-start block dropdownMenu ml-[-55px]">
-          <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
-            </div>
+        {/* DropDown Menu */}
+        <div className="dropdown dropdown-end  hidden dropdownMenu w-14">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn m-1"
+            onClick={toggleDropdown}
+          >
+            <IoMenu />
+          </div>
+          {isOpen && (
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
             >
               <NavItem
                 to="/"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 Home
               </NavItem>
@@ -113,6 +168,7 @@ export default function Navbar() {
                 to="/dmit"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 Dmit
               </NavItem>
@@ -120,6 +176,7 @@ export default function Navbar() {
                 to="/careercounselling"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 Career Counselling
               </NavItem>
@@ -127,6 +184,7 @@ export default function Navbar() {
                 to="/psychometrictest"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 Psychometric Test
               </NavItem>
@@ -134,6 +192,7 @@ export default function Navbar() {
                 to="/interesttest"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 Interest Test
               </NavItem>
@@ -141,6 +200,7 @@ export default function Navbar() {
                 to="/franchise"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 Franchise
               </NavItem>
@@ -148,6 +208,7 @@ export default function Navbar() {
                 to="/gallery"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 Gallery
               </NavItem>
@@ -155,6 +216,7 @@ export default function Navbar() {
                 to="/aboutus"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 About Us
               </NavItem>
@@ -162,79 +224,16 @@ export default function Navbar() {
                 to="/blog"
                 setActivePage={setActivePage}
                 activePage={activePage}
+                handleItemClick={handleItemClick}
               >
                 Blog
               </NavItem>
             </ul>
-          </div>
+          )}
         </div>
-      </div>
+        {/*  DropDown Menu */}
 
-      {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
-      <nav className="p-4 py-7 pt-24 flex justify-center belowNav">
-        <ul className="flex px-4">
-          <NavItem to="/" setActivePage={setActivePage} activePage={activePage}>
-            Home
-          </NavItem>
-          <NavItem
-            to="/dmit"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            Dmit
-          </NavItem>
-          <NavItem
-            to="/careercounselling"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            Career Counselling
-          </NavItem>
-          <NavItem
-            to="/psychometrictest"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            Psychometric Test
-          </NavItem>
-          <NavItem
-            to="/interesttest"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            Interest Test
-          </NavItem>
-          <NavItem
-            to="/franchise"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            Franchise
-          </NavItem>
-          <NavItem
-            to="/gallery"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            Gallery
-          </NavItem>
-          <NavItem
-            to="/blog"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            Blog
-          </NavItem>
-          <NavItem
-            to="/aboutus"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            About Us
-          </NavItem>
-        </ul>
-      </nav>
-      {/*<<<<<<<<<<---------------------  */}
+      </div>
 
       {/*  */}
       <SignupBanner />

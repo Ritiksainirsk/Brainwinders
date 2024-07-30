@@ -5,8 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
 import Marquee from "react-fast-marquee";
 
 const awards = [
@@ -22,30 +20,12 @@ const awards = [
     title: "Contribution in Educational ",
     subtitle: "Education Merit Awards 2017, 2018, 2019, 2020",
   },
+  {
+    title: "Best in Student Counselling",
+    subtitle: "Indian School Conclave 2018, 2019, 2020",
+  },
 ];
 
-const achievements = [
-  {
-    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOnASZ9BEKu4hUZVVyW3AwxQictINHqswS0EbF-LA4vQnY-Oze",
-    count: 250000,
-    label: "Students Guided",
-  },
-  {
-    icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2TeWt2WLV3N4x_SOF7_T_9gvMD78S1SDkz_MMv2TSBou5YUvV",
-    count: 120,
-    label: "Admission in Top Colleges",
-  },
-  {
-    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQexoxRRVtRJwjk3RSTl0_KqWt1SoKSvCwA0ZC_CjcasR_oem2R",
-    count: 40000,
-    label: "Scholarships",
-  },
-  {
-    icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsDIToc2NCNgyEKOkCqe0CBv-cZdYU2rr0NqKEPadcLbflczxa",
-    count: 250,
-    label: "Diverse Careers",
-  },
-];
 export default function Hero() {
   return (
     <>
@@ -56,24 +36,6 @@ export default function Hero() {
       <div className="flex flex-col justify-center items-center">
         <div className="container">
           <BannerComponent />
-
-          {/*  */}
-          <div className="pt-5 px-5">
-            <h2 className=" text-2xl md:text-3xl font-bold mb-2 text-center">
-              BRAINWONDERS ACHIEVEMENTS
-            </h2>
-            <div className="flex overflow-x-scroll justify-center">
-              {achievements.map((achievement, index) => (
-                <AchievementCard
-                  key={index}
-                  icon={achievement.icon}
-                  count={achievement.count}
-                  label={achievement.label}
-                />
-              ))}
-            </div>
-          </div>
-          {/*  */}
 
           {/* Carousel */}
           <div className="mb-7">
@@ -134,62 +96,15 @@ const Card = () => {
           Read More
         </button>
       </div>
-      <div className="md:w-[50%] p-6 aspect-w-16 aspect-h-9 h-72">
+      <div className="lg:w-[50%] p-6 aspect-w-16 aspect-h-9 h-80 mb-6">
         <iframe
-          className="w-full h-full"
+          className="w-full h-72 rounded-xl"
           src="https://www.youtube.com/embed/Uh_-gRHLo6k"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
       </div>
-    </div>
-  );
-};
-
-const Carousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
-  return (
-    <div className="max-w-screen-lg w-full">
-      <Slider {...settings}>
-        {awards.map((award, index) => (
-          <AwardCard key={index} title={award.title} desc={award.subtitle} />
-        ))}
-      </Slider>
     </div>
   );
 };
@@ -239,11 +154,11 @@ const BannerComponent = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-[#022F46] mt-2">
           TO ACHIEVE OUR GOALS WE MUST KNOW OUR STRENGTHS!
         </h1>
-        <p className="text-lg text-gray-700 mt-4">
+        <p className="text-lg text-gray-700 mt-8">
           Become self aware. A DMIT Test helps you to identify your Personality,
           Areas of Interest, and Aptitude level and IQ.
         </p>
-        <div className="flex space-x-4 mt-6">
+        <div className="flex space-x-4 mt-4">
           <button className="bg-[#022F46] text-white px-2 md:px-4 py-2 rounded">
             Get Your DMIT Test now
           </button>
@@ -252,7 +167,7 @@ const BannerComponent = () => {
           </button>
         </div>
       </div>
-      <div className="md:w-96 lg:w-56">
+      <div className="md:w-[27rem] lg:w-72">
         <img
           src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGZQQObCw82zB9DPtPkJYkOuPvHY4Qu_UeaUkOhMyb6uFQAUux" // Replace with your image URL
           alt="Banner"
@@ -263,23 +178,4 @@ const BannerComponent = () => {
   );
 };
 
-const AchievementCard = ({ icon, count, label }) => {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
 
-  return (
-    <div className="bg-white shadow-lg rounded-lg p-4 lg:p-6 m-4 flex flex-col lg:flex-row justify-center items-center gap-3">
-      <div className="mb-2 lg:mb-0">
-        <img src={icon} alt={label} className="w-10 h-10 lg:w-10 lg:h-10" />
-      </div>
-      <div className="flex flex-col items-start lg:text-left">
-        <h3 className=" lg:text-2xl font-bold" ref={ref}>
-          {inView ? <CountUp start={0} end={count} duration={7} /> : "0"}
-        </h3>
-        <p className="text-gray-600 text-sm lg:text-lg">{label}</p>
-      </div>
-    </div>
-  );
-};

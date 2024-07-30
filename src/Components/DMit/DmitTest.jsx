@@ -33,7 +33,7 @@ export default function DmitTest() {
 }
 
 const DMTITestComponent = () => (
-  <div className="bg-gray-100 py-8 px-4 flex justify-center items-center">
+  <div className=" py-8 px-4 flex justify-center items-center">
     <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-8">
       <div className="text-center lg:text-left">
         <h1 className="text-3xl lg:text-4xl font-bold mb-4">

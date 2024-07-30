@@ -11,96 +11,56 @@ const items = [
     subtitle:
       "DMIT is the best tool powered by biometrics and genetic intelligence to map all the traits & talents",
     url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSROsO2ca-Nj1lKtHD3ChaK9pj3hPPmuCaAi_XUZ2EN2cwnPEja",
+    buttonText: "Know More",
   },
   {
-    title: "Career Counslling",
-    subtitle:
-      "clear the confusion and build a career with confidence, based on personal abilities and current trends",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Afaatpbn0nhfnbgayDPIt0nGSGL7Z84q3w&s",
+    buttonText: "Know Yourself Better",
+    title: "Aptitide Test",
+      subtitle:
+        "measures work value congnitive abilities traits for shaping personal, social and profession growth.",
+      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg5RWnDUTHjk7KP6LKoMjzhh9OWAUrQbNEg&s",
   },
   {
     title: "Ideal Career Test",
+    buttonText: "Professional Guidance",
     subtitle:
       "clear the confusion and build a career with confidence, based on personal abilities and current trends",
     url: "https://www.innvictisedutech.com/img/psyc/ideal-career-test-1.jpg",
   },
   {
     title: "Psychometric Test",
+    buttonText: "India or Abroad",
     subtitle:
       "The test report will help you to explore career in order to get started in career search or change of career",
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEpW-sx5IXHcT46QKgBMtbp6JJF0T4VKDdg&s",
   },
-  {
-    title: "Aptitide Test",
-    subtitle:
-      "measures work value congnitive abilities traits for shaping personal, social and profession growth.",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg5RWnDUTHjk7KP6LKoMjzhh9OWAUrQbNEg&s",
-  },
-  {
-    title: "Personalit Test",
-    subtitle:
-      "Thoughtts, behaviour, relation, emotional regulation and more-decoded and defined.",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSAucPWqnvbfFqhGJ1PN87asJ7qfe7lPloEw&s",
-  },
-  {
-    title: "IQ Test",
-    subtitle:
-      "A standardisted way to measure the human intelligence and capability as per their age and acquired learning.",
-    url: "https://lifepsych.com.au/wp-content/uploads/2020/10/4336432A-88E0-4A05-A47B-EE8BD71D94CE-scaled-1.jpeg",
-  },
-  {
-    title: "Interest Test",
-    subtitle:
-      "Intrest Inventory analyses the aspects and fields that privide long term satisfaction to the person.",
-    url: "https://www.brainwonders.in/page_images/2020-11-12-10-38-152020-08-27-22-19-52banner-image_(2).webp",
-  },
+  // {
+  //  title: "Career Counslling",
+  //   buttonText: "Know Yourself Better",
+  //   subtitle:
+  //     "clear the confusion and build a career with confidence, based on personal abilities and current trends",
+  //   url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Afaatpbn0nhfnbgayDPIt0nGSGL7Z84q3w&s",
+  // },
+  // {
+  //   title: "Personalit Test",
+  //   subtitle:
+  //     "Thoughtts, behaviour, relation, emotional regulation and more-decoded and defined.",
+  //   url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSAucPWqnvbfFqhGJ1PN87asJ7qfe7lPloEw&s",
+  // },
+  // {
+  //   title: "IQ Test",
+  //   subtitle:
+  //     "A standardisted way to measure the human intelligence and capability as per their age and acquired learning.",
+  //   url: "https://lifepsych.com.au/wp-content/uploads/2020/10/4336432A-88E0-4A05-A47B-EE8BD71D94CE-scaled-1.jpeg",
+  // },
+  // {
+  //   title: "Interest Test",
+  //   subtitle:
+  //     "Intrest Inventory analyses the aspects and fields that privide long term satisfaction to the person.",
+  //   url: "https://www.brainwonders.in/page_images/2020-11-12-10-38-152020-08-27-22-19-52banner-image_(2).webp",
+  // },
 ];
 
-const cards = [
-  {
-    title: "Pool of 550+ career choices",
-    description: "Find the perfect career pathway that's just right for you",
-    buttonText: "Know More",
-    backgroundColor: "bg-yellow-200",
-    icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/straight.webp", // Replace with actual icon URL
-    hoverBackground: "bg-yellow-400",
-    hoverContent: "Explore Now",
-    iconColor: "bg-white",
-  },
-  {
-    title: "Personalised Assessment",
-    description:
-      "Helps you to identify your , Areas of Interest and Aptitude Level.",
-    buttonText: "Know Yourself Better",
-    backgroundColor: "bg-blue-200",
-    icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/evaluation.webp", // Replace with actual icon URL
-    hoverBackground: "bg-blue-400",
-    hoverContent: "Know Yourself Better",
-    iconColor: "bg-white",
-  },
-  {
-    title: "Chat With Real Experts",
-    description:
-      "Interact with Real Counselors, not Bots. Get answers for your quick career-related questions.",
-    buttonText: "Professional Guidance",
-    backgroundColor: "bg-pink-200",
-    icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/help-1.webp", // Replace with actual icon URL
-    hoverBackground: "bg-pink-400",
-    hoverContent: "Professional Guidance",
-    iconColor: "bg-white",
-  },
-  {
-    title: "Pick The Right College",
-    description:
-      "We’ll help you choose the perfect college fit in India or Abroad.",
-    buttonText: "India or Abroad",
-    backgroundColor: "bg-purple-200",
-    icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/graduate.webp", // Replace with actual icon URL
-    hoverBackground: "bg-purple-400",
-    hoverContent: "India or Abroad",
-    iconColor: "bg-white",
-  },
-];
 export default function Services() {
   return (
     <div>
@@ -110,66 +70,12 @@ export default function Services() {
           How does Brainwonders services help you to sucess in your career?
         </h1>
         <HoverEffectCard/>
-        <Carousel />
-
       </div>
       {/* Carousel */}
-
-      {/* midel form banner */}
-      <div className="flex items-center justify-center my-16">
-        <Banner />
-      </div>
-      {/*  midel form banner */}
     </div>
   );
 }
 
-const Carousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
-  return (
-    <div className="max-w-screen-lg w-full ">
-      <Slider {...settings}>
-        {items.map((item, index) => (
-          <Card title={item.title} desc={item.subtitle} url={item.url} />
-        ))}
-      </Slider>
-    </div>
-  );
-};
 
 const Card = ({ title, desc, url }) => {
   return (
@@ -226,21 +132,21 @@ const Banner = () => {
 const HoverEffectCard = ({bgcolor}) => {
   return (
     <div className="flex justify-center flex-col md:flex-row mx-9 rounded-2xl border-gray-200 border-2 mb-14 shadow-md ">
-      {cards.map((card, index) => (
+      {items.map((card, index) => (
         <div
           key={index}
           className={`py-10 relative flex flex-col hover:text-white fff overflow-hidden group justify-between p-6 border-gray-300 border-[1px] transition-all duration-300 w-full sm:w-1/2 md:w-1/4`}
         >
           <div>
-            <div className="flex flex-col mb-4 gap-7">
+            <div className="flex flex-col mb-2 gap-7">
               <div
-                className={`${card.backgroundColor} w-[69px] py-5 px-5 rounded-full text-center`}
+                className={`w-[80px] rounded-full text-center`}
               >
-                <img src={card.icon} alt="" className="" />
+                <img src={card.url} alt="" className="rounded-full object-cover" />
               </div>
               <h2 className="text-lg font-semibold">{card.title}</h2>
             </div>
-            <p className="">{card.description}</p>
+            <p className="">{card.subtitle}</p>
           </div>
           <div className="mt-4">
             <button className="py-2 tracking-wider">

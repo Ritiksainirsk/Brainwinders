@@ -4,10 +4,11 @@
 
 
 body{
-  /* margin: 0;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: 'Arial', sans-serif;
+  background-color: white;
 }
 
 /* ---------- */
@@ -39,19 +40,8 @@ body{
   gap: 40px;
 }
 
-@media only screen and (max-width: 770px) {
-  .socialIcons {
-    flex-direction: column;
-  }
-}
 
-@media only screen and (min-width: 543px) {
-  .dropdownMenu {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 1419px) {
   .navResponsive {
     flex-direction: column;
     gap: 15px;
@@ -59,12 +49,19 @@ body{
   }
 }
 
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 957px) {
   .belowNav {
     display: none;
   }
+  .dropdownMenu{
+    display: block;
+  }
+  .navResponsive{
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-
+/* ------------ */
 
 /* yah hover services ke liye hai */
 .fff:hover{
@@ -75,3 +72,12 @@ body{
   }
   /*  */
 
+
+  /* Navbar css ------ */
+
+  @media only screen and (max-width: 1790px) {
+    .bookAnAppointment{
+      display: none;
+    }
+  }
+   /* Navbar  */

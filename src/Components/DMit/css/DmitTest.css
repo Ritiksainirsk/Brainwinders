@@ -16,29 +16,29 @@
     }
     
 }
-@media only screen and (min-width: 560px) {
+@media only screen and (max-width: 560px) {
     .topSpaceDiv{
-        height: 160px;
+        height: 100px;
     }
     
 }
 
-@media only screen and (min-width: 560px) and (max-width: 770px) {
+@media only screen and (min-width: 560px) and (max-width: 950px) {
     .topSpaceDiv {
-      height: 110px;
+      height: 90px;
     }
   }
 
   
-@media only screen and (min-width: 770px) and (max-width: 1090px) {
+@media only screen and (min-width: 950px) and (max-width: 1420px) {
     .topSpaceDiv {
-      height: 75px;
+      height: 175px;
     }
   }
 
-  @media only screen and (min-width: 1090px) and (max-width: 7770px) {
+  @media only screen and (min-width: 1420px) and (max-width: 7770px) {
     .topSpaceDiv {
-      height: 0px;
+      height: 90px;
     }
   }
 

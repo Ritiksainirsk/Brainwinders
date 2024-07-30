@@ -29,7 +29,7 @@ export default function Blog() {
     <div>
       <div className="max-w-screen-lg mx-auto p-4 mt-10">
         <h2 className="text-2xl font-semibold text-center mb-6">OUR BLOGS</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-28">
           {blogs.map((blog, index) => (
             <Card
               key={index}
@@ -51,7 +51,7 @@ export default function Blog() {
 
 const Card = ({ imageSrc, title, date, description }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden w-80">
       <img src={imageSrc} alt={title} className="w-full h-48 " />
       <div className="p-4">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
