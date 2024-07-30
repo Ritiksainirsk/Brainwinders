@@ -24,6 +24,11 @@ const awards = [
     title: "Best in Student Counselling",
     subtitle: "Indian School Conclave 2018, 2019, 2020",
   },
+  {
+    title: "Best in Student Counselling",
+    subtitle: "Indian School Conclave 2018, 2019, 2020",
+  },
+  
 ];
 
 export default function Hero() {
@@ -33,8 +38,8 @@ export default function Hero() {
       <div className="topSpaceDiv"></div>
       {/* <<<<<<<< */}
       
-      <div className="flex flex-col justify-center items-center">
-        <div className="container">
+      <div className="">
+        <div className="mx-4">
           <BannerComponent />
 
           {/* Carousel */}
@@ -44,7 +49,7 @@ export default function Hero() {
                 Awards and Recognition
               </h1>
             </div>
-            <div className="px-8 md:px-20">
+            <div className="">
               <Marquee speed={50} direction="left">
                 <div className="flex justify-center">
                   {awards.map((award, index) => (
@@ -148,13 +153,13 @@ const AwardCard = ({ title, desc }) => {
 
 const BannerComponent = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-9 md:gap-56 p-6 bg-white">
-      <div className="max-w-md">
-        <p className="text-sm text-gray-500">TRUSTED BY 4,30,000+ USERS</p>
-        <h1 className="text-3xl md:text-4xl font-bold text-[#022F46] mt-2">
+    <div className=" mx-12 flex flex-col md:flex-row items-center justify-center gap-9 md:gap-24 p-6 bg-white">
+      <div className="md:w-[55rem]">
+        <p className="text-sm lg:text-lg text-gray-500">TRUSTED BY 4,30,000+ USERS</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#022F46] mt-2">
           TO ACHIEVE OUR GOALS WE MUST KNOW OUR STRENGTHS!
         </h1>
-        <p className="text-lg text-gray-700 mt-8">
+        <p className="text-lg lg:text-2xl text-gray-700 mt-8">
           Become self aware. A DMIT Test helps you to identify your Personality,
           Areas of Interest, and Aptitude level and IQ.
         </p>
@@ -167,7 +172,7 @@ const BannerComponent = () => {
           </button>
         </div>
       </div>
-      <div className="md:w-[27rem] lg:w-72">
+      <div className="md:w-[39rem] lg:w-80">
         <img
           src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGZQQObCw82zB9DPtPkJYkOuPvHY4Qu_UeaUkOhMyb6uFQAUux" // Replace with your image URL
           alt="Banner"

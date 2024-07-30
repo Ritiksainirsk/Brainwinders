@@ -55,7 +55,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className="navbar bg-base-100 px-10 navResponsive shadow-lg fixed z-50">
+      <div className="navbar bg-white px-10 navResponsive shadow-lg fixed z-50">
         <div className="navbar-center">
           <a className="">
             <img src="https://www.brainwonders.in/images/logo.webp" />
