@@ -17,16 +17,13 @@ export default function DmitTest() {
       {/*  */}
       {/*  */}
       <div className="mb-16">
-        <h1 className="md:text-2xl font-bold text-center my-10">
+        <h1 className="md:text-3xl font-bold text-center my-10">
           BENEFITS OF DMIT TEST FOR ALL AGES!
         </h1>
         <CareerOptions />
       </div>
       {/*  */}
       {/*  */}
-      <div className="mb-16">
-        <DmTests/>
-      </div>
       {/*  */}
     </div>
   );
@@ -34,7 +31,7 @@ export default function DmitTest() {
 
 const DMTITestComponent = () => (
   <div className=" py-8 px-4 flex justify-center items-center">
-    <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-8">
+    <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
       <div className="text-center lg:text-left">
         <h1 className="text-3xl lg:text-4xl font-bold mb-4">
           DISCOVER YOUR INBORN POTENTIAL
@@ -52,9 +49,9 @@ const DMTITestComponent = () => (
           Get Your DMIT Test now
         </button>
       </div>
-      <div className="w-full lg:w-1/2">
+      <div className="w-[60%] xl:w-[40%]">
         <iframe
-          className="w-full h-64 rounded-lg"
+          className="w-full h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="DMIT Test Video"
           allowFullScreen
@@ -71,7 +68,7 @@ const DMTITestComponent = () => (
 const DmttTestDescription = () => {
   return (
     <div className=" mx-auto p-6 md:px-20">
-      <h2 className="text-2xl font-bold text-center mb-4">
+      <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4">
         WHAT IS DMIT TEST?
       </h2>
       <p className="mb-4">
@@ -113,51 +110,51 @@ const DmttTestDescription = () => {
 const CareerOptions = () => {
   const cards = [
     {
-      title: "Pool of 5+ career choices",
-      description: "Find the perfect career pathway that's just right for you",
+      title: "DMIT Test for Toddlers (1-4 years)",
+      description: "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
       buttonText: "Explore Now",
-      icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/straight.webp",
+      icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7AMz_3fqjluWADEO6rkKwJVQRm4IJo6d2THmoqnDEOD5Il7hn",
       iconColor: "#FFD772",
     },
     {
-      title: "Personalised Assessment",
+      title: "DMIT Test for Children (4-10 years)",
       description:
-        "Helps you to identify your Personality, Areas of Interest and Aptitude Level.",
+        "Understanding their learning styles and intelligence profiles to explore their strengths.",
       buttonText: "Know Yourself Better",
-      icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/evaluation.webp",
+      icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGY2l14zUv0XW6odm081SYYwR65zTesUruyUDWZAT2Qz3eppf4",
       iconColor: "#9BC9FF",
     },
     {
-      title: "Chat With Real Experts",
+      title: "DMIT Test for Students (11 to 17 years)",
       description:
-        "Interact with Real Counselors, not Bots. Get answers for your quick career-related questions.",
+        "Highlights the innate primary and secondary learning styles.",
       buttonText: "Professional Guidance",
-      icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/help-1.webp",
+      icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsNMl0KBQhToPa0Ux-hNggAjvKNCyObZ4-T0X0TSGlqvaA-caX",
       iconColor: "#FFB1CC",
     },
     {
-      title: "Pick The Right College",
+      title: "DMIT Test for Career Guidance (18 years and above)",
       description:
-        "We’ll help you choose the perfect college fit in India or Abroad.",
+        "Boosts professional growth and ensures success on the job.",
       buttonText: "India or Abroad",
-      icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/graduate.webp",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuG7gyuVrX-6QEsKfLznnXQgNxoBvs1zO5UKcabWalDrb_uQKo",
       iconColor: "#C8BBFF",
     },
   ];
   return (
-    <div className="flex lg:flex-row flex-col items-center lg:items-stretch mx-2 rounded-lg lg:border-2 lg:border-gray ">
+    <div className="flex lg:flex-row flex-col items-center lg:items-stretch mx-2 rounded-lg justify-center ">
       {cards.map((card, index) => (
         <div
           key={index}
-          className="w-[25rem] lg:w-[300px] card relative p-6 bg-white overflow-hidden sm:border-[1px] border-gray lg:border-l-[1px] rounded-none"
+          className="w-[25rem] lg:w-[350px] card relative p-6 bg-white overflow-hidden sm:border-[1px] border-gray lg:border-l-[1px] rounded-none"
         >
           <div className="relative z-10">
             <div className="mb-4">
               <div
                 style={{ background: `${card.iconColor}` }}
-                className="text-white p-2 rounded-full w-12 h-12 flex items-center justify-center"
+                className="rounded-full w-20 h-20"
               >
-                <img src={card.icon} alt="" />
+                <img src={card.icon} alt="" className="rounded-full w-full h-full object-cover"/>
               </div>
             </div>
             <h3 className="font-bold text-lg mb-2">{card.title}</h3>
@@ -168,69 +165,6 @@ const CareerOptions = () => {
           </div>
         </div>
       ))}
-    </div>
-  );
-};
-
-const DmTests = () => {
-  const tests = [
-    {
-      title: "DMIT Test for Toddlers (1-4 years)",
-      description:
-        "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
-      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7AMz_3fqjluWADEO6rkKwJVQRm4IJo6d2THmoqnDEOD5Il7hn",
-    },
-    {
-      title: "DMIT Test for Children (4-10 years)",
-      description:
-        "Understanding their learning styles and intelligence profiles to explore their strengths.",
-      image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGY2l14zUv0XW6odm081SYYwR65zTesUruyUDWZAT2Qz3eppf4",
-    },
-    {
-      title: "DMIT Test for Students (11 to 17 years)",
-      description:
-        "Highlights the innate primary and secondary learning styles.",
-      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsNMl0KBQhToPa0Ux-hNggAjvKNCyObZ4-T0X0TSGlqvaA-caX",
-    },
-    {
-      title: "DMIT Test for Career Guidance (18 years and above)",
-      description: "Boosts professional growth and ensures success on the job.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuG7gyuVrX-6QEsKfLznnXQgNxoBvs1zO5UKcabWalDrb_uQKo",
-    },
-    {
-      title: "DMIT Test for Adult (25 years and above)",
-      description:
-        "Nurtures personal management and fosters social relationships.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4iiu98uczFUIyiu1k_RK2tZ4GtlGY5OAKaaW12HwXC8xhoKk",
-    },
-    {
-      title: "DMIT Test for Institutional (All ages)",
-      description:
-        "Provides valuable insights on student-teacher dynamics and organization growth.",
-      image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr32UKvo3htclj5II8XhdMzgbMsoY9u2jG42jOjAaleogqIZmu",
-    },
-  ];
-
-  return (
-    <div className="bg-gray-100 p-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {tests.map((test, index) => (
-          <div
-            key={index}
-            className="flex flex-col lg:flex-row gap-3 items-center bg-white p-4 rounded-lg shadow-md"
-          >
-            <img
-              src={test.image}
-              alt={test.title}
-              className="w-56 h-36 object-cover rounded-lg mr-4"
-            />
-            <div>
-              <h3 className="font-bold text-xl mb-2">{test.title}</h3>
-              <p className="text-gray-600">{test.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

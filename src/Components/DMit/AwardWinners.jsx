@@ -66,6 +66,7 @@ const AwardWinners = () => {
         <img
           src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUG-ngbe3GR7gXSi7EKzPvjbY13ETQ409ZTyJfcRV8hhqSaaQo"
           alt=""
+          className=" w-[28%]"
         />
       </div>
       {/* FAQ */}

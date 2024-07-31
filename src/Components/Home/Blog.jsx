@@ -52,7 +52,7 @@ export default function Blog() {
 const Card = ({ imageSrc, title, date, description }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden w-[22rem]">
-      <img src={imageSrc} alt={title} className="w-full h-48 " />
+      <img src={imageSrc} alt={title} className="w-full h-48 "/>
       <div className="p-4">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 text-sm mb-2">{date}</p>

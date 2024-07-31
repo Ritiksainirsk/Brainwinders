@@ -249,7 +249,7 @@ export default function Navbar() {
 
 function SignupBanner() {
   return (
-    <div className="fixed right-[-245px] top-[27rem] md:top-80 transform rotate-[-90deg] origin-bottom-left z-50">
+    <div className="fixed right-[-232px] top-[27rem] md:top-80 transform rotate-[-90deg] origin-bottom-left z-50">
       <div className="bg-[#022F46] text-white px-4 py-5 rounded-t-lg shadow-lg flex items-center gap-3">
         <MdEmail />{" "}
         <p className="text-sm font-semibold">Sign up & Get Rs. 500* OFF</p>

@@ -1,9 +1,5 @@
 import React from "react";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 import Man from "../../assets/mansmiles.png";
 const items = [
   {
@@ -76,58 +72,6 @@ export default function Services() {
   );
 }
 
-
-const Card = ({ title, desc, url }) => {
-  return (
-    <div className="max-w-xs mx-auto ml-5 bg-white rounded-[3.8rem] border-gray-400 border-2 overflow-hidden p-4 text-center">
-      <img className="w-24 h-24 mx-auto" src={url} alt="DMIT Test" />
-      <h2 className="mt-4 text-xl font-bold text-gray-800">{title}</h2>
-      <p className="mt-2 text-gray-600">{desc}</p>
-      <button className="mt-4 py-2 font-bold">Read More</button>
-    </div>
-  );
-};
-
-//
-const Banner = () => {
-  return (
-    <div className="w-full bg-[#022F46] text-white p-6 shadow-lg flex flex-col md:flex-row items-center justify-between">
-      <div className="md:w-2/3">
-        <h2 className="text-2xl font-bold">
-          Take the first step towards career clarity!
-        </h2>
-        <p className="mt-2">
-          Discover your best-fit career with the world's most-advanced career
-          assessment
-        </p>
-        <form className="mt-4 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-          <input
-            type="text"
-            placeholder="Name"
-            className="w-full md:w-1/3 p-2 rounded border border-gray-300 text-black"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full md:w-1/3 p-2 rounded border border-gray-300 text-black"
-          />
-          <input
-            type="tel"
-            placeholder="Phone"
-            className="w-full md:w-1/3 p-2 rounded border border-gray-300 text-black"
-          />
-        </form>
-      </div>
-      <div className="md:w-64 mt-4 md:mt-0 flex justify-center">
-        <img
-          src="https://img.freepik.com/premium-vector/psychological-counseling-concept-psychological-assistance-service-online-mobile-phone-therapist-is-helping-patient-cope-with-stressful-situation-vector-illustration-flat_186332-1291.jpg?w=900"
-          alt="Career Clarity"
-          className="w-full md:w-auto rounded-full"
-        />
-      </div>
-    </div>
-  );
-};
 
 const HoverEffectCard = ({bgcolor}) => {
   return (
