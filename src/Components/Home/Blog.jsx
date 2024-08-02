@@ -28,7 +28,7 @@ export default function Blog() {
   return (
     <div>
       <div className="p-4 mt-10 mx-7">
-        <h2 className="text-2xl font-semibold text-center mb-6">OUR BLOGS</h2>
+        <h2 className="text-2xl font-semibold text-center mb-6 heading-font">OUR BLOGS</h2>
         <div className="flex justify-center gap-10 flex-wrap">
           {blogs.map((blog, index) => (
             <Card
@@ -54,7 +54,7 @@ const Card = ({ imageSrc, title, date, description }) => {
     <div className="bg-white shadow-lg rounded-lg overflow-hidden w-[22rem]">
       <img src={imageSrc} alt={title} className="w-full h-48 "/>
       <div className="p-4">
-        <h3 className="text-lg font-semibold mb-2">{title}</h3>
+        <h3 className="text-lg mb-2 heading-font">{title}</h3>
         <p className="text-gray-600 text-sm mb-2">{date}</p>
         <p className="text-gray-600 mb-4">{description}</p>
       </div>

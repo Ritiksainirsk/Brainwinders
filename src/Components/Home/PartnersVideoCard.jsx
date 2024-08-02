@@ -20,7 +20,7 @@ const PartnerCard = ({ video, title, description, btcolor }) => (
     ></iframe>
     <div className="flex">
       <div className="p-4">
-        <h3 className="text-lg font-bold text-start ">{title}</h3>
+        <h3 className="text-lg text-start heading-font">{title}</h3>
         <p className="text-gray-600 mt-2 text-start ">{description}</p>
       </div>
       <div className="p-4 pt-10">
@@ -37,7 +37,7 @@ const PartnerCard = ({ video, title, description, btcolor }) => (
 
 const PartnerSection = () => (
   <div className="max-w-6xl mx-auto px-4 py-16 text-center">
-    <h2 className="text-2xl md:text-3xl font-bold mb-4">
+    <h2 className="text-2xl md:text-3xl font-bold mb-4 heading-font">
       What Our Partners Say About Us
     </h2>
     <p className="text-gray-600 mb-8">

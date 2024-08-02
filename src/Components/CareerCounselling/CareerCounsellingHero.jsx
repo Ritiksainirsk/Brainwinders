@@ -25,15 +25,15 @@ export default function CareerCounsellingHero() {
       {/*  */}
 
       {/*  */}
-      <BannerCard/>
+      <BannerCard />
       {/*  */}
     </div>
   );
 }
 
 const CareerCounsellingVideo = () => (
-  <div className="bg-gray-100 py-8 px-4 flex justify-center items-center">
-    <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-8">
+  <div className=" py-8 px-4 flex justify-center items-center">
+    <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
       <div className="text-center lg:text-left">
         <h1 className="text-3xl lg:text-4xl font-bold mb-4">
           GET THE RIGHT CAREER COUNSELLING
@@ -50,10 +50,10 @@ const CareerCounsellingVideo = () => (
           Take Counselling Now
         </button>
       </div>
-      <div className="w-full lg:w-1/2">
+      <div className="w-[60%] xl:w-[40%]">
         <iframe
-          className="w-full h-64 rounded-lg"
-          src="https://www.youtube.com/embed/Uh_-gRHLo6k"
+          className="w-full h-72 rounded-lg"
+          src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="DMIT Test Video"
           allowFullScreen
         ></iframe>
@@ -134,7 +134,7 @@ const CareerOptions = () => {
   ];
 
   return (
-    <div className="flex lg:flex-row flex-col items-center lg:items-stretch mx-2 rounded-lg lg:border-2 lg:border-gray ">
+    <div className="flex lg:flex-row flex-col items-center lg:items-stretch mx-2 rounded-lg justify-center">
       {cards.map((card, index) => (
         <div
           key={index}

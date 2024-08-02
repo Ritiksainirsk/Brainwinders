@@ -7,23 +7,23 @@ const CareerGuidance = () => {
       text: 'Enable students to identify their best-fit career with our world-class career assessment and personalised guidance.'
     },
     {
-      icon: 'path_to_icon2', // replace with actual icon paths
+      icon: 'https://mindlerimages.imgix.net/tinyimg/002-devices.svg', // replace with actual icon paths
       text: 'Empower students to learn all about the professional world with virtual career simulations, exhaustive career library, career blogs and vlogs.'
     },
     {
-      icon: 'path_to_icon3', // replace with actual icon paths
+      icon: 'https://mindlerimages.imgix.net/tinyimg/003-certificate.svg', // replace with actual icon paths
       text: 'Pave student’s way to their dream college with our end-to-end college application guidance, scholarship drive and corporate internship program.'
     },
     {
-      icon: 'path_to_icon4', // replace with actual icon paths
+      icon: 'https://mindlerimages.imgix.net/tinyimg/004-career.svg', // replace with actual icon paths
       text: 'Enable schools in creating a career guidance ecosystem in sync with the vision of New Education Policy.'
     },
     {
-      icon: 'path_to_icon5', // replace with actual icon paths
+      icon: 'https://mindlerimages.imgix.net/tinyimg/004-career.svg', // replace with actual icon paths
       text: 'Empower educators to become International Certified Career Coaches and build a career in career guidance & counselling.'
     },
     {
-      icon: 'path_to_icon6', // replace with actual icon paths
+      icon: 'https://mindlerimages.imgix.net/tinyimg/007-startup.svg', // replace with actual icon paths
       text: 'Revolutionary assessment platform and technology driven career guidance solutions for educators to boost their career guidance & counselling practice.'
     }
   ];

@@ -132,14 +132,25 @@ export default function Navbar() {
         </nav>
         {/*<<<<<<<<<<---------------------  */}
 
+        {/*  */}
+        <div className="flex text-center items-center w-auto text-sm flex-col lg:flex-row gap-0">
+          <button className="bg-[#F7CA01] py-1 w-28 rounded-lg explorebtn ">
+            Explore
+          </button>
+        </div>
+        {/*  */}
+
+        {/*  */}
         <div className="flex text-center items-center lg:gap-12 w-auto text-sm flex-col lg:flex-row gap-0">
           <button className="bg-[#022F46] text-white py-1 w-44 rounded-lg bookAnAppointment ">
             Book an Appointment
           </button>
         </div>
+        {/*  */}
 
         {/*  */}
         <PiPhoneCallFill className="text-2xl bounce hidden lg:block fixed top-7 right-8" />
+        {/*  */}
 
         {/* DropDown Menu */}
         <div className="dropdown dropdown-end  hidden dropdownMenu w-14">

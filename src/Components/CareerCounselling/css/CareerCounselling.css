@@ -1,0 +1,17 @@
+
+
+@media only screen and (max-width: 964px) {
+    .GuidingStepsContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .secondCard{
+        display: none;
+    }
+    .guiding-line{
+        display: none;
+    }
+}
+
+
+

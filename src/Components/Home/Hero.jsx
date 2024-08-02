@@ -25,10 +25,13 @@ const awards = [
     subtitle: "Indian School Conclave 2018, 2019, 2020",
   },
   {
+    title: "Contribution in Educational ",
+    subtitle: "Education Merit Awards 2017, 2018, 2019, 2020",
+  },  
+  {
     title: "Best in Student Counselling",
     subtitle: "Indian School Conclave 2018, 2019, 2020",
   },
-  
 ];
 
 export default function Hero() {
@@ -45,7 +48,7 @@ export default function Hero() {
           {/* Carousel */}
           <div className="mb-7">
             <div className="text-center">
-              <h1 className="text-2xl md:text-3xl font-semibold my-14">
+              <h1 className="text-2xl md:text-3xl font-semibold my-14 heading-font">
                 Awards and Recognition
               </h1>
             </div>
@@ -89,21 +92,21 @@ export default function Hero() {
 const Card = () => {
   return (
     <div className="w-full overflow-hidden flex flex-col md:flex-row ">
-      <div className="md:w-2/3 p-6 flex flex-col justify-center items-center">
-        <h2 className="text-2xl font-bold text-gray-800">
+      <div className="md:w-2/3 p-6 flex flex-col justify-center">
+        <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 heading-font">
           The World's Most Accurate Career Test
         </h2>
-        <p className="mt-4 text-gray-600 text-center">
+        <p className="mt-4 text-gray-600 ">
           Take our well researched, accurate DMIT test to make the right
           education, skill and career choice.
         </p>
-        <button className="mt-6 px-6 py-2 text-[14px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d]">
+        <button className="mt-6 px-6 py-2 text-[14px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] w-44">
           Read More
         </button>
       </div>
-      <div className="lg:w-[50%] p-6 aspect-w-16 aspect-h-9 h-80 mb-6">
+      <div className="lg:w-[50%] p-6 aspect-w-16 aspect-h-9 h-80 mb-6 hero-video-container">
         <iframe
-          className="w-full h-72 rounded-xl"
+          className="w-full h-72 rounded-xl heroVideo"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -129,7 +132,7 @@ const AwardCard = ({ title, desc }) => {
           <div>
             <div>
               <div>
-                <h2 className="font-bold text-[18px]">{title}</h2>
+                <h2 className=" text-[18px] heading-font">{title}</h2>
               </div>
             </div>
             <div>
@@ -155,8 +158,8 @@ const BannerComponent = () => {
   return (
     <div className=" mx-12 flex flex-col md:flex-row items-center justify-center gap-9 md:gap-24 p-6 bg-white">
       <div className="md:w-[55rem]">
-        <p className="text-sm lg:text-lg text-gray-500">TRUSTED BY 4,30,000+ USERS</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#022F46] mt-2">
+        <p className="text-sm lg:text-lg text-gray-500 heading-font">TRUSTED BY 4,30,000+ USERS</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#022F46] mt-2 heading-font">
           TO ACHIEVE OUR GOALS WE MUST KNOW OUR STRENGTHS!
         </h1>
         <p className="text-lg lg:text-2xl text-gray-700 mt-8">

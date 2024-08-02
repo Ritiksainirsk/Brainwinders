@@ -9,7 +9,7 @@ const CareerSuitabilitySection = () => {
       <div className="bg-[#022F46] text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14">
         {/* Left Section */}
         <div className="md:w-1/2">
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-4 heading-font">
             Check Career Suitability for your Dream Career
           </h2>
           <p className="mb-4">
@@ -57,7 +57,7 @@ const CareerSuitabilitySection = () => {
             </button>
           </div>
 
-          <h3 className="font-bold mb-2">MOST SEARCHABLE SUITABLE CHECK</h3>
+          <h3 className="font-bold mb-2 heading-font">MOST SEARCHABLE SUITABLE CHECK</h3>
           <div className="flex flex-wrap gap-2">
             {[
               "Medical Science",
@@ -107,7 +107,7 @@ const CareerFitSection = () => {
     <div className="flex flex-col md:flex-row justify-between items-center bg-white p-8 mx-auto">
       {/* Left Section */}
       <div className="md:w-2/3">
-        <h2 className="text-3xl font-light text-gray-800 mb-4">
+        <h2 className="text-3xl font-light text-gray-800 mb-4 heading-font">
           Confused about the best <span className="font-bold">career-fit</span>{" "}
           for you?
         </h2>

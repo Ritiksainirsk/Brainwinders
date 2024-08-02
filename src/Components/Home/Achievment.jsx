@@ -30,7 +30,7 @@ export default function Achievment() {
     <div>
          {/*  */}
          <div className="pt-5 px-5">
-            <h2 className=" text-2xl md:text-3xl font-bold mb-2 text-center">
+            <h2 className=" text-2xl md:text-3xl mb-2 font-bold text-center heading-font">
               BRAINWONDERS ACHIEVEMENTS
             </h2>
             <div className="flex overflow-x-scroll justify-center">
@@ -64,7 +64,7 @@ const AchievementCard = ({ icon, count, label }) => {
           <img src={icon} alt={label} className="w-10 h-10 lg:w-10 lg:h-10" />
         </div>
         <div className="flex flex-col items-start lg:text-left">
-          <h3 className=" lg:text-2xl font-bold" ref={ref}>
+          <h3 className=" lg:text-2xl heading-font" ref={ref}>
             {inView ? <CountUp start={0} end={count} duration={7} /> : "0"}
           </h3>
           <p className="text-gray-600 text-sm lg:text-lg">{label}</p>

@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('./assets/Gotham-Font/GothamBook.ttf') format('truetype');
+  /* font-weight: normal; */
+  /* font-style: normal; */
+  font-family: 'Bebas-Regular';
+  src: url('./assets/Gotham-Font/FontsFree-Net-Bebas-Regular.ttf') format('truetype');
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,12 +19,16 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
   background-color: white;
   font-family: "Lato", sans-serif;
   color: #022F46;
+  font-family: 'Gotham Book', sans-serif;
 }
 
+.heading-font{
+  font-family: 'Bebas-Regular', sans-serif ;
+  letter-spacing: 2px;
+}
 /* ---------- */
 @keyframes bounce {
   0%,
@@ -72,7 +86,14 @@ body{
     width: 380px;
     /* background-color: lightgray; */
     transition: all 0.9s ease, transform 0.9s ease;
-    background-color: #AB47BC;
+    /* background-color: #AB47BC; */
+  }
+  @media only screen and (min-width: 1500px) {
+    .second-fff:hover{
+      width: 800px;
+      /* transition: all 0.9s ease, transform 0.9s ease; */
+      /* background-color: #AB47BC; */
+    }
   }
   /*  */
 
@@ -84,4 +105,22 @@ body{
       display: none;
     }
   }
+  @media only screen and (max-width: 1570px) {
+    .explorebtn{
+      display: none;
+    }
+  }
    /* Navbar  */
+
+
+
+   /* Hero video */
+   @media only screen and (min-width: 1579px) {
+    .heroVideo{
+      height: 20rem;
+    }
+    .hero-video-container{
+      height: 21rem;
+    }
+  }
+   /* Hero Video */
