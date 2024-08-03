@@ -24,6 +24,7 @@ const images = [
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlno5slCcL8GsmE_BTfebbtyLHGpc9yTN2PLH8lvH3dN0BYiHz",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cV82B4UuDyT0ToMbtUzHN5b-khavLNTjWug81HOpYlrobTsr",
   "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHg6-coNMho6b2C6dHJUvU82Nmp-zTdarXaBlw2-QH0ybrefyp",
+  "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHg6-coNMho6b2C6dHJUvU82Nmp-zTdarXaBlw2-QH0ybrefyp",
 ];
 
 export default function MediaMentions() {
@@ -31,7 +32,7 @@ export default function MediaMentions() {
     <div>
       {/* Media Mentions */}
       <h1 className="text-center font-bold text-2xl mt-11 heading-font">Media Mentions</h1>
-      <div className="mx-6 lg:mx-24">
+      <div className="mx-6 lg:mx-28">
         <Marquee speed={50}>
           <div className="flex justify-center">
             <img src={Dunzo} alt="Dunzo" className="p-2 max-h-28 pr-12" />
@@ -74,7 +75,7 @@ export default function MediaMentions() {
       <h1 className="text-center font-bold text-2xl my-10 heading-font">
         ASSOCIATED SCHOOLS
       </h1>
-      <div className="mx-6 lg:mx-24 mb-16">
+      <div className="mx-6 lg:mx-28 mb-16">
         <Marquee speed={50} direction="right">
           <div className="flex justify-center">
             {images.map((image, index) => {

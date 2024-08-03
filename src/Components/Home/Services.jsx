@@ -1,5 +1,12 @@
 import React from "react";
 
+import Earth from "../../assets/earth_icon.png";
+import Data from "../../assets/data_analysis.png";
+import Management from "../../assets/management.png";
+
+import { FaAngleRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+
 const items = [
   {
     title: "DMIT Test",
@@ -33,55 +40,63 @@ const items = [
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEpW-sx5IXHcT46QKgBMtbp6JJF0T4VKDdg&s",
     bgcolor: "bg-red-500",
   },
-  // {
-  //  title: "Career Counslling",
-  //   buttonText: "Know Yourself Better",
-  //   subtitle:
-  //     "clear the confusion and build a career with confidence, based on personal abilities and current trends",
-  //   url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Afaatpbn0nhfnbgayDPIt0nGSGL7Z84q3w&s",
-  // },
-  // {
-  //   title: "Personalit Test",
-  //   subtitle:
-  //     "Thoughtts, behaviour, relation, emotional regulation and more-decoded and defined.",
-  //   url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSAucPWqnvbfFqhGJ1PN87asJ7qfe7lPloEw&s",
-  // },
-  // {
-  //   title: "IQ Test",
-  //   subtitle:
-  //     "A standardisted way to measure the human intelligence and capability as per their age and acquired learning.",
-  //   url: "https://lifepsych.com.au/wp-content/uploads/2020/10/4336432A-88E0-4A05-A47B-EE8BD71D94CE-scaled-1.jpeg",
-  // },
-  // {
-  //   title: "Interest Test",
-  //   subtitle:
-  //     "Intrest Inventory analyses the aspects and fields that privide long term satisfaction to the person.",
-  //   url: "https://www.brainwonders.in/page_images/2020-11-12-10-38-152020-08-27-22-19-52banner-image_(2).webp",
-  // },
 ];
-
+const items2 = [
+  {
+   title: "Career Counslling",
+    subtitle:
+      "clear the confusion and build a career with confidence, based on personal abilities and current trends",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Afaatpbn0nhfnbgayDPIt0nGSGL7Z84q3w&s",
+    buttonText: "Know More",
+    bgcolor: "bg-yellow-500",
+  },
+  {
+    title: "Personalit Test",
+    subtitle:
+      "Thoughtts, behaviour, relation, emotional regulation and more-decoded and defined.",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSAucPWqnvbfFqhGJ1PN87asJ7qfe7lPloEw&s",
+    bgcolor: "bg-yellow-500",
+    buttonText: "Know More",
+  },
+  {
+    title: "IQ Test",
+    subtitle:
+      "A standardisted way to measure the human intelligence and capability as per their age and acquired learning.",
+    url: "https://lifepsych.com.au/wp-content/uploads/2020/10/4336432A-88E0-4A05-A47B-EE8BD71D94CE-scaled-1.jpeg",
+    bgcolor: "bg-yellow-500",
+    buttonText: "Know More",
+  },
+  {
+    title: "Interest Test",
+    subtitle:
+      "Intrest Inventory analyses the aspects and fields that privide long term satisfaction to the person.",
+    url: "https://www.brainwonders.in/page_images/2020-11-12-10-38-152020-08-27-22-19-52banner-image_(2).webp",
+    bgcolor: "bg-yellow-500",
+    buttonText: "Know More",
+  },
+];
 export default function Services() {
   return (
-    <div>
+    <div className="flex justify-center">
       {/* Carousel */}
       <div className="flex flex-col items-center">
         <h1 className="text-2xl md:text-3xl font-semibold my-14 px-8 lg:px-80 text-center heading-font">
           How does Brainwonders services help you to sucess in your career?
         </h1>
         <HoverEffectCard />
+        <HoverEffectCard2 />
       </div>
       {/* Carousel */}
     </div>
   );
 }
 
-const HoverEffectCard = ({ bgcolor }) => {
+const HoverEffectCard = () => {
   return (
-    <div className="flex justify-center flex-col md:flex-row mx-9 rounded-2xl border-gray-200 border-2 mb-14 shadow-md ">
+    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
       {items.map((card, index) => (
         <div
-          key={index}
-          className={`py-10 relative ${
+          className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test"
               ? "hover:bg-yellow-500"
               : "" || card.title === "Aptitide Test"
@@ -91,31 +106,123 @@ const HoverEffectCard = ({ bgcolor }) => {
               : "" || card.title === "Psychometric Test"
               ? "hover:bg-red-500"
               : ""
-          } flex flex-col hover:text-white fff second-fff overflow-hidden group justify-between p-6 border-gray-300 border-[1px] transition-all duration-300 w-full sm:w-1/2 md:w-1/4`}
+          }`}
         >
-          <div>
-            <div className="flex flex-col mb-2 gap-7">
-              <div className={`w-[80px] rounded-full text-center`}>
-                <img
-                  src={card.url}
-                  alt=""
-                  className="rounded-full object-cover"
-                />
-              </div>
-              <h2 className="text-lg font-semibold heading-font">
-                {card.title}
-              </h2>
-            </div>
-            <p className="">{card.subtitle}</p>
+          <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
+            <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
+              Explore <FaArrowRight />
+            </button>
           </div>
-          <div className="mt-4">
-            <button className="py-2 tracking-wider">{card.buttonText}</button>
+
+          <div>
+            <div className={`w-[80px] pb-4 rounded-full text-center`}>
+              <img
+                src={card.url}
+                alt=""
+                className="rounded-full object-cover"
+              />
+            </div>
+
+            <h2 className="text-lg font-semibold heading-font pb-3">
+              {card.title}
+            </h2>
+            <p>{card.subtitle}</p>
+
+            <div className="mt-4 btnn ">
+              <button className="py-2 tracking-wider flex items-center gap-3">
+                {card.buttonText} <FaAngleRight />
+              </button>
+            </div>
+          </div>
+
+          <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
+            <img
+              src={
+                card.title === "Aptitide Test"
+                  ? Earth
+                  : Management || card.title === "Ideal Career Test"
+                  ? Management
+                  : Management || card.title === "Psychometric Test"
+                  ? Data
+                  : Earth
+              }
+              alt=""
+              className="w-52 absolute right-20 top-[-69px]"
+            />
           </div>
         </div>
       ))}
     </div>
   );
 };
+
+const HoverEffectCard2 = () => {
+  return (
+    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
+      {items2.map((card, index) => (
+        <div
+          className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
+            card.title === "Career Counslling"
+              ? "hover:bg-yellow-500"
+              : "" || card.title === "Personalit Test"
+              ? "hover:bg-blue-500"
+              : "" || card.title === "IQ Test"
+              ? "hover:bg-green-500"
+              : "" || card.title === "Interest Test"
+              ? "hover:bg-red-500"
+              : ""
+          }`}
+          key={index}
+        >
+          <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
+            <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
+              Explore <FaArrowRight />
+            </button>
+          </div>
+
+          <div>
+            <div className={`w-[80px] pb-4 rounded-full text-center`}>
+              <img
+                src={card.url}
+                alt=""
+                className="rounded-full object-cover"
+              />
+            </div>
+
+            <h2 className="text-lg font-semibold heading-font pb-3">
+              {card.title}
+            </h2>
+            <p>{card.subtitle}</p>
+
+            <div className="mt-4 btnn ">
+              <button className="py-2 tracking-wider flex items-center gap-3">
+                {card.buttonText} <FaAngleRight />
+              </button>
+            </div>
+          </div>
+
+          <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
+            <img
+              src={
+                card.title === "Aptitide Test"
+                  ? Earth
+                  : Management || card.title === "Ideal Career Test"
+                  ? Management
+                  : Management || card.title === "Psychometric Test"
+                  ? Data
+                  : Earth
+              }
+              alt=""
+              className="w-52 absolute right-20 top-[-69px]"
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
 
 // rough beutyfull card with png images --------------------------------------------------------------->>
 
@@ -137,3 +244,6 @@ const HoverEffectCard = ({ bgcolor }) => {
 //     </div>
 //   );
 // };
+
+
+//

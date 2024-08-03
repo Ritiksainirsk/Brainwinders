@@ -2,11 +2,11 @@ import React from "react";
 
 const CareerSuitabilitySection = () => {
   return (
-    <>
-    <div>
-        <CareerFitSection/>
-    </div>
-      <div className="bg-[#022F46] text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14">
+    <div className="">
+      <div>
+        <CareerFitSection />
+      </div>
+      <div className="bg-[#022F46] lg:px-16 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14">
         {/* Left Section */}
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-4 heading-font">
@@ -57,7 +57,9 @@ const CareerSuitabilitySection = () => {
             </button>
           </div>
 
-          <h3 className="font-bold mb-2 heading-font">MOST SEARCHABLE SUITABLE CHECK</h3>
+          <h3 className="font-bold mb-2 heading-font">
+            MOST SEARCHABLE SUITABLE CHECK
+          </h3>
           <div className="flex flex-wrap gap-2">
             {[
               "Medical Science",
@@ -96,7 +98,7 @@ const CareerSuitabilitySection = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -104,7 +106,7 @@ export default CareerSuitabilitySection;
 
 const CareerFitSection = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center bg-white p-8 mx-auto">
+    <div className="flex flex-col md:flex-row justify-between items-center bg-white p-8 mx-auto px-10 lg:px-20">
       {/* Left Section */}
       <div className="md:w-2/3">
         <h2 className="text-3xl font-light text-gray-800 mb-4 heading-font">

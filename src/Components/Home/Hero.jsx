@@ -27,7 +27,7 @@ const awards = [
   {
     title: "Contribution in Educational ",
     subtitle: "Education Merit Awards 2017, 2018, 2019, 2020",
-  },  
+  },
   {
     title: "Best in Student Counselling",
     subtitle: "Indian School Conclave 2018, 2019, 2020",
@@ -40,19 +40,19 @@ export default function Hero() {
       {/* this is hidden div of navbar */}
       <div className="topSpaceDiv"></div>
       {/* <<<<<<<< */}
-      
+
       <div className="">
-        <div className="mx-4">
+        <div className="2xl:mx-36">
           <BannerComponent />
 
           {/* Carousel */}
           <div className="mb-7">
             <div className="text-center">
-              <h1 className="text-2xl md:text-3xl font-semibold my-14 heading-font">
+              <h1 className="text-2xl md:text-3xl font-semibold my-9 heading-font">
                 Awards and Recognition
               </h1>
             </div>
-            <div className="">
+            <div className="2xl:mx-20">
               <Marquee speed={50} direction="left">
                 <div className="flex justify-center">
                   {awards.map((award, index) => (
@@ -81,7 +81,7 @@ export default function Hero() {
         {/*  */}
         <br />
 
-        <div className="flex items-center justify-center w-full bg-[#F7F5FF] px-10">
+        <div className="flex items-center justify-center w-full bg-[#F7F5FF] px-16 2xl:px-40">
           <Card />
         </div>
       </div>
@@ -156,13 +156,19 @@ const AwardCard = ({ title, desc }) => {
 
 const BannerComponent = () => {
   return (
-    <div className=" mx-12 flex flex-col md:flex-row items-center justify-center gap-9 md:gap-24 p-6 bg-white">
-      <div className="md:w-[55rem]">
-        <p className="text-sm lg:text-lg text-gray-500 heading-font">TRUSTED BY 4,30,000+ USERS</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#022F46] mt-2 heading-font">
-          TO ACHIEVE OUR GOALS WE MUST KNOW OUR STRENGTHS!
+    <div className="h-auto xl:h-[70vh] mx-4 md:mx-12 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 p-4 md:p-6 bg-white">
+      <div className="w-full md:w-[55rem] flex flex-col items-center md:items-start text-center md:text-left">
+        <p className="text-sm lg:text-lg text-gray-500 heading-font">
+          TRUSTED BY 4,30,000+ USERS
+        </p>
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-shadow text-[#022F46] mt-2 heading-font">
+          TO ACHIEVE OUR GOALS
+          <div className="text-4xl md:text-6xl xl:text-9xl my-2 xl:my-3">
+            WE MUST KNOW
+          </div>
+          OUR STRENGTHS!
         </h1>
-        <p className="text-lg lg:text-2xl text-gray-700 mt-8">
+        <p className="text-base md:text-lg lg:text-2xl text-gray-700 mt-6 md:mt-8 paragraph-font">
           Become self aware. A DMIT Test helps you to identify your Personality,
           Areas of Interest, and Aptitude level and IQ.
         </p>
@@ -175,15 +181,13 @@ const BannerComponent = () => {
           </button>
         </div>
       </div>
-      <div className="md:w-[39rem] lg:w-80">
+      <div className="w-72 md:w-[39rem] lg:w-96 flex justify-center md:justify-end">
         <img
-          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGZQQObCw82zB9DPtPkJYkOuPvHY4Qu_UeaUkOhMyb6uFQAUux" // Replace with your image URL
+          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGZQQObCw82zB9DPtPkJYkOuPvHY4Qu_UeaUkOhMyb6uFQAUux"
           alt="Banner"
-          className="w-full"
+          className="w-full h-auto"
         />
       </div>
     </div>
   );
 };
-
-

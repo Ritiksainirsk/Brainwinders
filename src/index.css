@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Gotham Book';
-  src: url('./assets/Gotham-Font/GothamBook.ttf') format('truetype');
+  src: url('./assets/Gotham-Font/GothamLight.ttf') format('truetype');
   /* font-weight: normal; */
   /* font-style: normal; */
   font-family: 'Bebas-Regular';
@@ -22,7 +22,7 @@ body{
   background-color: white;
   font-family: "Lato", sans-serif;
   color: #022F46;
-  font-family: 'Gotham Book', sans-serif;
+  font-family: 'Gotham Book';
 }
 
 .heading-font{
@@ -123,4 +123,92 @@ body{
       height: 21rem;
     }
   }
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
    /* Hero Video */
+
+
+
+
+
+
+
+
+
+/* styles.css */
+/* hover  cards css */
+.containerBox{
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay-content-btn, .overlay-content-image{
+  transition: transform 0.5s ease-in-out;
+}
+
+.containerBox:hover .overlay-content-btn {
+  transform: translateX(0);
+}
+
+.containerBox:hover button{
+  bottom: 40px;
+  right: 40px;
+}
+.containerBox:hover .btnn{
+  display: none;
+}
+ .containerBox:hover .overlay-content-image{
+  transform: translateX(0);
+ }
+
+ .containerBox:hover{
+  width: 500px;
+ }
+
+/* 1600px */
+@media only screen and (max-width: 1600px) {
+  .containerBox{
+    width: 300px;
+   }
+   .containerBox:hover{
+    width: 400px;
+   }
+}
+
+/* 1325px */
+@media only screen and (max-width: 1325px) {
+  .containerBox:hover{
+    width: 300px;
+   }
+}
+/* ------ */
+@media only screen and (max-width: 1270px) {
+  .main-hoverbox-container{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: none;
+  }
+
+  .containerBox{
+    width: 500px;
+    box-shadow: 1px 1px 5px gray;
+   }
+
+   .containerBox:hover{
+    width: 500px;
+   }
+}
+
+/* ------- */
+@media only screen and (max-width: 570px) {
+
+  .containerBox{
+    width: auto;
+    height: auto;
+   }
+   .containerBox:hover{
+    width: auto;
+   }
+}
+ /* hover card <<<<<<<<<<<<<<<------------------- */

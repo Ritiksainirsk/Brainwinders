@@ -13,7 +13,7 @@ import CareerSuitabilitySection from '../Components/Home/CareerSuitabilitySectio
 
 export default function Home() {
   return (
-    <div>
+    <div >
       <Hero/>
       <Services/>
       <CareerSuitabilitySection/>
