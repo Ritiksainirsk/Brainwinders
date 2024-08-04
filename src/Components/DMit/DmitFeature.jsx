@@ -28,7 +28,7 @@ export default function DmitFeature() {
   return (
     <div>
       <div className="mb-16">
-        <h2 className="text-3xl font-bold text-center mb-3 mt-12">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-3 mt-12 heading-font">
           DERMATOGLYPHICS MULTIPLE INTELLIGENCE TEST (DMIT TEST) FEATURES
         </h2>
         <p className="text-center mb-8">
@@ -56,7 +56,7 @@ const DMITFeatureCard = ({ title, description, icon, bgColor }) => {
     <div
       className={`relative bg-${bgColor}-500 rounded-lg p-6 m-4 flex flex-col items-center w-80`}
     >
-      <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+      <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 heading-font">{title}</h3>
       <p className="text-white mb-10">{description}</p>
       <div className=" absolute left-20 bottom-[-25px]">
         <img src={icon} alt={title} className="w-20 h-20 rounded-full" />

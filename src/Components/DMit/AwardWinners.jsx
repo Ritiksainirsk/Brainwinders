@@ -35,7 +35,7 @@ const AwardWinners = () => {
   return (
     <>
       <div className="py-8">
-        <h2 className="text-3xl font-bold text-center mb-3">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-3 heading-font">
           5+ National Award Winners
         </h2>
         <p className="text-center mb-8">
@@ -43,7 +43,7 @@ const AwardWinners = () => {
           Best Career Counselling Centre and our contribution to Educational
           Counselling.
         </p>
-        <div className="">
+        <div className="px-14">
           <Marquee className="p-9" speed={50} direction="right">
             {awards.map((award, index) => (
               <div

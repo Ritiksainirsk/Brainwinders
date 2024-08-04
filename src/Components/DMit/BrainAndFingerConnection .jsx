@@ -4,7 +4,7 @@ import React from 'react';
 const BrainAndFingerConnection = () => {
   return (
     <div className=" p-8 ">
-      <h2 className="text-3xl font-bold mb-2 text-center mt-10">BRAIN AND FINGER CONNECTION</h2>
+      <h2 className="text-5xl font-semibold mb-6 text-center mt-10 heading-font">BRAIN AND FINGER CONNECTION</h2>
       <h3 className="text-xl font-semibold mb-8 text-center">
         Right Brain is corresponding to Left Hand and Left Brain is corresponding to Right Hand
       </h3>
@@ -16,7 +16,7 @@ const BrainAndFingerConnection = () => {
             className="w-full h-auto" 
           />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 text-lg">
           <p className="mb-4">
             The full form of DMIT is the Dermatoglyphics Multiple Intelligence Test (DMIT) is a biometric analysis based on the scientific study of fingerprints. It is useful for all age groups and helps understand an individual’s potential, personality type, SWOT analysis, learning style, career introspection, and more. DMIT is particularly beneficial for parents and teachers, providing insights into a child's innate strengths and areas that need development. Using information from the child's biometrics, the DMIT assessment offers actionable insights and appropriate career recommendations.
           </p>
