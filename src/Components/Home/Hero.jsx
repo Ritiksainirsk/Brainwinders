@@ -1,11 +1,7 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import Marquee from "react-fast-marquee";
+import AwardRecognition from "./AwardRecognition";
 
 const awards = [
   {
@@ -46,26 +42,7 @@ export default function Hero() {
           <BannerComponent />
 
           {/* Carousel */}
-          <div className="mb-7">
-            <div className="text-center">
-              <h1 className="text-2xl md:text-3xl font-semibold my-9 heading-font">
-                Awards and Recognition
-              </h1>
-            </div>
-            <div className="2xl:mx-20">
-              <Marquee speed={50} direction="left">
-                <div className="flex justify-center">
-                  {awards.map((award, index) => (
-                    <AwardCard
-                      key={index}
-                      title={award.title}
-                      desc={award.subtitle}
-                    />
-                  ))}
-                </div>
-              </Marquee>
-            </div>
-          </div>
+          <AwardRecognition />
           {/* Carousel */}
 
           {/*  */}
@@ -114,43 +91,6 @@ const Card = () => {
         ></iframe>
       </div>
     </div>
-  );
-};
-
-const AwardCard = ({ title, desc }) => {
-  return (
-    <>
-      <div className="flex justify-center items-center text-center ml-8 w-72">
-        <img
-          decoding="async"
-          width="60"
-          height="132"
-          src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElementLeft.svg"
-          alt=""
-        />
-        <div>
-          <div>
-            <div>
-              <div>
-                <h2 className=" text-[18px] heading-font">{title}</h2>
-              </div>
-            </div>
-            <div>
-              <div className="text-[15px] text-[#7A7A7A]">
-                <p>“{desc}"</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          decoding="async"
-          width="60"
-          height="132"
-          src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElement1.svg"
-          alt=""
-        />
-      </div>
-    </>
   );
 };
 

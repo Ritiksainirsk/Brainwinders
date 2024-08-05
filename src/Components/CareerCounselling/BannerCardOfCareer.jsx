@@ -3,7 +3,7 @@ import React from 'react';
 const BannerCardOfCareer = () => {
   return (
     <div className="bg-[#022F46] p-8 text-center">
-      <h2 className="text-white text-2xl font-bold mb-2">Takethefirststeptowardscareer clarity!</h2>
+      <h2 className="text-white text-2xl font-semibold mb-2 heading-font">Take the first step towards career clarity!</h2>
       <p className="text-white mb-6">Discover your best-fit career with the world’s most-advanced career assessment</p>
       <div className="flex flex-wrap justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
         <input

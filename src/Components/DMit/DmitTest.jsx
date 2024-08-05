@@ -23,7 +23,7 @@ export default function DmitTest() {
       {/*  */}
       {/*  */}
       <div className="mb-16">
-        <h1 className="md:text-4xl font-bold text-center my-10">
+        <h1 className="md:text-4xl font-bold text-center my-10 heading-font">
           BENEFITS OF DMIT TEST FOR ALL AGES!
         </h1>
         <CareerOptions />
@@ -73,7 +73,7 @@ const DMTITestComponent = () => (
 const DmttTestDescription = () => {
   return (
     <div className=" mx-auto p-6 2xl:px-56">
-      <h2 className="text-3xl lg:text-5xl font-bold text-center mb-4">
+      <h2 className="text-3xl lg:text-5xl font-bold text-center mb-4 heading-font">
         WHAT IS DMIT TEST?
       </h2>
       <p className="mb-4 text-[1rem] leading-7">

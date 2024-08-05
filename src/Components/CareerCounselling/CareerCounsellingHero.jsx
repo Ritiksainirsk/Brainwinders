@@ -1,12 +1,20 @@
 import React from "react";
 import BannerCard from "../DMit/BannerCard";
 
+import Earth from "../../assets/earth_icon.png";
+import Data from "../../assets/data_analysis.png";
+import Management from "../../assets/management.png";
+
+import { FaAngleRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+
 export default function CareerCounsellingHero() {
   return (
     <div>
       {/* this is hidden div of navbar */}
       <div className="topSpaceDiv"></div>
       {/* <<<<<<<< */}
+
       <CareerCounsellingVideo />
 
       {/*  */}
@@ -17,7 +25,7 @@ export default function CareerCounsellingHero() {
 
       {/*  */}
       <div className="mb-16">
-        <h1 className="md:text-2xl font-bold text-center my-10">
+        <h1 className="md:text-4xl font-bold text-center my-10 heading-font">
           BENEFITS OF Career Counselling FOR ALL AGES!
         </h1>
         <CareerOptions />
@@ -33,15 +41,15 @@ export default function CareerCounsellingHero() {
 
 const CareerCounsellingVideo = () => (
   <div className=" py-8 px-4 flex justify-center items-center">
-    <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
+    <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
       <div className="text-center lg:text-left">
-        <h1 className="text-3xl lg:text-4xl font-bold mb-4">
+        <h1 className="text-5xl lg:text-[3.3rem] font-bold mb-6 text-shadow heading-font leading-[62px]">
           GET THE RIGHT CAREER COUNSELLING
           <br />
           TO LEAP THROUGH YOUR CAREER
           <br />
         </h1>
-        <h3 className="text-lg lg:text-xl mb-6">
+        <h3 className="text-lg lg:text-[1.4rem] mb-6 leading-[26px]">
           Take the world’s most-advanced Career Assessment Test
           <br />
           and Find your best Career, Course, and college
@@ -50,7 +58,7 @@ const CareerCounsellingVideo = () => (
           Take Counselling Now
         </button>
       </div>
-      <div className="w-[60%] xl:w-[40%]">
+      <div className="w-[90%] lg:w-[50%] xl:w-[30%]">
         <iframe
           className="w-full h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
@@ -68,8 +76,8 @@ const CareerCounsellingVideo = () => (
 
 const CareerCounsellingHeroDescription = () => {
   return (
-    <div className="p-6 rounded-lg md:px-20">
-      <h1 className="text-2xl font-bold text-center mb-4">
+    <div className="p-6 2xl:px-56">
+      <h1 className="text-3xl lg:text-5xl font-bold text-center mb-5 heading-font">
         WHAT IS CAREER COUNSELLING?
       </h1>
       <p className="text-gray-800 mb-4">
@@ -101,14 +109,14 @@ const CareerCounsellingHeroDescription = () => {
 const CareerOptions = () => {
   const cards = [
     {
-      title: "Pool of 5+ career choices",
+      title: "Career Guidance for class 8th and 9th",
       description: "Find the perfect career pathway that's just right for you",
       buttonText: "Explore Now",
       icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/straight.webp",
       iconColor: "#FFD772",
     },
     {
-      title: "Personalised Assessment",
+      title: "Career Guidance After 10th",
       description:
         "Helps you to identify your Personality, Areas of Interest and Aptitude Level.",
       buttonText: "Know Yourself Better",
@@ -116,7 +124,7 @@ const CareerOptions = () => {
       iconColor: "#9BC9FF",
     },
     {
-      title: "Chat With Real Experts",
+      title: "Career Guidance after 12th",
       description:
         "Interact with Real Counselors, not Bots. Get answers for your quick career-related questions.",
       buttonText: "Professional Guidance",
@@ -124,7 +132,7 @@ const CareerOptions = () => {
       iconColor: "#FFB1CC",
     },
     {
-      title: "Pick The Right College",
+      title: "Career Guidance after graduation",
       description:
         "We’ll help you choose the perfect college fit in India or Abroad.",
       buttonText: "India or Abroad",
@@ -134,26 +142,73 @@ const CareerOptions = () => {
   ];
 
   return (
-    <div className="flex lg:flex-row flex-col items-center lg:items-stretch mx-2 rounded-lg justify-center">
+    <div className="flex justify-center items-center mx-9 rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
+          className={`w-[22rem] border-2 h-[20rem] containerBox relative p-7 overflow-hidden ${
+            card.title === "Career Guidance for class 8th and 9th"
+              ? "hover:bg-yellow-500"
+              : "" || card.title === "Career Guidance After 10th"
+              ? "hover:bg-blue-500"
+              : "" || card.title === "Career Guidance after 12th"
+              ? "hover:bg-green-500"
+              : "" || card.title === "Career Guidance after graduation"
+              ? "hover:bg-red-500"
+              : ""
+          }`}
           key={index}
-          className="w-[25rem] lg:w-[300px] card relative p-6 bg-white overflow-hidden sm:border-[1px] border-gray lg:border-l-[1px] rounded-none"
         >
-          <div className="relative z-10">
-            <div className="mb-4">
-              <div
-                style={{ background: `${card.iconColor}` }}
-                className="text-white p-2 rounded-full w-12 h-12 flex items-center justify-center"
-              >
-                <img src={card.icon} alt="" />
-              </div>
-            </div>
-            <h3 className="font-bold text-lg mb-2">{card.title}</h3>
-            <p className="text-gray-700">{card.description}</p>
-            <button className="mt-4 text-blue-700 font-semibold">
-              {card.buttonText} &rarr;
+          <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
+            <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
+              Explore <FaArrowRight />
             </button>
+          </div>
+
+          <div>
+            <div className={`w-[80px] h-[80px] p-3 mb-4 rounded-full text-center ${
+            card.title === "Career Guidance for class 8th and 9th"
+              ? "bg-[#C8BBFF]"
+              : "" || card.title === "Career Guidance After 10th"
+              ? "bg-[#B5D7FF]"
+              : "" || card.title === "Career Guidance after 12th"
+              ? "bg-[#FFB1CC]"
+              : "" || card.title === "Career Guidance after graduation"
+              ? "bg-[#FED872]"
+              : ""
+          }`}>
+              <img
+                src={card.icon}
+                alt=""
+                className="rounded-full object-cover w-full"
+              />
+            </div>
+
+            <h2 className="text-lg font-semibold heading-font pb-3">
+              {card.title}
+            </h2>
+            <p>{card.description}</p>
+
+            <div className="mt-4 btnn ">
+              <button className="py-2 tracking-wider flex items-center gap-3">
+                {card.buttonText} <FaAngleRight />
+              </button>
+            </div>
+          </div>
+
+          <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
+            <img
+              src={
+                card.title === "Aptitide Test"
+                  ? Management
+                  : Earth || card.title === "Ideal Career Test"
+                  ? Earth
+                  : Earth || card.title === "Psychometric Test"
+                  ? Data
+                  : Earth
+              }
+              alt=""
+              className="w-52 absolute right-20 top-[-69px]"
+            />
           </div>
         </div>
       ))}

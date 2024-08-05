@@ -6,7 +6,7 @@ const GuidingSteps = () => {
   return (
     <div className="relative py-10">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-semibold">Guiding you at every step!</h2>
+        <h2 className=" text-3xl lg:text-4xl font-semibold heading-font">Guiding you at every step!</h2>
       </div>
       {/* medial line */}
       <div className="w-full h-1 bg-gray-500 absolute top-[54%] guiding-line"></div>
@@ -17,7 +17,7 @@ const GuidingSteps = () => {
           {/* first */}
           <div className="text-center p-5 lg:w-[30%]">
             <div className="bg-white p-6 rounded-lg firstCard-bottom-shadow lg:h-72" style={{boxShadow:"0 4px 6px -1px #2469BC",borderBottom:"5px solid #2469BC"}}>
-              <h3 className="text-xl font-semibold mb-4">Explore Careers</h3>
+              <h3 className="text-xl font-semibold mb-4 heading-font">Explore Careers</h3>
               <ul className="text-left text-gray-700 list-disc list-inside">
                 <li>Largest collection of career pathways</li>
                 <li>Repository of many job roles</li>
@@ -33,7 +33,7 @@ const GuidingSteps = () => {
 
             {/*  */}
             <div className="flex justify-center">
-              <div class="bg-[#2469BC] p-3 w-32 rounded-full flex flex-col justify-center items-center gap-1">
+              <div class="bg-[#2469BC] p-4 w-32 rounded-full flex flex-col justify-center items-center gap-1">
                 <div class="icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -295,7 +295,7 @@ const GuidingSteps = () => {
                     </g>
                   </svg>
                 </div>
-                <div class="step_name text-white">Discover Yourself</div>
+                <div class="step_name text-white heading-font">Discover Yourself</div>
               </div>
             </div>
             {/*  */}
@@ -319,7 +319,7 @@ const GuidingSteps = () => {
           {/* second card ka second card */}
           <div className="text-center p-5 lg:w-[30%] lg:hidden block">
             <div className="bg-white p-6 rounded-lg shadow-md lg:h-72" style={{boxShadow:"0 4px 6px -1px #143966",borderBottom:"5px solid #143966"}}>
-              <h3 className="text-xl font-semibold mb-4">Discover Yourself</h3>
+              <h3 className="text-xl font-semibold mb-4 heading-font">Discover Yourself</h3>
               <ul className="text-left text-gray-700 list-disc list-inside">
                 <li>Comprehensive game-based psychometric assessments</li>
                 <li>Insights on attitude, aptitude, and values</li>
@@ -521,7 +521,7 @@ const GuidingSteps = () => {
           {/* third */}
           <div className="text-center p-5 lg:w-[30%]">
             <div className="bg-white p-6 rounded-lg shadow-md lg:h-72" style={{boxShadow:"0 4px 6px -1px #DC2C1B",borderBottom:"5px solid #DC2C1B"}}>
-              <h3 className="text-xl font-semibold mb-4">Get Guided</h3>
+              <h3 className="text-xl font-semibold mb-4 heading-font">Get Guided</h3>
               <ul className="text-left text-gray-700 list-disc list-inside">
                 <li>Large network of certified career counsellors</li>
                 <li>Evidence based, one-on-one counselling sessions</li>
