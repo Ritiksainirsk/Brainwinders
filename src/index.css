@@ -1,14 +1,22 @@
+
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
+
+
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 @font-face {
-  font-family: 'Gotham Book';
-  src: url('./assets/Gotham-Font/GothamLight.ttf') format('truetype');
+
   /* font-weight: normal; */
   /* font-style: normal; */
   font-family: 'Bebas-Regular';
   src: url('./assets/Gotham-Font/FontsFree-Net-Bebas-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: Gotham-book;
+  src: url('./assets/Gotham-Font/GothamBook.ttf') format('truetype');
+}
 
 @tailwind base;
 @tailwind components;
@@ -22,13 +30,25 @@ body{
   background-color: white;
   font-family: "Lato", sans-serif;
   color: #022F46;
-  font-family: 'Gotham Book';
+}
+
+.gotham-font{
+  font-family: Gotham-book;
+  color: rgb(33, 37, 41);
 }
 
 .heading-font{
   font-family: 'Bebas-Regular', sans-serif ;
   letter-spacing: 2px;
 }
+
+p{
+  font-family: gotham-book;
+  font-size: 16px;
+}
+
+/* <<<<<<<<<<<<<<<<<<< */
+
 /* ---------- */
 @keyframes bounce {
   0%,
@@ -117,10 +137,7 @@ body{
    /* Hero video */
    @media only screen and (min-width: 1579px) {
     .heroVideo{
-      height: 20rem;
-    }
-    .hero-video-container{
-      height: 21rem;
+      /* height: 20rem; */
     }
   }
   .text-shadow {
@@ -212,3 +229,5 @@ body{
    }
 }
  /* hover card <<<<<<<<<<<<<<<------------------- */
+
+ 

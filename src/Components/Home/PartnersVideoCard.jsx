@@ -24,8 +24,8 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
       <img className="w-full h-52" src={thumbnail} />
       <div className="flex">
         <div className="p-4">
-          <h3 className="text-lg text-start heading-font">{title}</h3>
-          <p className="text-gray-600 mt-2 text-start ">{description}</p>
+          <h3 className="text-xl text-start heading-font font-bold">{title}</h3>
+          <p className="text-black mt-2 text-start ">{description}</p>
         </div>
         <div className="p-4 pt-10">
           <button
@@ -71,9 +71,8 @@ const PartnerSection = () => (
     <h2 className="text-2xl md:text-3xl font-bold mb-4 heading-font">
       What Our Partners Say About Us
     </h2>
-    <p className="text-gray-600 mb-8">
-      350+ top schools have chosen Univariety for alumni networking & career
-      guidance solutions
+    <p className=" mb-8 text-xl font-bold text-black">
+    Watch People from Different Backgrounds talk about their experience with Brainwonders.
     </p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       <PartnerCard

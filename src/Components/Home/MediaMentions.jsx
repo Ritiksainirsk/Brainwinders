@@ -31,7 +31,7 @@ export default function MediaMentions() {
   return (
     <div>
       {/* Media Mentions */}
-      <h1 className="text-center font-bold text-2xl mt-11 heading-font">Media Mentions</h1>
+      <h1 className="text-center font-bold text-3xl mt-11 heading-font">Media Mentions</h1>
       <div className="mx-6 lg:mx-28">
         <Marquee speed={50}>
           <div className="flex justify-center">
@@ -72,7 +72,7 @@ export default function MediaMentions() {
       {/* Media Mentions */}
 
       {/* ASSOCIATED SCHOOLS */}
-      <h1 className="text-center font-bold text-2xl my-10 heading-font">
+      <h1 className="text-center font-bold text-3xl my-10 heading-font">
         ASSOCIATED SCHOOLS
       </h1>
       <div className="mx-6 lg:mx-28 mb-16">

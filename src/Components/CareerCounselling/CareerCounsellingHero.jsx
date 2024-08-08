@@ -58,7 +58,7 @@ const CareerCounsellingVideo = () => (
           Take Counselling Now
         </button>
       </div>
-      <div className="w-[90%] lg:w-[50%] xl:w-[30%]">
+      <div className="w-[90%] lg:w-[50%] xl:w-[40%]">
         <iframe
           className="w-full h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
@@ -76,11 +76,11 @@ const CareerCounsellingVideo = () => (
 
 const CareerCounsellingHeroDescription = () => {
   return (
-    <div className="p-6 2xl:px-56">
+    <div className="p-6 2xl:px-[9rem]">
       <h1 className="text-3xl lg:text-5xl font-bold text-center mb-5 heading-font">
         WHAT IS CAREER COUNSELLING?
       </h1>
-      <p className="text-gray-800 mb-4">
+      <p className="text-black mb-4">
         Career Counselling is a process that helps you understand yourself and
         the world of work to make informed career, educational, and life
         decisions. It involves a structured interaction between the individual
@@ -183,7 +183,7 @@ const CareerOptions = () => {
               />
             </div>
 
-            <h2 className="text-lg font-semibold heading-font pb-3">
+            <h2 className="text-xl font-semibold heading-font pb-3">
               {card.title}
             </h2>
             <p>{card.description}</p>

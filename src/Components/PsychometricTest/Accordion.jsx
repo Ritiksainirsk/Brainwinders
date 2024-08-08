@@ -47,7 +47,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className=" mx-auto bg-[#000D71] text-white p-6 mt-6 px-14 lg:px-48">
+    <div className=" mx-auto bg-[#000D71] text-white p-6 mt-6 px-14">
       <h2 className="text-4xl font-semibold mb-6 text-center heading-font">
         Frequently Asked Questions
       </h2>

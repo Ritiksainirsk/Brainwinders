@@ -75,7 +75,7 @@ const AwardCard = ({ title, desc }) => {
             </div>
             <div>
               <div className="text-[15px] text-[#7A7A7A]">
-                <p>“{desc}"</p>
+                <p className="gotham-font">“{desc}"</p>
               </div>
             </div>
           </div>

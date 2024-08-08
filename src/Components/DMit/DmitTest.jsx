@@ -37,24 +37,26 @@ export default function DmitTest() {
 const DMTITestComponent = () => (
   <div className=" py-8 px-4 flex justify-center items-center">
     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
-      <div className="text-center lg:text-left">
-        <h1 className="text-5xl lg:text-[3.3rem] font-bold mb-4 text-shadow heading-font leading-[62px]">
+      <div className="text-center">
+        <h1 className="text-5xl lg:text-[3.3rem] md:text-left font-bold mb-4 text-shadow heading-font leading-[62px]">
           DISCOVER YOUR INBORN POTENTIAL
           <br />
           AND SHINE WITH DMIT TEST
           <br />
           <span className="text-4xl">DMIT TEST</span>
         </h1>
-        <h3 className="text-lg lg:text-[1.4rem] mb-6 leading-[26px]">
+        <h3 className="text-lg lg:text-[1.4rem] md:text-left mb-6 leading-[26px]">
           Take the world’s most-advanced Career Assessment Test
           <br />
           and Find your best Career, Course, and college
         </h3>
+        <div className="md:text-left">
         <button className="bg-[#022F46] text-white py-2 px-4 rounded-lg">
           Get Your DMIT Test now
         </button>
+        </div>
       </div>
-      <div className="w-[90%] lg:w-[50%] xl:w-[30%]">
+      <div className="w-[90%] lg:w-[50%] xl:w-[40%]">
         <iframe
           className="w-full h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
@@ -72,7 +74,7 @@ const DMTITestComponent = () => (
 
 const DmttTestDescription = () => {
   return (
-    <div className=" mx-auto p-6 2xl:px-56">
+    <div className=" mx-auto p-6 2xl:px-[9rem]">
       <h2 className="text-3xl lg:text-5xl font-bold text-center mb-4 heading-font">
         WHAT IS DMIT TEST?
       </h2>
@@ -150,7 +152,7 @@ const CareerOptions = () => {
     <div className="flex justify-center mx-9 rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[22rem] h-[21rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+          className={`w-[22rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test for Toddlers (1-4 years)"
               ? "hover:bg-yellow-500"
               : "" || card.title === "DMIT Test for Children (4-10 years)"
@@ -248,7 +250,7 @@ const CareerOptions2 = () => {
     <div className="flex justify-center mx-9 rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[22rem] h-[21rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+          className={`w-[22rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test for Adult (25 years and above)"
               ? "hover:bg-yellow-500"
               : "" || card.title === "DMIT Test for institutional (all years)"

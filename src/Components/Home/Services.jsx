@@ -80,8 +80,10 @@ export default function Services() {
     <div className="flex justify-center">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h1 className="text-2xl md:text-3xl font-semibold my-14 px-8 lg:px-80 text-center heading-font">
-          How does Brainwonders services help you to sucess in your career?
+        <h1 className="text-2xl md:text-3xl font-semibold my-14 px-8 lg:px-80 text-center heading-font ">
+          How does Brainwonders services 
+          <br />
+          help you to sucess in your career?
         </h1>
         <HoverEffectCard />
         <HoverEffectCard2 />
@@ -123,10 +125,10 @@ const HoverEffectCard = () => {
               />
             </div>
 
-            <h2 className="text-lg font-semibold heading-font pb-3">
+            <h2 className="text-xl font-semibold heading-font pb-3">
               {card.title}
             </h2>
-            <p>{card.subtitle}</p>
+            <p className="">{card.subtitle}</p>
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">

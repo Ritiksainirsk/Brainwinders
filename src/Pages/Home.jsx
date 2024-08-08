@@ -13,7 +13,7 @@ import CareerSuitabilitySection from '../Components/Home/CareerSuitabilitySectio
 
 export default function Home() {
   return (
-    <div >
+    <div className='max-w-[1550px] mx-auto overflow-hidden'>
       <Hero/>
       <Services/>
       <CareerSuitabilitySection/>

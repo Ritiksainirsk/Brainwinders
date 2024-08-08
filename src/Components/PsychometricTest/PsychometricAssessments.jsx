@@ -191,31 +191,17 @@ function CareerServices() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="p-4 px-9">
+    <div className="p-4">
       <h1 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font">
       Brainwonders Psychometric Career Test 
       </h1>
-      <div className="flex justify-center flex-wrap space-x-2 mb-6">
-        {tabs.map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`py-2 px-4 rounded ${
-              activeTab === tab ? "bg-red-500 text-white" : "bg-gray-200"
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
       <h3
-        className="text-center text-xl leading-7 pb-8 2xl:px-72"
-        style={{ color: "rgb(102, 102, 102)" }}
+        className="text-center text-xl leading-7 pb-8 2xl:px-72 text-black"
       >
         Brainwonders brings to you scientific and meticulously designed Psychometric Assessments to
         discover your true potential and interest ,learning styles and skills to excel in 21st Century
       </h3>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 2xl:px-48">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {cardData[activeTab]?.map((card, index) => (
           <div
             key={index}
@@ -223,7 +209,7 @@ function CareerServices() {
           >
             <img className="w-full h-52 object-cover" src={card.image} alt={card.title} />
             <div className="p-4">
-              <h3 className="font-bold text-lg heading-font">{card.title}</h3>
+              <h3 className="font-bold text-xl heading-font">{card.title}</h3>
               <span className="flex items-center gap-3">
                 <FaBookOpen />
                 <p className="text-gray-600">{card.questions}</p>
@@ -241,7 +227,7 @@ function CareerServices() {
                   <span className="text-red-500 ml-2">{card.price}</span>
                 </div>
               </span>
-              <button className="mt-4 w-full bg-orange-500 text-white py-2 rounded">
+              <button className="mt-4 w-full bg-[#022F46] text-white py-2 rounded">
                 {card.target}
               </button>
             </div>

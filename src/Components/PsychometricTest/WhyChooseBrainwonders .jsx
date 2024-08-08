@@ -40,7 +40,7 @@ const WhyChooseBrainwonders = () => {
               <div className="mb-4">
                 <img src={feature.icon} alt="icon" className="w-20 h-20" />
               </div>
-              <p className="text-center text-gray-700">{feature.title}</p>
+              <p className="text-center text-black text-xl font-semibold">{feature.title}</p>
             </div>
           ))}
         </div>

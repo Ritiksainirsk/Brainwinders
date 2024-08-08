@@ -11,7 +11,7 @@ import Accordion from '../Components/Home/Accordion'
 
 export default function Dmit() {
   return (
-    <div>
+    <div className='max-w-[1500px] mx-auto overflow-hidden'>
       <DmitTest/>
       <BannerCard/>
       <DmitFeature/>

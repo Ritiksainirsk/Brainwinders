@@ -3,7 +3,7 @@ import React from "react";
 export default function ImportanceOfCareerCounselling() {
   return (
     <div>
-      <div className="py-10 lg:px-32">
+      <div className="py-10 lg:px-16">
         <div className=" mx-auto px-4 ">
           <div className="bg-white p-8">
             <h2 className="text-3xl lg:text-4xl font-semibold mb-6 text-center heading-font">
@@ -14,7 +14,7 @@ export default function ImportanceOfCareerCounselling() {
                 <h3 className="text-xl lg:text-2xl font-semibold mb-2 heading-font">
                   Helps to choose a right career
                 </h3>
-                <p>
+                <p className={"text-black"}>
                   In Career Guidance & Counselling in Mumbai, counselee assesses
                   their aptitude, personality, interests, and other aspects and
                   evaluated to get a suggestion of best career options from all
@@ -25,7 +25,7 @@ export default function ImportanceOfCareerCounselling() {
                 <h3 className="text-xl lg:text-2xl font-semibold mb-2 heading-font">
                   Helps to provide expert resources
                 </h3>
-                <p>
+                <p className={"text-black"}>
                   Career Guidance & Counselling in Mumbai provides access to the
                   resources and knowledge that a career expert possesses. This
                   knowledge of Careers, their scope and the paths to pursue them
@@ -38,7 +38,7 @@ export default function ImportanceOfCareerCounselling() {
                 <h3 className="text-xl lg:text-2xl font-semibold mb-2 heading-font">
                   Helps Gain Confidence and Insight
                 </h3>
-                <p>
+                <p className={"text-black"}>
                   Career Guidance & Counseling in Mumbai helps a counselee
                   understand the hurdles in his/her career path. This knowledge
                   helps to develop the confidence to overcome these hurdles.
@@ -48,11 +48,11 @@ export default function ImportanceOfCareerCounselling() {
                 <h3 className="text-xl lg:text-2xl font-semibold mb-2 heading-font">
                   Career Mapping
                 </h3>
-                <p>
+                <p className={"text-black"}>
                   Mapping out a career route helps the counselee to keep abreast
                   of the development and changes related to one’s career field.
                 </p>
-                <p>
+                <p className={"text-black"}>
                   Career Guidance Counselling in Mumbai helps to choose a right
                   career that translates into professional success. Job
                   satisfaction plays an important role in ensuring professional
@@ -60,7 +60,7 @@ export default function ImportanceOfCareerCounselling() {
                 </p>
               </div>
               <div>
-                <p>
+                <p className={"text-black"}>
                   The next step is to look out for organization or individual
                   who provides Best Career Guidance & Counselling in Mumbai,
                   Haryana. The moment you Google it, you get 58,80,000 results

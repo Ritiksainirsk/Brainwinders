@@ -3,7 +3,7 @@ import React from 'react';
 const BannerCard = () => {
   return (
     <div className="bg-[#022F46] p-8 text-center">
-      <h2 className="text-white text-2xl font-bold mb-2">Don't Be an Average Student</h2>
+      <h2 className="text-white text-2xl font-bold mb-2 heading-font">Don't Be an Average Student</h2>
       <p className="text-white mb-6">Know your inborn Talent with DMIT Test</p>
       <div className="flex flex-wrap justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
         <input

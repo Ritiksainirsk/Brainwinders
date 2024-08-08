@@ -27,7 +27,7 @@ const NavItem = ({
           setActivePage(to);
           handleItemClick();
         }}
-        className={` px-3 py-2 rounded-lg ${
+        className={` py-[8px] px-[6px] 2xl:px-[10px] 2xl:py-[12px] rounded ${
           activePage === to ? "bg-[#022F46] text-white" : "text-[#022F46]"
         }`}
       >
@@ -54,17 +54,21 @@ export default function Navbar() {
   // <<<<<<<<------------------
 
   return (
-    <div>
-      <div className="navbar bg-white px-10 navResponsive shadow-lg fixed z-50">
-        <div className="navbar-center">
+    <header className="bg-white py-[12px] w-full shadow-lg fixed z-50">
+      {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
+      <nav className="text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg  flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 max-w-[1400px] lg:min-h-[50px] mx-auto px-4">
+        <div className="w-[220px] md:w-[240px]">
           <a className="">
-            <img src="https://www.brainwonders.in/images/logo.webp" />
+            <img
+              height={50}
+              width={220}
+              src="https://www.brainwonders.in/images/logo.webp"
+            />
           </a>
         </div>
 
-        {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
-        <nav className="p-4 flex justify-center belowNav">
-          <ul className="flex">
+        <div className="hidden gap-4 lg:flex items-center">
+          <ul className="flex ">
             <NavItem
               to="/"
               setActivePage={setActivePage}
@@ -129,43 +133,26 @@ export default function Navbar() {
               About Us
             </NavItem>
           </ul>
-        </nav>
-        {/*<<<<<<<<<<---------------------  */}
 
-        {/*  */}
-        <div className="flex text-center items-center w-auto text-sm flex-col lg:flex-row gap-0">
-          <button className="bg-[#F7CA01] py-1 w-28 rounded-lg explorebtn ">
+          <button className="bg-[#F7CA01] py-[8px] px-[14px] font-semibold rounded-[50px]  ">
             Explore
           </button>
         </div>
-        {/*  */}
-
-        {/*  */}
-        <div className="flex text-center items-center lg:gap-12 w-auto text-sm flex-col lg:flex-row gap-0">
-          <button className="bg-[#022F46] text-white py-1 w-44 rounded-lg bookAnAppointment ">
-            Book an Appointment
-          </button>
-        </div>
-        {/*  */}
-
-        {/*  */}
-        <PiPhoneCallFill className="text-2xl bounce hidden lg:block fixed top-7 right-8" />
-        {/*  */}
 
         {/* DropDown Menu */}
-        <div className="dropdown dropdown-end  hidden dropdownMenu w-14">
+        <div className="dropdown dropdown-end lg:hidden dropdownMenu absolute right-0 top-0 bg-white">
           <div
             tabIndex={0}
             role="button"
-            className="btn m-1"
+            className="btn m-1 bg-white border-none "
             onClick={toggleDropdown}
           >
-            <IoMenu />
+            <IoMenu className="text-lg" />
           </div>
           {isOpen && (
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+              className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-white"
             >
               <NavItem
                 to="/"
@@ -243,8 +230,17 @@ export default function Navbar() {
           )}
         </div>
         {/*  DropDown Menu */}
+      </nav>
+      {/*<<<<<<<<<<---------------------  */}
 
+      <div className="fixed top-4 right-1 items-center  hidden xl:flex gap-1 ">
+        <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-lg text-white py-1 px-4  ">
+          Book an Appointment
+        </button>
+        <PiPhoneCallFill className="text-[40px] bounce " />
+        {/*  */}
       </div>
+      {/*  */}
 
       {/*  */}
       <SignupBanner />
@@ -254,14 +250,14 @@ export default function Navbar() {
         <IoLogoWhatsapp className="text-5xl text-[#25D366]" />
       </div>
       {/*  */}
-    </div>
+    </header>
   );
 }
 
 function SignupBanner() {
   return (
-    <div className="fixed right-[-232px] top-[27rem] md:top-80 transform rotate-[-90deg] origin-bottom-left z-50">
-      <div className="bg-[#022F46] text-white px-4 py-5 rounded-t-lg shadow-lg flex items-center gap-3">
+    <div className="fixed right-[-253px] xl:top-[380px] top-[650px] transform rotate-[-90deg] origin-bottom-left z-50 hidden md:block">
+      <div className="bg-[#022F46] text-white px-4 py-4 rounded-t-lg shadow-lg flex items-center gap-3">
         <MdEmail />{" "}
         <p className="text-sm font-semibold">Sign up & Get Rs. 500* OFF</p>
       </div>

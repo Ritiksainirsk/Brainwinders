@@ -424,7 +424,7 @@ function CareerServices() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="p-4 px-9">
+    <div className="p-4">
       <h1 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font">
       Brainwonders Psychometric Test for Counselling Services
       </h1>
@@ -434,7 +434,7 @@ function CareerServices() {
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`py-2 px-4 rounded ${
-              activeTab === tab ? "bg-red-500 text-white" : "bg-gray-200"
+              activeTab === tab ? "bg-[#022F46] text-white" : "bg-gray-200"
             }`}
           >
             {tab}
@@ -448,7 +448,7 @@ function CareerServices() {
        Brainwonders brings to you scientific and meticulously designed
        Our Services to discover your true potential and interest ,learning styles and skills
       </h3>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 2xl:px-48">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {cardData[activeTab]?.map((card, index) => (
           <div
             key={index}
@@ -478,7 +478,7 @@ function CareerServices() {
                   <span className="text-red-500 ml-2">{card.price}</span>
                 </div>
               </span>
-              <button className="mt-4 w-full bg-orange-500 text-white py-2 rounded">
+              <button className="mt-4 w-full bg-[#022F46] text-white py-2 rounded">
                 {card.target}
               </button>
             </div>

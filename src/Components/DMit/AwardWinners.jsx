@@ -64,7 +64,7 @@ const AwardWinners = () => {
       {/* FAQ */}
       <div className="flex justify-center">
         <img
-          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUG-ngbe3GR7gXSi7EKzPvjbY13ETQ409ZTyJfcRV8hhqSaaQo"
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8LZpzbHv6LBMf5zbpg4n43DygbeSYn9Gcj00Jg1VE-cG-FVMx"
           alt=""
           className=" w-[28%]"
         />

@@ -6,19 +6,29 @@ const GuidingSteps = () => {
   return (
     <div className="relative py-10">
       <div className="text-center mb-10">
-        <h2 className=" text-3xl lg:text-4xl font-semibold heading-font">Guiding you at every step!</h2>
+        <h2 className=" text-3xl lg:text-4xl font-semibold heading-font">
+          Guiding you at every step!
+        </h2>
       </div>
       {/* medial line */}
       <div className="w-full h-1 bg-gray-500 absolute top-[54%] guiding-line"></div>
       {/* medial line */}
 
-      <div className="relative px-5 xl:px-28">
+      <div className="relative px-5">
         <div className="flex justify-center items-center lg:justify-around lg:items-start GuidingStepsContainer">
           {/* first */}
           <div className="text-center p-5 lg:w-[30%]">
-            <div className="bg-white p-6 rounded-lg firstCard-bottom-shadow lg:h-72" style={{boxShadow:"0 4px 6px -1px #2469BC",borderBottom:"5px solid #2469BC"}}>
-              <h3 className="text-xl font-semibold mb-4 heading-font">Explore Careers</h3>
-              <ul className="text-left text-gray-700 list-disc list-inside">
+            <div
+              className="bg-white p-6 rounded-lg firstCard-bottom-shadow lg:h-72"
+              style={{
+                boxShadow: "0 4px 6px -1px #2469BC",
+                borderBottom: "5px solid #2469BC",
+              }}
+            >
+              <h3 className="text-xl font-semibold mb-4 heading-font">
+                Explore Careers
+              </h3>
+              <ul className="text-left text-black list-disc list-inside">
                 <li>Largest collection of career pathways</li>
                 <li>Repository of many job roles</li>
                 <li>Awareness on traditional and new-age academic pathways</li>
@@ -295,7 +305,9 @@ const GuidingSteps = () => {
                     </g>
                   </svg>
                 </div>
-                <div class="step_name text-white heading-font">Discover Yourself</div>
+                <div class="step_name text-white heading-font">
+                  Discover Yourself
+                </div>
               </div>
             </div>
             {/*  */}
@@ -304,9 +316,15 @@ const GuidingSteps = () => {
               <div className="w-1 h-8 bg-black"></div>
             </div>
             {/*  */}
-            <div className="bg-white p-6 rounded-lg shadow-md h-72" style={{boxShadow:"0 -4px 6px -1px #143966",borderTop:"5px solid #143966"}}>
+            <div
+              className="bg-white p-6 rounded-lg shadow-md h-72"
+              style={{
+                boxShadow: "0 -4px 6px -1px #143966",
+                borderTop: "5px solid #143966",
+              }}
+            >
               <h3 className="text-xl font-semibold mb-4">Discover Yourself</h3>
-              <ul className="text-left text-gray-700 list-disc list-inside">
+              <ul className="text-left text-black list-disc list-inside">
                 <li>Comprehensive game-based psychometric assessments</li>
                 <li>Insights on attitude, aptitude, and values</li>
                 <li>Understanding parental expectations</li>
@@ -318,9 +336,17 @@ const GuidingSteps = () => {
 
           {/* second card ka second card */}
           <div className="text-center p-5 lg:w-[30%] lg:hidden block">
-            <div className="bg-white p-6 rounded-lg shadow-md lg:h-72" style={{boxShadow:"0 4px 6px -1px #143966",borderBottom:"5px solid #143966"}}>
-              <h3 className="text-xl font-semibold mb-4 heading-font">Discover Yourself</h3>
-              <ul className="text-left text-gray-700 list-disc list-inside">
+            <div
+              className="bg-white p-6 rounded-lg shadow-md lg:h-72"
+              style={{
+                boxShadow: "0 4px 6px -1px #143966",
+                borderBottom: "5px solid #143966",
+              }}
+            >
+              <h3 className="text-xl font-semibold mb-4 heading-font">
+                Discover Yourself
+              </h3>
+              <ul className="text-left text-black list-disc list-inside">
                 <li>Comprehensive game-based psychometric assessments</li>
                 <li>Insights on attitude, aptitude, and values</li>
                 <li>Understanding parental expectations</li>
@@ -520,9 +546,17 @@ const GuidingSteps = () => {
 
           {/* third */}
           <div className="text-center p-5 lg:w-[30%]">
-            <div className="bg-white p-6 rounded-lg shadow-md lg:h-72" style={{boxShadow:"0 4px 6px -1px #DC2C1B",borderBottom:"5px solid #DC2C1B"}}>
-              <h3 className="text-xl font-semibold mb-4 heading-font">Get Guided</h3>
-              <ul className="text-left text-gray-700 list-disc list-inside">
+            <div
+              className="bg-white p-6 rounded-lg shadow-md lg:h-72"
+              style={{
+                boxShadow: "0 4px 6px -1px #DC2C1B",
+                borderBottom: "5px solid #DC2C1B",
+              }}
+            >
+              <h3 className="text-xl font-semibold mb-4 heading-font">
+                Get Guided
+              </h3>
+              <ul className="text-left text-black list-disc list-inside">
                 <li>Large network of certified career counsellors</li>
                 <li>Evidence based, one-on-one counselling sessions</li>
                 <li>Choice of multiple time slots for counselling</li>
@@ -589,6 +623,16 @@ const GuidingSteps = () => {
             {/*  */}
           </div>
           {/* third */}
+
+          {/* image */}
+          <div className="w-[25rem] h-full mt-64 hidden 2xl:block">
+          <img
+            src="https://www.tcsion.com/per/g01/pub/1016/iDH/instance/1/product/microsite_data/IONCAREERINSIGHT/microsite_1722424800648/image/guide_banner.png?version=142946389"
+            alt=""
+            className="w-full"
+          />
+          </div>
+          {/* image */}
         </div>
       </div>
     </div>

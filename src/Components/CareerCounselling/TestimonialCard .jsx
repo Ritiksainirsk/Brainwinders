@@ -74,7 +74,7 @@ function TestimonialCard() {
       {/* FAQ */}
       <div className="flex justify-center">
         <img
-          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUG-ngbe3GR7gXSi7EKzPvjbY13ETQ409ZTyJfcRV8hhqSaaQo"
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8LZpzbHv6LBMf5zbpg4n43DygbeSYn9Gcj00Jg1VE-cG-FVMx"
           alt=""
           className=" w-[28%]"
         />
@@ -89,7 +89,7 @@ export default TestimonialCard;
 
 const ReviewCard = ({ image, name, text }) => {
   return (
-    <div className="max-w-sm mx-auto bg-blue-800 text-white rounded-3xl shadow-md p-6">
+    <div className="max-w-sm mx-auto bg-blue-800 text-white rounded-3xl shadow-md p-6 h-[22rem]">
       <div className="flex items-center justify-center">
         <div className="rounded-full overflow-hidden w-28 h-28 mb-4 mt-[-80px] border-2 border-black">
           <img
