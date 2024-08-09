@@ -5,7 +5,7 @@ const InformationSection = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="bg-blue-100 p-8 flex-1 lg:px-20">
-        <h2 className="text-[2rem] lg:text-[2.8rem] font-semibold mb-4 text-center leading-[54px] heading-font">DERMATOGLYPHICS MEANING</h2>
+        <h3 className="text-[2rem] lg:text-[2.8rem] font-semibold mb-4 text-center leading-[54px] heading-font">DERMATOGLYPHICS MEANING</h3>
         <p>
           Dermatoglyphics is the scientific study of the patterns of ridges on the skin of human fingers, palms, toes, and soles. These patterns, including loops, whorls, and arches, are formed during fetal development and remain unique and consistent throughout a person's life. The primary focus is on analyzing fingerprint patterns, which are categorized into these three main types, each with various subtypes. Dermatoglyphics is influenced by genetic and environmental factors during fetal development, making it a fascinating field that bridges biology and genetics. The uniqueness and permanence of these patterns make dermatoglyphics valuable for identification purposes, such as in forensic science. Additionally, it is used in medical research to study correlations between fingerprint patterns and certain genetic or developmental conditions. Overall, dermatoglyphics provides insights into individual identity and developmental biology, contributing to various scientific and practical applications.
         </p>

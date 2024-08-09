@@ -68,9 +68,9 @@ export default function Ebook() {
   return (
     <div className="mb-8">
       <div className="text-center my-8"> 
-        <h1 className="text-2xl md:text-3xl font-bold mb-2 heading-font">
+        <h3 className="text-2xl md:text-3xl font-bold mb-2 heading-font text-black">
           E-Book and Sample Paper
-        </h1>
+        </h3>
       </div>
       <div className=" lg:mx-6">
         <Carousel

@@ -6,9 +6,9 @@ export default function ImportanceOfCareerCounselling() {
       <div className="py-10 lg:px-16">
         <div className=" mx-auto px-4 ">
           <div className="bg-white p-8">
-            <h2 className="text-3xl lg:text-4xl font-semibold mb-6 text-center heading-font">
+            <h3 className="text-3xl lg:text-4xl font-semibold mb-6 text-center heading-font">
               IMPORTANCE OF CAREER COUNSELLING
-            </h2>
+            </h3>
             <div className="text-gray-800">
               <div className="mb-6">
                 <h3 className="text-xl lg:text-2xl font-semibold mb-2 heading-font">

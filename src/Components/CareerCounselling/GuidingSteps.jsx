@@ -6,9 +6,9 @@ const GuidingSteps = () => {
   return (
     <div className="relative py-10">
       <div className="text-center mb-10">
-        <h2 className=" text-3xl lg:text-4xl font-semibold heading-font">
+        <h3 className=" text-3xl lg:text-4xl font-semibold heading-font">
           Guiding you at every step!
-        </h2>
+        </h3>
       </div>
       {/* medial line */}
       <div className="w-full h-1 bg-gray-500 absolute top-[54%] guiding-line"></div>

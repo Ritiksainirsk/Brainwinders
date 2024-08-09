@@ -31,9 +31,9 @@ const WhyChooseBrainwonders = () => {
   return (
     <div className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center heading-font ">
+        <h3 className="text-3xl lg:text-4xl font-bold text-center heading-font ">
           Why Choose Brainwonders
-        </h2>
+        </h3>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg border border-gray-200">

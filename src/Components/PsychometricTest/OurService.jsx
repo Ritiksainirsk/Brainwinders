@@ -425,9 +425,9 @@ function CareerServices() {
 
   return (
     <div className="p-4">
-      <h1 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font">
+      <h3 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font">
       Brainwonders Psychometric Test for Counselling Services
-      </h1>
+      </h3>
       <div className="flex justify-center flex-wrap space-x-2 mb-6">
         {tabs.map((tab) => (
           <button

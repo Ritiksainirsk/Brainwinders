@@ -21,13 +21,12 @@ export default function CareerCounsellingHero() {
       <div>
         <CareerCounsellingHeroDescription />
       </div>
-      {/*  */}
-
+      {/*  */}3
       {/*  */}
       <div className="mb-16">
-        <h1 className="md:text-4xl font-bold text-center my-10 heading-font">
+        <h3 className="text-3xl md:text-4xl font-bold text-center my-10 heading-font px-5">
           BENEFITS OF Career Counselling FOR ALL AGES!
-        </h1>
+        </h3>
         <CareerOptions />
       </div>
       {/*  */}
@@ -40,10 +39,10 @@ export default function CareerCounsellingHero() {
 }
 
 const CareerCounsellingVideo = () => (
-  <div className=" py-8 px-4 flex justify-center items-center">
+  <div className=" py-8 px-2 flex justify-center items-center">
     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
       <div className="text-center lg:text-left">
-        <h1 className="text-5xl lg:text-[3.3rem] font-bold mb-6 text-shadow heading-font leading-[62px]">
+        <h1 className="text-4xl lg:text-[3.3rem] font-bold mb-6 text-shadow heading-font leading-[62px]">
           GET THE RIGHT CAREER COUNSELLING
           <br />
           TO LEAP THROUGH YOUR CAREER
@@ -77,9 +76,9 @@ const CareerCounsellingVideo = () => (
 const CareerCounsellingHeroDescription = () => {
   return (
     <div className="p-6 2xl:px-[9rem]">
-      <h1 className="text-3xl lg:text-5xl font-bold text-center mb-5 heading-font">
+      <h3 className="text-3xl lg:text-5xl font-bold text-center mb-5 heading-font">
         WHAT IS CAREER COUNSELLING?
-      </h1>
+      </h3>
       <p className="text-black mb-4">
         Career Counselling is a process that helps you understand yourself and
         the world of work to make informed career, educational, and life
@@ -183,9 +182,9 @@ const CareerOptions = () => {
               />
             </div>
 
-            <h2 className="text-xl font-semibold heading-font pb-3">
+            <h3 className="text-xl font-semibold heading-font pb-3">
               {card.title}
-            </h2>
+            </h3>
             <p>{card.description}</p>
 
             <div className="mt-4 btnn ">

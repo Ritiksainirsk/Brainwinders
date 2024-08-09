@@ -8,11 +8,14 @@ import Ebook from '../Components/Home/Ebook'
 import PartnersVideoCard from '../Components/Home/PartnersVideoCard'
 import Achievment from '../Components/Home/Achievment'
 import CareerSuitabilitySection from '../Components/Home/CareerSuitabilitySection '
-
+import HeroCarousel from '../Components/Home/HeroCarousel'
+import TestimonialCard from '../Components/CareerCounselling/TestimonialCard '
 
 
 export default function Home() {
   return (
+    <>
+    <HeroCarousel/>
     <div className='max-w-[1550px] mx-auto overflow-hidden'>
       <Hero/>
       <Services/>
@@ -21,8 +24,10 @@ export default function Home() {
       <Achievment/>
       <PartnersVideoCard/>
       <MediaMentions/>
+      <TestimonialCard/>
       <Blog/>
       <Accordion/>
     </div>
+    </>
   )
 }

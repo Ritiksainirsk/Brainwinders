@@ -24,7 +24,7 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
       <img className="w-full h-52" src={thumbnail} />
       <div className="flex">
         <div className="p-4">
-          <h3 className="text-xl text-start heading-font font-bold">{title}</h3>
+          <h3 className="text-xl text-start heading-font font-bold text-black">{title}</h3>
           <p className="text-black mt-2 text-start ">{description}</p>
         </div>
         <div className="p-4 pt-10">
@@ -67,11 +67,11 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
 };
 
 const PartnerSection = () => (
-  <div className="max-w-6xl mx-auto px-4 py-16 text-center">
-    <h2 className="text-2xl md:text-3xl font-bold mb-4 heading-font">
+  <div className="max-w-6xl mx-auto px-5 py-16 text-center">
+    <h3 className="text-3xl md:text-3xl font-bold mb-4 heading-font text-black">
       What Our Partners Say About Us
-    </h2>
-    <p className=" mb-8 text-xl font-bold text-black">
+    </h3>
+    <p className=" mb-8 md:text-xl font-bold text-black">
     Watch People from Different Backgrounds talk about their experience with Brainwonders.
     </p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

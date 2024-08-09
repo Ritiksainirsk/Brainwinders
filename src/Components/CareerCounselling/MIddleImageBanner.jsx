@@ -13,9 +13,9 @@ const MIddleImageBanner = () => {
       <SecondBanner />
       <div>
         <div className="flex justify-center items-center mt-5">
-          <h1 className="bg-[#FFF8F0] text-[#1C355E] font-bold text-center heading-font text-3xl lg:text-4xl my-11 py-4 px-10 rounded-full shadow-lg">
+          <h3 className="bg-[#FFF8F0] text-[#1C355E] font-bold text-center heading-font text-3xl lg:text-4xl my-11 py-4 px-10 rounded-full shadow-lg">
             Paving a path for your Bright future
-          </h1>
+          </h3>
         </div>
         <CareerOptions />
       </div>
@@ -28,9 +28,9 @@ const FirstBanner = () => {
     <>
       <div className="bg-white p-8 md:p-16">
         <div className="text-center">
-          <h1 className="text-3xl md:text-5xl font-semibold heading-font">
+          <h3 className="text-3xl md:text-5xl font-semibold heading-font">
             CAREER COUNSELLING THROUGH BIOMETRICS
-          </h1>
+          </h3>
           <p className="text-lg md:text-2xl text-black mt-4">
             Brainwonders, is the only U.S Patent DMIT Company which helps in
             transformation via brain mapping
@@ -69,11 +69,11 @@ const SecondBanner = () => {
   return (
     <>
       <div className="bg-gray-50 p-6">
-        <h2 className="text-3xl lg:text-4xl font-semibold heading-font text-center my-7">
+        <h3 className="text-3xl lg:text-4xl font-semibold heading-font text-center my-7">
           CAREER GUIDANCE BY OUR CAREER COUNSELLORS
-        </h2>
+        </h3>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-20">
-          <div className="md:w-[30%]">
+          <div className="md:w-[26%]">
             <img
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTauSCxFrAo84-YpO4jpScIjwLe6O0qPoyGPMynXGk5JgLyRg5S" // Replace with your image URL
               alt="Career Guidance"

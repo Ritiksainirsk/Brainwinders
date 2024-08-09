@@ -35,15 +35,15 @@ const AwardWinners = () => {
   return (
     <>
       <div className="py-8">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-3 heading-font">
+        <h3 className="text-3xl lg:text-4xl font-bold text-center mb-3 heading-font px-5">
           5+ National Award Winners
-        </h2>
-        <p className="text-center mb-8">
+        </h3>
+        <p className="text-center mb-8 px-5">
           Brainwonders has been a recipient of 5 National Awards for being the
           Best Career Counselling Centre and our contribution to Educational
           Counselling.
         </p>
-        <div className="px-14">
+        <div className="px-5">
           <Marquee className="p-9" speed={50} direction="right">
             {awards.map((award, index) => (
               <div
@@ -61,15 +61,6 @@ const AwardWinners = () => {
           </Marquee>
         </div>
       </div>
-      {/* FAQ */}
-      <div className="flex justify-center">
-        <img
-          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8LZpzbHv6LBMf5zbpg4n43DygbeSYn9Gcj00Jg1VE-cG-FVMx"
-          alt=""
-          className=" w-[28%]"
-        />
-      </div>
-      {/* FAQ */}
     </>
   );
 };

@@ -33,9 +33,9 @@ export default function AwardRecognition() {
     <div>
       <div className="mb-7">
         <div className="text-center">
-          <h1 className="text-2xl md:text-3xl font-semibold my-9 heading-font mb-16">
+          <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font mb-16">
             Awards and Recognition
-          </h1>
+          </h3>
         </div>
         <div className="2xl:mx-20">
           <Marquee speed={50} direction="left">

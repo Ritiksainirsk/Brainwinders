@@ -9,6 +9,7 @@ import SuitablityBanner from "../Components/Home/SuitablityBanner";
 import Ebook from "../Components/Home/Ebook";
 import WhyChooseBrainwonders from "../Components/PsychometricTest/WhyChooseBrainwonders ";
 import Accordion from "../Components/PsychometricTest/Accordion";
+import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 
 export default function PsychometricTest() {
   return (
@@ -23,6 +24,7 @@ export default function PsychometricTest() {
         <SuitablityBanner />
         <Ebook />
         <WhyChooseBrainwonders />
+        <TestimonialCard/>
         <Accordion />
       </div>
     </>

@@ -21,7 +21,7 @@ const CareerFitSection = () => {
     <div className="flex flex-col md:flex-row justify-between items-center bg-white p-8 mx-auto px-10 lg:px-20">
       {/* Left Section */}
       <div className="md:w-2/3">
-        <h2 className="text-3xl font-light text-gray-800 mb-4 heading-font">
+        <h2 className="text-3xl font-light text-black mb-4 heading-font">
           Confused about the best <span className="font-bold">career-fit</span>{" "}
           for you?
         </h2>

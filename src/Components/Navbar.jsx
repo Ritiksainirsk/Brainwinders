@@ -57,14 +57,113 @@ export default function Navbar() {
     <header className="bg-white py-[12px] w-full shadow-lg fixed z-50">
       {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
       <nav className="text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg  flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 max-w-[1400px] lg:min-h-[50px] mx-auto px-4">
-        <div className="w-[220px] md:w-[240px]">
+        <div className=" md:w-[240px] flex flex-col w-full">
           <a className="">
             <img
-              height={50}
-              width={220}
               src="https://www.brainwonders.in/images/logo.webp"
+              className="w-full sm:w-[220px]"
             />
           </a>
+          {/* DropDown Menu */}
+          <div className="flex items-center justify-between">
+            {/* button */}
+            <div className="sm:hidden">
+              <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-lg text-white py-1 px-4  ">
+                Book an Appointment
+              </button>
+            </div>
+            {/* button */}
+            <div className="dropdown dropdown-end lg:hidden dropdownMenu sm:absolute sm:right-0 sm:top-0 bg-white">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn m-1 bg-white border-none "
+                onClick={toggleDropdown}
+              >
+                <IoMenu className="text-lg" />
+              </div>
+              {isOpen && (
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-white"
+                >
+                  <NavItem
+                    to="/"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    Home
+                  </NavItem>
+                  <NavItem
+                    to="/dmit"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    Dmit
+                  </NavItem>
+                  <NavItem
+                    to="/careercounselling"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    Career Counselling
+                  </NavItem>
+                  <NavItem
+                    to="/psychometrictest"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    Psychometric Test
+                  </NavItem>
+                  <NavItem
+                    to="/interesttest"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    Interest Test
+                  </NavItem>
+                  <NavItem
+                    to="/franchise"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    Franchise
+                  </NavItem>
+                  <NavItem
+                    to="/gallery"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    Gallery
+                  </NavItem>
+                  <NavItem
+                    to="/aboutus"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    About Us
+                  </NavItem>
+                  <NavItem
+                    to="/blog"
+                    setActivePage={setActivePage}
+                    activePage={activePage}
+                    handleItemClick={handleItemClick}
+                  >
+                    Blog
+                  </NavItem>
+                </ul>
+              )}
+            </div>
+          </div>
+          {/*  DropDown Menu */}
         </div>
 
         <div className="hidden gap-4 lg:flex items-center">
@@ -138,98 +237,6 @@ export default function Navbar() {
             Explore
           </button>
         </div>
-
-        {/* DropDown Menu */}
-        <div className="dropdown dropdown-end lg:hidden dropdownMenu absolute right-0 top-0 bg-white">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn m-1 bg-white border-none "
-            onClick={toggleDropdown}
-          >
-            <IoMenu className="text-lg" />
-          </div>
-          {isOpen && (
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-white"
-            >
-              <NavItem
-                to="/"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                Home
-              </NavItem>
-              <NavItem
-                to="/dmit"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                Dmit
-              </NavItem>
-              <NavItem
-                to="/careercounselling"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                Career Counselling
-              </NavItem>
-              <NavItem
-                to="/psychometrictest"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                Psychometric Test
-              </NavItem>
-              <NavItem
-                to="/interesttest"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                Interest Test
-              </NavItem>
-              <NavItem
-                to="/franchise"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                Franchise
-              </NavItem>
-              <NavItem
-                to="/gallery"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                Gallery
-              </NavItem>
-              <NavItem
-                to="/aboutus"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                About Us
-              </NavItem>
-              <NavItem
-                to="/blog"
-                setActivePage={setActivePage}
-                activePage={activePage}
-                handleItemClick={handleItemClick}
-              >
-                Blog
-              </NavItem>
-            </ul>
-          )}
-        </div>
-        {/*  DropDown Menu */}
       </nav>
       {/*<<<<<<<<<<---------------------  */}
 

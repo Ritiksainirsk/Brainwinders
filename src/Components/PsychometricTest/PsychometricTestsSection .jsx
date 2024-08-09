@@ -8,7 +8,7 @@ const PsychometricTestsSection = () => {
     <div className="bg-gray-100 p-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-3/4">
-          <h2 className="text-3xl font-bold text-blue-900 heading-font">What are Psychometric Tests?</h2>
+          <h3 className="text-3xl font-bold text-blue-900 heading-font">What are Psychometric Tests?</h3>
           <p className="mt-4 text-lg text-gray-700">
             A psychometric test assesses a candidate's cognitive ability and personality. One of the most common uses of psychometric assessment is for recruitment. From a candidate's response, psychometric assessment tests can predict valuable insights such as job performance, competence, and motivations. There are two general types of psychometric testing: personality tests and <a href="#" className="text-blue-500 underline">Read More</a>.
           </p>

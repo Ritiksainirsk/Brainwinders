@@ -23,9 +23,9 @@ export default function DmitTest() {
       {/*  */}
       {/*  */}
       <div className="mb-16">
-        <h1 className="md:text-4xl font-bold text-center my-10 heading-font">
+        <h3 className="px-2 text-2xl md:text-4xl font-bold text-center my-10 heading-font">
           BENEFITS OF DMIT TEST FOR ALL AGES!
-        </h1>
+        </h3>
         <CareerOptions />
         <CareerOptions2 />
       </div>
@@ -75,9 +75,9 @@ const DMTITestComponent = () => (
 const DmttTestDescription = () => {
   return (
     <div className=" mx-auto p-6 2xl:px-[9rem]">
-      <h2 className="text-3xl lg:text-5xl font-bold text-center mb-4 heading-font">
+      <h3 className="text-3xl lg:text-5xl font-bold text-center mb-4 heading-font">
         WHAT IS DMIT TEST?
-      </h2>
+      </h3>
       <p className="mb-4 text-[1rem] leading-7">
         The{" "}
         <strong>
@@ -149,10 +149,10 @@ const CareerOptions = () => {
     },
   ];
   return (
-    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
+    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[22rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+          className={`w-[23rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test for Toddlers (1-4 years)"
               ? "hover:bg-yellow-500"
               : "" || card.title === "DMIT Test for Children (4-10 years)"
@@ -180,9 +180,9 @@ const CareerOptions = () => {
               />
             </div>
 
-            <h2 className="text-xl font-semibold heading-font pb-3 leading-6">
+            <h3 className="text-xl font-semibold heading-font pb-3 leading-6">
               {card.title}
-            </h2>
+            </h3>
             <p>{card.description}</p>
 
             <div className="mt-4 btnn ">
@@ -250,7 +250,7 @@ const CareerOptions2 = () => {
     <div className="flex justify-center mx-9 rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[22rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+          className={`w-[23rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test for Adult (25 years and above)"
               ? "hover:bg-yellow-500"
               : "" || card.title === "DMIT Test for institutional (all years)"
@@ -270,7 +270,7 @@ const CareerOptions2 = () => {
           </div>
 
           <div>
-            <div className={`w-[100px] h-[110px] pb-4 rounded-full text-center`}>
+            <div className={`w-[80px] h-[100px] pb-4 rounded-full text-center`}>
               <img
                 src={card.icon}
                 alt=""
@@ -278,9 +278,9 @@ const CareerOptions2 = () => {
               />
             </div>
 
-            <h2 className="text-xl font-semibold heading-font pb-3 leading-6">
+            <h3 className="text-xl font-semibold heading-font pb-3 leading-6">
               {card.title}
-            </h2>
+            </h3>
             <p>{card.description}</p>
 
             <div className="mt-4 btnn ">

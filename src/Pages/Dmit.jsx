@@ -8,6 +8,7 @@ import PartnersVideoCard from '../Components/Home/PartnersVideoCard'
 import CertificateGallery from '../Components/DMit/CertificateGallery'
 import AwardWinners from '../Components/DMit/AwardWinners'
 import Accordion from '../Components/Home/Accordion'
+import TestimonialCard from '../Components/CareerCounselling/TestimonialCard '
 
 export default function Dmit() {
   return (
@@ -20,6 +21,7 @@ export default function Dmit() {
       <PartnersVideoCard/>
       <CertificateGallery/>
       <AwardWinners/>
+      <TestimonialCard/>
       <Accordion/>
     </div>
   )

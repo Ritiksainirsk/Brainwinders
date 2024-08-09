@@ -4,7 +4,7 @@ import React from 'react';
 const CertificateGallery = () => {
   return (
     <div className="py-8 px-4 mb-12 mt-7">
-      <h2 className="text-4xl font-bold mb-8 text-center heading-font">OUR U.S PATENTED DMIT CERTIFICATES.</h2>
+      <h3 className="text-3xl md:text-4xl font-bold mb-8 text-center heading-font">OUR U.S PATENTED DMIT CERTIFICATES.</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         <div className="flex justify-center">
           <img 

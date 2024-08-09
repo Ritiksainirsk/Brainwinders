@@ -29,7 +29,8 @@ body{
   box-sizing: border-box;
   background-color: white;
   font-family: "Lato", sans-serif;
-  color: #022F46;
+  /* color: #022F46; */
+  color: #000;
 }
 
 .gotham-font{
@@ -40,6 +41,7 @@ body{
 .heading-font{
   font-family: 'Bebas-Regular', sans-serif ;
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 p{

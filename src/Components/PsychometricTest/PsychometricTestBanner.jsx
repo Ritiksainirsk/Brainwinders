@@ -5,9 +5,9 @@ export default function PsychometricTestBanner() {
     <div>
       <div className="bg-[#070954] text-white p-5 lg:p-8 flex flex-col lg:gap-20 md:flex-row items-center justify-between my-10">
         <div className="md:w-3/4 ">
-          <h2 className="text-3xl lg:text-4xl font-bold heading-font">
+          <h3 className="text-3xl lg:text-4xl font-bold heading-font">
             Not sure if career counselling is right for you?
-          </h2>
+          </h3>
           <p className="mt-4 text-lg lg:text-xl">   
             Book a Career Brainstorm Session to explore your options with a
             counsellor before opting for the full career guidance solution.

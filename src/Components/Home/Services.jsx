@@ -80,11 +80,11 @@ export default function Services() {
     <div className="flex justify-center">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h1 className="text-2xl md:text-3xl font-semibold my-14 px-8 lg:px-80 text-center heading-font ">
+        <h3 className="text-xl md:text-3xl font-semibold my-14 px-8 lg:px-80 text-center heading-font text-black">
           How does Brainwonders services 
           <br />
           help you to sucess in your career?
-        </h1>
+        </h3>
         <HoverEffectCard />
         <HoverEffectCard2 />
       </div>
@@ -95,7 +95,7 @@ export default function Services() {
 
 const HoverEffectCard = () => {
   return (
-    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
+    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
       {items.map((card, index) => (
         <div
           className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
@@ -125,9 +125,9 @@ const HoverEffectCard = () => {
               />
             </div>
 
-            <h2 className="text-xl font-semibold heading-font pb-3">
+            <h3 className="text-xl font-semibold heading-font pb-3 text-black">
               {card.title}
-            </h2>
+            </h3>
             <p className="">{card.subtitle}</p>
 
             <div className="mt-4 btnn ">
@@ -191,9 +191,9 @@ const HoverEffectCard2 = () => {
               />
             </div>
 
-            <h2 className="text-lg font-semibold heading-font pb-3">
+            <h3 className="text-lg font-semibold heading-font pb-3 text-black">
               {card.title}
-            </h2>
+            </h3>
             <p>{card.subtitle}</p>
 
             <div className="mt-4 btnn ">

@@ -192,9 +192,9 @@ function CareerServices() {
 
   return (
     <div className="p-4">
-      <h1 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font">
+      <h3 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font">
       Brainwonders Psychometric Career Test 
-      </h1>
+      </h3>
       <h3
         className="text-center text-xl leading-7 pb-8 2xl:px-72 text-black"
       >

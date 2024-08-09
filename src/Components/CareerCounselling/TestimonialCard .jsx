@@ -43,9 +43,9 @@ function TestimonialCard() {
   };
   return (
     <div>
-      <div className="my-10 mt-20">
+      <div className="my-10  px-3">
         <div className="text-center my-8">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2 heading-font">
+          <h1 className="text-3xl md:text-3xl font-bold mb-2 heading-font">
             Reviews
           </h1>
         </div>
