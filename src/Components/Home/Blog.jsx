@@ -28,7 +28,7 @@ export default function Blog() {
   return (
     <div>
       <div className="p-4 mt-10 mx-7">
-        <h2 className="text-3xl font-semibold text-center mb-6 heading-font text-black">OUR BLOGS</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6 heading-font text-[#022F46]">OUR BLOGS</h2>
         <div className="flex justify-center gap-10 flex-wrap">
           {blogs.map((blog, index) => (
             <Card
@@ -45,6 +45,15 @@ export default function Blog() {
         <button className="bg-[#022F46] px-4 py-2 text-white rounded-lg">View All Blogs</button>
         </div>
       </div>
+        {/* FAQ */}
+        <div className="flex justify-center">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8LZpzbHv6LBMf5zbpg4n43DygbeSYn9Gcj00Jg1VE-cG-FVMx"
+          alt=""
+          className=" w-[28%]"
+        />
+      </div>
+      {/* FAQ */}
     </div>
   );
 }

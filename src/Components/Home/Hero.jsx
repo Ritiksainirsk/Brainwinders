@@ -23,10 +23,6 @@ const awards = [
     title: "Contribution in Educational ",
     subtitle: "Education Merit Awards 2017, 2018, 2019, 2020",
   },
-  {
-    title: "Best in Student Counselling",
-    subtitle: "Indian School Conclave 2018, 2019, 2020",
-  },
 ];
 
 export default function Hero() {
@@ -39,13 +35,13 @@ export default function Hero() {
           {/* Carousel */}
           <div className="mb-10">
             <div className="text-center">
-              <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font text-black">
+              <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font text-[#022F46]">
                 Awards and Recognition
               </h3>
             </div>
             <div className="">
               <Marquee speed={50} direction="left">
-                <div className="flex justify-center gap-3">
+                <div className="flex justify-center gap-5">
                   {awards.map((award, index) => (
                     <AwardCard
                       key={index}
@@ -84,7 +80,7 @@ const Card = () => {
   return (
     <div className="w-full overflow-hidden flex flex-col md:flex-row ">
       <div className="md:basis-1/2 md:pl-10 p-6 flex flex-col justify-center">
-        <h3 className="text-2xl lg:text-3xl font-bold text-black heading-font">
+        <h3 className="text-2xl lg:text-3xl font-bold text-[#022F46] heading-font">
           The World's Most Accurate 
           <br />
           Career Test

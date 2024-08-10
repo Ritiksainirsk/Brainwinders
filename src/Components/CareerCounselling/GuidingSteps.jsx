@@ -6,7 +6,7 @@ const GuidingSteps = () => {
   return (
     <div className="relative py-10">
       <div className="text-center mb-10">
-        <h3 className=" text-3xl lg:text-4xl font-semibold heading-font">
+        <h3 className=" text-3xl lg:text-4xl font-semibold heading-font text-[#022F46]">
           Guiding you at every step!
         </h3>
       </div>

@@ -80,7 +80,7 @@ export default function Services() {
     <div className="flex justify-center">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h3 className="text-xl md:text-3xl font-semibold my-14 px-8 lg:px-80 text-center heading-font text-black">
+        <h3 className="text-xl md:text-3xl font-semibold my-14 px-8 lg:px-80 text-center heading-font text-[#022F46]">
           How does Brainwonders services 
           <br />
           help you to sucess in your career?

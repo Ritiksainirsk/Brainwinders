@@ -68,7 +68,7 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
 
 const PartnerSection = () => (
   <div className="max-w-6xl mx-auto px-5 py-16 text-center">
-    <h3 className="text-3xl md:text-3xl font-bold mb-4 heading-font text-black">
+    <h3 className="text-3xl md:text-3xl font-bold mb-4 heading-font text-[#022F46]">
       What Our Partners Say About Us
     </h3>
     <p className=" mb-8 md:text-xl font-bold text-black">

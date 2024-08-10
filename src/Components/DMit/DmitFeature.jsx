@@ -28,7 +28,7 @@ export default function DmitFeature() {
   return (
     <div>
       <div className="mb-16">
-        <h3 className="text-3xl lg:text-4xl font-bold text-center mb-3 mt-12 heading-font">
+        <h3 className="text-3xl lg:text-4xl font-bold text-center mb-3 mt-12 heading-font text-[#022F46]">
           DERMATOGLYPHICS MULTIPLE INTELLIGENCE TEST (DMIT TEST) FEATURES
         </h3>
         <p className="text-center mb-8">

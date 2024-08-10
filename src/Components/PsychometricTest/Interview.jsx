@@ -12,7 +12,7 @@ export default function Interview() {
     <div>
       <div className="bg-[#F9F9F9] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 heading-font mb-4">Top 6 psychometric tests for interview</h3>
+          <h3 className="text-3xl lg:text-4xl font-bold text-center heading-font mb-4 text-[#022F46]">Top 6 psychometric tests for interview</h3>
           <p className="text-center text-gray-600 mt-2 text-xl">
           Choose Various Types of Psychometric Tests for hiring From Our
           Skills Assessment Library

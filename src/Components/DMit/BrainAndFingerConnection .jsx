@@ -4,7 +4,7 @@ import React from 'react';
 const BrainAndFingerConnection = () => {
   return (
     <div className=" p-8 ">
-      <h3 className="text-3xl md:text-5xl font-semibold mb-6 text-center mt-10 heading-font">BRAIN AND FINGER CONNECTION</h3>
+      <h3 className="text-3xl md:text-5xl font-semibold mb-6 text-center mt-10 heading-font text-[#022F46]">BRAIN AND FINGER CONNECTION</h3>
       <h3 className="text-xl font-semibold mb-8 text-center">
         Right Brain is corresponding to Left Hand and Left Brain is corresponding to Right Hand
       </h3>

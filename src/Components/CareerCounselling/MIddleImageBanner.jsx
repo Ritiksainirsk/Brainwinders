@@ -13,7 +13,7 @@ const MIddleImageBanner = () => {
       <SecondBanner />
       <div>
         <div className="flex justify-center items-center mt-5">
-          <h3 className="bg-[#FFF8F0] text-[#1C355E] font-bold text-center heading-font text-3xl lg:text-4xl my-11 py-4 px-10 rounded-full shadow-lg">
+          <h3 className="bg-[#FFF8F0] text-[#022F46] font-bold text-center heading-font text-3xl lg:text-4xl my-11 py-4 px-10 rounded-full shadow-lg">
             Paving a path for your Bright future
           </h3>
         </div>
@@ -28,7 +28,7 @@ const FirstBanner = () => {
     <>
       <div className="bg-white p-8 md:p-16">
         <div className="text-center">
-          <h3 className="text-3xl md:text-5xl font-semibold heading-font">
+          <h3 className="text-3xl md:text-5xl font-semibold heading-font text-[#022F46]">
             CAREER COUNSELLING THROUGH BIOMETRICS
           </h3>
           <p className="text-lg md:text-2xl text-black mt-4">
@@ -69,7 +69,7 @@ const SecondBanner = () => {
   return (
     <>
       <div className="bg-gray-50 p-6">
-        <h3 className="text-3xl lg:text-4xl font-semibold heading-font text-center my-7">
+        <h3 className="text-3xl lg:text-4xl font-semibold heading-font text-center my-7 text-[#022F46]">
           CAREER GUIDANCE BY OUR CAREER COUNSELLORS
         </h3>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-20">

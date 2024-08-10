@@ -3,7 +3,7 @@ import React from "react";
 export default function Accordion() {
   return (
     <div className="px-8 lg:px-48 mb-14">
-      <h3 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-black">
+      <h3 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46] mt-5">
         Frequently Asked Questions
       </h3>
       <div className="join join-vertical w-full">

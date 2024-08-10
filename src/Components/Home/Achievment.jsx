@@ -30,7 +30,7 @@ export default function Achievment() {
     <div>
          {/*  */}
          <div className="pt-5 px-5">
-            <h3 className=" text-2xl md:text-3xl mb-2 font-bold text-center heading-font text-black">
+            <h3 className=" text-2xl md:text-3xl mb-2 font-bold text-center heading-font text-[#022F46]">
               BRAINWONDERS ACHIEVEMENTS
             </h3>
             <div className="flex overflow-x-scroll justify-center">

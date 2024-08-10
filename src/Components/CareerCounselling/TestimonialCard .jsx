@@ -45,7 +45,7 @@ function TestimonialCard() {
     <div>
       <div className="my-10  px-3">
         <div className="text-center my-8">
-          <h1 className="text-3xl md:text-3xl font-bold mb-2 heading-font">
+          <h1 className="text-3xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]">
             Reviews
           </h1>
         </div>
@@ -69,18 +69,7 @@ function TestimonialCard() {
             })}
           </Carousel>
         </div>
-      </div>
-
-      {/* FAQ */}
-      <div className="flex justify-center">
-        <img
-          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8LZpzbHv6LBMf5zbpg4n43DygbeSYn9Gcj00Jg1VE-cG-FVMx"
-          alt=""
-          className=" w-[28%]"
-        />
-      </div>
-      {/* FAQ */}
-      
+      </div>      
     </div>
   );
 }

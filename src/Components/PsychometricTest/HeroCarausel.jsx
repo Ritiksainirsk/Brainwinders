@@ -17,9 +17,9 @@ export default function HeroCarausel() {
 
       {/* text content */}
       <div className="px-16 2xl:px-80 my-14">
-        <h2 className="text-2xl lg:text-3xl heading-font font-semibold text-center mb-7">
+        <h3 className="text-2xl lg:text-3xl heading-font font-semibold text-center mb-7 text-[#022F46]">
           The World’s Most Powerful Psychometric Career Assessment
-        </h2>
+        </h3>
         <p className="text-xl leading-7 text-black">
           Using advanced machine learning, psychometrics, and career
           satisfaction data, Brainwonders has reimagined what a career test can

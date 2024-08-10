@@ -35,7 +35,7 @@ const AwardWinners = () => {
   return (
     <>
       <div className="py-8">
-        <h3 className="text-3xl lg:text-4xl font-bold text-center mb-3 heading-font px-5">
+        <h3 className="text-3xl lg:text-4xl font-bold text-center mb-3 heading-font px-5 text-[#022F46]">
           5+ National Award Winners
         </h3>
         <p className="text-center mb-8 px-5">

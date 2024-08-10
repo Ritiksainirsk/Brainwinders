@@ -23,7 +23,7 @@ export default function DmitTest() {
       {/*  */}
       {/*  */}
       <div className="mb-16">
-        <h3 className="px-2 text-2xl md:text-4xl font-bold text-center my-10 heading-font">
+        <h3 className="px-2 text-2xl md:text-4xl font-bold text-center my-10 heading-font text-[#022F46]">
           BENEFITS OF DMIT TEST FOR ALL AGES!
         </h3>
         <CareerOptions />
@@ -38,7 +38,7 @@ const DMTITestComponent = () => (
   <div className=" py-8 px-4 flex justify-center items-center">
     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
       <div className="text-center">
-        <h1 className="text-5xl lg:text-[3.3rem] md:text-left font-bold mb-4 text-shadow heading-font leading-[62px]">
+        <h1 className="text-5xl lg:text-[3.3rem] md:text-left font-bold mb-4 text-shadow heading-font leading-[62px] text-[#022F46]">
           DISCOVER YOUR INBORN POTENTIAL
           <br />
           AND SHINE WITH DMIT TEST
@@ -51,9 +51,9 @@ const DMTITestComponent = () => (
           and Find your best Career, Course, and college
         </h3>
         <div className="md:text-left">
-        <button className="bg-[#022F46] text-white py-2 px-4 rounded-lg">
-          Get Your DMIT Test now
-        </button>
+          <button className="bg-[#022F46] text-white py-2 px-4 rounded-lg">
+            Get Your DMIT Test now
+          </button>
         </div>
       </div>
       <div className="w-[90%] lg:w-[50%] xl:w-[40%]">
@@ -75,7 +75,7 @@ const DMTITestComponent = () => (
 const DmttTestDescription = () => {
   return (
     <div className=" mx-auto p-6 2xl:px-[9rem]">
-      <h3 className="text-3xl lg:text-5xl font-bold text-center mb-4 heading-font">
+      <h3 className="text-3xl lg:text-5xl font-bold text-center mb-4 heading-font text-[#022F46]">
         WHAT IS DMIT TEST?
       </h3>
       <p className="mb-4 text-[1rem] leading-7">
@@ -118,7 +118,8 @@ const CareerOptions = () => {
   const cards = [
     {
       title: "DMIT Test for Toddlers (1-4 years)",
-      description: "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
+      description:
+        "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
       buttonText: "Explore Now",
       icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7AMz_3fqjluWADEO6rkKwJVQRm4IJo6d2THmoqnDEOD5Il7hn",
       iconColor: "#FFD772",
@@ -141,8 +142,7 @@ const CareerOptions = () => {
     },
     {
       title: "DMIT Test for Career Guidance (18 years and above)",
-      description:
-        "Boosts professional growth and ensures success on the job.",
+      description: "Boosts professional growth and ensures success on the job.",
       buttonText: "India or Abroad",
       icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuG7gyuVrX-6QEsKfLznnXQgNxoBvs1zO5UKcabWalDrb_uQKo",
       iconColor: "#C8BBFF",
@@ -159,7 +159,9 @@ const CareerOptions = () => {
               ? "hover:bg-blue-500"
               : "" || card.title === "DMIT Test for Students (11 to 17 years)"
               ? "hover:bg-green-500"
-              : "" || card.title === "DMIT Test for Career Guidance (18 years and above)"
+              : "" ||
+                card.title ===
+                  "DMIT Test for Career Guidance (18 years and above)"
               ? "hover:bg-red-500"
               : ""
           }`}
@@ -196,15 +198,15 @@ const CareerOptions = () => {
             <img
               src={
                 card.title === "Aptitide Test"
-                  ? Earth
-                  : Management || card.title === "Ideal Career Test"
                   ? Management
-                  : Management || card.title === "Psychometric Test"
+                  : Earth || card.title === "Ideal Career Test"
+                  ? Earth
+                  : Earth || card.title === "Psychometric Test"
                   ? Data
                   : Earth
               }
               alt=""
-              className="w-52 absolute right-20 top-[-69px] "
+              className="w-48 absolute right-20 top-[-69px] "
             />
           </div>
         </div>
@@ -217,14 +219,16 @@ const CareerOptions2 = () => {
   const cards = [
     {
       title: "DMIT Test for Adult (25 years and above)",
-      description: "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
+      description:
+        "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
       buttonText: "Explore Now",
       icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4iiu98uczFUIyiu1k_RK2tZ4GtlGY5OAKaaW12HwXC8xhoKk",
       iconColor: "#FFD772",
     },
     {
       title: "DMIT Test for institutional (all years)",
-      description:"Understanding their learning styles and intelligence profiles to explore their strengths.",
+      description:
+        "Understanding their learning styles and intelligence profiles to explore their strengths.",
       buttonText: "Know Yourself Better",
       icon: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr32UKvo3htclj5II8XhdMzgbMsoY9u2jG42jOjAaleogqIZmu",
       iconColor: "#9BC9FF",
@@ -239,8 +243,7 @@ const CareerOptions2 = () => {
     },
     {
       title: "DMIT Test for Career Guidance (18 years and above)",
-      description:
-        "Boosts professional growth and ensures success on the job.",
+      description: "Boosts professional growth and ensures success on the job.",
       buttonText: "India or Abroad",
       icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTLeD3eeWIg0ceOxjDdQxGHMxBZr27D2XTrA&s",
       iconColor: "#C8BBFF",
@@ -257,7 +260,9 @@ const CareerOptions2 = () => {
               ? "hover:bg-blue-500"
               : "" || card.title === "DMIT Test for Students (11 to 17 years)"
               ? "hover:bg-green-500"
-              : "" || card.title === "DMIT Test for Career Guidance (18 years and above)"
+              : "" ||
+                card.title ===
+                  "DMIT Test for Career Guidance (18 years and above)"
               ? "hover:bg-red-500"
               : ""
           }`}
@@ -302,7 +307,7 @@ const CareerOptions2 = () => {
                   : Earth
               }
               alt=""
-              className="w-52 absolute right-20 top-[-69px] "
+              className="w-48 absolute right-20 top-[-69px] "
             />
           </div>
         </div>
