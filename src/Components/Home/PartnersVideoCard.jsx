@@ -21,7 +21,7 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105">
-      <img className="w-full h-52" src={thumbnail} />
+      <img className="w-full h-52" src={thumbnail} alt={title}  width={120} height={120} />
       <div className="flex">
         <div className="p-4">
           <h3 className="text-xl text-start heading-font font-bold text-black">{title}</h3>

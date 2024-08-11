@@ -13,7 +13,7 @@ const MIddleImageBanner = () => {
       <SecondBanner />
       <div>
         <div className="flex justify-center items-center mt-5">
-          <h3 className="bg-[#FFF8F0] text-[#022F46] font-bold text-center heading-font text-3xl lg:text-4xl my-11 py-4 px-10 rounded-full shadow-lg">
+          <h3 className="bg-[#FFF8F0] text-[#022F46] font-bold text-center heading-font mx-4 text-2xl md:text-3xl lg:text-4xl my-11 py-4 px-10 rounded-full shadow-lg">
             Paving a path for your Bright future
           </h3>
         </div>
@@ -42,6 +42,8 @@ const FirstBanner = () => {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC6zjQLCOk0WBZO0lFK6U17OkPO9jZUuONZoArz2FNTJcajU0c"
               alt="Career Counseling"
               className="w-3/4 md:w-2/3"
+              width={120}
+              height={120}
             />
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0 lg:pr-20">
@@ -78,6 +80,8 @@ const SecondBanner = () => {
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTauSCxFrAo84-YpO4jpScIjwLe6O0qPoyGPMynXGk5JgLyRg5S" // Replace with your image URL
               alt="Career Guidance"
               className="w-full"
+              width={120}
+              height={120}
             />
           </div>
           <div className="md:w-1/2 mt-4 md:mt-0">
@@ -183,13 +187,15 @@ const CareerOptions = () => {
                 src={card.icon}
                 alt=""
                 className="rounded-full object-cover w-full"
+                width={120}
+                height={120}
               />
             </div>
 
             <h2 className="text-xl font-semibold heading-font pb-3">
               {card.title}
             </h2>
-            <p>{card.description}</p>
+            <p className="mb-8 md:mb-3">{card.description}</p>
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">
@@ -210,7 +216,9 @@ const CareerOptions = () => {
                   : Earth
               }
               alt=""
-              className="w-52 absolute right-20 top-[-69px]"
+              className="w-48 lg:w-52 absolute right-20 top-[-69px]"
+              width={120}
+              height={120}
             />
           </div>
         </div>

@@ -28,7 +28,7 @@ const awards = [
 export default function Hero() {
   return (
     <>
-      <div className="mt-[120px] xl:mt-[80px] mb-5">
+      <div className="mt-16 xl:mt-[80px] mb-5">
         <div className="">
           {/* <BannerComponent /> */}
 
@@ -83,7 +83,7 @@ const Card = () => {
         <h3 className="text-2xl lg:text-3xl font-bold text-[#022F46] heading-font">
           The World's Most Accurate 
           <br />
-          Career Test
+         <span>Career Test</span> 
         </h3>
         <p className="mt-4 text-black text-xl">
           Take our well researched, accurate DMIT test to 
@@ -121,7 +121,7 @@ const AwardCard = ({ title, desc }) => {
           width="60"
           height="132"
           src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElementLeft.svg"
-          alt=""
+          alt={title}
         />
         <div>
           <div>
@@ -142,7 +142,7 @@ const AwardCard = ({ title, desc }) => {
           width="60"
           height="132"
           src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElement1.svg"
-          alt=""
+          alt={title}
         />
       </div>
     </>
@@ -184,6 +184,8 @@ const AwardCard = ({ title, desc }) => {
 //             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGZQQObCw82zB9DPtPkJYkOuPvHY4Qu_UeaUkOhMyb6uFQAUux"
 //             alt="Banner"
 //             className="w-[200px] md:w-[280px] h-auto"
+// width={120}
+// height={120}
 //           />
 //         </Link>
 

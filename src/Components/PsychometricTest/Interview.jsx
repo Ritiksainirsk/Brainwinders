@@ -72,7 +72,7 @@ export default function Interview() {
 
             <div className="lg:mt-8">
               <iframe
-                className="w-full h-80 rounded-lg"
+                className="w-full h-64 md:h-80 rounded-lg"
                 src="https://www.youtube.com/embed/mAzieboqF1c"
                 title="DMIT Test Video"
                 allowFullScreen

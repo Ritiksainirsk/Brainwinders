@@ -59,7 +59,7 @@ const DMITFeatureCard = ({ title, description, icon, bgColor }) => {
       <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 heading-font">{title}</h3>
       <p className="text-white mb-10">{description}</p>
       <div className=" absolute left-20 bottom-[-25px]">
-        <img src={icon} alt={title} className="w-20 h-20 rounded-full" />
+        <img src={icon} alt={title} className="w-20 h-20 rounded-full"  width={120} height={120}/>
       </div>
     </div>
   );

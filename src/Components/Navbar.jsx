@@ -62,6 +62,9 @@ export default function Navbar() {
             <img
               src="https://www.brainwonders.in/images/logo.webp"
               className="w-full sm:w-[220px]"
+              alt="brainwonders"
+              width={120}
+              height={120}
             />
           </a>
           {/* DropDown Menu */}
@@ -253,7 +256,7 @@ export default function Navbar() {
       <SignupBanner />
       {/*  */}
       {/*  */}
-      <div className="fixed bottom-5 right-5 z-50 cursor-pointer">
+      <div className="fixed bottom-24 lg:bottom-5 right-5 z-50 cursor-pointer">
         <IoLogoWhatsapp className="text-5xl text-[#25D366]" />
       </div>
       {/*  */}

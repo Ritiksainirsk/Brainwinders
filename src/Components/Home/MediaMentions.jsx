@@ -31,50 +31,118 @@ export default function MediaMentions() {
   return (
     <div>
       {/* Media Mentions */}
-      <h3 className="text-center font-bold text-3xl mt-11 heading-font text-[#022F46]">Media Mentions</h3>
+      <h3 className="text-center font-bold text-3xl mt-11 heading-font text-[#022F46]">
+        Media Mentions
+      </h3>
       <div className="mx-6 lg:mx-28">
         <Marquee speed={50}>
           <div className="flex justify-center">
-            <img src={Dunzo} alt="Dunzo" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Dunzo}
+              alt="Dunzo"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Grindle} alt="Grindle" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Grindle}
+              alt="Grindle"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Ibm} alt="IBM" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Ibm}
+              alt="IBM"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Infosys} alt="Infosys" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Infosys}
+              alt="Infosys"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Peercoin} alt="Peercoin" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Peercoin}
+              alt="Peercoin"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Sprint} alt="Sprint" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Sprint}
+              alt="Sprint"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Verizon} alt="Verizon" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Verizon}
+              alt="Verizon"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Infosys} alt="Infosys" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Infosys}
+              alt="Infosys"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Ibm} alt="IBM" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Ibm}
+              alt="IBM"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Grindle} alt="Grindle" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Grindle}
+              alt="Grindle"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
           <div className="flex justify-center">
-            <img src={Verizon} alt="Verizon" className="p-2 max-h-28 pr-12" />
+            <img
+              src={Verizon}
+              alt="Verizon"
+              className="p-2 max-h-28 pr-12"
+              width={120}
+              height={120}
+            />
           </div>
         </Marquee>
       </div>
       {/* Media Mentions */}
 
       {/* ASSOCIATED SCHOOLS */}
-      <h1 className="text-center font-bold text-3xl my-10 heading-font text-[#022F46]">
+      <h3 className="text-center font-bold text-3xl my-10 heading-font text-[#022F46]">
         ASSOCIATED SCHOOLS
-      </h1>
+      </h3>
       <div className="mx-6 lg:mx-28 mb-16">
         <Marquee speed={50} direction="right">
           <div className="flex justify-center">
@@ -85,6 +153,9 @@ export default function MediaMentions() {
                     src={image}
                     key={index}
                     className="p-2 max-h-24 mr-10"
+                    alt={index}
+                    width={120}
+                    height={120}
                   />
                 </>
               );

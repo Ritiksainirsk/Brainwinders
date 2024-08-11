@@ -21,7 +21,7 @@ export default function CareerCounsellingHero() {
       <div>
         <CareerCounsellingHeroDescription />
       </div>
-      {/*  */}3
+      {/*  */}
       {/*  */}
       <div className="mb-16">
         <h3 className="text-3xl md:text-4xl font-bold text-center my-10 heading-font px-5 text-[#022F46]">
@@ -42,7 +42,7 @@ const CareerCounsellingVideo = () => (
   <div className=" py-8 px-2 flex justify-center items-center">
     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
       <div className="text-center lg:text-left">
-        <h1 className="text-4xl lg:text-[3.3rem] font-bold mb-6 text-shadow heading-font leading-[62px] text-[#022F46]">
+        <h1 className="text-4xl lg:text-[3.3rem] font-bold mb-6 text-shadow heading-font leading-[50px] mt-8 lg:mt-0 lg:leading-[62px] text-[#022F46]">
           GET THE RIGHT CAREER COUNSELLING
           <br />
           TO LEAP THROUGH YOUR CAREER
@@ -59,7 +59,7 @@ const CareerCounsellingVideo = () => (
       </div>
       <div className="w-[90%] lg:w-[50%] xl:w-[40%]">
         <iframe
-          className="w-full h-72 rounded-lg"
+          className="w-full h-56 md:h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="DMIT Test Video"
           allowFullScreen
@@ -179,13 +179,15 @@ const CareerOptions = () => {
                 src={card.icon}
                 alt=""
                 className="rounded-full object-cover w-full"
+                width={120}
+                height={120}
               />
             </div>
 
             <h3 className="text-xl font-semibold heading-font pb-3">
               {card.title}
             </h3>
-            <p>{card.description}</p>
+            <p className="mb-7">{card.description}</p>
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">
@@ -206,7 +208,9 @@ const CareerOptions = () => {
                   : Earth
               }
               alt=""
-              className="w-52 absolute right-20 top-[-69px]"
+              className="w-48 lg:w-52 absolute right-20 top-[-69px]"
+              width={120}
+              height={120}
             />
           </div>
         </div>

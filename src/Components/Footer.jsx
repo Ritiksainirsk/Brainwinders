@@ -13,7 +13,9 @@ export default function Footer() {
           <img
             src="https://www.brainwonders.in/images/logo.webp"
             alt="Brainwonders Logo"
-            className="h-12"
+            className=" w-full md:w-[260px]"
+            width={120}
+            height={120}
           />
           <div className="flex space-x-4">
             <a href="#" className="text-gray-600 hover:text-gray-800">
@@ -34,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           <div>
             <h4 className="font-bold mb-2">Internal Links</h4>
             <ul className="space-y-1">
@@ -94,15 +96,17 @@ export default function Footer() {
               <li>Interest-Aptitude Test</li>
               <li>IQ Test</li>
               <li>Personality Test</li>
-              <li>Aptitude Test</li>
-              <li>DMIT Test</li>
-              <li>Free Career Test</li>
-              <li>Career Guidance</li>
-              <li>Career After 10th</li>
-              <li>Career After 12th</li>
-              <li>Career After 12th Arts</li>
-              <li>Career After 12th Science</li>
-              <li>Career After 12th Commerce</li>
+              <span className="hidden lg:block">
+                <li>Aptitude Test</li>
+                <li>DMIT Test</li>
+                <li>Free Career Test</li>
+                <li>Career Guidance</li>
+                <li>Career After 10th</li>
+                <li>Career After 12th</li>
+                <li>Career After 12th Arts</li>
+                <li>Career After 12th Science</li>
+                <li>Career After 12th Commerce</li>
+              </span>
             </ul>
           </div>
           <div>
@@ -132,7 +136,7 @@ export default function Footer() {
             <p className="font-bold">Contact Us</p>
             <p>📞 9987422220</p>
             <p>✉️ info@brainwonders.in</p>
-            <p>
+            <p className="mt-3">
               Brainwonders 804, 8th floor, Paras Business Center, Kasturba
               Carter Road No. 1, Gokul Nagar, near Kasturba Police station,
               Asara Colony, Thane West, Mumbai, Maharashtra 404601

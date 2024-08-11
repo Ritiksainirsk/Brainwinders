@@ -14,6 +14,8 @@ const BrainAndFingerConnection = () => {
             src="https://www.centurymedicaldental.com/wp-content/uploads/2022/01/Left-and-Right-Hemisphere-of-the-Brain.jpg.webp" 
             alt="Brain and Finger Connection" 
             className="w-full h-auto" 
+            width={120}
+            height={120}
           />
         </div>
         <div className="flex-1 text-lg">

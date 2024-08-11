@@ -51,7 +51,13 @@ const AwardWinners = () => {
                 className="bg-white shadow-md rounded-lg w-60 md:w-auto p-6 text-center ml-11 border-[1px] border-gray-300 h-72"
               >
                 <div className="flex justify-center">
-                  <img src={award.image} alt="" className="w-24 md:w-36 " />
+                  <img
+                    src={award.image}
+                    alt=""
+                    className="w-24 md:w-36 "
+                    width={120}
+                    height={120}
+                  />
                 </div>
                 <div className="text-xl font-bold mb-2">{award.title}</div>
                 <div className="text-gray-600 mb-2">{award.subtitle}</div>

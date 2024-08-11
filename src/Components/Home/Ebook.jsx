@@ -72,7 +72,7 @@ export default function Ebook() {
           E-Book and Sample Paper
         </h3>
       </div>
-      <div className=" lg:mx-6">
+      <div className="lg:mx-6">
         <Carousel
           responsive={responsive}
           className="p-8"
@@ -80,6 +80,7 @@ export default function Ebook() {
           autoPlay={true}
           transitionDuration={500}
           autoPlaySpeed={2000}
+          arrows={false}
         >
           {cards.map((card, index) => {
             return (
@@ -107,7 +108,7 @@ const Card = ({ title, category, downloads, image }) => {
         {category}
       </span>
       <div className="flex gap-3">
-        <img src={image} alt="Ebook" className="w-20 h-16 rounded" />
+        <img src={image} alt="Ebook" className="w-20 h-16 rounded"  width={120} height={120}/>
         <div>
           <h3 className="mt-4 text-sm font-semibold">{title}</h3>
         </div>

@@ -16,11 +16,11 @@ export default function HeroCarausel() {
       {/* main Carousel */}
 
       {/* text content */}
-      <div className="px-16 2xl:px-80 my-14">
-        <h3 className="text-2xl lg:text-3xl heading-font font-semibold text-center mb-7 text-[#022F46]">
+      <div className="px-7 md:px-16 2xl:px-80 my-14">
+        <h1 className="text-2xl lg:text-3xl heading-font font-semibold text-center mb-7 text-[#022F46]">
           The World’s Most Powerful Psychometric Career Assessment
-        </h3>
-        <p className="text-xl leading-7 text-black">
+        </h1>
+        <p className="text-xl leading-7 text-black text-center">
           Using advanced machine learning, psychometrics, and career
           satisfaction data, Brainwonders has reimagined what a career test can
           be. Brainwonders brings to you 30+ scientific and meticulously
@@ -127,6 +127,8 @@ const Carouselll = () => {
               src={slide.img}
               alt={`Slide ${index + 1}`}
               className="w-full h-full object-cover"
+              width={120}
+              height={120}
             />
             <div
               className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-5"
@@ -135,7 +137,7 @@ const Carouselll = () => {
                   "linear-gradient(90deg, rgba(5, 69, 137, 1) 0%, rgba(44, 157, 252, 1) 100%)",
               }}
             >
-              <h2 className="text-4xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow">
+              <h2 className="text-4xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow text-center mt-5 md:mt-0">
                 {slide.title}
               </h2>
               <p className="mt-2 2xl:text-xl text-sm leading-7 text-center lg:text-left">

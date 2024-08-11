@@ -428,7 +428,7 @@ function CareerServices() {
       <h3 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font text-[#022F46]">
       Brainwonders Psychometric Test for Counselling Services
       </h3>
-      <div className="flex justify-center flex-wrap space-x-2 mb-6">
+      <div className="flex justify-center gap-4 flex-wrap space-x-2 mb-6">
         {tabs.map((tab) => (
           <button
             key={tab}
@@ -458,6 +458,8 @@ function CareerServices() {
               className="w-full h-52 object-cover"
               src={card.image}
               alt={card.title}
+              width={120}
+              height={120}
             />
             <div className="p-4">
               <h3 className="font-bold text-lg heading-font">{card.title}</h3>

@@ -630,6 +630,8 @@ const GuidingSteps = () => {
             src="https://www.tcsion.com/per/g01/pub/1016/iDH/instance/1/product/microsite_data/IONCAREERINSIGHT/microsite_1722424800648/image/guide_banner.png?version=142946389"
             alt=""
             className="w-full"
+            width={120}
+            height={120}
           />
           </div>
           {/* image */}

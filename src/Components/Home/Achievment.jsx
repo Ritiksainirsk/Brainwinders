@@ -33,7 +33,7 @@ export default function Achievment() {
             <h3 className=" text-2xl md:text-3xl mb-2 font-bold text-center heading-font text-[#022F46]">
               BRAINWONDERS ACHIEVEMENTS
             </h3>
-            <div className="flex overflow-x-scroll justify-center">
+            <div className="flex justify-center flex-col md:flex-row">
               {achievements.map((achievement, index) => (
                 <AchievementCard
                   key={index}
@@ -61,13 +61,13 @@ const AchievementCard = ({ icon, count, label }) => {
     return (
       <div className="bg-white shadow-lg rounded-lg p-4 lg:p-6 m-4 flex flex-col lg:flex-row justify-center items-center gap-3">
         <div className="mb-2 lg:mb-0">
-          <img src={icon} alt={label} className="w-10 h-10 lg:w-10 lg:h-10" />
+          <img src={icon} alt={label} className="w-20 h-20 lg:w-16 lg:h-16"  width={120} height={120}/>
         </div>
-        <div className="flex flex-col items-start lg:text-left">
-          <h3 className=" lg:text-2xl heading-font text-black" ref={ref}>
-            {inView ? <CountUp start={0} end={count} duration={7} /> : "0"}
+        <div className="flex flex-col items-center lg:items-start lg:text-left">
+          <h3 className="text-3xl lg:text-3xl heading-font text-black" ref={ref}>
+            {count}
           </h3>
-          <p className="text-gray-600 text-sm lg:text-lg">{label}</p>
+          <p className="text-gray-600 text-lg">{label}</p>
         </div>
       </div>
     );

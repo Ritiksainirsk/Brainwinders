@@ -38,7 +38,7 @@ const DMTITestComponent = () => (
   <div className=" py-8 px-4 flex justify-center items-center">
     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
       <div className="text-center">
-        <h1 className="text-5xl lg:text-[3.3rem] md:text-left font-bold mb-4 text-shadow heading-font leading-[62px] text-[#022F46]">
+        <h1 className="text-5xl lg:text-[3.3rem] mt-8 md:mt-0 md:text-left font-bold mb-4 text-shadow heading-font leading-[55px] md:leading-[62px] text-[#022F46]">
           DISCOVER YOUR INBORN POTENTIAL
           <br />
           AND SHINE WITH DMIT TEST
@@ -58,7 +58,7 @@ const DMTITestComponent = () => (
       </div>
       <div className="w-[90%] lg:w-[50%] xl:w-[40%]">
         <iframe
-          className="w-full h-72 rounded-lg"
+          className="w-full h-56 md:h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="DMIT Test Video"
           allowFullScreen
@@ -179,13 +179,15 @@ const CareerOptions = () => {
                 src={card.icon}
                 alt=""
                 className=" h-full w-full rounded-full "
+                width={120}
+                height={120}
               />
             </div>
 
             <h3 className="text-xl font-semibold heading-font pb-3 leading-6">
               {card.title}
             </h3>
-            <p>{card.description}</p>
+            <p className="mb-8">{card.description}</p>
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">
@@ -207,6 +209,8 @@ const CareerOptions = () => {
               }
               alt=""
               className="w-48 absolute right-20 top-[-69px] "
+              width={120}
+              height={120}
             />
           </div>
         </div>
@@ -215,7 +219,7 @@ const CareerOptions = () => {
   );
 };
 
-const CareerOptions2 = () => {
+const CareerOptions2 = () => {  
   const cards = [
     {
       title: "DMIT Test for Adult (25 years and above)",
@@ -280,13 +284,15 @@ const CareerOptions2 = () => {
                 src={card.icon}
                 alt=""
                 className=" h-full w-full rounded-full "
+                width={120}
+                height={120}
               />
             </div>
 
             <h3 className="text-xl font-semibold heading-font pb-3 leading-6">
               {card.title}
             </h3>
-            <p>{card.description}</p>
+            <p className="mb-8">{card.description}</p>
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">
@@ -308,6 +314,8 @@ const CareerOptions2 = () => {
               }
               alt=""
               className="w-48 absolute right-20 top-[-69px] "
+              width={120}
+              height={120}
             />
           </div>
         </div>

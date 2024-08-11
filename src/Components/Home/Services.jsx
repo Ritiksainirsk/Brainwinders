@@ -80,10 +80,10 @@ export default function Services() {
     <div className="flex justify-center">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h3 className="text-xl md:text-3xl font-semibold my-14 px-8 lg:px-80 text-center heading-font text-[#022F46]">
+        <h3 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-8 lg:px-80 text-center heading-font text-[#022F46]">
           How does Brainwonders services 
           <br />
-          help you to sucess in your career?
+        <span> help you to sucess in your career? </span> 
         </h3>
         <HoverEffectCard />
         <HoverEffectCard2 />
@@ -98,6 +98,7 @@ const HoverEffectCard = () => {
     <div className="flex justify-center mx-9 rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
       {items.map((card, index) => (
         <div
+        key={index}
           className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test"
               ? "hover:bg-yellow-500"
@@ -120,15 +121,17 @@ const HoverEffectCard = () => {
             <div className={`w-[80px] pb-4 rounded-full text-center`}>
               <img
                 src={card.url}
-                alt=""
+                alt={index}
                 className="rounded-full object-cover"
+                width={120}
+                height={120}
               />
             </div>
 
             <h3 className="text-xl font-semibold heading-font pb-3 text-black">
               {card.title}
             </h3>
-            <p className="">{card.subtitle}</p>
+            <p className="mb-6 lg:mb-2">{card.subtitle}</p>
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">
@@ -148,8 +151,10 @@ const HoverEffectCard = () => {
                   ? Data
                   : Earth
               }
-              alt=""
-              className="w-52 absolute right-20 top-[-69px]"
+              alt={index}
+              className="w-44 md:w-52 absolute right-20 top-[-69px]"
+              width={120}
+              height={120}
             />
           </div>
         </div>
@@ -186,15 +191,17 @@ const HoverEffectCard2 = () => {
             <div className={`w-[80px] pb-4 rounded-full text-center`}>
               <img
                 src={card.url}
-                alt=""
+                alt={card.title}
                 className="rounded-full object-cover"
+                width={120}
+                height={120}
               />
             </div>
 
             <h3 className="text-lg font-semibold heading-font pb-3 text-black">
               {card.title}
             </h3>
-            <p>{card.subtitle}</p>
+            <p className="mb-6 lg:mb-2">{card.subtitle}</p>
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">
@@ -214,8 +221,10 @@ const HoverEffectCard2 = () => {
                   ? Data
                   : Earth
               }
-              alt=""
-              className="w-52 absolute right-20 top-[-69px]"
+              alt={card.title}
+              className="w-44 md:w-52 absolute right-20 top-[-69px]"
+              width={120}
+              height={120}
             />
           </div>
         </div>

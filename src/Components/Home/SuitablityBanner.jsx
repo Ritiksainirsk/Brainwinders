@@ -6,9 +6,9 @@ export default function SuitablityBanner() {
          <div className="bg-[#022F46] lg:px-16 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14">
         {/* Left Section */}
         <div className="md:w-1/2">
-          <h2 className="text-2xl font-bold mb-4 heading-font">
+          <h3 className="text-2xl font-bold mb-4 heading-font">
             Check Career Suitability for your Dream Career
-          </h2>
+          </h3>
           <p className="mb-4">
             Take Informed Career Decisions. Check Career Fit for your Dream
             Career
@@ -88,8 +88,10 @@ export default function SuitablityBanner() {
             src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt6fyUXoErXW-4MpwDJYeHrwDJ0vRd-6gQoUOrAQnWnJuPLsPo"
             alt="Career Suitability"
             className="max-w-full h-auto mb-4"
+            width={120}
+            height={120}
           />
-          <h2 className="font-bold pb-3">Check your career Suitability Now</h2>
+          <h3 className="font-bold pb-3">Check your career Suitability Now</h3>
           <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
             Start Now
           </button>

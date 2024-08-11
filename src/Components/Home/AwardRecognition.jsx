@@ -64,7 +64,7 @@ const AwardCard = ({ title, desc }) => {
           width="60"
           height="132"
           src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElementLeft.svg"
-          alt=""
+          alt={title}
         />
         <div>
           <div>

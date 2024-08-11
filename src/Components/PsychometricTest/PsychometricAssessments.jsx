@@ -10,7 +10,7 @@ const tabs = [
 ];
 
 const cardData = {
-    "Psychometric Career Test": [
+  "Psychometric Career Test": [
     {
       title: "IDEAL CAREER TEST™",
       questions: "180 Questions",
@@ -101,7 +101,8 @@ const cardData = {
       price: "₹500",
       oldPrice: "₹2000",
       target: "Grads & Post Grads",
-      image:"https://www.edwiseinternational.com/images/UK-Post-Graduation-Degree(1).jpg",
+      image:
+        "https://www.edwiseinternational.com/images/UK-Post-Graduation-Degree(1).jpg",
     },
     {
       title: "21st Century Skills & Learning Test Grade 12™",
@@ -193,13 +194,12 @@ function CareerServices() {
   return (
     <div className="p-4">
       <h3 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font text-[#022F46]">
-      Brainwonders Psychometric Career Test 
+        Brainwonders Psychometric Career Test
       </h3>
-      <h3
-        className="text-center text-xl leading-7 pb-8 2xl:px-72 text-black"
-      >
-        Brainwonders brings to you scientific and meticulously designed Psychometric Assessments to
-        discover your true potential and interest ,learning styles and skills to excel in 21st Century
+      <h3 className="text-center text-xl leading-7 pb-8 2xl:px-72 text-black">
+        Brainwonders brings to you scientific and meticulously designed
+        Psychometric Assessments to discover your true potential and interest
+        ,learning styles and skills to excel in 21st Century
       </h3>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {cardData[activeTab]?.map((card, index) => (
@@ -207,7 +207,13 @@ function CareerServices() {
             key={index}
             className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden"
           >
-            <img className="w-full h-52 object-cover" src={card.image} alt={card.title} />
+            <img
+              className="w-full h-52 object-cover"
+              src={card.image}
+              alt={card.title}
+              width={120}
+              height={120}
+            />
             <div className="p-4">
               <h3 className="font-bold text-xl heading-font">{card.title}</h3>
               <span className="flex items-center gap-3">

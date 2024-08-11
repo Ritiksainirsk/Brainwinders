@@ -45,9 +45,9 @@ function TestimonialCard() {
     <div>
       <div className="my-10  px-3">
         <div className="text-center my-8">
-          <h1 className="text-3xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]">
+          <h3 className="text-3xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]">
             Reviews
-          </h1>
+          </h3>
         </div>
         <div className="2xl:mx-28">
           <Carousel
@@ -85,6 +85,8 @@ const ReviewCard = ({ image, name, text }) => {
             src={image}
             alt="Archna Gupta"
             className="w-full h-full object-cover"
+            width={120}
+            height={120}
           />
         </div>
       </div>
