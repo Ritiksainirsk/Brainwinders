@@ -71,17 +71,21 @@ export default function Navbar() {
   // <<<<<<<<<<<<--------------------------
 
   return (
-    <header className={`bg-white py-[12px] w-full shadow-lg ${isFixed ?"fixed z-50":""}`}>
+    <header
+      className={`bg-white py-[12px] w-full shadow-lg ${
+        isFixed ? "fixed z-50" : ""
+      }`}
+    >
       {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
       <nav className="text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg  flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 max-w-[1400px] lg:min-h-[50px] mx-auto px-4">
         <div className=" md:w-[240px] flex flex-col w-full">
           <a href="/">
             <img
               src="https://www.brainwonders.in/images/logo.webp"
-     sizes="(max-width: 570px) 100vw, 570px"
-     alt="brainwonders" 
-     width="570" 
-     height="92"
+              sizes="(max-width: 570px) 100vw, 570px"
+              alt="brainwonders"
+              width="570"
+              height="92"
             />
           </a>
           {/* DropDown Menu */}

@@ -96,11 +96,13 @@ const Card = () => {
       </div>
       <div className="md:basis-1/2 py-6 px-3 md:px-10 md:pl-0 flex flex-col items-center hero-video-container">
         <iframe
+        width="560" height="315" 
           className="w-[100%] md:w-[80%] h-52 md:h-72 rounded-xl heroVideo"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
         ></iframe>
         <p className="text-center text-sm mt-2">
           Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about
