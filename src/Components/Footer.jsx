@@ -38,7 +38,7 @@ export default function Footer() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           <div>
-            <h4 className="font-bold mb-2">Internal Links</h4>
+            <h5 className="font-bold mb-2">Internal Links</h5>
             <ul className="space-y-1">
               <li>What Is DMIT</li>
               <li>About Us</li>
@@ -60,7 +60,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mb-2">Internal Links</h4>
+            <h5 className="font-bold mb-2">Internal Links</h5>
             <ul className="space-y-1">
               <li>Press Release</li>
               <li>Offline Media</li>
@@ -78,7 +78,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mb-2">Brainwonders Centers</h4>
+            <h5 className="font-bold mb-2">Brainwonders Centers</h5>
             <ul className="space-y-1">
               <li>Career Counselling Centers</li>
               <li>IQ Test Centers</li>
@@ -88,7 +88,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mb-2">Brainwonders Test Links</h4>
+            <h5 className="font-bold mb-2">Brainwonders Test Links</h5>
             <ul className="space-y-1">
               <li>Top College In Mumbai</li>
               <li>Career Counselling Online</li>
@@ -110,7 +110,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mb-2">FAQs</h4>
+            <h5 className="font-bold mb-2">FAQs</h5>
             <ul className="space-y-1">
               <li>FAQ's for DMIT</li>
               <li>FAQ's for IQ Test</li>

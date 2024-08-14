@@ -31,9 +31,9 @@ export default function Blog() {
   return (
     <div>
       <div className="p-4 mt-10 mx-7">
-        <h2 className="text-3xl font-semibold text-center mb-6 heading-font text-[#022F46]">
+        <h4 className="text-3xl font-semibold text-center mb-6 heading-font text-[#022F46]">
           OUR BLOGS
-        </h2>
+        </h4>
         <div className="flex justify-center gap-10 flex-wrap">
           {blogs.map((blog, index) => (
             <Card
@@ -77,9 +77,9 @@ const Card = ({ imageSrc, title, date, description }) => {
         height={120}
       />
       <div className="p-4">
-        <h3 className="text-xl font-bold mb-2 heading-font text-black">
+        <h4 className="text-xl font-bold mb-2 heading-font text-black">
           {title}
-        </h3>
+        </h4>
         <p className="text-sm mb-2 text-black">{date}</p>
         <p className="text-black mb-4">{description}</p>
       </div>

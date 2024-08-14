@@ -3,9 +3,9 @@ import React from "react";
 export default function Accordion() {
   return (
     <div className="px-8 lg:px-48 mb-14">
-      <h3 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46] mt-5">
+      <h4 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46] mt-5">
         Frequently Asked Questions
-      </h3>
+      </h4>
       <div className="join join-vertical w-full">
         <div className="collapse collapse-arrow join-item border-base-300 mb-6 rounded-2xl" style={{boxShadow:"0 5px 15px rgba(0, 0, 0, 0.2)"}}>
           <input type="radio" name="my-accordion-4" defaultChecked />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../Components/Home/Hero";
 import Services from "../Components/Home/Services";
 import MediaMentions from "../Components/Home/MediaMentions";
@@ -11,7 +11,7 @@ import CareerSuitabilitySection from "../Components/Home/CareerSuitabilitySectio
 import HeroCarousel from "../Components/Home/HeroCarousel";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 
-export default function Home() {
+export default function Home() {  
   return (
     <>
       <HeroCarousel />

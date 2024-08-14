@@ -91,7 +91,7 @@ const ReviewCard = ({ image, name, text }) => {
         </div>
       </div>
       <div className="text-center">
-        <h2 className="text-xl font-semibold"> {name}</h2>
+        <h4 className="text-xl font-semibold"> {name}</h4>
         <div className="flex justify-center my-2 gap-2">
           <FaStar className="text-orange-200 text-2xl" />
           <FaStar className="text-orange-200 text-2xl" />
