@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { IoMenu } from "react-icons/io5";
 
@@ -53,8 +53,25 @@ export default function Navbar() {
   };
   // <<<<<<<<------------------
 
+  // ---------->>>>>>>>>>>>>>>>>>>
+  const [isFixed, setIsFixed] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const threshold = 700; // Adjust this value as needed
+      setIsFixed(scrollY > threshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  // <<<<<<<<<<<<--------------------------
+
   return (
-    <header className="bg-white py-[12px] w-full shadow-lg fixed z-50">
+    <header className={`bg-white py-[12px] w-full shadow-lg ${isFixed ?"fixed z-50":""}`}>
       {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
       <nav className="text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg  flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 max-w-[1400px] lg:min-h-[50px] mx-auto px-4">
         <div className=" md:w-[240px] flex flex-col w-full">
@@ -243,7 +260,7 @@ export default function Navbar() {
       </nav>
       {/*<<<<<<<<<<---------------------  */}
 
-      <div className="fixed top-4 right-1 items-center  hidden xl:flex gap-1 ">
+      <div className="absolute top-4 right-2 items-center hidden xl:flex gap-1 ">
         <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-lg text-white py-1 px-4  ">
           Book an Appointment
         </button>

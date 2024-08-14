@@ -35,9 +35,9 @@ export default function Hero() {
           {/* Carousel */}
           <div className="mb-10">
             <div className="text-center">
-              <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font text-[#022F46]">
+              <h1 className="text-2xl md:text-3xl font-semibold my-9 heading-font text-[#022F46]">
                 Awards and Recognition
-              </h3>
+              </h1>
             </div>
             <div className="">
               <Marquee speed={50} direction="left">

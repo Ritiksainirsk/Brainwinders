@@ -16,6 +16,7 @@ import Admin from "./Pages/Admin";
 import CreatePage from "./Components/Admin/CreatePage/CreatePage";
 import AdminNavbar from "./Components/Admin/Navbar/Navbar";
 import ViewPage from "./Components/Admin/ViewPage/ViewPage";
+import DmitForChildern from "./Pages/Dmit/DmitForChildern";
 
 function App() {
   const loc = useLocation()
@@ -37,6 +38,9 @@ function App() {
           <Route path="/admin" element={<Admin/>} />
           <Route path='/createpage' element={<CreatePage/>}/>
           <Route path='/viewpage' element={<ViewPage/>}/>
+          {/* For Dmit */}
+          <Route path='/dmit/dmitforchildern' element={<DmitForChildern/>}/>
+
         </Routes>
         {loc.pathname === "/admin" ? "" : "" || loc.pathname === "/createpage" ? "" : "" || loc.pathname === "/viewpage" ? "" :<Footer/>}        
       </div>

@@ -7,10 +7,6 @@ import { FaChevronRight } from "react-icons/fa";
 export default function HeroCarausel() {
   return (
     <div>
-      {/* this is hidden div of navbar */}
-      <div className="topSpaceDivOfPsychometricTest"></div>
-      {/* <<<<<<<< */}
-
       {/* main Carousel */}
       <Carouselll />
       {/* main Carousel */}

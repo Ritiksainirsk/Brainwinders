@@ -93,16 +93,12 @@ export default function HeroCarousel() {
     autoplay: true,
     autoplaySpeed: 3500,
     arrows: true,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
+    // prevArrow: <CustomPrevArrow />,
+    // nextArrow: <CustomNextArrow />,
   };
 
   return (
-    <>
-      {/* this is hidden div of navbar */}
-      <div className="topSpaceDivOfPsychometricTest"></div>
-      {/* <<<<<<<< */}
-      
+    <>      
       <div className="relative w-full ">
         <Slider {...settings}>
           {slides.map((slide, index) => (
@@ -121,9 +117,9 @@ export default function HeroCarousel() {
                     "linear-gradient(90deg, rgba(5, 69, 137, 1) 0%, rgba(44, 157, 252, 1) 100%)",
                 }}
               >
-                <h1 className="text-4xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0">
+                <h2 className="text-4xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0">
                   {slide.title}
-                </h1>
+                </h2>
                 <p className="lg:mt-2 2xl:text-xl text-sm leading-7 text-center lg:text-left">
                   {slide.description}
                 </p>

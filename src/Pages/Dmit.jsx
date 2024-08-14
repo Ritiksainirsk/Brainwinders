@@ -9,10 +9,12 @@ import CertificateGallery from '../Components/DMit/CertificateGallery'
 import AwardWinners from '../Components/DMit/AwardWinners'
 import Accordion from '../Components/Home/Accordion'
 import TestimonialCard from '../Components/CareerCounselling/TestimonialCard '
+import Navbar from '../Components/DMit/Navbar'
 
 export default function Dmit() {
   return (
     <div className='max-w-[1500px] mx-auto overflow-hidden'>
+      <Navbar/>
       <DmitTest/>
       <BannerCard/>
       <DmitFeature/>

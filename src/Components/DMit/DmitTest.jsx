@@ -10,9 +10,6 @@ import { FaArrowRight } from "react-icons/fa";
 export default function DmitTest() {
   return (
     <div>
-      {/* this is hidden div of navbar */}
-      <div className="topSpaceDiv"></div>
-      {/* <<<<<<<< */}
       <div className="">
         <DMTITestComponent />
       </div>
@@ -35,7 +32,7 @@ export default function DmitTest() {
 }
 
 const DMTITestComponent = () => (
-  <div className=" py-8 px-4 flex justify-center items-center">
+  <div className=" py-8 px-4 flex justify-center items-center bg-[#E0EFFF]">
     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
       <div className="text-center">
         <h1 className="text-5xl lg:text-[3.3rem] mt-8 md:mt-0 md:text-left font-bold mb-4 text-shadow heading-font leading-[55px] md:leading-[62px] text-[#022F46]">
