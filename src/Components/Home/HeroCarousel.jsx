@@ -30,7 +30,9 @@ const CustomNextArrow = (props) => {
   );
 };
 
- const HeroCarousel = React.memo(() =>{
+export default function HeroCarousel() {
+
+  console.log("rendering")
   const slides = [
     {
       img: "https://www.careerguide.com/images_new/banner_2.png",
@@ -159,6 +161,4 @@ const CustomNextArrow = (props) => {
       </div>
     </>
   );
-})
-
-export default HeroCarousel
+}
