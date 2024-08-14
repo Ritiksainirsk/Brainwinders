@@ -14,8 +14,6 @@ export default function Footer() {
             src="https://www.brainwonders.in/images/logo.webp"
             alt="Brainwonders Logo"
             className=" w-full md:w-[260px]"
-            width={120}
-            height={120}
           />
           <div className="flex space-x-4">
             <a href="#" className="text-gray-600 hover:text-gray-800">
@@ -38,7 +36,7 @@ export default function Footer() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           <div>
-            <h5 className="font-bold mb-2">Internal Links</h5>
+            <h4 className="font-bold mb-2">Internal Links</h4>
             <ul className="space-y-1">
               <li>What Is DMIT</li>
               <li>About Us</li>
@@ -60,7 +58,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h5 className="font-bold mb-2">Internal Links</h5>
+            <h4 className="font-bold mb-2">Internal Links</h4>
             <ul className="space-y-1">
               <li>Press Release</li>
               <li>Offline Media</li>
@@ -78,7 +76,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h5 className="font-bold mb-2">Brainwonders Centers</h5>
+            <h4 className="font-bold mb-2">Brainwonders Centers</h4>
             <ul className="space-y-1">
               <li>Career Counselling Centers</li>
               <li>IQ Test Centers</li>
@@ -88,7 +86,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h5 className="font-bold mb-2">Brainwonders Test Links</h5>
+            <h4 className="font-bold mb-2">Brainwonders Test Links</h4>
             <ul className="space-y-1">
               <li>Top College In Mumbai</li>
               <li>Career Counselling Online</li>
@@ -110,7 +108,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h5 className="font-bold mb-2">FAQs</h5>
+            <h4 className="font-bold mb-2">FAQs</h4>
             <ul className="space-y-1">
               <li>FAQ's for DMIT</li>
               <li>FAQ's for IQ Test</li>
