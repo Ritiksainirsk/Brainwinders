@@ -14,6 +14,8 @@ export default function Footer() {
             src="https://www.brainwonders.in/images/logo.webp"
             alt="Brainwonders Logo"
             className=" w-full md:w-[260px]"
+            width={120}
+            height={120}
           />
           <div className="flex space-x-4">
             <a href="#" className="text-gray-600 hover:text-gray-800">

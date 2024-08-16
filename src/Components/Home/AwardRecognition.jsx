@@ -33,11 +33,11 @@ export default function AwardRecognition() {
     <div>
       <div className="mb-7">
         <div className="text-center">
-          <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font mb-16">
+          <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font mb-16 text-[#022F46]">
             Awards and Recognition
           </h3>
         </div>
-        <div className="2xl:mx-20">
+        <div className="">
           <Marquee speed={50} direction="left">
             <div className="flex justify-center">
               {awards.map((award, index) => (

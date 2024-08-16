@@ -5,7 +5,7 @@ export default function HeroSection() {
     <div>
       <div className="bg-[#E3F2FB] p-8 md:p-12 rounded-lg flex flex-col md:flex-row items-center justify-around ">
         {/* Left Section */}
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Are you ready for
             <br />
@@ -26,6 +26,8 @@ export default function HeroSection() {
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTafeyol0A0bYV8vtkPhfe-OzkWTXkte5C62zCD64j77zb05AZT" /* Replace with actual image URL */
             alt="Child holding books"
             className="w-full rounded-md shadow-lg"
+            width={120}
+            height={120}
           />
           
         </div>
