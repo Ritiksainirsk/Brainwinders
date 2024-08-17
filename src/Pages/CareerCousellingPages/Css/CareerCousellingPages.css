@@ -1,0 +1,25 @@
+
+/* dot animation ------------->>>>>>>>>>> */
+.dot {
+    width: 10px; /* Size of the white dot */
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    animation: moveDot 5s linear infinite; /* Duration of the animation */
+  }
+  
+  @keyframes moveDot {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: calc(100% - 10px); /* Move to the far right */
+    }
+    100% {
+      left: 0; /* Return to the start */
+    }
+  }
+
+
+  /* <<<<<<<<<<<<<<<<<------------------------------- */

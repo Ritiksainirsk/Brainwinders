@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-export default function Navbar() {
+export default function DmitNavbar() {
   const loc = useLocation();
 
   console.log();
@@ -26,7 +26,7 @@ export default function Navbar() {
                     item === "DMIT for Toddlers"
                       ? ""
                       : "" || item === "DMIT for Children"
-                      ? `${loc.pathname}/dmitforchildern`
+                      ? `/dmit/dmitforchildern`
                       : "" || item === "DMIT for Teenagers"
                       ? ""
                       : "" || item === "DMIT for Adults (25+)"

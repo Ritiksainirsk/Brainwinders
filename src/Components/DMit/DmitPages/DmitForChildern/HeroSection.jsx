@@ -6,14 +6,15 @@ export default function HeroSection() {
       <div className="bg-[#E3F2FB] p-8 md:p-12 rounded-lg flex flex-col md:flex-row items-center justify-around ">
         {/* Left Section */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+          <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-bold text-gray-800 leading-tight mb-9">
             Are you ready for
             <br />
             <span className="text-[#043E56]">your child's success story?</span>
           </h1>
-          <p className="mt-4 text-black text-lg md:text-xl">
-            With Our DMIT Test, Understand your Child's capabilities & plan her
-            future accordingly
+          <p className="mt-4 text-black text-lg md:text-[2xl] 2xl:text-3xl">
+            With Our DMIT Test, Understand your Child's
+            <br />
+            capabilities & plan her future accordingly
           </p>
           <button className="mt-6 bg-[#043E56] text-white px-6 py-3 rounded-md shadow-lg hover:bg-[#032F42] transition">
             Get Your DMIT Test now

@@ -9,11 +9,13 @@ import PartnersVideoCard from "../Components/Home/PartnersVideoCard";
 import AwardRecognition from "../Components/Home/AwardRecognition";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 import Accordion from "../Components/Home/Accordion";
+import CareerCounsellingNavbar from "../Components/CareerCounselling/CareerCounsellingPages/CareerCounsellingNavbar";
 
 export default function CareerCounselling() {
   return (
     <>
       <div className="max-w-[1500px] mx-auto overflow-hidden">
+        <CareerCounsellingNavbar/>
         <CareerCounsellingHero />
         <CareerGuidance />
         <GuidingSteps />
