@@ -10,10 +10,12 @@ import Ebook from "../Components/Home/Ebook";
 import WhyChooseBrainwonders from "../Components/PsychometricTest/WhyChooseBrainwonders ";
 import Accordion from "../Components/PsychometricTest/Accordion";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
+import PsychometricNavbar from "../Components/PsychometricTest/PsychometricPages/PsychometricNavbar";
 
 export default function PsychometricTest() {
   return (
     <>
+      <PsychometricNavbar />
       <HeroCarausel />
       <div className="max-w-[1500px] mx-auto overflow-hidden">
         <PsychometricTestsSection />
@@ -24,7 +26,7 @@ export default function PsychometricTest() {
         <SuitablityBanner />
         <Ebook />
         <WhyChooseBrainwonders />
-        <TestimonialCard/>
+        <TestimonialCard />
         <Accordion />
       </div>
     </>
