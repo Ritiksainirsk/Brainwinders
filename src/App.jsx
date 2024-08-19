@@ -19,6 +19,7 @@ import ViewPage from "./Components/Admin/ViewPage/ViewPage";
 import DmitForChildern from "./Pages/DmitPages/DmitForChildern";
 import CareerGuidanceForClass10and12 from "./Pages/CareerCousellingPages/CareerGuidanceForClass10and12";
 import AptitudeTest from "./Pages/PsychometricTestPages/AptitudeTest";
+import IqTest from "./Pages/PsychometricTestPages/IqTest";
 
 function App() {
   const loc = useLocation()
@@ -46,6 +47,7 @@ function App() {
           <Route path='/careercounselling/careerGuidanceforclass10th&12th' element={<CareerGuidanceForClass10and12/>}/>
           {/* Psychometric Test */}
           <Route path='/psychometrictest/aptitudetest' element={<AptitudeTest/> }/>
+          <Route path='/psychometrictest/iqtest' element={<IqTest/> }/>
         </Routes>
         {loc.pathname === "/admin" ? "" : "" || loc.pathname === "/createpage" ? "" : "" || loc.pathname === "/viewpage" ? "" :<Footer/>}        
       </div>
