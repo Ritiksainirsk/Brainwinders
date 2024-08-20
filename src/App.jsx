@@ -20,6 +20,7 @@ import DmitForChildern from "./Pages/DmitPages/DmitForChildern";
 import CareerGuidanceForClass10and12 from "./Pages/CareerCousellingPages/CareerGuidanceForClass10and12";
 import AptitudeTest from "./Pages/PsychometricTestPages/AptitudeTest";
 import IqTest from "./Pages/PsychometricTestPages/IqTest";
+import PersnalityTest from "./Pages/PsychometricTestPages/PersnalityTest";
 
 function App() {
   const loc = useLocation()
@@ -48,6 +49,7 @@ function App() {
           {/* Psychometric Test */}
           <Route path='/psychometrictest/aptitudetest' element={<AptitudeTest/> }/>
           <Route path='/psychometrictest/iqtest' element={<IqTest/> }/>
+          <Route path='/psychometrictest/persnalitytest' element={<PersnalityTest/> }/>
         </Routes>
         {loc.pathname === "/admin" ? "" : "" || loc.pathname === "/createpage" ? "" : "" || loc.pathname === "/viewpage" ? "" :<Footer/>}        
       </div>

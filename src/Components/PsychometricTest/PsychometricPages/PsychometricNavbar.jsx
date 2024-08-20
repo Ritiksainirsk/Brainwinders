@@ -23,7 +23,7 @@ export default function PsychometricNavbar() {
                       : "" || item === "IQ Test"
                       ? "/psychometrictest/iqtest"
                       : "" || item === "Personality Test"
-                      ? ""
+                      ? "/psychometrictest/persnalitytest"
                       :""
                   }
                 >
