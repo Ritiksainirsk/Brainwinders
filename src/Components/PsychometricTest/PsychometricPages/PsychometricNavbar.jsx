@@ -11,6 +11,7 @@ export default function PsychometricNavbar() {
 
   return (
     <>
+    <div className="">
       <div className="bg-[#043E56] p-2">
         <ul className="flex justify-around flex-col gap-3 md:gap-0 items-center md:flex-row">
           {navItems.map((item, index) => (
@@ -34,6 +35,7 @@ export default function PsychometricNavbar() {
             </li>
           ))}
         </ul>
+      </div>
       </div>
     </>
   );

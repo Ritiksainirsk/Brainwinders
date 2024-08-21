@@ -21,13 +21,13 @@ export default function InterestTest() {
       <LoginAndStatsBanner />
       <div className="max-w-[1500px] mx-auto overflow-hidden">
         <InterestVideoSection />
-        <InteresrTestMiddleSection/>
+        <InteresrTestMiddleSection />
       </div>
-      <BannerCard/>
+      <BannerCard />
       <div className="max-w-[1500px] mx-auto overflow-hidden">
-        <InterestTestCareer/>
+        <InterestTestCareer />
       </div>
-      <BannerCard/> 
+      <BannerCard />
       <div className="max-w-[1500px] mx-auto overflow-hidden">
         <PartnersVideoCard />
         <AwardWinners />
