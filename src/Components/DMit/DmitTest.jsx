@@ -33,7 +33,7 @@ export default function DmitTest() {
 
 const DMTITestComponent = () => (
   <div className=" py-8 px-4 flex justify-center items-center bg-[#E0EFFF]">
-    <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
+    <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-10 xl:gap-20">
       <div className="text-center">
         <h1 className="text-5xl lg:text-[3.3rem] mt-8 md:mt-0 md:text-left font-bold mb-4 text-shadow heading-font leading-[55px] md:leading-[62px] text-[#022F46]">
           DISCOVER YOUR INBORN POTENTIAL
@@ -53,7 +53,7 @@ const DMTITestComponent = () => (
           </button>
         </div>
       </div>
-      <div className="w-[90%] lg:w-[50%] xl:w-[40%]">
+      <div className="w-[90%] lg:w-[50%] xl:w-[30%]">
         <iframe
           className="w-full h-56 md:h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"

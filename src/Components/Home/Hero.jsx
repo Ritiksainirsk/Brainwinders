@@ -28,34 +28,8 @@ const awards = [
 export default function Hero() {
   return (
     <>
-      <div className="mt-16 xl:mt-[80px] mb-5">
+      <div className=" mb-5">
         <div className="">
-          {/* <BannerComponent /> */}
-
-          {/* Carousel */}
-          <div className="mb-10">
-            <div className="text-center">
-              <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font text-[#022F46]">
-                Awards and Recognition
-              </h3>
-            </div>
-            <div className="">
-              <Marquee speed={50} direction="left">
-                <div className="flex justify-center gap-5">
-                  {awards.map((award, index) => (
-                    <AwardCard
-                      key={index}
-                      title={award.title}
-                      desc={award.subtitle}
-                    />
-                  ))}
-                </div>
-              </Marquee>
-            </div>
-          </div>
-          {/* Carousel */}
-
-          {/*  */}
           <div className="text-center font-bold py-[5%] md:px-[15%] px-7 md:leading-[38px] leading-8">
             <h3 className="text-[18px] md:text-[22px] text-black">
               We at Brainwonders, India's Largest Career Counselling and DMIT
@@ -66,8 +40,6 @@ export default function Hero() {
           </div>
         </div>
         {/*  */}
-
-
         <div className="flex items-center justify-center w-full bg-[#F7F5FF]  ">
           <Card />
         </div>
@@ -78,9 +50,9 @@ export default function Hero() {
 
 const Card = () => {
   return (
-    <div className="w-full overflow-hidden flex flex-col md:flex-row ">
+    <div className="w-full overflow-hidden flex flex-col md:flex-row 2xl:px-48">
       <div className="md:basis-1/2 md:pl-10 p-6 flex flex-col justify-center">
-        <h3 className="text-2xl lg:text-3xl font-bold text-[#022F46] heading-font">
+        <h3 className="text-2xl lg:text-4xl font-bold text-[#022F46] heading-font">
           The World's Most Accurate 
           <br />
          <span>Career Test</span> 
@@ -90,7 +62,7 @@ const Card = () => {
           <br />
           make the right education, skill and career choice.
         </p>
-        <button className="mt-6 px-6 py-2 text-[14px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] w-32">
+        <button className="mt-6 px-6 py-2 text-[16px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] w-32">
           Read More
         </button>
       </div>

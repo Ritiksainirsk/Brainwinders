@@ -54,7 +54,7 @@ export default function DmitFeature() {
 const DMITFeatureCard = ({ title, description, icon, bgColor }) => {
   return (
     <div
-      className={`relative bg-${bgColor}-500 rounded-lg p-6 m-4 flex flex-col items-center w-80`}
+      className={`relative bg-${bgColor}-500 rounded-lg p-6 m-4 flex flex-col items-center w-96`}
     >
       <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 heading-font">{title}</h3>
       <p className="text-white mb-10">{description}</p>

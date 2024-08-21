@@ -14,19 +14,25 @@ import CareerCounsellingNavbar from "../Components/CareerCounselling/CareerCouns
 export default function CareerCounselling() {
   return (
     <>
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
-        <CareerCounsellingNavbar/>
-        <CareerCounsellingHero />
-        <CareerGuidance />
-        <GuidingSteps />
-        <BannerCardOfCareer />
-        <ImportanceOfCareerCounselling />
-        <MIddleImageBanner />
-        <BannerCardOfCareer />
-        <PartnersVideoCard />
-        <AwardRecognition />
-        <TestimonialCard />
-        <Accordion />
+      <div>
+          <CareerCounsellingNavbar />
+          <CareerCounsellingHero />
+        <div className="max-w-[1500px] mx-auto overflow-hidden">
+          <CareerGuidance />
+          <GuidingSteps />
+        </div>
+          <BannerCardOfCareer />
+        <div className="max-w-[1500px] mx-auto overflow-hidden">
+          <ImportanceOfCareerCounselling />
+          <MIddleImageBanner />
+        </div>
+          <BannerCardOfCareer />
+        <div className="max-w-[1500px] mx-auto overflow-hidden">
+          <PartnersVideoCard />
+          <AwardRecognition />
+          <TestimonialCard />
+          <Accordion />
+        </div>
       </div>
     </>
   );

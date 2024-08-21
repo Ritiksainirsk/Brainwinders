@@ -18,7 +18,7 @@ export default CareerSuitabilitySection;
 
 const CareerFitSection = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center bg-white p-8 mx-auto px-10 lg:px-20">
+    <div className="flex flex-col md:flex-row justify-between items-center bg-white p-8 mx-auto px-10 2xl:px-44">
       {/* Left Section */}
       <div className="md:w-2/3">
         <h3 className="text-3xl font-light text-black mb-4 heading-font">
@@ -41,7 +41,7 @@ const CareerFitSection = () => {
         <img
           src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkX0S924Kg-a0Gdm1pz-Dzv_X23VDX6OYE7AE8VzV7HQrOODxz"
           alt="Career Fit Illustration"
-          className="max-w-full h-auto"
+          className="w-48 h-auto"
           width={120}
           height={120}
         />

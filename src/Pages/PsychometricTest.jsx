@@ -17,13 +17,17 @@ export default function PsychometricTest() {
     <>
       <PsychometricNavbar />
       <HeroCarausel />
+      <PsychometricTestsSection />
       <div className="max-w-[1500px] mx-auto overflow-hidden">
-        <PsychometricTestsSection />
         <PsychometricAssessments />
-        <PsychometricTestBanner />
+      </div>
+      <PsychometricTestBanner />
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
         <OurService />
         <Interview />
-        <SuitablityBanner />
+      </div>
+      <SuitablityBanner />
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
         <Ebook />
         <WhyChooseBrainwonders />
         <TestimonialCard />

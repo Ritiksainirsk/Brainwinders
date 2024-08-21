@@ -3,7 +3,7 @@ import React from 'react'
 export default function SuitablityBanner() {
   return (
     <div>
-         <div className="bg-[#022F46] lg:px-16 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14">
+         <div className="bg-[#022F46] 2xl:px-44 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14">
         {/* Left Section */}
         <div className="md:w-1/2">
           <h3 className="text-2xl font-bold mb-4 heading-font">
@@ -87,7 +87,7 @@ export default function SuitablityBanner() {
           <img
             src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt6fyUXoErXW-4MpwDJYeHrwDJ0vRd-6gQoUOrAQnWnJuPLsPo"
             alt="Career Suitability"
-            className="max-w-full h-auto mb-4"
+            className="w-56 h-auto mb-4"
             width={120}
             height={120}
           />

@@ -35,8 +35,8 @@ export default function CareerCounsellingHero() {
 }
 
 const CareerCounsellingVideo = () => (
-  <div className=" py-8 px-2 flex justify-center items-center bg-[#E0EFFF]">
-    <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20">
+  <div className=" py-12 px-2 flex justify-center items-center bg-[#E0EFFF]">
+    <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-10 xl:gap-20">
       <div className="text-center lg:text-left">
         <h1 className="text-4xl lg:text-[3.3rem] font-bold mb-6 text-shadow heading-font leading-[50px] mt-8 lg:mt-0 lg:leading-[62px] text-[#022F46]">
           GET THE RIGHT CAREER COUNSELLING
@@ -53,7 +53,7 @@ const CareerCounsellingVideo = () => (
           Take Counselling Now
         </button>
       </div>
-      <div className="w-[90%] lg:w-[50%] xl:w-[40%]">
+      <div className="w-[90%] lg:w-[50%] xl:w-[30%]">
         <iframe
           className="w-full h-56 md:h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
@@ -160,17 +160,19 @@ const CareerOptions = () => {
           </div>
 
           <div>
-            <div className={`w-[80px] h-[80px] p-3 mb-4 rounded-full text-center ${
-            card.title === "Career Guidance for class 8th and 9th"
-              ? "bg-[#C8BBFF]"
-              : "" || card.title === "Career Guidance After 10th"
-              ? "bg-[#B5D7FF]"
-              : "" || card.title === "Career Guidance after 12th"
-              ? "bg-[#FFB1CC]"
-              : "" || card.title === "Career Guidance after graduation"
-              ? "bg-[#FED872]"
-              : ""
-          }`}>
+            <div
+              className={`w-[80px] h-[80px] p-3 mb-4 rounded-full text-center ${
+                card.title === "Career Guidance for class 8th and 9th"
+                  ? "bg-[#C8BBFF]"
+                  : "" || card.title === "Career Guidance After 10th"
+                  ? "bg-[#B5D7FF]"
+                  : "" || card.title === "Career Guidance after 12th"
+                  ? "bg-[#FFB1CC]"
+                  : "" || card.title === "Career Guidance after graduation"
+                  ? "bg-[#FED872]"
+                  : ""
+              }`}
+            >
               <img
                 src={card.icon}
                 alt=""

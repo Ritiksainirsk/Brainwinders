@@ -16,7 +16,7 @@ export default function DmitNavbar() {
 
   return (
     <>
-      <div className="bg-[#043E56] rounded-lg p-2 my-4 ">
+      <div className="bg-[#043E56] p-2 ">
         <ul className="flex justify-around flex-col gap-3 md:gap-0 items-center md:flex-row">
           {navItems.map((item, index) => (
             <li key={index} className="text-white text-lg font-semibold">

@@ -29,7 +29,7 @@ const CareerGuidance = () => {
   ];
 
   return (
-    <div className="p-6 bg-white lg:px-40">
+    <div className="p-6 bg-white">
       <h3 className="text-3xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46]">
         Shaping the Career Guidance Landscape
       </h3>
