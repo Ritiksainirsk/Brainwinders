@@ -35,7 +35,7 @@ const First = () => {
 
   return (
     <div className="p-6 bg-white px-5 mt-10">
-      <h3 className="text-3xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46]">
+      <h3 className="text-2xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46]">
         HOW TO USE THE RESULTS OF DMIT TEST
       </h3>
       <p className="text-center mb-8">

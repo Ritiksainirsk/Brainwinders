@@ -33,7 +33,7 @@ export default function AwardRecognition() {
     <div>
       <div className="mb-7">
         <div className="text-center">
-          <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font mb-16 text-[#022F46]">
+          <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font text-[#022F46]">
             Awards and Recognition
           </h3>
         </div>

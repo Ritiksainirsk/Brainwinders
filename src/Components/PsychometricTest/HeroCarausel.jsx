@@ -118,7 +118,7 @@ const Carouselll = () => {
     <div className="relative w-full ">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="relative w-full h-[70vh]">
+          <div key={index} className="relative w-full h-[50vh] md:h-[70vh]">
             <img
               src={slide.img}
               alt={`Slide ${index + 1}`}
@@ -127,19 +127,19 @@ const Carouselll = () => {
               height={120}
             />
             <div
-              className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-5"
+              className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-5 md:gap-7"
                   style={{
                 background:
                   "linear-gradient(90deg, rgba(5, 69, 137, 1) 0%, rgba(44, 157, 252, 1) 100%)",
               }}
             >
-              <h2 className="text-4xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow text-center mt-5 md:mt-0">
+              <h2 className="text-3xl 2xl:text-[3.5rem] font-bold heading-font text-shadow text-center">
                 {slide.title}
               </h2>
-              <p className="mt-2 2xl:text-xl text-sm leading-7 text-center lg:text-left">
+              <p className="md:mt-2 2xl:text-xl text-sm leading-7 text-center lg:text-left">
                 {slide.description}
               </p>
-              <button className="bg-[#F23E36] p-2 lg:text-lg leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
+              <button className="bg-[#F23E36] p-1 md:p-2 text-sm lg:text-lg leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
                 {slide.btntext}
               </button>
             </div>

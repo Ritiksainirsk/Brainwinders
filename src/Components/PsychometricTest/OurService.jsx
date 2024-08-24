@@ -425,7 +425,7 @@ function CareerServices() {
 
   return (
     <div className="p-4">
-      <h3 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font text-[#022F46]">
+      <h3 className="text-2xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font text-[#022F46]">
       Brainwonders Psychometric Test for Counselling Services
       </h3>
       <div className="flex justify-center gap-4 flex-wrap space-x-2 mb-6">
@@ -442,7 +442,7 @@ function CareerServices() {
         ))}
       </div>
       <h3
-        className="text-center text-xl leading-7 pb-8 2xl:px-72"
+        className="text-center md:text-xl leading-7 pb-8 2xl:px-72"
         style={{ color: "rgb(102, 102, 102)" }}
       >
        Brainwonders brings to you scientific and meticulously designed

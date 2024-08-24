@@ -20,7 +20,7 @@ export default function DmitTest() {
       {/*  */}
       {/*  */}
       <div className="mb-16">
-        <h3 className="px-2 text-2xl md:text-4xl font-bold text-center my-10 heading-font text-[#022F46]">
+        <h3 className="px-2 text-2xl md:text-3xl font-bold text-center my-10 heading-font text-[#022F46]">
           BENEFITS OF DMIT TEST FOR ALL AGES!
         </h3>
         <CareerOptions />
@@ -35,17 +35,14 @@ const DMTITestComponent = () => (
   <div className=" py-8 px-4 flex justify-center items-center bg-[#E0EFFF]">
     <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-10 xl:gap-20">
       <div className="text-center">
-        <h1 className="text-5xl lg:text-[3.3rem] mt-8 md:mt-0 md:text-left font-bold mb-4 text-shadow heading-font leading-[55px] md:leading-[62px] text-[#022F46]">
+        <h1 className="text-3xl lg:flex lg:flex-col lg:text-[2.6rem] mt-8 md:mt-0 md:text-left font-bold mb-4 text-shadow heading-font leading-[44px] lg:leading-[62px] text-[#022F46]">
           DISCOVER YOUR INBORN POTENTIAL
-          <br />
-          AND SHINE WITH DMIT TEST
-          <br />
-          <span className="text-4xl">DMIT TEST</span>
+          <span>AND SHINE WITH DMIT TEST</span>
         </h1>
-        <h3 className="text-lg lg:text-[1.4rem] md:text-left mb-6 leading-[26px]">
-          Take the world’s most-advanced Career Assessment Test
-          <br />
-          and Find your best Career, Course, and college
+        <h3 className="text-lg lg:text-[1.4rem] md:text-left mb-6 leading-[26px] lg:flex lg:flex-col lg:gap-2">
+          <span>Take the world’s most-advanced Career Assessment Test</span>
+
+          <span>and Find your best Career, Course, and college</span>
         </h3>
         <div className="md:text-left">
           <button className="bg-[#022F46] text-white py-2 px-4 rounded-lg">
@@ -72,7 +69,7 @@ const DMTITestComponent = () => (
 const DmttTestDescription = () => {
   return (
     <div className=" mx-auto p-6 2xl:px-[9rem]">
-      <h3 className="text-3xl lg:text-5xl font-bold text-center mb-4 heading-font text-[#022F46]">
+      <h3 className="text-2xl lg:text-3xl font-bold text-center mb-4 heading-font text-[#022F46]">
         WHAT IS DMIT TEST?
       </h3>
       <p className="mb-4 text-[1rem] leading-7">
@@ -146,10 +143,10 @@ const CareerOptions = () => {
     },
   ];
   return (
-    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
+    <div className="flex justify-center rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[23rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+          className={`w-[25rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test for Toddlers (1-4 years)"
               ? "hover:bg-yellow-500"
               : "" || card.title === "DMIT Test for Children (4-10 years)"
@@ -175,7 +172,7 @@ const CareerOptions = () => {
               <img
                 src={card.icon}
                 alt=""
-                className=" h-full w-full rounded-full "
+                className=" h-full w-full rounded-full object-cover"
                 width={120}
                 height={120}
               />
@@ -216,7 +213,7 @@ const CareerOptions = () => {
   );
 };
 
-const CareerOptions2 = () => {  
+const CareerOptions2 = () => {
   const cards = [
     {
       title: "DMIT Test for Adult (25 years and above)",
@@ -251,10 +248,10 @@ const CareerOptions2 = () => {
     },
   ];
   return (
-    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
+    <div className="flex justify-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[23rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+          className={`w-[25rem] h-[23rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test for Adult (25 years and above)"
               ? "hover:bg-yellow-500"
               : "" || card.title === "DMIT Test for institutional (all years)"
@@ -280,7 +277,7 @@ const CareerOptions2 = () => {
               <img
                 src={card.icon}
                 alt=""
-                className=" h-full w-full rounded-full "
+                className=" h-full w-full rounded-full object-cover"
                 width={120}
                 height={120}
               />

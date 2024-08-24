@@ -30,8 +30,8 @@ const blogs = [
 export default function Blog() {
   return (
     <div>
-      <div className="p-4 mt-10 mx-7">
-        <h4 className="text-3xl font-semibold text-center mb-6 heading-font text-[#022F46]">
+      <div className="p-4 ">
+        <h4 className="text-2xl md:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46]">
           OUR BLOGS
         </h4>
         <div className="flex justify-center gap-10 flex-wrap">

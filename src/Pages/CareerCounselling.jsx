@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CareerCounsellingHero from "../Components/CareerCounselling/CareerCounsellingHero";
 import CareerGuidance from "../Components/CareerCounselling/CareerGuidance";
 import GuidingSteps from "../Components/CareerCounselling/GuidingSteps";
@@ -10,8 +10,18 @@ import AwardRecognition from "../Components/Home/AwardRecognition";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 import Accordion from "../Components/Home/Accordion";
 import CareerCounsellingNavbar from "../Components/CareerCounselling/CareerCounsellingPages/CareerCounsellingNavbar";
+import { useLocation } from "react-router-dom";
 
 export default function CareerCounselling() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
   return (
     <>
       <div>

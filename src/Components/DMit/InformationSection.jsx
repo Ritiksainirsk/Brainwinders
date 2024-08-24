@@ -5,7 +5,7 @@ const InformationSection = () => {
   return (
       <div className="flex flex-col md:flex-row ">
       <div className="bg-blue-100 p-8 flex-1 lg:px-20">
-        <h3 className="text-[2rem] lg:text-[2.6rem] font-semibold mb-4 text-center leading-[54px] heading-font text-[#022F46]">
+        <h3 className="text-2xl lg:text-[2.6rem] font-semibold mb-4 text-center heading-font text-[#022F46]">
           DERMATOGLYPHICS MEANING
         </h3>
         <p>
@@ -27,7 +27,7 @@ const InformationSection = () => {
         </p>
       </div>
       <div className="bg-orange-100 p-8 flex-1 lg:px-20">
-        <h2 className="text-[2rem] lg:text-[2.6rem] font-semibold mb-4 text-center leading-[54px] heading-font text-[#022F46]">
+        <h2 className="text-2xl lg:text-[2.6rem] font-semibold mb-4 text-center heading-font text-[#022F46]">
           WHAT IS MULTIPLE INTELLIGENCE TEST?
         </h2>
         <p>

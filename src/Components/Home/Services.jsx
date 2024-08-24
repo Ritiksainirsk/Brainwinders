@@ -80,7 +80,7 @@ export default function Services() {
     <div className="flex justify-center">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h3 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-8 lg:px-80 text-center heading-font text-[#022F46]">
+        <h3 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2 lg:px-80 text-center heading-font text-[#022F46]">
           How does Brainwonders services 
           <br />
         <span> help you to sucess in your career? </span> 
@@ -95,7 +95,7 @@ export default function Services() {
 
 const HoverEffectCard = () => {
   return (
-    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
+    <div className="flex justify-center rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
       {items.map((card, index) => (
         <div
         key={index}
@@ -165,7 +165,7 @@ const HoverEffectCard = () => {
 
 const HoverEffectCard2 = () => {
   return (
-    <div className="flex justify-center mx-9 rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
+    <div className="flex justify-center rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
       {items2.map((card, index) => (
         <div
           className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${

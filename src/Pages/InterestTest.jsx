@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import InterestTestHero from "../Components/InterestTest/InterestTestHero";
 import AwardRecognition from "../Components/Home/AwardRecognition";
 import LoginAndStatsBanner from "../Components/PsychometricTest/PsychometricPages/AptitudeTest/LoginAndStatsBanner";
@@ -10,8 +10,18 @@ import PartnersVideoCard from "../Components/Home/PartnersVideoCard";
 import AwardWinners from "../Components/DMit/AwardWinners";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 import Accordion from "../Components/Home/Accordion";
+import { useLocation } from "react-router-dom";
 
 export default function InterestTest() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
   return (
     <div>
       <InterestTestHero />

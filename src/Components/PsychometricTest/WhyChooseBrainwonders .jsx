@@ -29,9 +29,9 @@ const WhyChooseBrainwonders = () => {
   ];
 
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-3xl lg:text-4xl font-bold text-center heading-font text-[#022F46]">
+        <h3 className="text-2xl lg:text-4xl font-bold text-center heading-font text-[#022F46]">
           Why Choose Brainwonders
         </h3>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">

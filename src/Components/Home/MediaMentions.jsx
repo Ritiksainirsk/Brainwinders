@@ -31,7 +31,7 @@ export default function MediaMentions() {
   return (
     <div>
       {/* Media Mentions */}
-      <h3 className="text-center font-bold text-3xl mt-11 heading-font text-[#022F46]">
+      <h3 className="text-center font-bold text-2xl md:text-3xl mt-11 heading-font text-[#022F46]">
         Media Mentions
       </h3>
       <div className="mx-6 lg:mx-28">
@@ -140,7 +140,7 @@ export default function MediaMentions() {
       {/* Media Mentions */}
 
       {/* ASSOCIATED SCHOOLS */}
-      <h3 className="text-center font-bold text-3xl my-10 heading-font text-[#022F46]">
+      <h3 className="text-center font-bold text-2xl md:text-3xl my-10 heading-font text-[#022F46]">
         ASSOCIATED SCHOOLS
       </h3>
       <div className="mx-6 lg:mx-28 mb-16">

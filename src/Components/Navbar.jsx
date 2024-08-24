@@ -58,7 +58,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const threshold = 700; // Adjust this value as needed
+      const threshold = 200; // Adjust this value as needed
       setIsFixed(scrollY > threshold);
     };
 
@@ -91,20 +91,21 @@ export default function Navbar() {
           {/* DropDown Menu */}
           <div className="flex items-center justify-between">
             {/* button */}
-            <div className="sm:hidden">
+            <div className="sm:hidden flex">
               <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-lg text-white py-1 px-4  ">
                 Book an Appointment
               </button>
+              <PiPhoneCallFill className="text-[30px] ml-4 " />
             </div>
             {/* button */}
             <div className="dropdown dropdown-end lg:hidden dropdownMenu sm:absolute sm:right-0 sm:top-0 bg-white">
               <div
                 tabIndex={0}
                 role="button"
-                className="btn m-1 bg-white border-none "
+                className="btn m-1 bg-white "
                 onClick={toggleDropdown}
               >
-                <IoMenu className="text-lg" />
+                <IoMenu className="text-3xl" />
               </div>
               {isOpen && (
                 <ul
@@ -190,7 +191,7 @@ export default function Navbar() {
           {/*  DropDown Menu */}
         </div>
 
-        <div className="hidden gap-4 lg:flex items-center">
+        <div className="hidden gap-4 text-[16px] lg:flex items-center">
           <ul className="flex ">
             <NavItem
               to="/"
@@ -257,18 +258,18 @@ export default function Navbar() {
             </NavItem>
           </ul>
 
-          <button className="bg-[#F7CA01] py-[8px] px-[14px] font-semibold rounded-[50px]  ">
+          <button className="bg-[#F7CA01] py-[8px] px-[14px] font-semibold rounded-[50px] text-[16px] ">
             Explore
           </button>
         </div>
       </nav>
       {/*<<<<<<<<<<---------------------  */}
 
-      <div className="absolute top-4 right-2 items-center hidden xl:flex gap-1 ">
-        <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-lg text-white py-1 px-4  ">
+      <div className="absolute top-4 right-10 items-center hidden 2xl:flex gap-1 ">
+        <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-sm text-white py-2 px-4  ">
           Book an Appointment
         </button>
-        <PiPhoneCallFill className="text-[40px] bounce " />
+        <PiPhoneCallFill className="text-[40px] bounce ml-8 " />
         {/*  */}
       </div>
       {/*  */}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroCarausel from "../Components/PsychometricTest/HeroCarausel";
 import PsychometricTestsSection from "../Components/PsychometricTest/PsychometricTestsSection ";
 import PsychometricAssessments from "../Components/PsychometricTest/PsychometricAssessments";
@@ -11,8 +11,18 @@ import WhyChooseBrainwonders from "../Components/PsychometricTest/WhyChooseBrain
 import Accordion from "../Components/PsychometricTest/Accordion";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 import PsychometricNavbar from "../Components/PsychometricTest/PsychometricPages/PsychometricNavbar";
+import { useLocation } from "react-router-dom";
 
 export default function PsychometricTest() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
   return (
     <>
       <PsychometricNavbar />

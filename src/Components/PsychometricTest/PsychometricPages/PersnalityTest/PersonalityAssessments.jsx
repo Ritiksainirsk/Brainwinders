@@ -3,19 +3,21 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const PersonalityAssessments = () => {
   return (
-    <div className="p-8 bg-white text-center my-4">
-      <h1 className="text-3xl md:text-4xl font-bold mb-2 heading-font">
+    <div className="md:p-8 py-5 px-4 bg-white text-center my-4">
+      <h1 className="text-2xl md:text-3xl font-bold mb-2 heading-font md:flex md:flex-col ">
         Our Personality Assessments Are Built Using Validated
-        <br />
-        Scientific Theories And In-house Psychometric Expertise
+        <span>Scientific Theories And In-house Psychometric Expertise</span>
       </h1>
-      <p className="text-xl md:text-2xl font-bold py-4 mb-8">
+      <p className="text-xl md:text-2xl py-4 mb-8">
         The Quality Of Our Personality Tests Is Reflected In Their High Validity
         And Reliability Metrics
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-12 text-start">
         {/* Big Five Theory Card */}
-        <div className="relative p-10 border border-green-400 rounded-lg shadow-2xl bg-white" style={{textAlign:""}}>
+        <div
+          className="relative p-10 border border-green-400 rounded-lg shadow-2xl bg-white"
+          style={{ textAlign: "" }}
+        >
           <FaCheckCircle className="absolute top-[-22px] z-10 left-8 h-10 w-10 text-green-600 bg-white" />
           <h2 className="text-2xl font-semibold mb-4">The Big Five Theory</h2>
           <p>

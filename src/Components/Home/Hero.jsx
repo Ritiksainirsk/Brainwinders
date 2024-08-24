@@ -52,17 +52,17 @@ const Card = () => {
   return (
     <div className="w-full overflow-hidden flex flex-col md:flex-row 2xl:px-48">
       <div className="md:basis-1/2 md:pl-10 p-6 flex flex-col justify-center">
-        <h3 className="text-2xl lg:text-4xl font-bold text-[#022F46] heading-font">
+        <h1 className="text-2xl lg:text-4xl font-bold text-[#022F46] heading-font">
           The World's Most Accurate 
           <br />
          <span>Career Test</span> 
-        </h3>
+        </h1>
         <p className="mt-4 text-black text-xl">
           Take our well researched, accurate DMIT test to 
           <br />
           make the right education, skill and career choice.
         </p>
-        <button className="mt-6 px-6 py-2 text-[16px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] w-32">
+        <button className="mt-6 px-6 py-2 text-[16px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
           Read More
         </button>
       </div>

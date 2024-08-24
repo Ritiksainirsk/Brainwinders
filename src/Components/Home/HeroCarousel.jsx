@@ -94,10 +94,10 @@ export default function HeroCarousel() {
 
   return (
     <>      
-       <div className="relative w-full ">
+       <div className="relative w-full">
         <Slider {...settings}>
           {/* Static Slide */}
-          <div className="relative w-full h-[65vh] lg:h-[70vh]">
+          <div className="relative w-full h-[55vh] lg:h-[70vh]">
             <img
               src="https://www.careerguide.com/images_new/banner_1.png"
               alt="Static Slide"
@@ -112,15 +112,15 @@ export default function HeroCarousel() {
                   "linear-gradient(90deg, rgba(5, 69, 137, 1) 0%, rgba(44, 157, 252, 1) 100%)",
               }}
             >
-              <h1 className="text-4xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0">
+              <h2 className="text-4xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0">
                 Class 10th
-              </h1>
+              </h2>
               <p className="lg:mt-2 2xl:text-xl text-sm leading-7 text-center lg:text-left">
                 Career Counselling Services for Class 10th students contains
                 Stream Selection, Career option Exploration and everything a
                 class 10th student needs to get Confidence and Career Clarity
               </p>
-              <button className="bg-[#F23E36] p-2 lg:text-lg leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
+              <button className="bg-[#F23E36] lg:p-2 p-1 text-[14px]  leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
                 Explore services for Class 10th
               </button>
             </div>
@@ -128,7 +128,7 @@ export default function HeroCarousel() {
 
           {/* Dynamic Slides from Array */}
           {slides.map((slide, index) => (
-            <div key={index} className="relative w-full h-[65vh] lg:h-[70vh]">
+            <div key={index} className="relative w-full  h-[55vh] lg:h-[70vh]">
               <img
                 src={slide.img}
                 alt={`Slide ${index + 1}`}
@@ -138,20 +138,20 @@ export default function HeroCarousel() {
                 key={index}
               />
               <div
-                className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-6 lg:gap-4"
+                className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-5 lg:gap-4"
                 style={{
                   background:
                     "linear-gradient(90deg, rgba(5, 69, 137, 1) 0%, rgba(44, 157, 252, 1) 100%)",
                 }}
                 key={index}
               >
-                <h2 className="text-4xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0">
+                <h2 className="text-3xl 2xl:text-[3.5rem] font-bold leading-[60px] heading-font text-shadow text-center">
                   {slide.title}
                 </h2>
                 <p className="lg:mt-2 2xl:text-xl text-sm leading-7 text-center lg:text-left">
                   {slide.description}
                 </p>
-                <button className="bg-[#F23E36] p-2 lg:text-lg leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
+                <button className="bg-[#F23E36] lg:p-2 p-1 text-[14px] lg:text-lg leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
                   {slide.btntext}
                 </button>
               </div>

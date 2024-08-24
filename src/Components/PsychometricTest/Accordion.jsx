@@ -48,7 +48,7 @@ const Accordion = () => {
 
   return (
     <div className=" mx-auto bg-[#000D71] text-white p-6 mt-6 px-5 md:px-14">
-      <h2 className="text-4xl font-semibold mb-6 text-center heading-font">
+      <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-center heading-font">
         Frequently Asked Questions
       </h2>
       {faqData.map((item, index) => (

@@ -14,13 +14,13 @@ export default function CareerOptions() {
         <h3 className="text-3xl mb-3 md:text-4xl font-bold text-center heading-font px-5 text-[#022F46]">
           Types of Aptitude Tests
         </h3>
-        <p className="font-bold text-[16px] md:text-[22px] text-center mb-6">
+        <p className="font-bold text-[16px] md:text-[22px] text-center mb-6 md:flex md:flex-col">
           Many types of aptitude tests are administered for
-          <br />
-          educational or career discovery and ability purposes
+          {/* <br /> */}
+          <span>educational or career discovery and ability purposes</span>
         </p>
         <CareerOptionsCard />
-        <CareerOptionsCard2/>
+        <CareerOptionsCard2 />
       </div>
     </div>
   );
@@ -63,10 +63,10 @@ const CareerOptionsCard = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center mx-9 rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
+    <div className="flex justify-center items-center rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[22rem] border-2 h-[23rem] containerBox relative p-7 overflow-hidden ${
+          className={`w-[25rem] border-2 h-[23rem] containerBox relative p-7 overflow-hidden ${
             card.title === "Mechanical reasoning"
               ? "hover:bg-yellow-500"
               : "" || card.title === "Situational judgment"
@@ -180,10 +180,10 @@ const CareerOptionsCard2 = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center mx-9 rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
+    <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[22rem] border-2 h-[23rem] containerBox relative p-7 overflow-hidden ${
+          className={`w-[25rem] border-2 h-[23rem] containerBox relative p-7 overflow-hidden ${
             card.title === "Abstract reasoning"
               ? "hover:bg-yellow-500"
               : "" || card.title === "Numerical reasoning"
@@ -259,4 +259,3 @@ const CareerOptionsCard2 = () => {
     </div>
   );
 };
-

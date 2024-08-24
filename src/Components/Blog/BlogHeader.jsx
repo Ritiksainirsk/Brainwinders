@@ -16,11 +16,12 @@ const BlogHeader = () => {
         >
           Brainwonders Blogs
         </h1>
-        <p className="text-lg md:text-xl text-white mt-2">
+        <p className="text-lg md:text-xl text-white mt-2 md:flex md:flex-col">
           Discover about a variety of topics to careers, courses & industries
           and get useful in-depth
-          <br />
+          <span>
           information.
+          </span>
         </p>
         <div className="mt-6 flex justify-center">
           <input

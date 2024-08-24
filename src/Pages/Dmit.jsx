@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DmitTest from "../Components/DMit/DmitTest";
 import BannerCard from "../Components/DMit/BannerCard";
 import DmitFeature from "../Components/DMit/DmitFeature";
@@ -10,8 +10,20 @@ import AwardWinners from "../Components/DMit/AwardWinners";
 import Accordion from "../Components/Home/Accordion";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 import DmitNavbar from "../Components/DMit/DmitPages/DmitNavbar";
+import { useLocation } from "react-router-dom";
 
 export default function Dmit() {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
+
   return (
     <div>
       <DmitNavbar />

@@ -11,19 +11,27 @@ import CareerSuitabilitySection from "../Components/Home/CareerSuitabilitySectio
 import HeroCarousel from "../Components/Home/HeroCarousel";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 import AwardRecognition from "../Components/Home/AwardRecognition";
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
   return (
     <>
-        <HeroCarousel />
+      <HeroCarousel />
       <div className="max-w-[1550px] mx-auto overflow-hidden">
         <AwardRecognition />
       </div>
-        <Hero />
-      <div className="max-w-[1550px] mx-auto overflow-hidden">
-        <Services />
-      </div>
-        <CareerSuitabilitySection />
+      <Hero />
+      <Services />
+      <div className="max-w-[1550px] mx-auto overflow-hidden"></div>
+      <CareerSuitabilitySection />
       <div className="max-w-[1550px] mx-auto overflow-hidden">
         <Ebook />
         <Achievment />

@@ -44,10 +44,10 @@ const FirstComponent = () => {
   ];
   return (
     <div className=" mx-auto p-6 text-center">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 heading-font">
+      <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-4 heading-font">
         HOW TO TAKE AN APTITUDE TEST?
       </h2>
-      <p className="text-xl md:text-2xl text-black mb-10">
+      <p className="text-lg md:text-2xl text-black mb-10">
         It's very simple. Just follow these steps!
       </p>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -74,7 +74,7 @@ const FirstComponent = () => {
 function SecondComponent() {
   return (
      <div className="p-8">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 heading-font">
+      <h1 className="text-2xl md:text-4xl font-bold text-center mb-8 heading-font">
         Personality Test for Everyone
       </h1>
       <div className="grid md:grid-cols-3 gap-8">

@@ -6,11 +6,11 @@ export default function PersnalityVideoSection() {
       <div className="mx-auto py-2 px-5 lg:px-5">
         <div className="my-8">
           {/* Section Title */}
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#022F46] mb-6 text-center heading-font">
+          <h2 className="text-2xl lg:text-4xl font-bold text-[#022F46] mb-6 text-center heading-font">
             WHAT IS PERSONALITY TEST?
           </h2>
 
-          <p className="text-center text-black text-xl md:text-[25px] font-bold mb-8">
+          <p className="text-center text-black text-xl md:text-[25px] md:font-bold mb-8">
             It determines the skills, capabilities and more that are possessed
             by the individual.
           </p>

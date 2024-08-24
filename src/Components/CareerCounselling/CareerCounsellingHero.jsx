@@ -20,7 +20,7 @@ export default function CareerCounsellingHero() {
       {/*  */}
       {/*  */}
       <div className="mb-16">
-        <h3 className="text-3xl md:text-4xl font-bold text-center my-10 heading-font px-5 text-[#022F46]">
+        <h3 className="text-2xl md:text-3xl font-bold text-center my-10 heading-font px-5 text-[#022F46]">
           BENEFITS OF Career Counselling FOR ALL AGES!
         </h3>
         <CareerOptions />
@@ -35,34 +35,34 @@ export default function CareerCounsellingHero() {
 }
 
 const CareerCounsellingVideo = () => (
-  <div className=" py-12 px-2 flex justify-center items-center bg-[#E0EFFF]">
-    <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-10 xl:gap-20">
-      <div className="text-center lg:text-left">
-        <h1 className="text-4xl lg:text-[3.3rem] font-bold mb-6 text-shadow heading-font leading-[50px] mt-8 lg:mt-0 lg:leading-[62px] text-[#022F46]">
-          GET THE RIGHT CAREER COUNSELLING
-          <br />
-          TO LEAP THROUGH YOUR CAREER
-          <br />
+  <div className="md:py-8 px-4 md:px-12 lg:px-20 xl:px-44 flex justify-center items-center bg-[#E0EFFF]">
+    <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-8 xl:gap-20">
+      {/* Text Section - 60% width */}
+      <div className="w-full lg:w-[60%] text-center lg:text-left">
+        <h1 className="text-2xl md:text-3xl lg:text-[2.7rem] font-bold mb-4 lg:mb-6 text-shadow heading-font leading-snug lg:leading-[56px] mt-6 lg:mt-0 text-[#022F46]">
+          GET THE RIGHT CAREER COUNSELLING TO LEAP THROUGH YOUR CAREER
         </h1>
-        <h3 className="text-lg lg:text-[1.4rem] mb-6 leading-[26px]">
-          Take the world’s most-advanced Career Assessment Test
-          <br />
-          and Find your best Career, Course, and college
+        <h3 className="text-base md:text-lg lg:text-[1.4rem] mb-4 lg:mb-6 leading-snug lg:leading-[26px] md:flex md:flex-col text-[#4D5B6B]">
+          <span>Take the world’s most advanced Career Assessment Test</span> 
+          and Find your best Career, Course, and College
         </h3>
-        <button className="bg-[#022F46] text-white py-2 px-4 rounded-lg">
+        <button className="bg-[#022F46] text-white py-2 px-6 rounded-lg shadow-md hover:bg-[#011e36] transition-colors">
           Take Counselling Now
         </button>
       </div>
-      <div className="w-[90%] lg:w-[50%] xl:w-[30%]">
-        <iframe
-          className="w-full h-56 md:h-72 rounded-lg"
-          src="https://www.youtube.com/embed/ISv2-cLrtnY"
-          title="DMIT Test Video"
-          allowFullScreen
-        ></iframe>
-        <p className="text-center text-sm mt-2">
-          Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about
-          its DMIT franchise model
+
+      {/* Video Section - 40% width */}
+      <div className="w-full lg:w-[40%]">
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe
+            className="w-full h-56 lg:h-72 rounded-lg"
+            src="https://www.youtube.com/embed/ISv2-cLrtnY"
+            title="DMIT Test Video"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <p className="text-center text-xs md:text-sm mt-2 text-[#4D5B6B]">
+          Watch the Founder & CEO of Brainwonders, Mr. Manish Naidu, talk about its DMIT franchise model
         </p>
       </div>
     </div>
@@ -72,7 +72,7 @@ const CareerCounsellingVideo = () => (
 const CareerCounsellingHeroDescription = () => {
   return (
     <div className="p-6 2xl:px-[9rem]">
-      <h3 className="text-3xl lg:text-5xl font-bold text-center mb-5 heading-font text-[#022F46]">
+      <h3 className="text-2xl lg:text-4xl font-bold text-center mb-5 heading-font text-[#022F46]">
         WHAT IS CAREER COUNSELLING?
       </h3>
       <p className="text-black mb-4">
@@ -137,10 +137,10 @@ const CareerOptions = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center mx-9 rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
+    <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[22rem] border-2 h-[20rem] containerBox relative p-7 overflow-hidden ${
+          className={`w-[25rem] border-2 h-[21rem] containerBox relative p-7 overflow-hidden ${
             card.title === "Career Guidance for class 8th and 9th"
               ? "hover:bg-yellow-500"
               : "" || card.title === "Career Guidance After 10th"

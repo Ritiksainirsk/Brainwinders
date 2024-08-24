@@ -19,7 +19,7 @@ export default function DmitNavbar() {
       <div className="bg-[#043E56] p-2 ">
         <ul className="flex justify-around flex-col gap-3 md:gap-0 items-center md:flex-row">
           {navItems.map((item, index) => (
-            <li key={index} className="text-white text-lg font-semibold">
+            <li key={index} className="text-white font-semibold">
               <button className="relative group">
                 <Link
                   to={

@@ -3,10 +3,10 @@ import React from "react";
 export default function ImportanceOfCareerCounselling() {
   return (
     <div>
-      <div className="py-10 lg:px-16">
-        <div className=" mx-auto px-4 ">
+      <div className="py-3 lg:px-16">
+        <div className=" mx-auto ">
           <div className="bg-white p-8">
-            <h3 className="text-3xl lg:text-4xl font-semibold mb-6 text-center heading-font text-[#022F46]">
+            <h3 className="text-2xl lg:text-4xl font-semibold mb-6 text-center heading-font text-[#022F46]">
               IMPORTANCE OF CAREER COUNSELLING
             </h3>
             <div className="text-gray-800">

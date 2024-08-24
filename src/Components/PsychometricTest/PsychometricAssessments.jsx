@@ -193,10 +193,10 @@ function CareerServices() {
 
   return (
     <div className="p-4">
-      <h3 className="text-3xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font text-[#022F46]">
+      <h3 className="text-2xl mt-10 lg:text-4xl font-bold text-center mb-5   heading-font text-[#022F46]">
         Brainwonders Psychometric Career Test
       </h3>
-      <h3 className="text-center text-xl leading-7 pb-8 2xl:px-72 text-black">
+      <h3 className="text-center md:text-xl leading-7 pb-8 2xl:px-72 text-black">
         Brainwonders brings to you scientific and meticulously designed
         Psychometric Assessments to discover your true potential and interest
         ,learning styles and skills to excel in 21st Century

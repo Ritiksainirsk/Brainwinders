@@ -1,52 +1,59 @@
-
 @import "../node_modules/slick-carousel/slick/slick.css";
 @import "../node_modules/slick-carousel/slick/slick-theme.css";
 
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@font-face {
-
-  /* font-weight: normal; */
-  /* font-style: normal; */
-  font-family: 'Bebas-Regular';
-  src: url('./assets/Gotham-Font/FontsFree-Net-Bebas-Regular.ttf') format('truetype');
+/* @font-face {
+  font-family: "Bebas-Regular";
+  src: url("./assets/Gotham-Font/FontsFree-Net-Bebas-Regular.ttf")
+    format("truetype");
 }
 
 @font-face {
   font-family: Gotham-book;
-  src: url('./assets/Gotham-Font/GothamBook.ttf') format('truetype');
-}
+  src: url("./assets/Gotham-Font/GothamBook.ttf") format("truetype");
+} */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: white;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   /* color: #022F46; */
   color: #000;
 }
 
-.gotham-font{
-  font-family: Gotham-book;
-  color: rgb(33, 37, 41);
+.gotham-font {
+  /* font-family: Gotham-book;
+  color: rgb(33, 37, 41); */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.heading-font{
-  font-family: 'Bebas-Regular', sans-serif ;
+.heading-font {
+  /* font-family: "Bebas-Regular", sans-serif;
   letter-spacing: 2px;
-  text-transform: capitalize;
+  text-transform: capitalize; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-p{
-  font-family: gotham-book;
+p {
+  /* font-family: gotham-book;
   font-size: 16px;
+   */
+   font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* <<<<<<<<<<<<<<<<<<< */
@@ -80,7 +87,6 @@ p{
   gap: 40px;
 }
 
-
 @media only screen and (max-width: 1419px) {
   .navResponsive {
     flex-direction: column;
@@ -93,10 +99,10 @@ p{
   .belowNav {
     display: none;
   }
-  .dropdownMenu{
+  .dropdownMenu {
     display: block;
   }
-  .navResponsive{
+  .navResponsive {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -104,64 +110,54 @@ p{
 /* ------------ */
 
 /* yah hover services ke liye hai */
-.fff:hover{
-    width: 380px;
-    /* background-color: lightgray; */
-    transition: all 0.9s ease, transform 0.9s ease;
+.fff:hover {
+  width: 380px;
+  /* background-color: lightgray; */
+  transition: all 0.9s ease, transform 0.9s ease;
+  /* background-color: #AB47BC; */
+}
+@media only screen and (min-width: 1500px) {
+  .second-fff:hover {
+    width: 800px;
+    /* transition: all 0.9s ease, transform 0.9s ease; */
     /* background-color: #AB47BC; */
   }
-  @media only screen and (min-width: 1500px) {
-    .second-fff:hover{
-      width: 800px;
-      /* transition: all 0.9s ease, transform 0.9s ease; */
-      /* background-color: #AB47BC; */
-    }
+}
+/*  */
+
+/* Navbar css ------ */
+
+@media only screen and (max-width: 1790px) {
+  .bookAnAppointment {
+    display: none;
   }
-  /*  */
-
-
-  /* Navbar css ------ */
-
-  @media only screen and (max-width: 1790px) {
-    .bookAnAppointment{
-      display: none;
-    }
+}
+@media only screen and (max-width: 1570px) {
+  .explorebtn {
+    display: none;
   }
-  @media only screen and (max-width: 1570px) {
-    .explorebtn{
-      display: none;
-    }
+}
+/* Navbar  */
+
+/* Hero video */
+@media only screen and (min-width: 1579px) {
+  .heroVideo {
+    /* height: 20rem; */
   }
-   /* Navbar  */
-
-
-
-   /* Hero video */
-   @media only screen and (min-width: 1579px) {
-    .heroVideo{
-      /* height: 20rem; */
-    }
-  }
-  .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  }
-   /* Hero Video */
-
-
-
-
-
-
-
-
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+/* Hero Video */
 
 /* styles.css */
 /* hover  cards css */
-.containerBox{
+.containerBox {
   transition: all 0.5s ease-in-out;
 }
 
-.overlay-content-btn, .overlay-content-image{
+.overlay-content-btn,
+.overlay-content-image {
   transition: transform 0.5s ease-in-out;
 }
 
@@ -169,69 +165,64 @@ p{
   transform: translateX(0);
 }
 
-.containerBox:hover button{
+.containerBox:hover button {
   bottom: 40px;
   right: 40px;
 }
-.containerBox:hover .btnn{
+.containerBox:hover .btnn {
   display: none;
 }
- .containerBox:hover .overlay-content-image{
+.containerBox:hover .overlay-content-image {
   transform: translateX(0);
- }
+}
 
- .containerBox:hover{
+.containerBox:hover {
   width: 500px;
- }
+}
 
 /* 1600px */
 @media only screen and (max-width: 1600px) {
-  .containerBox{
+  .containerBox {
     width: 300px;
-   }
-   .containerBox:hover{
+  }
+  .containerBox:hover {
     width: 400px;
-   }
+  }
 }
 
 /* 1325px */
 @media only screen and (max-width: 1325px) {
-  .containerBox:hover{
+  .containerBox:hover {
     width: 300px;
-   }
+  }
 }
 /* ------ */
 @media only screen and (max-width: 1270px) {
-  .main-hoverbox-container{
+  .main-hoverbox-container {
     display: flex;
     flex-direction: column;
     border: none;
     box-shadow: none;
   }
 
-  .containerBox{
+  .containerBox {
     width: 500px;
     box-shadow: 1px 1px 5px gray;
-   }
+  }
 
-   .containerBox:hover{
+  .containerBox:hover {
     width: 500px;
-   }
+  }
 }
 
 /* ------- */
 @media only screen and (max-width: 570px) {
-
-  .containerBox{
+  .containerBox {
     width: auto;
     height: auto;
-   }
-   .containerBox:hover{
+  }
+  .containerBox:hover {
     width: auto;
-   }
+  }
 }
- /* hover card <<<<<<<<<<<<<<<------------------- */
-
-
-
- 
+/* hover card <<<<<<<<<<<<<<<------------------- */

@@ -4,7 +4,7 @@ export default function CareerPathBanner() {
   return (
     <div>
       <div className=" p-8 ">
-        <h3 className="text-3xl md:text-5xl font-semibold mb-12 text-center mt-10 heading-font text-[#022F46]">
+        <h3 className="text-2xl md:text-4xl font-semibold mb-12  text-center mt-10 heading-font text-[#022F46]">
           How DMIT Test for Students helps
           <br />
           in Choosing a Right Career

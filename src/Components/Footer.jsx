@@ -5,145 +5,489 @@ import { FaTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-800">
-      <div className="container mx-auto py-8 px-4">
-        <div className="flex flex-wrap gap-9 justify-between items-center mb-8">
-          <img
-            src="https://www.brainwonders.in/images/logo.webp"
-            alt="Brainwonders Logo"
-            className=" w-full md:w-[260px]"
-            width={120}
-            height={120}
-          />
-          <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-gray-800">
-              <FaInstagram />
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">
-              <FaFacebook />
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">
-              <FaLinkedin />
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">
-              <FaTwitter />
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">
-              <FaYoutube />
-            </a>
+    <footer className="bg-gradient-to-b from-[#E5EEF8] to-[#A4BFD6] pt-10">
+      <div className="mx-auto px-4 lg:px-28">
+        <div className="flex flex-wrap justify-between">
+          {/* Left Column */}
+          <div className="w-full md:w-1/4 mb-8 md:mb-0">
+            <img
+              src="https://www.brainwonders.in/images/logo.webp"
+              alt="Brainwonders Logo"
+              className="w-full md:w-[260px] "
+              width={120}
+              height={120}
+            />
+            <ul className="text-[#4D5B6B] my-3">
+              <li className="mb-2">
+                <a href="#" className="hover:text-[#022F46]">
+                  About Us
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="#" className="hover:text-[#022F46]">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#022F46]">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <div className="bg-blue-900 text-white p-4 rounded-lg w-full md:w-80">
+                <p className="font-bold">Contact Us</p>
+                <p>📞 9987422220</p>
+                <p>✉️ info@brainwonders.in</p>
+                <p className="mt-3">
+                  Brainwonders 804, 8th floor, Paras Business Center, Kasturba
+                  Carter Road No. 1, Gokul Nagar, near Kasturba Police station,
+                  Asara Colony, Thane West, Mumbai, Maharashtra 404601
+                </p>
+              </div>
+              <h3 className="text-lg text-[#022F46] font-bold my-4">Socials</h3>
+              <div className="flex space-x-4 text-[#022F46]">
+                <a href="#" className="text-gray-600 hover:text-gray-800">
+                  <FaInstagram />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-gray-800">
+                  <FaFacebook />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-gray-800">
+                  <FaLinkedin />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-gray-800">
+                  <FaTwitter />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-gray-800">
+                  <FaYoutube />
+                </a>
+              </div>
+            </div>
+            <div className="mt-6">
+              <p className="text-[#022F46] font-bold text-sm">
+                Talk to an Expert now!
+              </p>
+              <p className="bg-white border border-gray-300 text-[#022F46] px-4 py-2 rounded-lg mt-2 inline-block">
+                <a href="tel:09555990000">09555990000</a>
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column */}
+          <div className="w-full md:w-3/4">
+            <div className="flex flex-wrap justify-between">
+              {/* Column 1 */}
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+                <h3 className="text-[#022F46] text-lg font-bold mb-4">
+                  Internal Links
+                </h3>
+                <ul className="text-[#4D5B6B] space-y-2">
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      What Is DMIT
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Contact Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      SSC Result
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Refer & Earn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      CBSE Result
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Certification
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Video
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      School
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Why Brainwonders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Franchise Opportunities
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Franchise Enquiry
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Pay Now
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Blogs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Dmit & Parents
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Types of Finger Print
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Intelligence Type
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 2 */}
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+                <h3 className="text-[#022F46] font-bold mb-4">
+                  Internal Links
+                </h3>
+                <ul className="text-[#4D5B6B] space-y-2">
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Press Release
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Offline Media
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      School Reviews
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Join With Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Brain & Fingers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      About Dmit
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Dmit Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Dmit Benefits
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Franchise Hindi
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Analysis Report
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Is DMIT for me?
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Finger History
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Franchise
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 3 */}
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+                <h3 className="text-[#022F46] font-bold mb-4">
+                  Internal Links
+                </h3>
+                <ul className="text-[#4D5B6B] space-y-2">
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Press Release
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Offline Media
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      School Reviews
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Join With Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Brain & Fingers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      About Dmit
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Dmit Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Dmit Benefits
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Franchise Hindi
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Analysis Report
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Is DMIT for me?
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Finger History
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Franchise
+                    </a>
+                  </li>
+                </ul>
+                <h3 className="text-[#022F46] font-bold mb-4 mt-8">
+                  Brainwonders Centers
+                </h3>
+                <ul className="text-[#4D5B6B] space-y-2">
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Career Counselling Centers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      IQ Test Centers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Personality Test Centers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Aptitude Test Centers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      DMIT Test Centers
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 4 */}
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+                <h3 className="text-[#022F46] font-bold mb-4">
+                  Brainwonders Test Links
+                </h3>
+                <ul className="text-[#4D5B6B] space-y-2">
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Top College In Mumbai
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Career Counselling Online
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Psychometric Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Interest-Aptitude Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      IQ Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Personality Test
+                    </a>
+                  </li>
+                  <span className="hidden lg:block">
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        Aptitude Test
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        DMIT Test
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        Free Career Test
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        Career Guidance
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        Career After 10th
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        Career After 12th
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        Career After 12th Arts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        Career After 12th Science
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-[#022F46]">
+                        Career After 12th Commerce
+                      </a>
+                    </li>
+                  </span>
+                </ul>
+                <h3 className="text-[#022F46] font-bold mb-4 mt-8">Reports</h3>
+                <ul className="text-[#4D5B6B] space-y-2">
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      FAQ's for DMIT
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      FAQ's for IQ Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      FAQ's for Aptitude Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      FAQ's for Interest-Aptitude Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      FAQ's for Personality Test
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      Franchise FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:text-[#022F46]">
+                      FAQs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          <div>
-            <h4 className="font-bold mb-2">Internal Links</h4>
-            <ul className="space-y-1">
-              <li>What Is DMIT</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>SSC Result</li>
-              <li>Refer & Earn</li>
-              <li>CBSE Result</li>
-              <li>Certification</li>
-              <li>Video</li>
-              <li>School</li>
-              <li>Why Brainwonders</li>
-              <li>Franchise Opportunities</li>
-              <li>Franchise Enquiry</li>
-              <li>Pay Now</li>
-              <li>Blogs</li>
-              <li>Dmit & Parents</li>
-              <li>Types of Finger Print</li>
-              <li>Intelligence Type</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-2">Internal Links</h4>
-            <ul className="space-y-1">
-              <li>Press Release</li>
-              <li>Offline Media</li>
-              <li>School Reviews</li>
-              <li>Join With Us</li>
-              <li>Brain & Fingers</li>
-              <li>About Dmit</li>
-              <li>Dmit Test</li>
-              <li>Dmit Benefits</li>
-              <li>Franchise Hindi</li>
-              <li>Analysis Report</li>
-              <li>Is DMIT for me?</li>
-              <li>Finger History</li>
-              <li>Franchise</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-2">Brainwonders Centers</h4>
-            <ul className="space-y-1">
-              <li>Career Counselling Centers</li>
-              <li>IQ Test Centers</li>
-              <li>Personality Test Centers</li>
-              <li>Aptitude Test Centers</li>
-              <li>DMIT Test Centers</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-2">Brainwonders Test Links</h4>
-            <ul className="space-y-1">
-              <li>Top College In Mumbai</li>
-              <li>Career Counselling Online</li>
-              <li>Psychometric Test</li>
-              <li>Interest-Aptitude Test</li>
-              <li>IQ Test</li>
-              <li>Personality Test</li>
-              <span className="hidden lg:block">
-                <li>Aptitude Test</li>
-                <li>DMIT Test</li>
-                <li>Free Career Test</li>
-                <li>Career Guidance</li>
-                <li>Career After 10th</li>
-                <li>Career After 12th</li>
-                <li>Career After 12th Arts</li>
-                <li>Career After 12th Science</li>
-                <li>Career After 12th Commerce</li>
-              </span>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-2">FAQs</h4>
-            <ul className="space-y-1">
-              <li>FAQ's for DMIT</li>
-              <li>FAQ's for IQ Test</li>
-              <li>FAQ's for Aptitude Test</li>
-              <li>FAQ's for Interest-Aptitude Test</li>
-              <li>FAQ's for Personality Test</li>
-              <li>Franchise FAQ</li>
-              <li>FAQs</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap gap-6 justify-between items-start mt-8 border-t pt-4">
-          <div className="text-sm">
-            <p>
-              Career Counselling | Blogs | Testimonials | Accredentials |
-              Associations | Awards | Franchisee Locator
-            </p>
-            <p>Copyright 2024 © Brainwonders. All Right Reserved.</p>
-            <p>Terms & Services | Return & Refund | Privacy Policy</p>
-          </div>
-          <div className="bg-blue-900 text-white p-4 rounded-lg text-sm w-80">
-            <p className="font-bold">Contact Us</p>
-            <p>📞 9987422220</p>
-            <p>✉️ info@brainwonders.in</p>
-            <p className="mt-3">
-              Brainwonders 804, 8th floor, Paras Business Center, Kasturba
-              Carter Road No. 1, Gokul Nagar, near Kasturba Police station,
-              Asara Colony, Thane West, Mumbai, Maharashtra 404601
-            </p>
-          </div>
+        {/* Copyright */}
+        <div className="text-center text-[#4D5B6B] text-sm mt-8 pb-4">
+          <p>
+            Copyright - Medhavi Professional Services Pvt Ltd. All Rights
+            Reserved
+          </p>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
