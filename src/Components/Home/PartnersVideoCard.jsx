@@ -1,8 +1,15 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function PartnersVideoCard() {
+    
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
   return (
-    <div>
+    <div  data-aos="fade-right">
       <PartnerSection />
     </div>
   );
@@ -20,9 +27,9 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105">
-      <img className="w-full h-52" src={thumbnail} alt={title}  width={120} height={120} />
-      <div className="flex">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105" >
+      <img className="w-full h-52" src={thumbnail} alt={title}  width={120} height={120} data-aos="zoom-in" />
+      <div className="flex" data-aos="zoom-in">
         <div className="p-4">
           <h3 className="text-xl text-start heading-font font-bold text-black">{title}</h3>
           <p className="text-black mt-2 text-start ">{description}</p>

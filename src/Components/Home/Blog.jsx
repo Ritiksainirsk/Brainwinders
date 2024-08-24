@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const blogs = [
   {
@@ -28,9 +30,15 @@ const blogs = [
 ];
 
 export default function Blog() {
+
+  
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
   return (
     <div>
-      <div className="p-4 ">
+      <div className="p-4 "  data-aos="fade-right">
         <h4 className="text-2xl md:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46]">
           OUR BLOGS
         </h4>
@@ -45,20 +53,21 @@ export default function Blog() {
             />
           ))}
         </div>
-        <div className="text-center my-8">
+        <div className="text-center my-8" data-aos="zoom-in">
           <button className="bg-[#022F46] px-4 py-2 text-white rounded-lg">
             View All Blogs
           </button>
         </div>
       </div>
       {/* FAQ */}
-      <div className="flex justify-center">
+      <div className="flex justify-center" >
         <img
           src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8LZpzbHv6LBMf5zbpg4n43DygbeSYn9Gcj00Jg1VE-cG-FVMx"
           alt="No image"
           className=" w-[28%]"
           width={120}
           height={120}
+          data-aos="zoom-in"
         />
       </div>
       {/* FAQ */}
@@ -75,8 +84,9 @@ const Card = ({ imageSrc, title, date, description }) => {
         className="w-full h-48 "
         width={120}
         height={120}
+        data-aos="zoom-in"
       />
-      <div className="p-4">
+      <div className="p-4" data-aos="zoom-in">
         <h4 className="text-xl font-bold mb-2 heading-font text-black">
           {title}
         </h4>

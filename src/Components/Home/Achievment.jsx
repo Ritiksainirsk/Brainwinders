@@ -1,6 +1,6 @@
-import React from 'react'
-
-import CountUp from "react-countup";
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useInView } from "react-intersection-observer";
 
 const achievements = [
@@ -26,11 +26,17 @@ const achievements = [
     },
   ];
 export default function Achievment() {
+
+  
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
   return (
     <div>
          {/*  */}
-         <div className="pt-5 px-5">
-            <h3 className=" text-2xl md:text-3xl mb-2 font-bold text-center heading-font text-[#022F46]">
+         <div className="pt-5 px-5" data-aos="fade-left">
+            <h3 className=" text-2xl md:text-3xl mb-2 font-bold text-center heading-font text-[#022F46]" data-aos="flip-up">
               BRAINWONDERS ACHIEVEMENTS
             </h3>
             <div className="flex justify-center flex-col md:flex-row">

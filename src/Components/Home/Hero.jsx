@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Marquee from "react-fast-marquee";
+import React, { useEffect } from "react";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const awards = [
   {
     title: "Excellence in Career Counselling",
@@ -26,12 +26,17 @@ const awards = [
 ];
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init({duration: 1000})
+  }, []);
+
+
   return (
     <>
       <div className=" mb-5">
         <div className="">
           <div className="text-center font-bold py-[5%] md:px-[15%] px-7 md:leading-[38px] leading-8">
-            <h3 className="text-[18px] md:text-[22px] text-black">
+            <h3 className="text-[18px] md:text-[22px] text-black"  data-aos="zoom-in">
               We at Brainwonders, India's Largest Career Counselling and DMIT
               Company, strive to help you make an informed decision about your
               career. Based on the analysis you opt for, we assist you in
@@ -40,7 +45,7 @@ export default function Hero() {
           </div>
         </div>
         {/*  */}
-        <div className="flex items-center justify-center w-full bg-[#F7F5FF]  ">
+        <div className="flex items-center justify-center w-full bg-[#F7F5FF]  "data-aos="zoom-in-up">
           <Card />
         </div>
       </div>

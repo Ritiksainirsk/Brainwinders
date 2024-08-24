@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -15,6 +15,9 @@ import Verizon from "../../assets/verizon.png";
 // yah animations to create silky smooth marquees
 import Marquee from "react-fast-marquee";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const images = [
   "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzSQ3F-WLvrUYS-ociTD57MHATe4sBkwG5nGaeOjHStcWQWu7Q",
   "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlno5slCcL8GsmE_BTfebbtyLHGpc9yTN2PLH8lvH3dN0BYiHz",
@@ -28,13 +31,17 @@ const images = [
 ];
 
 export default function MediaMentions() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div>
+    <div data-aos="zoom-in-down">
       {/* Media Mentions */}
-      <h3 className="text-center font-bold text-2xl md:text-3xl mt-11 heading-font text-[#022F46]">
+      <h3 className="text-center font-bold text-2xl md:text-3xl mt-11 heading-font text-[#022F46]" data-aos="flip-up">
         Media Mentions
       </h3>
-      <div className="mx-6 lg:mx-28">
+      <div className="mx-6 lg:mx-28" data-aos="zoom-in-down">
         <Marquee speed={50}>
           <div className="flex justify-center">
             <img
@@ -140,10 +147,10 @@ export default function MediaMentions() {
       {/* Media Mentions */}
 
       {/* ASSOCIATED SCHOOLS */}
-      <h3 className="text-center font-bold text-2xl md:text-3xl my-10 heading-font text-[#022F46]">
+      <h3 className="text-center font-bold text-2xl md:text-3xl my-10 heading-font text-[#022F46]" data-aos="flip-up">
         ASSOCIATED SCHOOLS
       </h3>
-      <div className="mx-6 lg:mx-28 mb-16">
+      <div className="mx-6 lg:mx-28 mb-16"  data-aos="zoom-in-down">
         <Marquee speed={50} direction="right">
           <div className="flex justify-center">
             {images.map((image, index) => {

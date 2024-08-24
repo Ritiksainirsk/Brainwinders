@@ -20,9 +20,9 @@ export default function BlogDetail() {
     <div>
       <BlogDetailHero />
       <div className="max-w-[1500px] mx-auto overflow-hidden">
-        <TagCloud/>
         <ContentSection />
         <ArticleSection />
+        <TagCloud/>
       </div>
         <CourseBanner/>
     </div>

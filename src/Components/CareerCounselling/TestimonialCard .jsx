@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function TestimonialCard() {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
+
   const items = [
     {
       name: "Archna Gupta",
@@ -43,7 +52,7 @@ function TestimonialCard() {
   };
   return (
     <div>
-      <div className=" px-3">
+      <div className=" px-3" data-aos="fade-up">
         <div className="text-center my-8">
           <h3 className="text-2xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]">
             Reviews

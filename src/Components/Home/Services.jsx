@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Earth from "../../assets/earth_icon.png";
 import Data from "../../assets/data_analysis.png";
@@ -6,6 +6,9 @@ import Management from "../../assets/management.png";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const items = [
   {
@@ -76,8 +79,16 @@ const items2 = [
   },
 ];
 export default function Services() {
+
+  
+  useEffect(() => {
+    AOS.init({duration: 1000})
+  }, []);
+
+
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" data-aos="fade-up"
+    data-aos-duration="3000">
       {/* Carousel */}
       <div className="flex flex-col items-center">
         <h3 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2 lg:px-80 text-center heading-font text-[#022F46]">

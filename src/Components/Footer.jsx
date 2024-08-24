@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
   return (
     <footer className="bg-gradient-to-b from-[#E5EEF8] to-[#A4BFD6] pt-10">
       <div className="mx-auto px-4 lg:px-28">
         <div className="flex flex-wrap justify-between">
           {/* Left Column */}
-          <div className="w-full md:w-1/4 mb-8 md:mb-0">
+          <div
+            className="w-full md:w-1/4 mb-8 md:mb-0"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src="https://www.brainwonders.in/images/logo.webp"
               alt="Brainwonders Logo"
@@ -80,7 +91,10 @@ const Footer = () => {
           <div className="w-full md:w-3/4">
             <div className="flex flex-wrap justify-between">
               {/* Column 1 */}
-              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+              <div
+                className="w-1/2 md:w-1/4 mb-8 md:mb-0"
+                data-aos="fade-right"
+              >
                 <h3 className="text-[#022F46] text-lg font-bold mb-4">
                   Internal Links
                 </h3>
@@ -174,7 +188,7 @@ const Footer = () => {
               </div>
 
               {/* Column 2 */}
-              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0" data-aos="fade-left">
                 <h3 className="text-[#022F46] font-bold mb-4">
                   Internal Links
                 </h3>
@@ -248,7 +262,7 @@ const Footer = () => {
               </div>
 
               {/* Column 3 */}
-              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0" data-aos="fade-left">
                 <h3 className="text-[#022F46] font-bold mb-4">
                   Internal Links
                 </h3>
@@ -352,7 +366,7 @@ const Footer = () => {
               </div>
 
               {/* Column 4 */}
-              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0" data-aos="fade-left">
                 <h3 className="text-[#022F46] font-bold mb-4">
                   Brainwonders Test Links
                 </h3>

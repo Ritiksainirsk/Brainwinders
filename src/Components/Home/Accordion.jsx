@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Accordion() {
+
+  useEffect(() => {
+    AOS.init({duration: 3000})
+  }, []);
+
   return (
-    <div className="px-8 lg:px-48 mb-14">
-      <h4 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46] mt-5">
+    <div className="px-8 lg:px-48 mb-14" data-aos="fade-up">
+      <h4 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46] mt-5" data-aos="flip-up">
         Frequently Asked Questions
       </h4>
       <div className="join join-vertical w-full">
