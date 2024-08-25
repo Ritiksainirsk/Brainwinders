@@ -19,9 +19,6 @@ const Footer = () => {
           {/* Left Column */}
           <div
             className="w-full md:w-1/4 mb-8 md:mb-0"
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
           >
             <img
               src="https://www.brainwonders.in/images/logo.webp"
@@ -93,7 +90,6 @@ const Footer = () => {
               {/* Column 1 */}
               <div
                 className="w-1/2 md:w-1/4 mb-8 md:mb-0"
-                data-aos="fade-right"
               >
                 <h3 className="text-[#022F46] text-lg font-bold mb-4">
                   Internal Links
@@ -188,7 +184,7 @@ const Footer = () => {
               </div>
 
               {/* Column 2 */}
-              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0" data-aos="fade-left">
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0" >
                 <h3 className="text-[#022F46] font-bold mb-4">
                   Internal Links
                 </h3>
@@ -262,7 +258,7 @@ const Footer = () => {
               </div>
 
               {/* Column 3 */}
-              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0" data-aos="fade-left">
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0" >
                 <h3 className="text-[#022F46] font-bold mb-4">
                   Internal Links
                 </h3>
@@ -366,7 +362,7 @@ const Footer = () => {
               </div>
 
               {/* Column 4 */}
-              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0" data-aos="fade-left">
+              <div className="w-1/2 md:w-1/4 mb-8 md:mb-0">
                 <h3 className="text-[#022F46] font-bold mb-4">
                   Brainwonders Test Links
                 </h3>

@@ -70,7 +70,7 @@ const WhatCoursesAfter12th = () => {
               {mainTitle}
             </h2>
             <a href="#" className="text-black font-semibold md:text-lg">
-              View all...
+              <Link to={"/blog/viewmore/:title"}>View all...</Link>
             </a>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -216,7 +216,7 @@ const CareerGuidanceSection = () => {
       {renderContent()}
       <div className="text-center font-bold">
         <a href="" className="text-2xl ">
-          View all....
+          <Link to={""}>View all....</Link>
         </a>
       </div>
     </div>
