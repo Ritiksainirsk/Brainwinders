@@ -4,7 +4,7 @@ export default function BlogPosts({ value }) {
   return (
     <div>
       <FirstPostSection value={value} />
-      <HandpickedPosts value={value}/>
+      <HandpickedPosts value={value} />
     </div>
   );
 }
@@ -49,13 +49,14 @@ const FirstPostSection = ({ value }) => {
     },
   ];
 
-    // Filtering logic moved to a useMemo hook to prevent unnecessary re-renders
-    const filteredPosts = useMemo(() => {
-      return posts.filter(post =>
+  // Filtering logic moved to a useMemo hook to prevent unnecessary re-renders
+  const filteredPosts = useMemo(() => {
+    return posts.filter(
+      (post) =>
         post.title.toLowerCase().includes(value) ||
         post.category.toLowerCase().includes(value)
-      );
-    }, [value, posts]);
+    );
+  }, [value, posts]);
 
   return (
     <div className="py-8 px-4">
@@ -65,35 +66,39 @@ const FirstPostSection = ({ value }) => {
       <div className="border-b-2 border-black mb-4"></div>{" "}
       {/* Line below heading */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {filteredPosts.map((post) => (
-          <div
-            key={post.id}
-            className="flex justify-between items-center border-b pb-4"
-          >
-            <div>
-              <h3 className="text-lg md:text-xl font-bold">{post.title}</h3>
-              <span className="inline-block bg-[#022F46] text-white px-4 py-1 rounded-full text-sm md:text-lg font-medium my-2">
-                {post.category}
-              </span>
-              <p className="text-gray-500 text-sm">
-                {post.date} | {post.readTime}
-              </p>
+        {filteredPosts.length > 0 ? (
+          filteredPosts.map((post) => (
+            <div
+              key={post.id}
+              className="flex justify-between items-center border-b pb-4"
+            >
+              <div>
+                <h3 className="text-lg md:text-xl font-bold">{post.title}</h3>
+                <span className="inline-block bg-[#022F46] text-white px-4 py-1 rounded-full text-sm md:text-lg font-medium my-2">
+                  {post.category}
+                </span>
+                <p className="text-gray-500 text-sm">
+                  {post.date} | {post.readTime}
+                </p>
+              </div>
+              <div>
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-32 h-20 rounded-lg object-cover"
+                />
+              </div>
             </div>
-            <div>
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-32 h-20 rounded-lg object-cover"
-              />
-            </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p>No posts found</p>
+        )}
       </div>
     </div>
   );
 };
 
-const HandpickedPosts = ({value}) => {
+const HandpickedPosts = ({ value }) => {
   const posts = [
     {
       id: 1,
@@ -124,14 +129,14 @@ const HandpickedPosts = ({value}) => {
     },
   ];
 
-  
-    // Filtering logic moved to a useMemo hook to prevent unnecessary re-renders
-    const filteredPosts = useMemo(() => {
-      return posts.filter(post =>
+  // Filtering logic moved to a useMemo hook to prevent unnecessary re-renders
+  const filteredPosts = useMemo(() => {
+    return posts.filter(
+      (post) =>
         post.title.toLowerCase().includes(value) ||
         post.category.toLowerCase().includes(value)
-      );
-    }, [value, posts]);
+    );
+  }, [value, posts]);
 
   return (
     <div className="py-8 px-4">
@@ -141,24 +146,28 @@ const HandpickedPosts = ({value}) => {
       <div className="border-b-2 border-black mb-4"></div>
       {/* Line below heading */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {filteredPosts.map((post) => (
-          <div key={post.id} className="flex flex-col">
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full h-48 md:h-64 rounded-lg object-cover mb-4"
-            />
-            <h3 className="md:text-xl text-lg font-bold">{post.title}</h3>
-            <div className="flex justify-between items-center">
-              <span className="inline-block bg-[#022F46] text-white px-5 py-1 rounded-full text-sm md:text-lg font-medium my-2">
-                {post.category}
-              </span>
-              <p className="text-gray-500 text-sm">
-                {post.date} | {post.readTime}
-              </p>
+        {filteredPosts.length > 0 ? (
+          filteredPosts.map((post) => (
+            <div key={post.id} className="flex flex-col">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-48 md:h-64 rounded-lg object-cover mb-4"
+              />
+              <h3 className="md:text-xl text-lg font-bold">{post.title}</h3>
+              <div className="flex justify-between items-center">
+                <span className="inline-block bg-[#022F46] text-white px-5 py-1 rounded-full text-sm md:text-lg font-medium my-2">
+                  {post.category}
+                </span>
+                <p className="text-gray-500 text-sm">
+                  {post.date} | {post.readTime}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p>No posts found</p>
+        )}
       </div>
     </div>
   );
