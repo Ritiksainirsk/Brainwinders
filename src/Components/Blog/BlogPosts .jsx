@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
-export default function BlogPosts() {
+export default function BlogPosts({ value }) {
   return (
     <div>
-      <FirstPostSection />
-      <HandpickedPosts />
+      <FirstPostSection value={value} />
+      <HandpickedPosts value={value}/>
     </div>
   );
 }
 
-const FirstPostSection = () => {
+const FirstPostSection = ({ value }) => {
   const posts = [
     {
       id: 1,
@@ -49,13 +49,23 @@ const FirstPostSection = () => {
     },
   ];
 
+    // Filtering logic moved to a useMemo hook to prevent unnecessary re-renders
+    const filteredPosts = useMemo(() => {
+      return posts.filter(post =>
+        post.title.toLowerCase().includes(value) ||
+        post.category.toLowerCase().includes(value)
+      );
+    }, [value, posts]);
+
   return (
     <div className="py-8 px-4">
-      <h2 className="md:text-2xl text-xl font-semibold mb-4 heading-font">Latest</h2>
+      <h2 className="md:text-2xl text-xl font-semibold mb-4 heading-font">
+        Latest
+      </h2>
       <div className="border-b-2 border-black mb-4"></div>{" "}
       {/* Line below heading */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {posts.map((post) => (
+        {filteredPosts.map((post) => (
           <div
             key={post.id}
             className="flex justify-between items-center border-b pb-4"
@@ -83,7 +93,7 @@ const FirstPostSection = () => {
   );
 };
 
-const HandpickedPosts = () => {
+const HandpickedPosts = ({value}) => {
   const posts = [
     {
       id: 1,
@@ -91,7 +101,8 @@ const HandpickedPosts = () => {
       category: "Medicine",
       date: "15 July, 2022",
       readTime: "4 min read",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4cpsvMMqkPZNQAfqOvBxEWf_CG4XNrNrM--z9GYpyWBlWyal7",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4cpsvMMqkPZNQAfqOvBxEWf_CG4XNrNrM--z9GYpyWBlWyal7",
     },
     {
       id: 2,
@@ -99,7 +110,8 @@ const HandpickedPosts = () => {
       category: "Engineering",
       date: "15 July, 2022",
       readTime: "4 min read",
-      image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT39nZ9r4EOIL9AcXUxdc9lSSo6XZYOh1ZhycnHort1iINKxOL",
+      image:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT39nZ9r4EOIL9AcXUxdc9lSSo6XZYOh1ZhycnHort1iINKxOL",
     },
     {
       id: 3,
@@ -107,17 +119,29 @@ const HandpickedPosts = () => {
       category: "Management",
       date: "15 July, 2022",
       readTime: "4 min read",
-      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2X0cezJ0o6dX5MzFfQWYTGNQ-0_6XNDDP7TpW0_FIRO-Hrye3",
+      image:
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2X0cezJ0o6dX5MzFfQWYTGNQ-0_6XNDDP7TpW0_FIRO-Hrye3",
     },
   ];
 
+  
+    // Filtering logic moved to a useMemo hook to prevent unnecessary re-renders
+    const filteredPosts = useMemo(() => {
+      return posts.filter(post =>
+        post.title.toLowerCase().includes(value) ||
+        post.category.toLowerCase().includes(value)
+      );
+    }, [value, posts]);
+
   return (
     <div className="py-8 px-4">
-      <h2 className="md:text-2xl text-xl font-semibold mb-2 heading-font">Handpicked</h2>
+      <h2 className="md:text-2xl text-xl font-semibold mb-2 heading-font">
+        Handpicked
+      </h2>
       <div className="border-b-2 border-black mb-4"></div>
       {/* Line below heading */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {posts.map((post) => (
+        {filteredPosts.map((post) => (
           <div key={post.id} className="flex flex-col">
             <img
               src={post.image}
