@@ -24,22 +24,24 @@ export default function Home() {
   }, [pathname]);
   return (
     <>
-      <HeroCarousel />
-      <div className="max-w-[1550px] mx-auto overflow-hidden">
-        <AwardRecognition />
-      </div>
-      <Hero />
-      <Services />
-      <div className="max-w-[1550px] mx-auto overflow-hidden"></div>
-      <CareerSuitabilitySection />
-      <div className="max-w-[1550px] mx-auto overflow-hidden">
-        <Ebook />
-        <Achievment />
-        <PartnersVideoCard />
-        <MediaMentions />
-        <TestimonialCard />
-        <Blog />
-        <Accordion />
+      <div className="overflow-hidden">
+        <HeroCarousel />
+        <div className="max-w-[1550px] mx-auto overflow-hidden">
+          <AwardRecognition />
+        </div>
+        <Hero />
+        <Services />
+        <div className="max-w-[1550px] mx-auto overflow-hidden"></div>
+        <CareerSuitabilitySection />
+        <div className="max-w-[1550px] mx-auto overflow-hidden">
+          <Ebook />
+          <Achievment />
+          <PartnersVideoCard />
+          <MediaMentions />
+          <TestimonialCard />
+          <Blog />
+          <Accordion />
+        </div>
       </div>
     </>
   );

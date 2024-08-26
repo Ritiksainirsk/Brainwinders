@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 
 import "animate.css";
 
-const NavItem = ({
+export const NavItem = ({
   to,
   children,
   setActivePage,
@@ -20,8 +20,7 @@ const NavItem = ({
   const location = useLocation();
 
   return (
-    <li>
-      <Link
+          <Link
         to={to}
         onClick={() => {
           setActivePage(to);
@@ -33,7 +32,6 @@ const NavItem = ({
       >
         {children}
       </Link>
-    </li>
   );
 };
 
@@ -279,7 +277,9 @@ export default function Navbar() {
       {/*  */}
       {/*  */}
       <div className="fixed bottom-24 lg:bottom-5 right-5 z-50 cursor-pointer">
+        <a href="https://api.whatsapp.com/send?phone=919987422220&text=I%20have%20enquiry%20for%20https://www.brainwonders.in//" target="_blank">
         <IoLogoWhatsapp className="text-5xl text-[#25D366]" />
+        </a>
       </div>
       {/*  */}
     </header>

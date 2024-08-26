@@ -41,13 +41,13 @@ export default function MediaMentions() {
       <h3 className="text-center font-bold text-2xl md:text-3xl mt-11 heading-font text-[#022F46]" data-aos="flip-up">
         Media Mentions
       </h3>
-      <div className="mx-6 lg:mx-28" data-aos="zoom-in-down">
+      <div className="mx-6 " data-aos="zoom-in-down">
         <Marquee speed={50}>
           <div className="flex justify-center">
             <img
               src={Dunzo}
               alt="Dunzo"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -56,7 +56,7 @@ export default function MediaMentions() {
             <img
               src={Grindle}
               alt="Grindle"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -65,7 +65,7 @@ export default function MediaMentions() {
             <img
               src={Ibm}
               alt="IBM"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -74,7 +74,7 @@ export default function MediaMentions() {
             <img
               src={Infosys}
               alt="Infosys"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -83,7 +83,7 @@ export default function MediaMentions() {
             <img
               src={Peercoin}
               alt="Peercoin"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -92,7 +92,7 @@ export default function MediaMentions() {
             <img
               src={Sprint}
               alt="Sprint"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -101,7 +101,7 @@ export default function MediaMentions() {
             <img
               src={Verizon}
               alt="Verizon"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -110,7 +110,7 @@ export default function MediaMentions() {
             <img
               src={Infosys}
               alt="Infosys"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -119,7 +119,7 @@ export default function MediaMentions() {
             <img
               src={Ibm}
               alt="IBM"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -128,7 +128,7 @@ export default function MediaMentions() {
             <img
               src={Grindle}
               alt="Grindle"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -137,7 +137,7 @@ export default function MediaMentions() {
             <img
               src={Verizon}
               alt="Verizon"
-              className="p-2 max-h-28 pr-12"
+              className="p-2 max-h-28 mr-12"
               width={120}
               height={120}
             />
@@ -150,7 +150,7 @@ export default function MediaMentions() {
       <h3 className="text-center font-bold text-2xl md:text-3xl my-10 heading-font text-[#022F46]" data-aos="flip-up">
         ASSOCIATED SCHOOLS
       </h3>
-      <div className="mx-6 lg:mx-28 mb-16"  data-aos="zoom-in-down">
+      <div className="mx-6 mb-16"  data-aos="zoom-in-down">
         <Marquee speed={50} direction="right">
           <div className="flex justify-center">
             {images.map((image, index) => {

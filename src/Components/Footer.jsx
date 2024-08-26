@@ -6,6 +6,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   useEffect(() => {
@@ -29,19 +30,19 @@ const Footer = () => {
             />
             <ul className="text-[#4D5B6B] my-3">
               <li className="mb-2">
-                <a href="#" className="hover:text-[#022F46]">
+                <Link to={'/aboutus'} className="hover:text-[#022F46]">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-[#022F46]">
+                <Link to={"/"} className="hover:text-[#022F46]">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#022F46]">
+                <Link to={"/contactus"} className="hover:text-[#022F46]">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="mt-6">
@@ -98,16 +99,6 @@ const Footer = () => {
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
                       What Is DMIT
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-[#022F46]">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-[#022F46]">
-                      Contact Us
                     </a>
                   </li>
                   <li>

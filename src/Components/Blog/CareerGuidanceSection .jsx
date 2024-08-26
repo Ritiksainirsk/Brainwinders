@@ -69,9 +69,9 @@ const WhatCoursesAfter12th = () => {
             <h2 className="md:text-2xl text-xl font-bold heading-font">
               {mainTitle}
             </h2>
-            <a href="#" className="text-black font-semibold md:text-lg">
+            <p href="#" className="text-black font-semibold md:text-lg">
               <Link to={"/blog/viewmore/:title"}>View all...</Link>
-            </a>
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {whatCoursesAfter12thData.map((course, index) => (
@@ -215,9 +215,9 @@ const CareerGuidanceSection = () => {
       </div>
       {renderContent()}
       <div className="text-center font-bold">
-        <a href="" className="text-2xl ">
+        <p href="" className="text-2xl ">
           <Link to={""}>View all....</Link>
-        </a>
+        </p>
       </div>
     </div>
   );

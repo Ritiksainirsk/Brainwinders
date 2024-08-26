@@ -23,6 +23,7 @@ import IqTest from "./Pages/PsychometricTestPages/IqTest";
 import PersnalityTest from "./Pages/PsychometricTestPages/PersnalityTest";
 import BlogDetail from "./Pages/BlogDetail/BlogDetail";
 import BlogViewMore from "./Pages/BlogViewMorePage/BlogViewMore";
+import ContactUs from "./Pages/FooterPages/ContactUs";
 
 function App() {
   const loc = useLocation()
@@ -55,6 +56,9 @@ function App() {
           {/* Blog pages */}
           <Route path='/blog/:title' element={<BlogDetail/> }/>
           <Route path='/blog/viewmore/:title' element={<BlogViewMore/> }/>
+          {/* Footer Page */}
+          <Route path='/contactus' element={<ContactUs/> }/>
+          
         </Routes>
         {loc.pathname === "/admin" ? "" : "" || loc.pathname === "/createpage" ? "" : "" || loc.pathname === "/viewpage" ? "" :<Footer/>}        
       </div>
