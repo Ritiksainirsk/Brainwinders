@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const PricingCard = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
     return (
-      <div className="flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8"  data-aos="fade-up">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Free Plan */}
           <div className="bg-white rounded-2xl shadow-2xl py-8 px-8 sm:px-12 lg:px-16 text-center">

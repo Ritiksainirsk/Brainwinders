@@ -203,7 +203,7 @@ export default function Navbar() {
               setActivePage={setActivePage}
               activePage={activePage}
             >
-              Dmit
+              DMIT
             </NavItem>
             <NavItem
               to="/careercounselling"

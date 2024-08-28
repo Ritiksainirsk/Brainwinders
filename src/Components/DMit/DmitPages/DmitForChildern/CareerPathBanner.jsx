@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function CareerPathBanner() {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
+  
   return (
     <div>
-      <div className=" p-8 ">
-        <h3 className="text-2xl md:text-4xl font-semibold mb-12  text-center mt-10 heading-font text-[#022F46]">
+      <div className=" p-8 " data-aos="fade-up">
+        <h3 className="text-2xl md:text-3xl font-semibold mb-12  text-center mt-10 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
           How DMIT Test for Students helps
           <br />
           in Choosing a Right Career
         </h3>
         <div className="flex flex-col lg:flex-row items-center">
           <div className="flex-1 text-lg">
-            <p className="mb-4 text-black text-[15px] md:text-[20px]" style={{ textAlign: 'justify' }}>
+            <p className="mb-4 text-black text-[15px] md:text-[16px]" style={{ textAlign: 'justify' }}>
               DMIT Test for students helps in choosing the Right Career. DMIT
               Test determines the strengths and comfort zones of an individual
               through Brain Mapping. It helps in identifying, which parts of

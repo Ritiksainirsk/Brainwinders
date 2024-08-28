@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PersonalityAssessments = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
-    <div className="md:p-8 py-5 px-4 bg-white text-center my-4">
-      <h1 className="text-2xl md:text-3xl font-bold mb-2 heading-font md:flex md:flex-col ">
+    <div className="md:p-8 py-5 px-4 bg-white text-center my-4" data-aos="fade-up">
+      <h1 className="text-2xl md:text-3xl font-bold heading-font md:flex md:flex-col " style={{fontWeight:"600"}}>
         Our Personality Assessments Are Built Using Validated
         <span>Scientific Theories And In-house Psychometric Expertise</span>
       </h1>
-      <p className="text-xl md:text-2xl py-4 mb-8">
+      <p className="text-base py-4 mb-8">
         The Quality Of Our Personality Tests Is Reflected In Their High Validity
         And Reliability Metrics
       </p>

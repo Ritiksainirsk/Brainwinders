@@ -73,7 +73,7 @@ export default function Ebook() {
   }, []);
 
   return (
-    <div className="mb-8"  data-aos="fade-up">
+    <div className="mb-8"   data-aos="fade-up">
       <div className="text-center my-8"> 
         <h3 className="text-2xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]">
           E-Book and Sample Paper

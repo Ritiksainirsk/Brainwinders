@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./css/DmitTest.css";
 import Earth from "../../assets/earth_icon.png";
 import Data from "../../assets/data_analysis.png";
@@ -6,8 +6,16 @@ import Management from "../../assets/management.png";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function DmitTest() {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
+
   return (
     <div>
       <div className="">
@@ -19,8 +27,8 @@ export default function DmitTest() {
       </div>
       {/*  */}
       {/*  */}
-      <div className="mb-16">
-        <h3 className="px-2 text-2xl md:text-3xl font-bold text-center my-10 heading-font text-[#022F46]">
+      <div className="mb-16"  data-aos="fade-up">
+        <h3 className="px-2 text-2xl md:text-3xl text-center my-10 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
           BENEFITS OF DMIT TEST FOR ALL AGES!
         </h3>
         <CareerOptions />
@@ -32,17 +40,18 @@ export default function DmitTest() {
 }
 
 const DMTITestComponent = () => (
-  <div className=" py-8 px-4 flex justify-center items-center bg-[#E0EFFF]">
+  <div className=" py-8 px-36 flex justify-center items-center bg-[#E0EFFF]">
     <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-10 xl:gap-20">
       <div className="text-center">
-        <h1 className="text-3xl lg:flex lg:flex-col lg:text-[2.6rem] mt-8 md:mt-0 md:text-left font-bold mb-4 text-shadow heading-font leading-[44px] lg:leading-[62px] text-[#022F46]">
-          DISCOVER YOUR INBORN POTENTIAL
-          <span>AND SHINE WITH DMIT TEST</span>
+        <h1
+          className="text-3xl lg:text-[40px] mt-8 md:mt-0 md:text-left font-thin mb-4 text-shadow heading-font leading-[44px] lg:leading-[62px] text-[#022F46]"
+          style={{ fontWeight: "700" }}
+        >
+          DISCOVER YOUR INBORN POTENTIAL AND SHINE WITH DMIT TEST
         </h1>
-        <h3 className="text-lg lg:text-[1.4rem] md:text-left mb-6 leading-[26px] lg:flex lg:flex-col lg:gap-2">
-          <span>Take the world’s most-advanced Career Assessment Test</span>
-
-          <span>and Find your best Career, Course, and college</span>
+        <h3 className="lg:text-[16px] md:text-left mb-6 leading-[26px] lg:flex lg:flex-col lg:gap-2 2xl:mr-96">
+          Take the world’s most-advanced Career Assessment Test and Find your
+          best Career, Course, and college
         </h3>
         <div className="md:text-left">
           <button className="bg-[#022F46] text-white py-2 px-4 rounded-lg">
@@ -50,7 +59,7 @@ const DMTITestComponent = () => (
           </button>
         </div>
       </div>
-      <div className="w-[90%] lg:w-[50%] xl:w-[30%]">
+      <div className="w-[90%] lg:w-[50%] xl:w-[45%]">
         <iframe
           className="w-full h-56 md:h-72 rounded-lg"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
@@ -69,7 +78,7 @@ const DMTITestComponent = () => (
 const DmttTestDescription = () => {
   return (
     <div className=" mx-auto p-6 2xl:px-[9rem]">
-      <h3 className="text-2xl lg:text-3xl font-bold text-center mb-4 heading-font text-[#022F46]">
+      <h3 className="text-2xl lg:text-3xl text-center mb-4 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         WHAT IS DMIT TEST?
       </h3>
       <p className="mb-4 text-[1rem] leading-7">

@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function IqTestVideoSection() {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
-      <div className="mx-auto py-2 px-5 lg:px-5">
+      <div className="mx-auto py-2 px-5 lg:px-5" data-aos="fade-up">
         <div className="my-8">
           {/* Section Title */}
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#022F46] mb-6 text-center heading-font">
+          <h2 className="text-3xl lg:text-3xl text-[#022F46] mb-2 text-center heading-font" style={{fontWeight:"600"}}>
             WHAT IS IQ TEST?
           </h2>
 
-          <p className="text-center text-black text-xl md:text-[25px] font-bold mb-8">
+          <p className="text-center text-black text-[16px] mb-8">
             It basically refers to one’s ability to do certain kinds of work
           </p>
 
-          <p className="text-black text-[15px] md:text-[20px] leading-relaxed">
+          <p className="text-black text-[15px] md:text-[16px] leading-relaxed">
             An IQ test is a set of questions designed to measure an individual'
             s intellectual abilities. It can assess the capacity for
             problem-solving, logical reasoning, and abstract thought. These
@@ -24,7 +33,7 @@ export default function IqTestVideoSection() {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-5 md:gap-16">
+        <div className="flex flex-col lg:flex-row gap-5 md:gap-16 items-center">
           {/* Left Video Section */}
           <div className="lg:w-[35%] bg-gray-100 p-4 rounded-xl md:h-[21rem]">
             <div className="w-full h-full">
@@ -48,7 +57,7 @@ export default function IqTestVideoSection() {
           {/* right Text Section */}
           <div className=" lg:w-[55%]">
             <ul className=" space-y-6">
-              <li className="text-[15px] md:text-[25px] text-black leading-relaxed" style={{textAlign:"justify"}}>
+              <li className="text-[15px] md:text-[18px] text-black leading-relaxed" style={{textAlign:"justify"}}>
                 An IQ test is a set of questions designed to measure an
                 individual' s intellectual abilities. It can assess the capacity
                 for problem-solving, logical reasoning, and abstract thought.

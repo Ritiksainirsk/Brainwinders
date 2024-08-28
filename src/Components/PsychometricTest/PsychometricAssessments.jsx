@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { FaBookOpen } from "react-icons/fa6";
 import { MdOutlineGroups } from "react-icons/md";
 import { FaRupeeSign } from "react-icons/fa";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const tabs = [
   "Psychometric Career Test",
@@ -179,6 +182,11 @@ const cardData = {
 };
 
 export default function PsychometricAssessments() {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <div>
@@ -192,11 +200,11 @@ function CareerServices() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="p-4">
-      <h3 className="text-2xl mt-10 lg:text-4xl font-bold text-center mb-5   heading-font text-[#022F46]">
+    <div className="p-4"  data-aos="fade-up">
+      <h3 className="text-2xl mt-10 lg:text-3xl  text-center mb-3 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         Brainwonders Psychometric Career Test
       </h3>
-      <h3 className="text-center md:text-xl leading-7 pb-8 2xl:px-72 text-black">
+      <h3 className="text-center leading-7 pb-8 2xl:px-72 text-black">
         Brainwonders brings to you scientific and meticulously designed
         Psychometric Assessments to discover your true potential and interest
         ,learning styles and skills to excel in 21st Century

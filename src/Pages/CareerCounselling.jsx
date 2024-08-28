@@ -25,18 +25,18 @@ export default function CareerCounselling() {
   return (
     <>
       <div>
-          <CareerCounsellingNavbar />
-          <CareerCounsellingHero />
+        <CareerCounsellingNavbar />
+        <CareerCounsellingHero />
         <div className="max-w-[1500px] mx-auto overflow-hidden">
           <CareerGuidance />
           <GuidingSteps />
         </div>
-          <BannerCardOfCareer />
+        <BannerCardOfCareer />
         <div className="max-w-[1500px] mx-auto overflow-hidden">
           <ImportanceOfCareerCounselling />
           <MIddleImageBanner />
         </div>
-          <BannerCardOfCareer />
+        <BannerCardOfCareer />
         <div className="max-w-[1500px] mx-auto overflow-hidden">
           <PartnersVideoCard />
           <AwardRecognition />

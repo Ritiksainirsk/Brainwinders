@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function IqTestGuide() {
   return (
@@ -44,12 +46,18 @@ const FirstComponent = () => {
         "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBe8TcWcKUfXR97rh4XNfhri_RbkRApeMGsM9fF0aBaT_TAxoP",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
-    <div className=" mx-auto p-6 text-center">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 heading-font">
+    <div className=" mx-auto p-6 text-center" data-aos="fade-up">
+      <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 mb-4 heading-font" style={{fontWeight:"600"}}>
         Start the test and Discover where you stand!
       </h2>
-      <p className="text-base md:text-2xl text-black mb-10">
+      <p className="text-base text-black mb-10">
         The IQ score derived gives a reasonable measure of the individual's
         intelligence. The Brainwonders I.Q. Test is a test which purports to
         assess a general level of ability of the person taking it. The
@@ -84,11 +92,11 @@ const FirstComponent = () => {
 
 const WhyIQTests = () => {
   return (
-    <div className="py-8 px-4 md:px-10 bg-white text-gray-800">
-      <h2 className="text-2xl md:text-4xl font-semibold text-center text-teal-900 mb-4 heading-font">
+    <div className="py-8 px-4 md:px-10 bg-white text-gray-800" data-aos="fade-up">
+      <h2 className="text-2xl md:text-3xl font-semibold text-center text-teal-900 mb-4 heading-font" style={{fontWeight:"600"}}>
         Why Our IQ Tests?
       </h2>
-      <ul className="list-disc list-inside space-y-2 text-[15px] md:text-[20px]">
+      <ul className="list-disc list-inside space-y-2 text-[15px] md:text-[16px]">
         <li>
           It's the easiest way to learn your IQ score and which average IQ class
           you're in.

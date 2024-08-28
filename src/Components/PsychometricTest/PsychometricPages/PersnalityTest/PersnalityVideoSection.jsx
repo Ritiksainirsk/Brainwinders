@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function PersnalityVideoSection() {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
-      <div className="mx-auto py-2 px-5 lg:px-5">
+      <div className="mx-auto py-2 px-5 lg:px-5" data-aos="fade-up">
         <div className="my-8">
           {/* Section Title */}
-          <h2 className="text-2xl lg:text-4xl font-bold text-[#022F46] mb-6 text-center heading-font">
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#022F46] mb-2 text-center heading-font" style={{fontWeight:"600"}}>
             WHAT IS PERSONALITY TEST?
           </h2>
 
-          <p className="text-center text-black text-xl md:text-[25px] md:font-bold mb-8">
+          <p className="text-center text-black text-base mb-8">
             It determines the skills, capabilities and more that are possessed
             by the individual.
           </p>
 
-          <p className="text-black text-[15px] md:text-[20px] leading-relaxed">
+          <p className="text-black text-[15px] md:text-[16px] leading-relaxed">
             Personality tests have gained immense popularity in the digital age,
             providing an accessible and easy way to assess individual
             personality traits. These tests help people identify their most
@@ -53,7 +61,7 @@ export default function PersnalityVideoSection() {
           <div className=" lg:w-[55%] flex items-center">
             <ul className=" space-y-6">
               <li
-                className="text-[16px] md:text-[25px] text-black leading-relaxed"
+                className="text-[16px] md:text-[18px] text-black leading-relaxed"
                 style={{ textAlign: "justify" }}
               >
                 This test can help us to know ourselves better and understand

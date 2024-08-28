@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const IQTestMeasure = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
-    <div className="py-12 bg-gray-100 text-gray-800 px-6 lg:px-20 2xl:px-52">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-teal-900 mb-6 heading-font">
+    <div className="py-12 bg-gray-100 text-gray-800 px-6 lg:px-20 2xl:px-52" data-aos="fade-up">
+      <h2 className="text-3xl md:text-3xl font-bold text-center text-teal-900 mb-6 heading-font" style={{fontWeight:"600"}}>
         What does the IQ test measure?
       </h2>
-      <p className="text-center mx-auto text-lg md:text-xl mb-12">
+      <p className="text-center mx-auto text-base mb-12">
         IQ tests are intended to measure the intelligence of a person. Thus, the
         purpose of the test is to assess a person's general intellectual
         abilities and to identify their attributes. As a result, the IQ test

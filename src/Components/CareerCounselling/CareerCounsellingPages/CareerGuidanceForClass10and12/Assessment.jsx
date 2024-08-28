@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Assessment() {
+  
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
       <div className="  ">
@@ -13,13 +21,13 @@ export default function Assessment() {
 
 const First = () => {
   return (
-    <div className="p-6 bg-white shadow-md rounded-lg">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-10 heading-font">
+    <div className="p-6 bg-white rounded-lg" data-aos="fade-up">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 heading-font" style={{fontWeight:"600"}}>
         Why this assessment?
       </h2>
-      <div className="flex flex-col md:flex-row items-start ">
+      <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-3/5" style={{ textAlign: "justify" }}>
-          <p className="text-black mb-4 md:text-[20px]">
+          <p className="text-black mb-4 md:text-[16px]">
             Students often feel lost or confused while selecting a subject or
             stream that’s meant for them. Sometimes, they end up making the
             wrong choice, only to realize the same after they’ve already begun a
@@ -28,7 +36,7 @@ const First = () => {
             subject is not the end of the world, it affects the student’s
             confidence and self-esteem.
           </p>
-          <ul className="list-disc pl-5 text-black md:text-[20px]">
+          <ul className="list-disc pl-5 text-black md:text-[16px]">
             <li>
               Psychometric career assessments are specifically designed to help
               students recognize and accept their traits, strengths, weaknesses,
@@ -49,7 +57,7 @@ const First = () => {
             </li>
           </ul>
         </div>
-        <div className="md:w-[50%] w-[100%] md:pl-8 mt-6 md:mt-0">
+        <div className="md:w-[40%] w-[100%] md:pl-8 mt-6 md:mt-0">
           <img
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSra2MmFMelNW55iG_fbI9CWr-cbytdi3hT2X4IyucDFMQ5i5Fc"
             alt="Student studying"
@@ -65,14 +73,14 @@ const First = () => {
 
 const Second = () => {
   return (
-    <div className="p-6 bg-white shadow-md rounded-lg">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-10 heading-font">
+    <div className="p-6 bg-white rounded-lg" data-aos="fade-up">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 heading-font" style={{fontWeight:"600"}}>
         How is this helpful for me?
       </h2>
 
       <div className="flex flex-col md:flex-row items-center">
 
-        <div className="md:w-[50%] w-[100%] md:pr-8 mb-6 md:mt-0">
+        <div className="md:w-[40%] w-[100%] md:pr-8 mb-6 md:mt-0">
           <img
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSra2MmFMelNW55iG_fbI9CWr-cbytdi3hT2X4IyucDFMQ5i5Fc"
             alt="Student studying"
@@ -83,13 +91,13 @@ const Second = () => {
         </div>
 
         <div className="md:w-3/5" style={{ textAlign: "justify" }}>
-          <p className="text-black mb-4 md:text-[20px]">
+          <p className="text-black mb-4 md:text-[18px]">
             For most students today, choosing a stream can be difficult as there
             are too many career options available. Career assessment tests help
             you better understand your educational needs and career
             possibilities based on who you are as an individual
           </p>
-          <ul className="list-disc pl-5 text-black md:text-[20px]">
+          <ul className="list-disc pl-5 text-black md:text-[18px]">
             <li>
               When paired with professional counsel, they help you plan your
               entire education and career

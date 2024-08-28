@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function CareerGuidence() {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
       <div>
-        <div className="mx-auto py-8 px-5 lg:px-1">
+        <div className="mx-auto py-8 px-5 lg:px-1" data-aos="fade-up">
           <div className="my-8">
             {/* Section Title */}
-            <h2 className="text-2xl lg:text-4xl font-bold text-[#022F46] mb-6 text-center heading-font">
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#022F46] mb-2 text-center heading-font" style={{fontWeight:"600"}}>
               Why Brainwonders For Career Guidance after 10th?
             </h2>
 
-            <p className="text-black text-center text-[15px] md:text-[20px] leading-relaxed font-semibold">
+            <p className="text-black text-center text-[15px] md:text-[16px] leading-relaxed">
               As a parent, there are several investments- emotional, physical
               and financial commitments one puts towards bringing up a
               <br />
@@ -36,7 +44,7 @@ export default function CareerGuidence() {
 
             {/* right Text Section */}
             <div className="lg:w-[55%] space-y-6">
-              <p className="text-[15px] md:text-[20px] text-black leading-relaxed" style={{textAlign:"justify"}}>
+              <p className="text-[15px] md:text-[16px] text-black leading-relaxed" style={{textAlign:"justify"}}>
                 <span className="font-semibold"> Clarity about your interests and goals: </span>
                 <br />
                 If you are unsure about your career interests, passions, or

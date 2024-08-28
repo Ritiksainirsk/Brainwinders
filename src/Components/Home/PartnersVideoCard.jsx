@@ -9,7 +9,7 @@ export default function PartnersVideoCard() {
   }, []);
 
   return (
-    <div  data-aos="fade-right">
+    <div   data-aos="fade-up">
       <PartnerSection />
     </div>
   );
@@ -28,8 +28,8 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105" >
-      <img className="w-full h-52" src={thumbnail} alt={title}  width={120} height={120} data-aos="zoom-in" />
-      <div className="flex" data-aos="zoom-in">
+      <img className="w-full h-52" src={thumbnail} alt={title}  width={120} height={120}  />
+      <div className="flex">
         <div className="p-4">
           <h3 className="text-xl text-start heading-font font-bold text-black">{title}</h3>
           <p className="text-black mt-2 text-start ">{description}</p>
@@ -75,10 +75,10 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
 
 const PartnerSection = () => (
   <div className="max-w-6xl mx-auto px-5 py-16 text-center">
-    <h3 className="text-3xl md:text-3xl font-bold mb-4 heading-font text-[#022F46]">
+    <h3 className="text-3xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
       What Our Partners Say About Us
     </h3>
-    <p className=" mb-8 md:text-xl font-bold text-black">
+    <p className=" mb-8 md:text-[16px] text-black">
     Watch People from Different Backgrounds talk about their experience with Brainwonders.
     </p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

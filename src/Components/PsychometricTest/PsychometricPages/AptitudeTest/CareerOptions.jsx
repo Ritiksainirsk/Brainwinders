@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Earth from "../../../../assets/earth_icon.png";
 import Data from "../../../../assets/data_analysis.png";
@@ -7,17 +7,22 @@ import Management from "../../../../assets/management.png";
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function CareerOptions() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
-      <div className="mb-16 my-10">
-        <h3 className="text-3xl mb-3 md:text-4xl font-bold text-center heading-font px-5 text-[#022F46]">
+      <div className="mb-16 my-10" data-aos="fade-up">
+        <h3 className="text-3xl mb-3 md:text-3xl font-bold text-center heading-font px-5 text-[#022F46]" style={{fontWeight:"600"}}>
           Types of Aptitude Tests
         </h3>
-        <p className="font-bold text-[16px] md:text-[22px] text-center mb-6 md:flex md:flex-col">
-          Many types of aptitude tests are administered for
-          {/* <br /> */}
-          <span>educational or career discovery and ability purposes</span>
+        <p className=" text-[16px] md:text-[16px] text-center mb-6 md:flex md:flex-col">
+          Many types of aptitude tests are administered for educational or career discovery and ability purposes
         </p>
         <CareerOptionsCard />
         <CareerOptionsCard2 />

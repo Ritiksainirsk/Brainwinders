@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BannerCardOfCareer = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
-    <div className="bg-[#022F46] p-8 text-center">
-      <h3 className="text-white text-2xl font-semibold mb-2 heading-font">Take the first step towards career clarity!</h3>
+    <div className="bg-[#022F46] p-8 text-center" data-aos="fade-up">
+      <h3 className="text-white text-2xl lg:text-3xl font-semibold mb-2 heading-font" style={{fontWeight:"600"}}>Take the first step towards career clarity!</h3>
       <p className="text-white mb-6">Discover your best-fit career with the world’s most-advanced career assessment</p>
       <div className="flex flex-wrap justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
         <input

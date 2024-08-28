@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BannerCard from "../DMit/BannerCard";
 
 import Earth from "../../assets/earth_icon.png";
@@ -8,7 +8,14 @@ import Management from "../../assets/management.png";
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function CareerCounsellingHero() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <CareerCounsellingVideo />
@@ -19,8 +26,11 @@ export default function CareerCounsellingHero() {
       </div>
       {/*  */}
       {/*  */}
-      <div className="mb-16">
-        <h3 className="text-2xl md:text-3xl font-bold text-center my-10 heading-font px-5 text-[#022F46]">
+      <div className="mb-16" data-aos="fade-up">
+        <h3
+          className="text-2xl md:text-3xl font-bold text-center my-10 heading-font px-5 text-[#022F46]"
+          style={{ fontWeight: "600" }}
+        >
           BENEFITS OF Career Counselling FOR ALL AGES!
         </h3>
         <CareerOptions />
@@ -39,12 +49,15 @@ const CareerCounsellingVideo = () => (
     <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-8 xl:gap-20">
       {/* Text Section - 60% width */}
       <div className="w-full lg:w-[60%] text-center lg:text-left">
-        <h1 className="text-2xl md:text-3xl lg:text-[2.7rem] font-bold mb-4 lg:mb-6 text-shadow heading-font leading-snug lg:leading-[56px] mt-6 lg:mt-0 text-[#022F46]">
+        <h1
+          className="text-2xl md:text-3xl lg:text-[40px] font-bold mb-4 lg:mb-6 text-shadow heading-font leading-snug lg:leading-[56px] mt-6 lg:mt-0 text-[#022F46]"
+          style={{ fontWeight: "700" }}
+        >
           GET THE RIGHT CAREER COUNSELLING TO LEAP THROUGH YOUR CAREER
         </h1>
-        <h3 className="text-base md:text-lg lg:text-[1.4rem] mb-4 lg:mb-6 leading-snug lg:leading-[26px] md:flex md:flex-col text-[#4D5B6B]">
-          <span>Take the world’s most advanced Career Assessment Test</span> 
-          and Find your best Career, Course, and College
+        <h3 className="text-base lg:text-[16px] mb-4 md:mr-80 lg:mb-6 leading-snug lg:leading-[26px] md:flex md:flex-col text-[#4D5B6B]">
+          Take the world’s most advanced Career Assessment Test and Find your
+          best Career, Course, and College
         </h3>
         <button className="bg-[#022F46] text-white py-2 px-6 rounded-lg shadow-md hover:bg-[#011e36] transition-colors">
           Take Counselling Now
@@ -62,7 +75,8 @@ const CareerCounsellingVideo = () => (
           ></iframe>
         </div>
         <p className="text-center text-xs md:text-sm mt-2 text-[#4D5B6B]">
-          Watch the Founder & CEO of Brainwonders, Mr. Manish Naidu, talk about its DMIT franchise model
+          Watch the Founder & CEO of Brainwonders, Mr. Manish Naidu, talk about
+          its DMIT franchise model
         </p>
       </div>
     </div>
@@ -72,7 +86,10 @@ const CareerCounsellingVideo = () => (
 const CareerCounsellingHeroDescription = () => {
   return (
     <div className="p-6 2xl:px-[9rem]">
-      <h3 className="text-2xl lg:text-4xl font-bold text-center mb-5 heading-font text-[#022F46]">
+      <h3
+        className="text-2xl lg:text-3xl font-bold text-center mb-5 heading-font text-[#022F46]"
+        style={{ fontWeight: "600" }}
+      >
         WHAT IS CAREER COUNSELLING?
       </h3>
       <p className="text-black mb-4">

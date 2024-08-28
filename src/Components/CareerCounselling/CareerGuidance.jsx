@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CareerGuidance = () => {
   const items = [
@@ -28,9 +30,13 @@ const CareerGuidance = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
   return (
-    <div className="p-6 bg-white">
-      <h3 className="text-2xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46]">
+    <div className="p-6 bg-white" data-aos="fade-up">
+      <h3 className="text-2xl lg:text-3xl font-bold text-center mb-2 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         Shaping the Career Guidance Landscape
       </h3>
       <p className="text-center mb-8">

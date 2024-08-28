@@ -32,16 +32,16 @@ const images = [
 
 export default function MediaMentions() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 2000 });
   }, []);
 
   return (
     <div data-aos="zoom-in-down">
       {/* Media Mentions */}
-      <h3 className="text-center font-bold text-2xl md:text-3xl mt-11 heading-font text-[#022F46]" data-aos="flip-up">
+      <h3 className="text-center font-bold text-2xl md:text-3xl mt-11 heading-font text-[#022F46]"  data-aos="fade-up">
         Media Mentions
       </h3>
-      <div className="mx-6 " data-aos="zoom-in-down">
+      <div className="mx-6 "  data-aos="fade-up">
         <Marquee speed={50}>
           <div className="flex justify-center">
             <img
@@ -147,10 +147,10 @@ export default function MediaMentions() {
       {/* Media Mentions */}
 
       {/* ASSOCIATED SCHOOLS */}
-      <h3 className="text-center font-bold text-2xl md:text-3xl my-10 heading-font text-[#022F46]" data-aos="flip-up">
+      <h3 className="text-center font-bold text-2xl md:text-3xl my-10 heading-font text-[#022F46]"  data-aos="fade-up">
         ASSOCIATED SCHOOLS
       </h3>
-      <div className="mx-6 mb-16"  data-aos="zoom-in-down">
+      <div className="mx-6 mb-16"  data-aos="fade-up">
         <Marquee speed={50} direction="right">
           <div className="flex justify-center">
             {images.map((image, index) => {

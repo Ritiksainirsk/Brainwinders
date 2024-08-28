@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const HowItWorks = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className="mx-auto py-12">
-      <h3 className="text-4xl font-bold text-center mb-8 heading-font">
+    <div className="mx-auto py-12"  data-aos="fade-up">
+      <h3 className="text-2xl md:text-3xl font-bold text-center mb-2 heading-font" style={{fontWeight:"600"}}>
         Curious about how it works?
       </h3>
-      <p className="text-center text-[20px] text-black mb-16">
+      <p className="text-center text-[16px] text-black mb-16">
         Discover how Brainwonders has empowered over 4.3 lakhs+ individuals and
         collaborated
         <br />

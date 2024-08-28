@@ -26,7 +26,9 @@ export default function DmitForChildern() {
       <div className="max-w-[1500px] mx-auto overflow-hidden">
         <CareerPathBanner />
         <MiddleBanner />
+      </div>
         <BannerCard />
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
         <DmitTestBenefits />
         <PartnersVideoCard />
         <AwardWinners />

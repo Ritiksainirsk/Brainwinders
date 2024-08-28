@@ -10,7 +10,7 @@ export default function Accordion() {
 
   return (
     <div className="px-8 lg:px-48 mb-14" data-aos="fade-up">
-      <h4 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46] mt-5" data-aos="flip-up">
+      <h4 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46] mt-5" data-aos="flip-up"style={{fontWeight:"600"}}>
         Frequently Asked Questions
       </h4>
       <div className="join join-vertical w-full">

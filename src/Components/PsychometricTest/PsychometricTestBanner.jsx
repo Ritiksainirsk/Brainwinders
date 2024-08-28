@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function PsychometricTestBanner() {
+  
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
-      <div className="bg-[#070954] text-white p-8 2xl:px-40 flex flex-col lg:gap-20 md:flex-row items-center justify-between my-5">
+      <div data-aos="fade-up" className="bg-[#070954] text-white p-8 2xl:px-40 flex flex-col lg:gap-20 md:flex-row items-center justify-between my-5">
         <div className="md:w-3/4 ">
           <h3 className="text-3xl lg:text-4xl font-bold heading-font">
             Not sure if career counselling is right for you?

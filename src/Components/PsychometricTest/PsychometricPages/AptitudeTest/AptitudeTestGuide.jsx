@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AptitudeTestGuide() {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
       <FirstComponent />
@@ -45,11 +53,11 @@ const FirstComponent = () => {
     },
   ];
   return (
-    <div className=" mx-auto p-6 text-center">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 heading-font">
+    <div className=" mx-auto p-6 text-center" data-aos="fade-up">
+      <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 mb-2 heading-font" style={{fontWeight:"600"}}>
         HOW TO TAKE AN APTITUDE TEST?
       </h2>
-      <p className="text-xl md:text-2xl text-black mb-10">
+      <p className="text-base text-black mb-10">
         It's very simple. Just follow these steps!
       </p>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -107,23 +115,23 @@ function SecondComponent() {
     },
   ];
   return (
-    <div className=" mx-auto py-12 px-4">
+    <div className=" mx-auto py-12 px-4" data-aos="fade-up">
       <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 heading-font">
+        <h2 className="text-3xl md:text-3xl font-bold text-gray-800 mb-2 heading-font" style={{fontWeight:"600"}}>
           What to expect in an Aptitude test
         </h2>
-        <p className="text-lg md:text-2xl text-black mb-8">
+        <p className="text-base text-black mb-8">
           Plan Your Career The Right Way Get an insight to your future career
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
         {aptitudeTestData.map((item, index) => (
-          <div key={index} className="bg-blue-100 p-10 rounded-lg shadow-lg">
-            <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
+          <div key={index} className="bg-blue-100 p-10 md:p-12 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-black mb-4">
               {item.title}
             </h3>
-            <p className="text-black text-[15px] md:text-[20px]">{item.description}</p>
+            <p className="text-black text-[15px] md:text-[16px]">{item.description}</p>
           </div>
         ))}
       </div>

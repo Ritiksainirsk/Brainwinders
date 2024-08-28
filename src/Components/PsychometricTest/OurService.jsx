@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { FaBookOpen } from "react-icons/fa6";
 import { MdOutlineGroups } from "react-icons/md";
 import { FaRupeeSign } from "react-icons/fa";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const tabs = [
   "Counsellors",
@@ -413,6 +416,10 @@ const cardData = {
 };
 
 export default function OurService() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <CareerServices />
@@ -424,8 +431,8 @@ function CareerServices() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="p-4">
-      <h3 className="text-2xl mt-10 lg:text-4xl font-bold text-center mb-10 heading-font text-[#022F46]">
+    <div className="p-4"  data-aos="fade-up">
+      <h3 className="text-2xl mt-10 lg:text-3xl font-bold text-center mb-10 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
       Brainwonders Psychometric Test for Counselling Services
       </h3>
       <div className="flex justify-center gap-4 flex-wrap space-x-2 mb-6">

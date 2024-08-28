@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function MiddleBanner() {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
   return (
     <>
-      <First />
-      <Second />
+      <First/>
+      <Second data-aos="fade-up"/>
     </>
   );
 }
 
 const First = () => {
+
   const items = [
     {
       icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZgqy3xeOjNiW2FUhqw1-bbrwKeyDt3O-ebO7xMjYC48KNqShS", // replace with actual icon paths
@@ -34,19 +40,19 @@ const First = () => {
   ];
 
   return (
-    <div className="p-6 bg-white px-5 mt-10">
-      <h3 className="text-2xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46]">
+    <div className="p-6 bg-white px-5 mt-10"  data-aos="fade-up">
+      <h3 className="text-2xl lg:text-3xl font-bold text-center mb-2 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         HOW TO USE THE RESULTS OF DMIT TEST
       </h3>
       <p className="text-center mb-8">
         With Our DMIT Test, Understand your Child's capabilities & plan her
         future accordingly
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}} >
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center p-4"
+            className="flex flex-col items-center text-center p-4 md:w-[450px]"
           >
             <img
               src={item.icon}
@@ -55,7 +61,7 @@ const First = () => {
               width={120}
               height={120}
             />
-            <p className="text-black text-[15px] md:text-[20px]">{item.text}</p>
+            <p className="text-black text-[15px] md:text-[16px]">{item.text}</p>
           </div>
         ))}
       </div>
@@ -93,22 +99,21 @@ const Second = () => {
   ];
   return (
     <>
-      <div className="p-6 bg-white mt-10 px-5">
-        <h3 className="text-3xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46]">
+      <div className="p-6 bg-white mt-10 px-5"  data-aos="fade-up">
+        <h3 className="text-3xl lg:text-3xl font-bold text-center mb-4 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
           SIMPLIFYING PARENTING
         </h3>
-        <p className="text-center mb-8 text-black text-[18px] md:text-[22px]">
+        <p className="text-center mb-8 text-black text-[18px] md:text-[16px]">
           As a parent, there are several investments- emotional, physical and financial
-          <br />
            commitments one puts towards bringing up a happy and successful child. Thus, here 
            <br />
            are some aspects we cater to to make sure that your efforts are not a shot in the dark:
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
           {items2.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-4"
+              className="flex flex-col items-center p-4 w-[450px]"
             >
               <img
                 src={item.icon}
@@ -118,7 +123,7 @@ const Second = () => {
                 height={120}
               />
               <h4 className="text-black font-bold text-[22px] py-4">{item.title}</h4>
-              <p className="text-black text-[15px] md:text-[20px]" style={{ textAlign: 'justify' }}>
+              <p className="text-black text-[15px] md:text-[16px]" style={{ textAlign: 'justify' }}>
                 {item.desc}
               </p>
             </div>

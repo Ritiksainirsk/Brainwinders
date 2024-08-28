@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Earth from "../../assets/earth_icon.png";
 import Data from "../../assets/data_analysis.png";
@@ -6,14 +6,24 @@ import Management from "../../assets/management.png";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const MIddleImageBanner = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <FirstBanner />
       <SecondBanner />
       <div>
-        <div className="flex justify-center items-center mt-5">
-          <h3 className="bg-[#FFF8F0] text-[#022F46] font-bold text-center heading-font mx-4 text-2xl md:text-3xl lg:text-3xl my-11 py-4 px-10 rounded-full shadow-lg">
+        <div className="flex justify-center items-center mt-5" data-aos="fade-up">
+          <h3 className="bg-[#FFF8F0] text-[#022F46] font-bold text-center heading-font mx-4 text-2xl md:text-3xl lg:text-3xl my-11 py-4 px-10 rounded-full shadow-lg" style={{fontWeight:"600"}}>
             Paving a path for your Bright future
           </h3>
         </div>
@@ -26,12 +36,12 @@ const MIddleImageBanner = () => {
 const FirstBanner = () => {
   return (
     <>
-      <div className="bg-white p-6 md:p-16">
+      <div className="bg-white p-6 md:p-16" data-aos="fade-up">
         <div className="text-center">
-          <h3 className="text-2xl md:text-3xl font-semibold heading-font text-[#022F46]">
+          <h3 className="text-2xl md:text-3xl font-semibold heading-font text-[#022F46]" style={{fontWeight:"600"}}>
             CAREER COUNSELLING THROUGH BIOMETRICS
           </h3>
-          <p className=" md:text-2xl text-black mt-4">
+          <p className=" text-black mt-1">
             Brainwonders, is the only U.S Patent DMIT Company which helps in
             transformation via brain mapping
           </p>
@@ -47,7 +57,7 @@ const FirstBanner = () => {
             />
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0 lg:pr-20">
-            <p className="text-black text-sm md:text-base">
+            <p className="text-black text-sm md:text-base" style={{textAlign:"justify"}}>
               DMIT Dermatoglyphics Multiple Intelligence test (DMIT) is the
               latest and most trending way of mapping a person's brain. In DMIT,
               the fingerprints of the client are taken using a scanner, and then
@@ -70,7 +80,7 @@ const FirstBanner = () => {
 const SecondBanner = () => {
   return (
     <>
-      <div className="bg-gray-50 p-6">
+      <div className="bg-gray-50 p-6" data-aos="fade-up">
         <h3 className="text-2xl lg:text-3xl font-semibold heading-font text-center my-7 text-[#022F46]">
           CAREER GUIDANCE BY OUR CAREER COUNSELLORS
         </h3>
@@ -147,7 +157,7 @@ const CareerOptions = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
+    <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container" data-aos="fade-up">
       {cards.map((card, index) => (
         <div
           className={`w-[22rem] border-2 h-[20rem] containerBox relative p-7 overflow-hidden ${

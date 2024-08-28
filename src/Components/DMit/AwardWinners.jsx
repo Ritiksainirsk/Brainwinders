@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Marquee from "react-fast-marquee";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const awards = [
   {
@@ -32,10 +34,17 @@ const awards = [
 ];
 
 const AwardWinners = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
-      <div className="py-8">
-        <h3 className="text-3xl lg:text-4xl font-bold text-center mb-3 heading-font px-5 text-[#022F46]">
+      <div className="py-8" data-aos="fade-up">
+        <h3
+          className="text-2xl lg:text-3xl text-center mb-2 heading-font px-5 text-[#022F46]"
+          style={{ fontWeight: "600" }}
+        >
           5+ National Award Winners
         </h3>
         <p className="text-center mb-8 px-5">

@@ -40,7 +40,7 @@ export default function Blog() {
 
   return (
     <div>
-      <div className="p-4 " data-aos="fade-right">
+      <div className="p-4 "  data-aos="fade-up">
         <h4 className="text-2xl md:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46]">
           OUR BLOGS
         </h4>
@@ -55,7 +55,7 @@ export default function Blog() {
             />
           ))}
         </div>
-        <div className="text-center my-8" data-aos="zoom-in">
+        <div className="text-center my-8" data-aos="fade-up">
           <NavItem
             to="/blog"
             setActivePage={setActivePage}
@@ -92,9 +92,8 @@ const Card = ({ imageSrc, title, date, description }) => {
         className="w-full h-48 "
         width={120}
         height={120}
-        data-aos="zoom-in"
       />
-      <div className="p-4" data-aos="zoom-in">
+      <div className="p-4">
         <h4 className="text-xl font-bold mb-2 heading-font text-black">
           {title}
         </h4>

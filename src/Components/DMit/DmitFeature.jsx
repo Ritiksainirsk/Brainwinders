@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function DmitFeature() {
   const features = [
@@ -24,18 +26,22 @@ export default function DmitFeature() {
       bgColor: "orange",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
   
   return (
     <div>
-      <div className="mb-16">
-        <h3 className="text-2xl px-2 lg:text-4xl font-bold text-center mb-3 mt-12 heading-font text-[#022F46]">
+      <div className="mb-16" data-aos="fade-up">
+        <h3 className="text-2xl px-2 lg:text-3xl font-bold text-center mb-3 mt-12 heading-font text-[#022F46]"style={{fontWeight:"600"}}>
           DERMATOGLYPHICS MULTIPLE INTELLIGENCE TEST (DMIT TEST) FEATURES
         </h3>
-        <p className="text-center mb-8 px-2">
+        <p className="text-center mb-8 px-2 text-[16px]">
           Implementing the study of fingerprints to help discover & expand an
           individual's potential.
         </p>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-between">
           {features.map((feature, index) => (
             <DMITFeatureCard
               key={index}
@@ -54,7 +60,7 @@ export default function DmitFeature() {
 const DMITFeatureCard = ({ title, description, icon, bgColor }) => {
   return (
     <div
-      className={`relative bg-${bgColor}-500 rounded-lg p-6 m-4 flex flex-col items-center w-96`}
+      className={`relative bg-${bgColor}-500 rounded-lg p-6 m-4 flex flex-col items-center w-[450px]`}
     >
       <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 heading-font">{title}</h3>
       <p className="text-white mb-10">{description}</p>

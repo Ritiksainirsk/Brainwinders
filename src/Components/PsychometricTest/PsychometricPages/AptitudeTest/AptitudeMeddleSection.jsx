@@ -1,6 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AptitudeMeddleSection() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <First />
@@ -28,23 +34,23 @@ function First() {
     },
   ];
   return (
-    <div className=" mx-auto py-12 px-4">
+    <div className=" mx-auto py-12 px-4" data-aos="fade-up">
       <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 heading-font">
+        <h2 className="text-3xl md:text-3xl font-bold text-gray-800 mb-2 heading-font" style={{fontWeight:"600"}}>
           What to expect in an Aptitude test
         </h2>
-        <p className="text-lg md:text-2xl text-black mb-8">
+        <p className="text-lg md:text-[16px] text-black mb-8">
           Plan Your Career The Right Way Get an insight to your future career
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
         {aptitudeTestData.map((item, index) => (
-          <div key={index} className="bg-blue-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
+          <div key={index} className="bg-blue-100 p-12 rounded-lg shadow-lg ">
+            <h3 className="text-xl md:text-xl font-bold text-black mb-4">
               {item.title}
             </h3>
-            <p className="text-black md:text-[20px]">{item.description}</p>
+            <p className="text-black md:text-[16px]">{item.description}</p>
           </div>
         ))}
       </div>
@@ -101,12 +107,12 @@ const AptitudeTestSampleQuestions = () => {
     };
   
     return (
-      <div className="mx-auto py-8 px-4 ">
+      <div className="mx-auto py-8 px-4 " data-aos="fade-up">
         <div className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 heading-font">
+          <h2 className="text-3xl md:text-3xl font-bold text-gray-800 heading-font" style={{fontWeight:"600"}}>
             Free Aptitude Test Sample Questions
           </h2>
-          <p className="text-base md:text-xl text-black mt-4 ">
+          <p className="text-base text-black mt-2 ">
             Online aptitude tests questions with answers to help you understand
             the structure of an aptitude assessment.
           </p>

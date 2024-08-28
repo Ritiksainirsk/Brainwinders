@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function ImportanceOfCareerCounselling() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
-      <div className="py-3 lg:px-16">
+      <div className="py-3 lg:px-16" data-aos="fade-up">
         <div className=" mx-auto ">
           <div className="bg-white p-8">
-            <h3 className="text-2xl lg:text-4xl font-semibold mb-6 text-center heading-font text-[#022F46]">
+            <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-center heading-font text-[#022F46]" style={{fontWeight:"600"}}>
               IMPORTANCE OF CAREER COUNSELLING
             </h3>
             <div className="text-gray-800">

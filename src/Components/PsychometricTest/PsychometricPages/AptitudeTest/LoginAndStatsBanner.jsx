@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const LoginAndStatsBanner = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
-    <div className="flex justify-center items-center py-6 bg-gray-300 my-5">
+    <div className="flex justify-center items-center py-6 bg-gray-300 my-5" data-aos="fade-up">
     <div className="flex flex-col md:flex-row bg-white w-full h-auto md:h-96 max-w-7xl rounded-lg shadow-lg overflow-hidden">
       {/* Left Section - Login Form */}
       <div className="w-full md:w-1/2 p-8 relative">

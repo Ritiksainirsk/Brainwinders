@@ -22,13 +22,13 @@ const CareerFitSection = () => {
   
   
   useEffect(() => {
-    AOS.init({duration: 1000})
+    AOS.init({duration: 2000})
   }, []);
 
   return (
     <div className="flex flex-col md:flex-row justify-between items-center bg-white p-8 mx-auto px-10 2xl:px-44">
       {/* Left Section */}
-      <div className="md:w-2/3"  data-aos="fade-right">
+      <div className="md:w-2/3"   data-aos="fade-up">
         <h3 className="text-3xl font-light text-black mb-4 heading-font">
           Confused about the best <span className="font-bold">career-fit</span>{" "}
           for you?

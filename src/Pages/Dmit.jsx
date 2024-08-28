@@ -13,7 +13,6 @@ import DmitNavbar from "../Components/DMit/DmitPages/DmitNavbar";
 import { useLocation } from "react-router-dom";
 
 export default function Dmit() {
-
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -23,7 +22,6 @@ export default function Dmit() {
     });
   }, [pathname]);
 
-
   return (
     <div>
       <DmitNavbar />
@@ -31,7 +29,9 @@ export default function Dmit() {
       <BannerCard />
       <div className="max-w-[1500px] mx-auto overflow-hidden">
         <DmitFeature />
-        <InformationSection />
+      </div>
+      <InformationSection />
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
         <BrainAndFingerConnection />
         <PartnersVideoCard />
         <CertificateGallery />

@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WhyChooseBrainwonders = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   const features = [
     {
       icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJPH0Y0TU4XR3p0xau4c7IR07VXbodmiaAjVfJpGcO9hWH1Uaw",
@@ -29,7 +35,7 @@ const WhyChooseBrainwonders = () => {
   ];
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white " data-aos="fade-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="text-2xl lg:text-4xl font-bold text-center heading-font text-[#022F46]">
           Why Choose Brainwonders

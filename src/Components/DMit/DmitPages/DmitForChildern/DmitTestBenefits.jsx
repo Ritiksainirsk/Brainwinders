@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function DmitTestBenefits() {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+  
   return (
     <div>
       <First />
@@ -11,12 +18,12 @@ export default function DmitTestBenefits() {
 
 const First = () => {
   return (
-    <div className=" mx-auto p-6 2xl:px-[9rem] mt-9">
-      <h3 className="text-3xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46]">
+    <div className=" mx-auto p-6 2xl:px-[9rem] mt-9" data-aos="fade-up">
+      <h3 className="text-3xl lg:text-3xl font-bold text-center mb-4 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         Why DMIT Test need to be done for Students?
       </h3>
       <p
-        className="mb-4 text-[15px] md:text-[20px] text-black"
+        className="mb-4 text-[15px] md:text-[16px] text-black"
         style={{ textAlign: "justify" }}
       >
         DMIT Test for students can help in saving time, effort and money spent
@@ -39,12 +46,12 @@ const First = () => {
 
 const Second = () => {
   return (
-    <div className=" mx-auto p-6 2xl:px-[9rem] mt-2">
-      <h3 className="text-3xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46] ">
+    <div className=" mx-auto p-6 2xl:px-[9rem] mt-2" data-aos="fade-up">
+      <h3 className="text-2xl lg:text-3xl font-bold text-center mb-4 heading-font text-[#022F46] " style={{fontWeight:"600"}}>
         Benefits of DMIT Test for Students?
       </h3>
       <p
-        className="mb-4 text-[15px] md:text-[20px] text-black "
+        className="mb-4 text-[15px] md:text-[16px] text-black "
         style={{ textAlign: "justify" }}
       >
         <span className="ml-[-22px]">There are plenty of benefits of DMIT Test for students:</span>

@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function FormBanner() {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
+
   return (
     <div>
-      <div className="bg-[#022F46] p-8 text-center">
-        <h2 className="text-white text-lg md:text-2xl font-bold py-2 heading-font">
+      <div className="bg-[#022F46] p-8 text-center" data-aos="fade-up">
+        <h2 className="text-white text-lg md:text-2xl font-bold py-2 heading-font"  style={{fontWeight:"600"}}>
         Dermatoglyphics Multiple Intelligence Test is a combined scientific study of Brain
         <br />
         Lobes, 9 Multiple Intelligence and Human Psychology. with the help of fingerprints.
         </h2>
-        <h3 className="text-blue-300 text-lg md:text-2xl font-bold py-4">
+        <h3 className="text-blue-300 text-lg md:text-[20px] font-bold py-4">
         Know your inborn Talent with DMIT Test and be a Winner
         </h3>
         <h4 className="text-white text-lg md:text-2xl font-bold mb-5 heading-font">

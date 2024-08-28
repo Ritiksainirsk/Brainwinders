@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function VideoSection() {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
+
   return (
     <div>
-      <div className="mx-auto py-8 px-5 lg:px-1">
+      <div className="mx-auto py-8 px-5 lg:px-1"  data-aos="fade-up">
         <div className="my-8">
           {/* Section Title */}
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#022F46] mb-6 text-center heading-font">
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#022F46] mb-6 text-center heading-font" style={{fontWeight:"600"}}>
             DMIT Test for Toddlers
           </h2>
 
-          <p className="text-black text-[15px] md:text-[20px] leading-relaxed">
+          <p className="text-black text-[15px] md:text-[16px] leading-relaxed">
             DMIT Test for toddler and infant is widely accepted. Infancy and
             toddlerhood - which is basically the age of 0-2 years and 3-5 years;
             respectively is where 60% of the brain development happens. Several
@@ -43,14 +51,14 @@ export default function VideoSection() {
 
           {/* right Text Section */}
           <div className="lg:w-[55%] space-y-6">
-            <p className="text-[15px] md:text-[20px] text-black leading-relaxed">
+            <p className="text-[15px] md:text-[16px] text-black leading-relaxed">
               When a baby is born - a parent's joy knows no bounds. There are
               several ways in which any parent can always recount how they are
               always putting the best interests of their baby forward. But when
               a child can barely even understand the parents’ speech - how can
               one decide on what is the best for a baby or a toddler?
             </p>
-            <p className="text-[15px] md:text-[20px] text-black leading-relaxed">
+            <p className="text-[15px] md:text-[16px] text-black leading-relaxed">
               Obviously every parent wants to help their child get ahead in
               life. It is not easy though to do that when one does not have any
               direction. To add to it, this is the time when the toddler is
@@ -60,7 +68,7 @@ export default function VideoSection() {
               this blank slate will be a masterstroke. Hence, one has no option
               but to move forward without a clue.
             </p>
-            <p className="text-[15px] md:text-[20px] text-black leading-relaxed">
+            <p className="text-[15px] md:text-[16px] text-black leading-relaxed">
               But Brainwonders US Patented DMIT Test is here to use biometric
               analysis to map the complete inborn profile of a child. There are
               in fact several ways in which Brainwonders DMIT Test assist.

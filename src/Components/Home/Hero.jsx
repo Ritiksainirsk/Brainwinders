@@ -27,7 +27,7 @@ const awards = [
 
 export default function Hero() {
   useEffect(() => {
-    AOS.init({duration: 1000})
+    AOS.init({duration: 2000})
   }, []);
 
 
@@ -36,7 +36,7 @@ export default function Hero() {
       <div className=" mb-5">
         <div className="">
           <div className="text-center font-bold py-[5%] md:px-[15%] px-7 md:leading-[38px] leading-8">
-            <h3 className="text-[18px] md:text-[22px] text-black"  data-aos="zoom-in">
+            <h3 className="text-[18px] md:text-[22px] text-black"   data-aos="fade-up">
               We at Brainwonders, India's Largest Career Counselling and DMIT
               Company, strive to help you make an informed decision about your
               career. Based on the analysis you opt for, we assist you in
@@ -45,7 +45,7 @@ export default function Hero() {
           </div>
         </div>
         {/*  */}
-        <div className="flex items-center justify-center w-full bg-[#F7F5FF]  "data-aos="zoom-in-up">
+        <div className="flex items-center justify-center w-full bg-[#F7F5FF]  " data-aos="fade-up">
           <Card />
         </div>
       </div>

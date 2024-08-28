@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function InteresrTestMiddleSection() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
       <First />
@@ -11,12 +19,12 @@ export default function InteresrTestMiddleSection() {
 
 const First = () => {
   return (
-    <div className="p-8 bg-white py-12">
+    <div className="p-8 bg-white py-12"  data-aos="fade-up">
       {/* Heading Section */}
-      <h1 className="text-2xl md:text-4xl font-bold text-center mb-4 heading-font">
+      <h1 className="text-2xl md:text-3xl text-center mb-4 heading-font" style={{fontWeight:"600"}}>
         HOW DOES THE INTEREST TEST BENEFIT CHILDREN'S CAREER?
       </h1>
-      <p className="text-center md:text-xl mb-8" style={{ textAlign: "justify" }}>
+      <p className="text-center md:text-[16px] mb-8" style={{ textAlign: "justify" }}>
         The Interest-Aptitude Test draws its foundations in psychology and human
         development. As per the theories of intellectual development,
         intelligence is crystallized by the age of 18—and thus early exploration
@@ -38,7 +46,7 @@ const First = () => {
           <h3 className="text-xl font-semibold mb-2 heading-font">
             SCHOOL & BOARD SELECTION
           </h3>
-          <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "justify" }} className="">
             The analysis allows the parents to understand which subjects are
             strong and weak within the child. This helps the parents select the
             board aligned with the focused curriculum.
@@ -170,11 +178,11 @@ const Second = () => {
     },
   ];
   return (
-    <div className=" mx-auto p-6 text-center">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 heading-font">
+    <div className=" mx-auto p-6 text-center" data-aos="fade-up">
+      <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 mb-2 heading-font" style={{fontWeight:"600"}}>
         HOW TO TAKE AN INTEREST TEST?
       </h2>
-      <p className="text-xl md:text-2xl text-black mb-10">
+      <p className="text-xl md:text-[16px] text-black mb-10">
       The Interest Test can be taken in either an online or offline mode in four simple steps
       </p>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">

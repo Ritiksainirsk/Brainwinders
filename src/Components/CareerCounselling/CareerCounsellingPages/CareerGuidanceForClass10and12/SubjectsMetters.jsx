@@ -1,8 +1,13 @@
-import React from "react";
-import { FaShieldAlt, FaClock, FaCode, FaBullhorn } from "react-icons/fa";
+import React, { useEffect } from "react";
 import './Css/CareerCousellingPages.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function SubjectsMetters() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <DescriptionBenner />
@@ -13,12 +18,12 @@ export default function SubjectsMetters() {
 
 const DescriptionBenner = () => {
   return (
-    <div className=" mx-auto p-6 2xl:px-[8rem] mt-9">
-      <h3 className="text-3xl lg:text-4xl font-bold text-center mb-4 heading-font text-[#022F46]">
+    <div className=" mx-auto p-6 2xl:px-[6rem] mt-9"  data-aos="fade-up">
+      <h3 className="text-3xl lg:text-3xl text-center mb-4 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         Why Brainwonders For Career Guidance after 10th?
       </h3>
       <p
-        className="mb-4 text-[15px] md:text-[20px] text-black"
+        className="mb-4 text-[15px] md:text-[16px] text-black"
         style={{ textAlign: "justify" }}
       >
         Brainwonders is a highly trusted and reliable option for Career
@@ -61,12 +66,12 @@ function SubjectMattersCompo() {
   ];
 
   return (
-    <div className="bg-white py-12">
+    <div className="bg-white py-12"  data-aos="fade-up">
     <div className="text-center">
-      <h2 className="text-xl font-semibold text-red-600">LET'S OVERCOME IT</h2>
-      <h2 className="text-3xl font-bold text-gray-800 mt-2 heading-font">Right subject Matters</h2>
+      <h2 className="text-xl font-semibold text-black">LET'S OVERCOME IT</h2>
+      <h2 className="text-3xl font-bold text-gray-800 mt-2 heading-font" style={{fontWeight:"600"}}>Right subject Matters</h2>
       <div className="flex justify-center mt-2">
-        <div className="w-60 h-[6px] bg-[#AB2931] relative overflow-hidden rounded-lg">
+        <div className="w-60 h-[6px] bg-[#032F42] relative overflow-hidden rounded-lg">
           <div className="dot"></div>
         </div>
       </div>

@@ -35,8 +35,8 @@ export default function Achievment() {
   return (
     <div>
          {/*  */}
-         <div className="pt-5 px-5" data-aos="fade-left">
-            <h3 className=" text-2xl md:text-3xl mb-2 font-bold text-center heading-font text-[#022F46]" data-aos="flip-up">
+         <div className="pt-5 px-5" data-aos="fade-up">
+            <h3 className=" text-2xl md:text-3xl mb-2 font-bold text-center heading-font text-[#022F46]"  data-aos="fade-up">
               BRAINWONDERS ACHIEVEMENTS
             </h3>
             <div className="flex justify-center flex-col md:flex-row">

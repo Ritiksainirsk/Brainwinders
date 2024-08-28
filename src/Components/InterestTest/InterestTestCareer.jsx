@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function InterestTestCareer() {
   const aptitudeTestData = [
@@ -33,14 +35,20 @@ export default function InterestTestCareer() {
         "Many organisations not only use the aptitude test during hiring, but also subject their employees to it continuously to evaluate growth. Similarly, adults and working professionals benefit by using it toboost their own profile",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
-      <div className=" mx-auto py-12 px-4">
+      <div className=" mx-auto py-12 px-4" data-aos="fade-up">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 heading-font">
+          <h2 className="text-3xl md:text-3xl font-bold text-gray-800 mb-2 heading-font" style={{fontWeight:"600"}}>
             Career Interest Test for Everyone
           </h2>
-          <p className="text-lg md:text-2xl text-black mb-8">
+          <p className="text-lg md:text-[16px] text-black mb-8">
             Plan Your Career The Right Way Get an insight to your future career
           </p>
         </div>

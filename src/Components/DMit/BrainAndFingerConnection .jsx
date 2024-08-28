@@ -1,11 +1,21 @@
 // src/components/BrainAndFingerConnection.js
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const BrainAndFingerConnection = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, []);
+
+
+
   return (
-    <div className=" p-8 ">
-      <h3 className="text-2xl md:text-4xl font-semibold mb-6 text-center mt-10 heading-font text-[#022F46]">BRAIN AND FINGER CONNECTION</h3>
-      <h3 className="md:text-xl font-semibold mb-8 text-center">
+    <div className=" p-8 "  data-aos="fade-up">
+      <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-center mt-10 heading-font text-[#022F46]" style={{fontWeight:"600"}}>BRAIN AND FINGER CONNECTION</h3>
+      <h3 className="md:text-[16px] mb-8 text-center">
         Right Brain is corresponding to Left Hand and Left Brain is corresponding to Right Hand
       </h3>
       <div className="flex flex-col lg:flex-row items-center">
@@ -18,7 +28,7 @@ const BrainAndFingerConnection = () => {
             height={120}
           />
         </div>
-        <div className="flex-1 text-lg">
+        <div className="flex-1 md:text-[16px]">
           <p className="mb-4">
             The full form of DMIT is the Dermatoglyphics Multiple Intelligence Test (DMIT) is a biometric analysis based on the scientific study of fingerprints. It is useful for all age groups and helps understand an individual’s potential, personality type, SWOT analysis, learning style, career introspection, and more. DMIT is particularly beneficial for parents and teachers, providing insights into a child's innate strengths and areas that need development. Using information from the child's biometrics, the DMIT assessment offers actionable insights and appropriate career recommendations.
           </p>

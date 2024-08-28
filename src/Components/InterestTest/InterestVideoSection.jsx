@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function InterestVideoSection() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <div>
-      <div className="mx-auto py-2 px-5 lg:px-5">
+      <div className="mx-auto py-2 px-5 lg:px-5"  data-aos="fade-up">
         <div className="my-8">
           {/* Section Title */}
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#022F46] mb-6 text-center heading-font">
+          <h2 className="text-3xl lg:text-3xl font-bold text-[#022F46] mb-2 text-center heading-font" style={{fontWeight:"600"}}>
             What is Interest Test
           </h2>
 
-          <p className="text-center text-black text-xl md:text-[25px] font-bold mb-8">
+          <p className="text-center text-black text-xl md:text-[16px] mb-8">
             It basically refers to one’s ability to do certain kinds of work
           </p>
 
-          <p className="text-black text-[15px] md:text-[20px] leading-relaxed">
+          <p className="text-black text-[15px] md:text-[16px] leading-relaxed font-semibold">
             The interest test is a Psychometric Test that estimates a child’s
             abilities from different angles. It differentiates the numerous
             ranges of abilities and inclinations present in an individual. This
@@ -48,7 +56,7 @@ export default function InterestVideoSection() {
           <div className=" lg:w-[55%] flex items-center">
             <ul className=" space-y-6">
               <li
-                className="text-[16px] md:text-[25px] text-black leading-relaxed"
+                className="text-[16px] md:text-[18px] text-black leading-relaxed"
                 style={{ textAlign: "justify" }}
               >
                 Children can immensely benefit from the test as it helps one

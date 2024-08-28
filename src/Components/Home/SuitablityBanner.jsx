@@ -5,13 +5,13 @@ import 'aos/dist/aos.css';
 export default function SuitablityBanner() {
 
   useEffect(() => {
-    AOS.init({duration: 1000})
+    AOS.init({duration: 2000})
   }, []);
 
 
   return (
     <div>
-      <div className="bg-[#022F46] 2xl:px-44 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14" data-aos="flip-up">
+      <div className="bg-[#022F46] 2xl:px-44 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14"  data-aos="fade-up">
         {/* Left Section */}
         <div className="md:w-1/2">
           <h3 className="text-2xl font-bold mb-4 heading-font">

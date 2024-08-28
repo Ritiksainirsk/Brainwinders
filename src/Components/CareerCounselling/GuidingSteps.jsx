@@ -1,12 +1,21 @@
 // src/components/GuidingSteps.js
-import React from "react";
+import React, { useEffect } from "react";
 import "./css/CareerCounselling.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const GuidingSteps = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className="relative py-10">
+    <div className="relative py-10" data-aos="fade-up">
       <div className="text-center mb-10">
-        <h3 className=" text-2xl lg:text-4xl font-semibold heading-font text-[#022F46]">
+        <h3
+          className=" text-2xl lg:text-3xl font-semibold heading-font text-[#022F46]"
+          style={{ fontWeight: "600" }}
+        >
           Guiding you at every step!
         </h3>
       </div>
@@ -626,13 +635,13 @@ const GuidingSteps = () => {
 
           {/* image */}
           <div className="w-[25rem] h-full mt-64 hidden 2xl:block">
-          <img
-            src="https://www.tcsion.com/per/g01/pub/1016/iDH/instance/1/product/microsite_data/IONCAREERINSIGHT/microsite_1722424800648/image/guide_banner.png?version=142946389"
-            alt=""
-            className="w-full"
-            width={120}
-            height={120}
-          />
+            <img
+              src="https://www.tcsion.com/per/g01/pub/1016/iDH/instance/1/product/microsite_data/IONCAREERINSIGHT/microsite_1722424800648/image/guide_banner.png?version=142946389"
+              alt=""
+              className="w-full"
+              width={120}
+              height={120}
+            />
           </div>
           {/* image */}
         </div>

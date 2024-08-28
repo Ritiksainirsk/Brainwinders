@@ -13,7 +13,7 @@ export default function HeroCarausel() {
 
       {/* text content */}
       <div className="px-7 md:px-16 2xl:px-80 my-14">
-        <h1 className="text-2xl lg:text-3xl heading-font font-semibold text-center mb-7 text-[#022F46]">
+        <h1 className="text-2xl lg:text-3xl heading-font font-semibold text-center mb-7 text-[#022F46]" style={{fontWeight:'600'}}>
           The World’s Most Powerful Psychometric Career Assessment
         </h1>
         <p className="text-xl leading-7 text-black text-center">

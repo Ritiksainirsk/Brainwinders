@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const faqData = [
   {
@@ -46,8 +48,15 @@ const Accordion = () => {
     }
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className=" mx-auto bg-[#000D71] text-white p-6 mt-6 px-5 md:px-14">
+    <div
+      className=" mx-auto bg-[#000D71] text-white p-6 mt-6 px-5 md:px-14"
+      data-aos="fade-up"
+    >
       <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-center heading-font">
         Frequently Asked Questions
       </h2>
