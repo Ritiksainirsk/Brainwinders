@@ -1,12 +1,20 @@
 import React from "react";
 
 import { PiPhoneCallFill } from "react-icons/pi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import CreatePage from "../../../assets/add-product.png";
 import List from "../../../assets/list.png";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+
+  const LogOut = () => {
+    localStorage.clear();
+
+    navigate("/admin/login");
+  };
+
   return (
     <div>
       <div className="navbar bg-base-100 px-24 py-3 shadow-lg z-50 flex items-center justify-between">
@@ -32,7 +40,12 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-        <PiPhoneCallFill className="text-2xl bounce hidden lg:block " />
+        <div className="flex gap-14">
+          <PiPhoneCallFill className="text-2xl bounce hidden lg:block " />
+          <button className="font-bold" onClick={() => LogOut()}>
+            Logout
+          </button>
+        </div>
       </div>
     </div>
   );

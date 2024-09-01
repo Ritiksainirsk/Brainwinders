@@ -6,11 +6,11 @@ export default function InterestTestHero() {
       <div className="bg-[#E3F2FB] md:py-10 2xl:px-32 p-8 rounded-lg flex flex-col md:flex-row items-center justify-around">
         {/* Left Section */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-3xl md:text-[40px] font-bold text-gray-800 leading-tight mr-20">
+          <h1 className="text-3xl md:text-[40px] font-bold text-gray-800 leading-tight md:mr-20">
             Find a Career that
             <span className="text-[#043E56]"> Suits your Interests</span>
           </h1>
-          <p className="mt-4 text-black text-lg md:text-[16px] mr-40">
+          <p className="mt-4 text-black text-lg md:text-[16px] md:mr-40">
             Measuring your interests lets you accurately match your
             preferences with careers that let you do what you love.
           </p>

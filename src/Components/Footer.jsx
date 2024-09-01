@@ -97,9 +97,9 @@ const Footer = () => {
                 </h3>
                 <ul className="text-[#4D5B6B] space-y-2">
                   <li>
-                    <a href="#" className="hover:text-[#022F46]">
-                      What Is DMIT
-                    </a>
+                    <Link to={"/marks2career"} href="#" className="hover:text-[#022F46]">
+                        Marks 2 Career
+                    </Link>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">

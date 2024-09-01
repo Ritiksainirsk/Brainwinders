@@ -45,37 +45,36 @@ export default function CareerCounsellingHero() {
 }
 
 const CareerCounsellingVideo = () => (
-  <div className="md:py-8 px-4 md:px-12 lg:px-20 xl:px-44 flex justify-center items-center bg-[#E0EFFF]">
-    <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-8 xl:gap-20">
-      {/* Text Section - 60% width */}
-      <div className="w-full lg:w-[60%] text-center lg:text-left">
+  <div className="py-8 px-3 md:px-36 flex justify-center items-center bg-[#E0EFFF]">
+    <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
+      <div className="text-center lg:text-left">
         <h1
-          className="text-2xl md:text-3xl lg:text-[40px] font-bold mb-4 lg:mb-6 text-shadow heading-font leading-snug lg:leading-[56px] mt-6 lg:mt-0 text-[#022F46]"
+          className="text-3xl lg:text-[40px] mt-8 md:mt-0 font-thin mb-4 text-shadow heading-font leading-[44px] lg:leading-[62px] text-[#022F46]"
           style={{ fontWeight: "700" }}
         >
           GET THE RIGHT CAREER COUNSELLING TO LEAP THROUGH YOUR CAREER
         </h1>
-        <h3 className="text-base lg:text-[16px] mb-4 md:mr-80 lg:mb-6 leading-snug lg:leading-[26px] md:flex md:flex-col text-[#4D5B6B]">
+        <h3 className="lg:text-[16px] mb-6 leading-[26px] 2xl:pr-56">
           Take the world’s most advanced Career Assessment Test and Find your
           best Career, Course, and College
         </h3>
-        <button className="bg-[#022F46] text-white py-2 px-6 rounded-lg shadow-md hover:bg-[#011e36] transition-colors">
-          Take Counselling Now
-        </button>
+        <div>
+          <button className="bg-[#022F46] text-white py-2 px-4 rounded-lg">
+            Take Counselling Now
+          </button>
+        </div>
       </div>
-
-      {/* Video Section - 40% width */}
-      <div className="w-full lg:w-[40%]">
-        <div className="aspect-w-16 aspect-h-9">
+      <div className="w-full lg:w-1/2">
+        <div className="relative overflow-hidden pb-[56.25%]">
           <iframe
-            className="w-full h-56 lg:h-72 rounded-lg"
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
             src="https://www.youtube.com/embed/ISv2-cLrtnY"
             title="DMIT Test Video"
             allowFullScreen
           ></iframe>
         </div>
-        <p className="text-center text-xs md:text-sm mt-2 text-[#4D5B6B]">
-          Watch the Founder & CEO of Brainwonders, Mr. Manish Naidu, talk about
+        <p className="text-center text-sm mt-2">
+          Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about
           its DMIT franchise model
         </p>
       </div>

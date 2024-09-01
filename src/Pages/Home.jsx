@@ -22,6 +22,8 @@ export default function Home() {
       behavior: "smooth",
     });
   }, [pathname]);
+
+  
   return (
     <>
       <div className="overflow-hidden">

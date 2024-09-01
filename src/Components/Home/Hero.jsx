@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const awards = [
   {
     title: "Excellence in Career Counselling",
@@ -27,16 +27,18 @@ const awards = [
 
 export default function Hero() {
   useEffect(() => {
-    AOS.init({duration: 2000})
+    AOS.init({ duration: 2000 });
   }, []);
-
 
   return (
     <>
       <div className=" mb-5">
         <div className="">
           <div className="text-center font-bold py-[5%] md:px-[15%] px-7 md:leading-[38px] leading-8">
-            <h3 className="text-[18px] md:text-[22px] text-black"   data-aos="fade-up">
+            <h3
+              className="text-[18px] md:text-[22px] text-black"
+              data-aos="fade-up"
+            >
               We at Brainwonders, India's Largest Career Counselling and DMIT
               Company, strive to help you make an informed decision about your
               career. Based on the analysis you opt for, we assist you in
@@ -45,7 +47,10 @@ export default function Hero() {
           </div>
         </div>
         {/*  */}
-        <div className="flex items-center justify-center w-full bg-[#F7F5FF]  " data-aos="fade-up">
+        <div
+          className="flex items-center justify-center w-full bg-[#F7F5FF]  "
+          data-aos="fade-up"
+        >
           <Card />
         </div>
       </div>
@@ -58,27 +63,28 @@ const Card = () => {
     <div className="w-full overflow-hidden flex flex-col md:flex-row 2xl:px-48">
       <div className="md:basis-1/2 md:pl-10 p-6 flex flex-col justify-center">
         <h1 className="text-2xl lg:text-4xl font-bold text-[#022F46] heading-font">
-          The World's Most Accurate 
+          The World's Most Accurate
           <br />
-         <span>Career Test</span> 
+          <span>Career Test</span>
         </h1>
         <p className="mt-4 text-black text-xl">
-          Take our well researched, accurate DMIT test to 
+          Take our well researched, accurate DMIT test to
           <br />
           make the right education, skill and career choice.
         </p>
-        <button className="mt-6 px-6 py-2 text-[16px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
+        <button className="mt-6 py-2 text-[16px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
           Read More
         </button>
       </div>
       <div className="md:basis-1/2 py-6 px-3 md:px-10 md:pl-0 flex flex-col items-center hero-video-container">
         <iframe
-        width="560" height="315" 
+          width="560"
+          height="315"
           className="w-[100%] md:w-[80%] h-52 md:h-72 rounded-xl heroVideo"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="YouTube video player"
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
         <p className="text-center text-sm mt-2">
@@ -106,7 +112,9 @@ const AwardCard = ({ title, desc }) => {
           <div>
             <div>
               <div>
-                <h3 className=" text-[18px] heading-font text-black">{title}</h3>
+                <h3 className=" text-[18px] heading-font text-black">
+                  {title}
+                </h3>
               </div>
             </div>
             <div>
@@ -127,7 +135,6 @@ const AwardCard = ({ title, desc }) => {
     </>
   );
 };
-
 
 // const BannerComponent = () => {
 //   return (

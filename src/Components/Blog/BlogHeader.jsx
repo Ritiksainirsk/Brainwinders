@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import BackgroundImage from "../../assets/blogHeader.jpg";
 import BlogPosts from "../Blog/BlogPosts ";
+import { useLocation } from "react-router-dom";
 
 const BlogHeader = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const location = useLocation();
 
   const handleSearch = (event) => {
     const value = event.target.value.toLowerCase();
@@ -45,7 +47,11 @@ const BlogHeader = () => {
         </div>
       </div>
       <div className="max-w-[1500px] mx-auto overflow-hidden">
-        <BlogPosts value={searchTerm}/>
+        {location.pathname === "/blog/viewmore/:title" ? (
+          ""
+        ) : (
+          <BlogPosts value={searchTerm} />
+        )}
       </div>
     </div>
   );

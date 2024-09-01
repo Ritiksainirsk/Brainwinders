@@ -69,7 +69,7 @@ const WhatCoursesAfter12th = () => {
             <h2 className="md:text-2xl text-xl font-bold heading-font">
               {mainTitle}
             </h2>
-            <p href="#" className="text-black font-semibold md:text-lg">
+            <p href="#" className="text-black font-semibold ">
               <Link to={"/blog/viewmore/:title"}>View all...</Link>
             </p>
           </div>

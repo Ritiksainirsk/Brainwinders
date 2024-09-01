@@ -40,32 +40,34 @@ export default function DmitTest() {
 }
 
 const DMTITestComponent = () => (
-  <div className=" py-8 px-36 flex justify-center items-center bg-[#E0EFFF]">
-    <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-10 xl:gap-20">
-      <div className="text-center">
+  <div className="py-8 px-3 md:px-36 flex justify-center items-center bg-[#E0EFFF]">
+    <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
+      <div className="text-center lg:text-left">
         <h1
-          className="text-3xl lg:text-[40px] mt-8 md:mt-0 md:text-left font-thin mb-4 text-shadow heading-font leading-[44px] lg:leading-[62px] text-[#022F46]"
+          className="text-3xl lg:text-[40px] mt-8 md:mt-0 font-thin mb-4 text-shadow heading-font leading-[44px] lg:leading-[62px] text-[#022F46]"
           style={{ fontWeight: "700" }}
         >
           DISCOVER YOUR INBORN POTENTIAL AND SHINE WITH DMIT TEST
         </h1>
-        <h3 className="lg:text-[16px] md:text-left mb-6 leading-[26px] lg:flex lg:flex-col lg:gap-2 2xl:mr-96">
+        <h3 className="lg:text-[16px] mb-6 leading-[26px] 2xl:pr-56">
           Take the world’s most-advanced Career Assessment Test and Find your
           best Career, Course, and college
         </h3>
-        <div className="md:text-left">
+        <div>
           <button className="bg-[#022F46] text-white py-2 px-4 rounded-lg">
             Get Your DMIT Test now
           </button>
         </div>
       </div>
-      <div className="w-[90%] lg:w-[50%] xl:w-[45%]">
-        <iframe
-          className="w-full h-56 md:h-72 rounded-lg"
-          src="https://www.youtube.com/embed/ISv2-cLrtnY"
-          title="DMIT Test Video"
-          allowFullScreen
-        ></iframe>
+      <div className="w-full lg:w-1/2">
+        <div className="relative overflow-hidden pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/ISv2-cLrtnY"
+            title="DMIT Test Video"
+            allowFullScreen
+          ></iframe>
+        </div>
         <p className="text-center text-sm mt-2">
           Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about
           its DMIT franchise model
@@ -74,6 +76,8 @@ const DMTITestComponent = () => (
     </div>
   </div>
 );
+
+
 
 const DmttTestDescription = () => {
   return (
