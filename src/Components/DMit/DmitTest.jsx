@@ -1,21 +1,11 @@
 import React, { useEffect } from "react";
 import "./css/DmitTest.css";
-import Earth from "../../assets/earth_icon.png";
-import Data from "../../assets/data_analysis.png";
-import Management from "../../assets/management.png";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AnimatedSection from "../AnimatedSection";
 
 export default function DmitTest() {
-
-  useEffect(() => {
-    AOS.init({duration: 2000})
-  }, []);
-
-
   return (
     <div>
       <div className="">
@@ -27,12 +17,19 @@ export default function DmitTest() {
       </div>
       {/*  */}
       {/*  */}
-      <div className="mb-16"  data-aos="fade-up">
-        <h3 className="px-2 text-2xl md:text-3xl text-center my-10 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
+      <div className="mb-16">
+        <h3
+          className="px-2 text-2xl md:text-3xl text-center my-10 heading-font text-[#022F46]"
+          style={{ fontWeight: "600" }}
+        >
           BENEFITS OF DMIT TEST FOR ALL AGES!
         </h3>
-        <CareerOptions />
-        <CareerOptions2 />
+        <AnimatedSection>
+          <CareerOptions />
+        </AnimatedSection>
+        <AnimatedSection>
+          <CareerOptions2 />
+        </AnimatedSection>
       </div>
       {/*  */}
     </div>
@@ -77,45 +74,35 @@ const DMTITestComponent = () => (
   </div>
 );
 
-
-
 const DmttTestDescription = () => {
   return (
     <div className=" mx-auto p-6 2xl:px-[9rem]">
-      <h3 className="text-2xl lg:text-3xl text-center mb-4 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
+      <h3
+        className="text-2xl lg:text-3xl text-center mb-4 heading-font text-[#022F46]"
+        style={{ fontWeight: "600" }}
+      >
         WHAT IS DMIT TEST?
       </h3>
       <p className="mb-4 text-[1rem] leading-7">
-        The{" "}
-        <strong>
-          full form of DMIT is the Dermatoglyphics Multiple Intelligence Test
-          (DMIT)
-        </strong>{" "}
-        is a biometric analysis based on the scientific study of fingerprints.
-        It is useful for all age groups and helps understand an individual’s
-        potential, personality type, SWOT analysis, learning style, career
-        introspection, and more. DMIT is particularly beneficial for parents and
-        teachers, providing insights into a child's innate strengths and areas
-        that need development. Using information from the child's biometrics,
-        the DMIT assessment offers actionable insights and appropriate career
-        recommendations.
-      </p>
-      <p className="mb-4">
-        Dermatoglyphics is the study of the patterns of skin ridges on human
-        fingers, toes, and soles. It reveals the congenital links between our
-        fingers and our intrinsic qualities and talents. These patterns are
-        formed from the external ectoderm and typically develop during the fetal
-        stage, with fingerprints forming between the 13th and 21st weeks.
-      </p>
-      <p className="mb-4">
-        Medical experts and scientists have discovered that the distribution of
-        brain cells in different parts of the brain can be understood through
-        the DMIT test. This helps reveal a person's multiple intelligences,
-        innate potential capabilities, and personality.
-      </p>
-      <p className="font-bold">
-        Our fingerprints reveal what we need and how we learn, transforming our
-        lives through a holistic education approach.
+        The full form of DMIT is the Dermatoglyphics Multiple Intelligence Test
+        (DMIT) is a biometric analysis based on the scientific study of
+        fingerprints. It is useful for all age groups and helps understand an
+        individual’s potential, personality type, SWOT analysis, learning style,
+        career introspection, and more. DMIT is particularly beneficial for
+        parents and teachers, providing insights into a child's innate strengths
+        and areas that need development. Using information from the child's
+        biometrics, the DMIT assessment offers actionable insights and
+        appropriate career recommendations. Dermatoglyphics is the study of the
+        patterns of skin ridges on human fingers, toes, and soles. It reveals
+        the congenital links between our fingers and our intrinsic qualities and
+        talents. These patterns are formed from the external ectoderm and
+        typically develop during the fetal stage, with fingerprints forming
+        between the 13th and 21st weeks. Medical experts and scientists have
+        discovered that the distribution of brain cells in different parts of
+        the brain can be understood through the DMIT test. This helps reveal a
+        person's multiple intelligences, innate potential capabilities, and
+        personality. Our fingerprints reveal what we need and how we learn,
+        transforming our lives through a holistic education approach.
       </p>
     </div>
   );
@@ -159,7 +146,7 @@ const CareerOptions = () => {
     <div className="flex justify-center rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[25rem] h-[22rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+          className={`w-[25rem] h-[25rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test for Toddlers (1-4 years)"
               ? "hover:bg-yellow-500"
               : "" || card.title === "DMIT Test for Children (4-10 years)"
@@ -198,27 +185,9 @@ const CareerOptions = () => {
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">
-                {card.buttonText} <FaAngleRight />
+                Explore Now <FaAngleRight />
               </button>
             </div>
-          </div>
-
-          <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
-            <img
-              src={
-                card.title === "Aptitide Test"
-                  ? Management
-                  : Earth || card.title === "Ideal Career Test"
-                  ? Earth
-                  : Earth || card.title === "Psychometric Test"
-                  ? Data
-                  : Earth
-              }
-              alt=""
-              className="w-48 absolute right-20 top-[-69px] "
-              width={120}
-              height={120}
-            />
           </div>
         </div>
       ))}
@@ -264,13 +233,13 @@ const CareerOptions2 = () => {
     <div className="flex justify-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
-          className={`w-[25rem] h-[23rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+          className={`w-[25rem] h-[25rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
             card.title === "DMIT Test for Adult (25 years and above)"
-              ? "hover:bg-yellow-500"
+              ? "hover:bg-pink-300"
               : "" || card.title === "DMIT Test for institutional (all years)"
-              ? "hover:bg-blue-500"
+              ? "hover:bg-orange-300"
               : "" || card.title === "DMIT Test for Students (11 to 17 years)"
-              ? "hover:bg-green-500"
+              ? "hover:bg-gray-400"
               : "" ||
                 card.title ===
                   "DMIT Test for Career Guidance (18 years and above)"
@@ -303,27 +272,9 @@ const CareerOptions2 = () => {
 
             <div className="mt-4 btnn ">
               <button className="py-2 tracking-wider flex items-center gap-3">
-                {card.buttonText} <FaAngleRight />
+                Explore Now <FaAngleRight />
               </button>
             </div>
-          </div>
-
-          <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
-            <img
-              src={
-                card.title === "Aptitide Test"
-                  ? Earth
-                  : Management || card.title === "Ideal Career Test"
-                  ? Management
-                  : Management || card.title === "Psychometric Test"
-                  ? Data
-                  : Earth
-              }
-              alt=""
-              className="w-48 absolute right-20 top-[-69px] "
-              width={120}
-              height={120}
-            />
           </div>
         </div>
       ))}

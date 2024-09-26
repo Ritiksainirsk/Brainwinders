@@ -137,6 +137,14 @@ p {
     display: none;
   }
 }
+
+/* bookanappointmentbtn for desktop  */
+@media only screen and (min-width: 1788px) {
+  .bookanappointmentbtn {
+    display: block;
+  }
+}
+
 /* Navbar  */
 
 /* Hero video */
@@ -226,5 +234,13 @@ p {
   }
 }
 /* hover card <<<<<<<<<<<<<<<------------------- */
+
+
+/* Admin Sidebar Css */
+.admin_sidebar{
+  height: calc(100vh - 80px);
+}
+
+
 
 

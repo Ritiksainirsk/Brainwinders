@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 import { NavItem } from "../Navbar";
+import AnimatedSection from "../AnimatedSection";
 
 const blogs = [
   {
@@ -33,17 +32,13 @@ const blogs = [
 
 export default function Blog() {
   const [activePage, setActivePage] = useState(window.location.pathname);
-
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
   return (
     <div>
-      <div className="p-4 "  data-aos="fade-up">
-        <h4 className="text-2xl md:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46]">
+      <div className="p-4 ">
+        <h2 className="text-2xl md:text-[34px] font-semibold text-center mb-6 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
           OUR BLOGS
-        </h4>
+        </h2>
+        <AnimatedSection>
         <div className="flex justify-center gap-10 flex-wrap">
           {blogs.map((blog, index) => (
             <Card
@@ -55,7 +50,8 @@ export default function Blog() {
             />
           ))}
         </div>
-        <div className="text-center my-8" data-aos="fade-up">
+        </AnimatedSection>
+        <div className="text-center my-8">
           <NavItem
             to="/blog"
             setActivePage={setActivePage}
@@ -75,7 +71,6 @@ export default function Blog() {
           className=" w-[28%]"
           width={120}
           height={120}
-          data-aos="zoom-in"
         />
       </div>
       {/* FAQ */}

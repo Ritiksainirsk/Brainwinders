@@ -1,23 +1,16 @@
 import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function SuitablityBanner() {
 
-  useEffect(() => {
-    AOS.init({duration: 2000})
-  }, []);
-
-
   return (
     <div>
-      <div className="bg-[#022F46] 2xl:px-44 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14"  data-aos="fade-up">
+      <div className="bg-[#022F46] 2xl:px-44 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14">
         {/* Left Section */}
         <div className="md:w-1/2">
-          <h3 className="text-2xl font-bold mb-4 heading-font">
+          <h2 className="lg:text-[34px] font-bold mb-4 heading-font"style={{fontWeight:"700"}}>
             Check Career Suitability for your Dream Career
-          </h3>
-          <p className="mb-4">
+          </h2>
+          <p className="mb-4 text-[17px]" style={{fontWeight:"500"}}>
             Take Informed Career Decisions. Check Career Fit for your Dream
             Career
           </p>

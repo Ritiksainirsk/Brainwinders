@@ -9,14 +9,10 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  useEffect(() => {
-    AOS.init({ duration: 3000 });
-  }, []);
-
   return (
     <footer className="bg-gradient-to-b from-[#E5EEF8] to-[#A4BFD6] pt-10">
       <div className="mx-auto px-4 lg:px-28">
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between ">
           {/* Left Column */}
           <div
             className="w-full md:w-1/4 mb-8 md:mb-0"
@@ -45,8 +41,8 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-            <div className="mt-6">
-              <div className="bg-blue-900 text-white p-4 rounded-lg w-full md:w-80">
+            <div className="mt-6 md:mr-3 2xl:mr-10">
+              <div className="bg-blue-900 text-white p-4 rounded-lg w-full">
                 <p className="font-bold">Contact Us</p>
                 <p>📞 9987422220</p>
                 <p>✉️ info@brainwonders.in</p>

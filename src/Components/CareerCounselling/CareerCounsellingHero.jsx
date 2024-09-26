@@ -7,14 +7,10 @@ import Management from "../../assets/management.png";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AnimatedSection from "../AnimatedSection";
+import { Link } from "react-router-dom";
 
 export default function CareerCounsellingHero() {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
 
   return (
     <div>
@@ -26,7 +22,7 @@ export default function CareerCounsellingHero() {
       </div>
       {/*  */}
       {/*  */}
-      <div className="mb-16" data-aos="fade-up">
+      <div className="mb-16" >
         <h3
           className="text-2xl md:text-3xl font-bold text-center my-10 heading-font px-5 text-[#022F46]"
           style={{ fontWeight: "600" }}
@@ -45,6 +41,7 @@ export default function CareerCounsellingHero() {
 }
 
 const CareerCounsellingVideo = () => (
+  <AnimatedSection>
   <div className="py-8 px-3 md:px-36 flex justify-center items-center bg-[#E0EFFF]">
     <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
       <div className="text-center lg:text-left">
@@ -80,10 +77,12 @@ const CareerCounsellingVideo = () => (
       </div>
     </div>
   </div>
+  </AnimatedSection>
 );
 
 const CareerCounsellingHeroDescription = () => {
   return (
+    <AnimatedSection>
     <div className="p-6 2xl:px-[9rem]">
       <h3
         className="text-2xl lg:text-3xl font-bold text-center mb-5 heading-font text-[#022F46]"
@@ -114,6 +113,7 @@ const CareerCounsellingHeroDescription = () => {
         time.
       </p>
     </div>
+    </AnimatedSection>
   );
 };
 
@@ -153,9 +153,11 @@ const CareerOptions = () => {
   ];
 
   return (
+    <AnimatedSection>
     <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
-        <div
+       <Link to={card.title === "Career Guidance After 10th" ? "/careercounselling/careerGuidanceforclass10th&12th":""}>
+       <div
           className={`w-[25rem] border-2 h-[21rem] containerBox relative p-7 overflow-hidden ${
             card.title === "Career Guidance for class 8th and 9th"
               ? "hover:bg-yellow-500"
@@ -228,7 +230,9 @@ const CareerOptions = () => {
             />
           </div>
         </div>
+        </Link> 
       ))}
     </div>
+    </AnimatedSection>
   );
 };

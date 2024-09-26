@@ -264,7 +264,7 @@ export default function Navbar() {
       {/*<<<<<<<<<<---------------------  */}
 
       <div className="absolute top-4 right-10 items-center hidden 2xl:flex gap-1 ">
-        <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-sm text-white py-2 px-4  ">
+        <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-sm hidden text-white py-2 px-4 bookanappointmentbtn">
           Book an Appointment
         </button>
         <PiPhoneCallFill className="text-[40px] bounce ml-8 " />

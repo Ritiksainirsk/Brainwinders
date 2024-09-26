@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
+import AnimatedSection from "../AnimatedSection";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
 const awards = [
   {
     title: "Excellence in Career Counselling",
@@ -26,33 +25,32 @@ const awards = [
 ];
 
 export default function Hero() {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
   return (
     <>
       <div className=" mb-5">
         <div className="">
-          <div className="text-center font-bold py-[5%] md:px-[15%] px-7 md:leading-[38px] leading-8">
-            <h3
-              className="text-[18px] md:text-[22px] text-black"
-              data-aos="fade-up"
-            >
-              We at Brainwonders, India's Largest Career Counselling and DMIT
-              Company, strive to help you make an informed decision about your
-              career. Based on the analysis you opt for, we assist you in
-              understanding your or your child's capabilities better.{" "}
-            </h3>
-          </div>
+          <AnimatedSection>
+            <div className="text-center font-bold py-[5%] md:px-[15%] px-7 md:leading-[38px] leading-8">
+              <h3
+                className="text-[18px] md:text-[22px] text-black"
+                
+              >
+                We at Brainwonders, India's Largest Career Counselling and DMIT
+                Company, strive to help you make an informed decision about your
+                career. Based on the analysis you opt for, we assist you in
+                understanding your or your child's capabilities better.{" "}
+              </h3>
+            </div>
+          </AnimatedSection>
         </div>
         {/*  */}
+        <AnimatedSection>
         <div
           className="flex items-center justify-center w-full bg-[#F7F5FF]  "
-          data-aos="fade-up"
         >
           <Card />
         </div>
+        </AnimatedSection>
       </div>
     </>
   );
@@ -62,12 +60,12 @@ const Card = () => {
   return (
     <div className="w-full overflow-hidden flex flex-col md:flex-row 2xl:px-48">
       <div className="md:basis-1/2 md:pl-10 p-6 flex flex-col justify-center">
-        <h1 className="text-2xl lg:text-4xl font-bold text-[#022F46] heading-font">
+        <h2 className="text-2xl lg:text-[34px] font-bold text-[#022F46] heading-font" style={{fontWeight:"700"}}>
           The World's Most Accurate
           <br />
           <span>Career Test</span>
-        </h1>
-        <p className="mt-4 text-black text-xl">
+        </h2>
+        <p className="mt-4 text-black lg:text-[17px]" style={{fontWeight:"500"}}>
           Take our well researched, accurate DMIT test to
           <br />
           make the right education, skill and career choice.

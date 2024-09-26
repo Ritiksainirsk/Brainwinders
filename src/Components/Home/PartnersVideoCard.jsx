@@ -1,15 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AnimatedSection from "../AnimatedSection";
 
 export default function PartnersVideoCard() {
     
-  useEffect(() => {
-    AOS.init({duration: 2000})
-  }, []);
-
   return (
-    <div   data-aos="fade-up">
+    <div>
       <PartnerSection />
     </div>
   );
@@ -74,13 +69,15 @@ const PartnerCard = ({ video, title, description, btcolor, id, thumbnail }) => {
 };
 
 const PartnerSection = () => (
+
   <div className="max-w-6xl mx-auto px-5 py-16 text-center">
-    <h3 className="text-3xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
+    <h2 className="text-3xl md:text-[34px] font-bold mb-2 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
       What Our Partners Say About Us
-    </h3>
-    <p className=" mb-8 md:text-[16px] text-black">
+    </h2>
+    <p className=" mb-8 md:text-[17px] text-black " style={{fontWeight:"500"}}>
     Watch People from Different Backgrounds talk about their experience with Brainwonders.
     </p>
+    <AnimatedSection>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       <PartnerCard
         video="https://www.youtube.com/embed/4wxwS28Khl4"
@@ -107,5 +104,6 @@ const PartnerSection = () => (
         id="3"
       />
     </div>
+    </AnimatedSection>
   </div>
 );

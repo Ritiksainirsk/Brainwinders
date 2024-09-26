@@ -6,23 +6,16 @@ import Management from "../../assets/management.png";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+import AnimatedSection from "../AnimatedSection";
 
 const MIddleImageBanner = () => {
-
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
 
   return (
     <>
       <FirstBanner />
       <SecondBanner />
       <div>
-        <div className="flex justify-center items-center mt-5" data-aos="fade-up">
+        <div className="flex justify-center items-center mt-5">
           <h3 className="bg-[#FFF8F0] text-[#022F46] font-bold text-center heading-font mx-4 text-2xl md:text-3xl lg:text-3xl my-11 py-4 px-10 rounded-full shadow-lg" style={{fontWeight:"600"}}>
             Paving a path for your Bright future
           </h3>
@@ -36,7 +29,7 @@ const MIddleImageBanner = () => {
 const FirstBanner = () => {
   return (
     <>
-      <div className="bg-white p-6 md:p-16" data-aos="fade-up">
+      <div className="bg-white p-6 md:p-16">
         <div className="text-center">
           <h3 className="text-2xl md:text-3xl font-semibold heading-font text-[#022F46]" style={{fontWeight:"600"}}>
             CAREER COUNSELLING THROUGH BIOMETRICS
@@ -46,6 +39,7 @@ const FirstBanner = () => {
             transformation via brain mapping
           </p>
         </div>
+        <AnimatedSection>
         <div className="flex flex-col md:flex-row items-center mt-8">
           <div className="md:w-1/2 flex justify-center">
             <img
@@ -72,6 +66,7 @@ const FirstBanner = () => {
             </p>
           </div>
         </div>
+        </AnimatedSection>
       </div>
     </>
   );
@@ -80,10 +75,11 @@ const FirstBanner = () => {
 const SecondBanner = () => {
   return (
     <>
-      <div className="bg-gray-50 p-6" data-aos="fade-up">
+      <div className="bg-gray-50 p-6">
         <h3 className="text-2xl lg:text-3xl font-semibold heading-font text-center my-7 text-[#022F46]">
           CAREER GUIDANCE BY OUR CAREER COUNSELLORS
         </h3>
+        <AnimatedSection>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-20">
           <div className="md:w-[26%]">
             <img
@@ -116,6 +112,7 @@ const SecondBanner = () => {
             </p>
           </div>
         </div>
+        </AnimatedSection>
       </div>
     </>
   );
@@ -157,7 +154,8 @@ const CareerOptions = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container" data-aos="fade-up">
+    <AnimatedSection>
+    <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
           className={`w-[22rem] border-2 h-[20rem] containerBox relative p-7 overflow-hidden ${
@@ -234,6 +232,7 @@ const CareerOptions = () => {
         </div>
       ))}
     </div>
+    </AnimatedSection>
   );
 };
 

@@ -6,9 +6,7 @@ import Management from "../../assets/management.png";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AnimatedSection from "../AnimatedSection";
 
 const items = [
   {
@@ -80,22 +78,15 @@ const items2 = [
 ];
 export default function Services() {
 
-  
-  useEffect(() => {
-    AOS.init({duration: 1000})
-  }, []);
-
-
   return (
-    <div className="flex justify-center" data-aos="fade-up"
-    data-aos-duration="3000">
+    <div className="flex justify-center">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h3 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2 lg:px-80 text-center heading-font text-[#022F46]">
+        <h2 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2 lg:px-80 text-center heading-font text-[#022F46]" style={{fontWeight:"700"}}>
           How does Brainwonders services 
           <br />
         <span> help you to sucess in your career? </span> 
-        </h3>
+        </h2>
         <HoverEffectCard />
         <HoverEffectCard2 />
       </div>
@@ -106,6 +97,7 @@ export default function Services() {
 
 const HoverEffectCard = () => {
   return (
+    <AnimatedSection>
     <div className="flex justify-center rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
       {items.map((card, index) => (
         <div
@@ -151,43 +143,29 @@ const HoverEffectCard = () => {
             </div>
           </div>
 
-          <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
-            <img
-              src={
-                card.title === "Aptitide Test"
-                  ? Earth
-                  : Management || card.title === "Ideal Career Test"
-                  ? Management
-                  : Management || card.title === "Psychometric Test"
-                  ? Data
-                  : Earth
-              }
-              alt={index}
-              className="w-44 md:w-52 absolute right-20 top-[-69px]"
-              width={120}
-              height={120}
-            />
-          </div>
+        
         </div>
       ))}
     </div>
+    </AnimatedSection>
   );
 };
 
 const HoverEffectCard2 = () => {
   return (
+    <AnimatedSection>
     <div className="flex justify-center rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
       {items2.map((card, index) => (
         <div
           className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
             card.title === "Career Counslling"
-              ? "hover:bg-yellow-500"
+              ? "hover:bg-pink-300"
               : "" || card.title === "Personalit Test"
-              ? "hover:bg-blue-500"
+              ? "hover:bg-purple-200"
               : "" || card.title === "IQ Test"
-              ? "hover:bg-green-500"
+              ? "hover:bg-orange-500"
               : "" || card.title === "Interest Test"
-              ? "hover:bg-red-500"
+              ? "hover:bg-gray-400"
               : ""
           }`}
           key={index}
@@ -221,26 +199,10 @@ const HoverEffectCard2 = () => {
             </div>
           </div>
 
-          <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
-            <img
-              src={
-                card.title === "Aptitide Test"
-                  ? Earth
-                  : Management || card.title === "Ideal Career Test"
-                  ? Management
-                  : Management || card.title === "Psychometric Test"
-                  ? Data
-                  : Earth
-              }
-              alt={card.title}
-              className="w-44 md:w-52 absolute right-20 top-[-69px]"
-              width={120}
-              height={120}
-            />
-          </div>
         </div>
       ))}
     </div>
+    </AnimatedSection>
   );
 };
 

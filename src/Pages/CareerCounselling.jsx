@@ -25,7 +25,6 @@ export default function CareerCounselling() {
   return (
     <>
       <div>
-        <CareerCounsellingNavbar />
         <CareerCounsellingHero />
         <div className="max-w-[1500px] mx-auto overflow-hidden">
           <CareerGuidance />

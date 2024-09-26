@@ -1,16 +1,12 @@
 // src/components/GuidingSteps.js
 import React, { useEffect } from "react";
 import "./css/CareerCounselling.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AnimatedSection from "../AnimatedSection";
 
 const GuidingSteps = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
   return (
-    <div className="relative py-10" data-aos="fade-up">
+    <AnimatedSection>
+    <div className="relative py-10">
       <div className="text-center mb-10">
         <h3
           className=" text-2xl lg:text-3xl font-semibold heading-font text-[#022F46]"
@@ -647,6 +643,7 @@ const GuidingSteps = () => {
         </div>
       </div>
     </div>
+    </AnimatedSection>
   );
 };
 

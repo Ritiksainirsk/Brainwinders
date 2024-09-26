@@ -4,9 +4,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AnimatedSection from "../AnimatedSection";
 
 const cards = [
   {
@@ -68,18 +66,15 @@ export default function Ebook() {
     },
   };
   
-  useEffect(() => {
-    AOS.init({duration: 2000})
-  }, []);
-
   return (
-    <div className="mb-8"   data-aos="fade-up">
+    <div className="mb-8">
       <div className="text-center my-8"> 
-        <h3 className="text-2xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]">
+        <h2 className="text-2xl md:text-[34px] font-bold mb-2 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
           E-Book and Sample Paper
-        </h3>
+        </h2>
       </div>
       <div className="lg:mx-6">
+      <AnimatedSection>
         <Carousel
           responsive={responsive}
           className="p-8"
@@ -103,6 +98,7 @@ export default function Ebook() {
             );
           })}
         </Carousel>
+        </AnimatedSection>
       </div>
     </div>
   );

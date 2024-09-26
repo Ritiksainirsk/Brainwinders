@@ -33,7 +33,6 @@ export default function Home() {
         </div>
         <Hero />
         <Services />
-        <div className="max-w-[1550px] mx-auto overflow-hidden"></div>
         <CareerSuitabilitySection />
         <div className="max-w-[1550px] mx-auto overflow-hidden">
           <Ebook />

@@ -2,16 +2,9 @@ import React, { useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AnimatedSection from "../AnimatedSection";
 
 function TestimonialCard() {
-
-  useEffect(() => {
-    AOS.init({duration: 2000})
-  }, []);
-
 
   const items = [
     {
@@ -52,12 +45,13 @@ function TestimonialCard() {
   };
   return (
     <div>
-      <div className=" px-3" data-aos="fade-up">
+      <div className=" px-3" >
         <div className="text-center my-8">
-          <h3 className="text-2xl md:text-3xl font-bold mb-2 heading-font text-[#022F46]">
+          <h2 className="text-2xl md:text-[34px] font-bold mb-2 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
             Reviews
-          </h3>
+          </h2>
         </div>
+        <AnimatedSection>
         <div className="2xl:mx-28">
           <Carousel
             responsive={responsive}
@@ -78,6 +72,7 @@ function TestimonialCard() {
             })}
           </Carousel>
         </div>
+        </AnimatedSection>
       </div>      
     </div>
   );

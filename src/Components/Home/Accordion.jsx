@@ -1,18 +1,14 @@
 import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AnimatedSection from "../AnimatedSection";
 
 export default function Accordion() {
 
-  useEffect(() => {
-    AOS.init({duration: 3000})
-  }, []);
-
   return (
-    <div className="px-8 lg:px-48 mb-14" data-aos="fade-up">
-      <h4 className="text-2xl lg:text-3xl font-semibold text-center mb-6 heading-font text-[#022F46] mt-5" data-aos="flip-up"style={{fontWeight:"600"}}>
+    <div className="px-8 lg:px-48 mb-14">
+      <h2 className="text-2xl lg:text-[34px] font-semibold text-center mb-6 heading-font text-[#022F46] mt-5" style={{fontWeight:"700"}}>
         Frequently Asked Questions
-      </h4>
+      </h2>
+      <AnimatedSection>
       <div className="join join-vertical w-full">
         <div className="collapse collapse-arrow join-item border-base-300 mb-6 rounded-2xl" style={{boxShadow:"0 5px 15px rgba(0, 0, 0, 0.2)"}}>
           <input type="radio" name="my-accordion-4" defaultChecked />
@@ -87,6 +83,7 @@ export default function Accordion() {
           </div>
         </div>
       </div>
+      </AnimatedSection>
     </div>
   );
 }

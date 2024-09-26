@@ -33,9 +33,9 @@ export default function AwardRecognition() {
     <div>
       <div className="mb-7">
         <div className="text-center">
-          <h3 className="text-2xl md:text-3xl font-semibold my-9 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
+          <h2 className="text-2xl md:text-[34px] font-semibold my-9 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
             Awards and Recognition
-          </h3>
+          </h2>
         </div>
         <div className="">
           <Marquee speed={50} direction="left">
