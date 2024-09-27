@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import SuitablityBanner from "./SuitablityBanner";
 import AnimatedSection from "../AnimatedSection";
+import Img from '../../assets/Curious about how it works/Confused about the best career fit for you.webp'
 
 const CareerSuitabilitySection = () => {
   return (
@@ -44,12 +45,11 @@ const CareerFitSection = () => {
       {/* Right Section */}
       <div
         className="md:w-1/3 mt-8 md:mt-0 flex justify-center"
-        data-aos="zoom-in"
       >
         <img
-          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkX0S924Kg-a0Gdm1pz-Dzv_X23VDX6OYE7AE8VzV7HQrOODxz"
+          src={Img}
           alt="Career Fit Illustration"
-          className="w-48 h-auto"
+          className="w-52 h-auto"
           width={120}
           height={120}
         />

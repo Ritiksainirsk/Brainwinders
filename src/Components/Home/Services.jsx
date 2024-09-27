@@ -7,13 +7,22 @@ import Management from "../../assets/management.png";
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import AnimatedSection from "../AnimatedSection";
+// images
+import Dmit from '../../assets/services/DMIT.webp'
+import AptitudeTest from '../../assets/services/Aptitude test.webp'
+import IdealCareerTest from '../../assets/services/Ideal Career Test.webp'
+import PsychometricTest from '../../assets/services/Psychometric Test.webp'
+import CareerCounselling from '../../assets/services/Career Counselling (1).webp'
+import PersonalityTest from '../../assets/services/Personality test.webp'
+import IQTest from '../../assets/services/IQ Test.webp'
+import InterestTest from '../../assets/services/Interest Test.webp'
 
 const items = [
   {
     title: "DMIT Test",
     subtitle:
       "DMIT is the best tool powered by biometrics and genetic intelligence to map all the traits & talents",
-    url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSROsO2ca-Nj1lKtHD3ChaK9pj3hPPmuCaAi_XUZ2EN2cwnPEja",
+    url: Dmit,
     buttonText: "Know More",
     bgcolor: "bg-yellow-500",
   },
@@ -22,7 +31,7 @@ const items = [
     title: "Aptitide Test",
     subtitle:
       "measures work value congnitive abilities traits for shaping personal, social and profession growth.",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg5RWnDUTHjk7KP6LKoMjzhh9OWAUrQbNEg&s",
+    url: AptitudeTest,
     bgcolor: "bg-blue-500",
   },
   {
@@ -30,7 +39,7 @@ const items = [
     buttonText: "Professional Guidance",
     subtitle:
       "clear the confusion and build a career with confidence, based on personal abilities and current trends",
-    url: "https://www.innvictisedutech.com/img/psyc/ideal-career-test-1.jpg",
+    url: IdealCareerTest,
     bgcolor: "bg-green-500",
   },
   {
@@ -38,7 +47,7 @@ const items = [
     buttonText: "India or Abroad",
     subtitle:
       "The test report will help you to explore career in order to get started in career search or change of career",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEpW-sx5IXHcT46QKgBMtbp6JJF0T4VKDdg&s",
+    url: PsychometricTest,
     bgcolor: "bg-red-500",
   },
 ];
@@ -47,7 +56,7 @@ const items2 = [
    title: "Career Counslling",
     subtitle:
       "clear the confusion and build a career with confidence, based on personal abilities and current trends",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Afaatpbn0nhfnbgayDPIt0nGSGL7Z84q3w&s",
+    url: CareerCounselling,
     buttonText: "Know More",
     bgcolor: "bg-yellow-500",
   },
@@ -55,7 +64,7 @@ const items2 = [
     title: "Personalit Test",
     subtitle:
       "Thoughtts, behaviour, relation, emotional regulation and more-decoded and defined.",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSAucPWqnvbfFqhGJ1PN87asJ7qfe7lPloEw&s",
+    url: PersonalityTest,
     bgcolor: "bg-yellow-500",
     buttonText: "Know More",
   },
@@ -63,7 +72,7 @@ const items2 = [
     title: "IQ Test",
     subtitle:
       "A standardisted way to measure the human intelligence and capability as per their age and acquired learning.",
-    url: "https://lifepsych.com.au/wp-content/uploads/2020/10/4336432A-88E0-4A05-A47B-EE8BD71D94CE-scaled-1.jpeg",
+    url: IQTest,
     bgcolor: "bg-yellow-500",
     buttonText: "Know More",
   },
@@ -71,7 +80,7 @@ const items2 = [
     title: "Interest Test",
     subtitle:
       "Intrest Inventory analyses the aspects and fields that privide long term satisfaction to the person.",
-    url: "https://www.brainwonders.in/page_images/2020-11-12-10-38-152020-08-27-22-19-52banner-image_(2).webp",
+    url: InterestTest,
     bgcolor: "bg-yellow-500",
     buttonText: "Know More",
   },

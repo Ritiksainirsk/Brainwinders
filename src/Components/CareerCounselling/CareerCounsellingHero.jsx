@@ -24,8 +24,8 @@ export default function CareerCounsellingHero() {
       {/*  */}
       <div className="mb-16" >
         <h3
-          className="text-2xl md:text-3xl font-bold text-center my-10 heading-font px-5 text-[#022F46]"
-          style={{ fontWeight: "600" }}
+          className="text-2xl md:text-[34px] font-bold text-center my-10 heading-font px-5 text-[#022F46]"
+          style={{ fontWeight: "700" }}
         >
           BENEFITS OF Career Counselling FOR ALL AGES!
         </h3>
@@ -51,7 +51,7 @@ const CareerCounsellingVideo = () => (
         >
           GET THE RIGHT CAREER COUNSELLING TO LEAP THROUGH YOUR CAREER
         </h1>
-        <h3 className="lg:text-[16px] mb-6 leading-[26px] 2xl:pr-56">
+        <h3 className="lg:text-[17px] mb-6 leading-[26px] 2xl:pr-56" style={{fontWeight:"500"}}>
           Take the world’s most advanced Career Assessment Test and Find your
           best Career, Course, and College
         </h3>
@@ -85,12 +85,14 @@ const CareerCounsellingHeroDescription = () => {
     <AnimatedSection>
     <div className="p-6 2xl:px-[9rem]">
       <h3
-        className="text-2xl lg:text-3xl font-bold text-center mb-5 heading-font text-[#022F46]"
-        style={{ fontWeight: "600" }}
+        className="text-2xl lg:text-[34px] font-bold text-center mb-5 heading-font text-[#022F46]"
+        style={{ fontWeight: "700"}}
       >
         WHAT IS CAREER COUNSELLING?
       </h3>
-      <p className="text-black mb-4">
+      <p className="text-black mb-4 lg:text-[17px]" style={{fontWeight:"500",textAlign:"justify" }}>
+
+      <p className="mb-4" >
         Career Counselling is a process that helps you understand yourself and
         the world of work to make informed career, educational, and life
         decisions. It involves a structured interaction between the individual
@@ -101,7 +103,7 @@ const CareerCounsellingHeroDescription = () => {
         also provide information about the job market, education and training
         programs, and career paths.
       </p>
-      <p className="text-gray-800">
+      <p className="">
         Career counsellors assist individuals in setting career goals and
         developing concrete action plans to achieve those goals. This involves
         identifying potential obstacles and developing strategies to overcome
@@ -111,6 +113,7 @@ const CareerCounsellingHeroDescription = () => {
         support and encouragement throughout the career exploration and
         decision-making process, recognizing that career paths may evolve over
         time.
+      </p>
       </p>
     </div>
     </AnimatedSection>
@@ -210,24 +213,6 @@ const CareerOptions = () => {
                 {card.buttonText} <FaAngleRight />
               </button>
             </div>
-          </div>
-
-          <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
-            <img
-              src={
-                card.title === "Aptitide Test"
-                  ? Management
-                  : Earth || card.title === "Ideal Career Test"
-                  ? Earth
-                  : Earth || card.title === "Psychometric Test"
-                  ? Data
-                  : Earth
-              }
-              alt=""
-              className="w-48 lg:w-52 absolute right-20 top-[-69px]"
-              width={120}
-              height={120}
-            />
           </div>
         </div>
         </Link> 

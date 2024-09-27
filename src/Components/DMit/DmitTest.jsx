@@ -89,7 +89,7 @@ const DmttTestDescription = () => {
       </h3>
       <p
         className="mb-4 md:text-[17px] leading-7"
-        style={{ fontWeight: "500" }}
+        style={{ fontWeight: "500",textAlign:"justify" }}
       >
         The full form of DMIT is the Dermatoglyphics Multiple Intelligence Test
         (DMIT) is a biometric analysis based on the scientific study of

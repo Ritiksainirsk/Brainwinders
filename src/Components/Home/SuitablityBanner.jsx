@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Img from '../../assets/Curious about how it works/Check Career Suitability.webp'
 
 export default function SuitablityBanner() {
 
@@ -86,9 +87,9 @@ export default function SuitablityBanner() {
         {/* Right Section */}
         <div className="md:w-[30%] flex flex-col items-center mt-8 md:mt-0">
           <img
-            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt6fyUXoErXW-4MpwDJYeHrwDJ0vRd-6gQoUOrAQnWnJuPLsPo"
+            src={Img}
             alt="Career Suitability"
-            className="w-56 h-auto mb-4"
+            className="lg:w-72 h-auto mb-4"
             width={120}
             height={120}
           />
