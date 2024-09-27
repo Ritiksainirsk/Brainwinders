@@ -4,6 +4,7 @@ import "./css/DmitTest.css";
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import AnimatedSection from "../AnimatedSection";
+import { Link } from "react-router-dom";
 
 export default function DmitTest() {
   return (
@@ -19,8 +20,8 @@ export default function DmitTest() {
       {/*  */}
       <div className="mb-16">
         <h3
-          className="px-2 text-2xl md:text-3xl text-center my-10 heading-font text-[#022F46]"
-          style={{ fontWeight: "600" }}
+          className="px-2 text-2xl md:text-[34px] text-center my-10 heading-font text-[#022F46]"
+          style={{ fontWeight: "700" }}
         >
           BENEFITS OF DMIT TEST FOR ALL AGES!
         </h3>
@@ -46,7 +47,10 @@ const DMTITestComponent = () => (
         >
           DISCOVER YOUR INBORN POTENTIAL AND SHINE WITH DMIT TEST
         </h1>
-        <h3 className="lg:text-[16px] mb-6 leading-[26px] 2xl:pr-56">
+        <h3
+          className="lg:text-[17px] mb-6 leading-[26px] 2xl:pr-56"
+          style={{ fontWeight: "500" }}
+        >
           Take the world’s most-advanced Career Assessment Test and Find your
           best Career, Course, and college
         </h3>
@@ -78,12 +82,15 @@ const DmttTestDescription = () => {
   return (
     <div className=" mx-auto p-6 2xl:px-[9rem]">
       <h3
-        className="text-2xl lg:text-3xl text-center mb-4 heading-font text-[#022F46]"
-        style={{ fontWeight: "600" }}
+        className="text-2xl lg:text-[34px] text-center mb-4 heading-font text-[#022F46]"
+        style={{ fontWeight: "700" }}
       >
         WHAT IS DMIT TEST?
       </h3>
-      <p className="mb-4 text-[1rem] leading-7">
+      <p
+        className="mb-4 md:text-[17px] leading-7"
+        style={{ fontWeight: "500" }}
+      >
         The full form of DMIT is the Dermatoglyphics Multiple Intelligence Test
         (DMIT) is a biometric analysis based on the scientific study of
         fingerprints. It is useful for all age groups and helps understand an
@@ -145,51 +152,61 @@ const CareerOptions = () => {
   return (
     <div className="flex justify-center rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
-        <div
-          className={`w-[25rem] h-[25rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
-            card.title === "DMIT Test for Toddlers (1-4 years)"
-              ? "hover:bg-yellow-500"
-              : "" || card.title === "DMIT Test for Children (4-10 years)"
-              ? "hover:bg-blue-500"
-              : "" || card.title === "DMIT Test for Students (11 to 17 years)"
-              ? "hover:bg-green-500"
-              : "" ||
-                card.title ===
-                  "DMIT Test for Career Guidance (18 years and above)"
-              ? "hover:bg-red-500"
+        <Link
+          to={
+            card.title === "DMIT Test for Children (4-10 years)"
+              ? "/dmit/dmitforchildern"
               : ""
-          }`}
-          key={index}
+          }
         >
-          <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
-            <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
-              Explore <FaArrowRight />
-            </button>
-          </div>
-
-          <div>
-            <div className={`w-[85px] h-[100px] pb-4 rounded-full text-center`}>
-              <img
-                src={card.icon}
-                alt=""
-                className=" h-full w-full rounded-full object-cover"
-                width={120}
-                height={120}
-              />
-            </div>
-
-            <h3 className="text-xl font-semibold heading-font pb-3 leading-6">
-              {card.title}
-            </h3>
-            <p className="mb-8">{card.description}</p>
-
-            <div className="mt-4 btnn ">
-              <button className="py-2 tracking-wider flex items-center gap-3">
-                Explore Now <FaAngleRight />
+          <div
+            className={`w-[25rem] h-[25rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
+              card.title === "DMIT Test for Toddlers (1-4 years)"
+                ? "hover:bg-yellow-500"
+                : "" || card.title === "DMIT Test for Children (4-10 years)"
+                ? "hover:bg-blue-500"
+                : "" || card.title === "DMIT Test for Students (11 to 17 years)"
+                ? "hover:bg-green-500"
+                : "" ||
+                  card.title ===
+                    "DMIT Test for Career Guidance (18 years and above)"
+                ? "hover:bg-red-500"
+                : ""
+            }`}
+            key={index}
+          >
+            <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
+              <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
+                Explore <FaArrowRight />
               </button>
             </div>
+
+            <div>
+              <div
+                className={`w-[85px] h-[100px] pb-4 rounded-full text-center`}
+              >
+                <img
+                  src={card.icon}
+                  alt=""
+                  className=" h-full w-full rounded-full object-cover"
+                  width={120}
+                  height={120}
+                />
+              </div>
+
+              <h3 className="text-xl font-semibold heading-font pb-3 leading-6">
+                {card.title}
+              </h3>
+              <p className="mb-8">{card.description}</p>
+
+              <div className="mt-4 btnn ">
+                <button className="py-2 tracking-wider flex items-center gap-3">
+                  Explore Now <FaAngleRight />
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

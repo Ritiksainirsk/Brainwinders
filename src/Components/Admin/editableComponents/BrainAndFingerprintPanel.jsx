@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
-const SixthComp = ({ data, handleSixthCompDataChanger }) => {
+const BrainAndFingerprintPanel = ({ data, handleSixthCompDataChanger }) => {
   // Function to handle file input change
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -111,4 +111,4 @@ const SixthComp = ({ data, handleSixthCompDataChanger }) => {
   );
 };
 
-export default SixthComp;
+export default BrainAndFingerprintPanel;

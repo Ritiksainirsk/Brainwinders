@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FifthComp = ({data,handleFifthCompHeadingChange,handleFifthCopmTextChange}) => {
+const DermatoglyphicsMultipleIntelligenceOverviewPanel = ({data,handleFifthCompHeadingChange,handleFifthCopmTextChange}) => {
   return (
     <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 p-8">
       {data.map((section) => (
@@ -28,4 +28,4 @@ const FifthComp = ({data,handleFifthCompHeadingChange,handleFifthCopmTextChange}
   );
 };
 
-export default FifthComp;
+export default DermatoglyphicsMultipleIntelligenceOverviewPanel;

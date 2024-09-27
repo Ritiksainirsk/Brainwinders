@@ -58,7 +58,7 @@ const EditableCard = ({ title, description, imageUrl,link,handleThirdCompData,id
   );
 };
 
-const ThirdComp = ({data,handleThirdCompData,handleThirdCompTitle}) => {
+const BenefitsForAllAges = ({data,handleThirdCompData,handleThirdCompTitle}) => {
 
   return (
     <div className="2xl:px-56 py-6 bg-gray-200">
@@ -87,4 +87,4 @@ const ThirdComp = ({data,handleThirdCompData,handleThirdCompTitle}) => {
   );
 };
 
-export default ThirdComp;
+export default BenefitsForAllAges;

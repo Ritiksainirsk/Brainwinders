@@ -263,7 +263,7 @@ export default function Navbar() {
       </nav>
       {/*<<<<<<<<<<---------------------  */}
 
-      <div className="absolute top-4 right-10 items-center hidden 2xl:flex gap-1 ">
+      <div className="absolute top-4 right-10 items-center hidden 2xl:flex gap-1">
         <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-sm hidden text-white py-2 px-4 bookanappointmentbtn">
           Book an Appointment
         </button>

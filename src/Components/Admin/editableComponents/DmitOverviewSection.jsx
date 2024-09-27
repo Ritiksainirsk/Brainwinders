@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-import ThirdComp from "./ThirdComp";
 
-const SecondComp = ({data,handleInputChange}) => {
+const DmitOverviewSection = ({data,handleInputChange}) => {
   return (
     <div>
       <div className="max-w-6xl mx-auto mt-10 p-5 bg-gray-50 shadow-lg rounded-md">
@@ -50,4 +49,4 @@ const SecondComp = ({data,handleInputChange}) => {
   );
 };
 
-export default SecondComp;
+export default DmitOverviewSection;

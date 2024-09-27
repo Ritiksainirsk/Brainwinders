@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AnimatedSection from "../AnimatedSection";
 
 const awards = [
   {
@@ -34,24 +35,22 @@ const awards = [
 ];
 
 const AwardWinners = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
 
   return (
     <>
-      <div className="py-8" data-aos="fade-up">
-        <h3
-          className="text-2xl lg:text-3xl text-center mb-2 heading-font px-5 text-[#022F46]"
-          style={{ fontWeight: "600" }}
+      <div className="py-8">
+        <h2
+          className="text-2xl lg:text-[34px] text-center mb-2 heading-font px-5 text-[#022F46]"
+          style={{ fontWeight: "700" }}
         >
           5+ National Award Winners
-        </h3>
-        <p className="text-center mb-8 px-5">
+        </h2>
+        <p className="text-center mb-8 px-5 lg:text-[17px]" style={{fontWeight:'500'}}>
           Brainwonders has been a recipient of 5 National Awards for being the
           Best Career Counselling Centre and our contribution to Educational
           Counselling.
         </p>
+        <AnimatedSection>
         <div className="px-5">
           <Marquee className="p-9" speed={50} direction="right">
             {awards.map((award, index) => (
@@ -74,7 +73,7 @@ const AwardWinners = () => {
               </div>
             ))}
           </Marquee>
-        </div>
+        </div></AnimatedSection>
       </div>
     </>
   );

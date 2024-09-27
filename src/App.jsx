@@ -24,7 +24,7 @@ import Login from "./Pages/BackendUi/AdminValidation/Login";
 import SignUp from "./Pages/BackendUi/AdminValidation/SignUp";
 import Marks2Career from "./Pages/FooterPages/Marks2Career";
 import AdminDeshboard from "./Pages/AdminDeshboard";
-import DmitEditablePage from "./Components/Admin/EditablePages/Dmit/DmitEditablePage";
+import DmitEditablePage from "./Components/Admin/DmitEditablePage";
 
 function App() {
   const loc = useLocation();

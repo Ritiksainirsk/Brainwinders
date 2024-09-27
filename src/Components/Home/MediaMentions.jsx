@@ -10,6 +10,7 @@ import Verizon from "../../assets/verizon.png";
 
 // yah animations to create silky smooth marquees
 import Marquee from "react-fast-marquee";
+import AnimatedSection from "../AnimatedSection";
 
 const images = [
   "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzSQ3F-WLvrUYS-ociTD57MHATe4sBkwG5nGaeOjHStcWQWu7Q",
@@ -31,6 +32,7 @@ export default function MediaMentions() {
       <h2 className="text-center font-bold text-2xl md:text-[34px] mt-11 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
         Media Mentions
       </h2>
+      <AnimatedSection>
       <div className="mx-6 ">
         <Marquee speed={50}>
           <div className="flex justify-center">
@@ -134,12 +136,14 @@ export default function MediaMentions() {
           </div>
         </Marquee>
       </div>
+      </AnimatedSection>
       {/* Media Mentions */}
 
       {/* ASSOCIATED SCHOOLS */}
       <h2 className="text-center font-bold text-2xl lg:text-[34px] md:text-3xl my-10 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
         ASSOCIATED SCHOOLS
       </h2>
+      <AnimatedSection>
       <div className="mx-6 mb-16">
         <Marquee speed={50} direction="right">
           <div className="flex justify-center">
@@ -160,6 +164,7 @@ export default function MediaMentions() {
           </div>
         </Marquee>
       </div>
+      </AnimatedSection>
       {/* ASSOCIATED SCHOOLS */}
     </div>
   );

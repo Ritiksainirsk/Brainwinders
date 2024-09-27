@@ -23,7 +23,6 @@ export default function Dmit() {
 
   return (
     <div>
-      <DmitNavbar />
           <DmitTest/>
           <BannerCard />
           <div className="max-w-[1500px] mx-auto overflow-hidden">

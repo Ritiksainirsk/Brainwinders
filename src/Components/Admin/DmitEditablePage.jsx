@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-import SecondComp from "./components/SecondComp";
-import ThirdComp from "./components/ThirdComp";
-import FourthComp from "./components/FourthComp";
-import FifthComp from "./components/FifethComp";
-import SixthComp from "./components/SixthComp";
+import DmitOverviewSection from "./editableComponents/DmitOverviewSection";
+import BenefitsForAllAges from "./editableComponents/BenefitsForAllAges";
+import TestFeatures from "./editableComponents/TestFeatures";
+import DermatoglyphicsMultipleIntelligenceOverviewPanel from "./editableComponents/DermatoglyphicsMultipleIntelligenceOverviewPanel";
+import BrainAndFingerprintPanel from "./editableComponents/BrainAndFingerprintPanel";
 
 export default function DmitEditablePage() {
   // State for each component
@@ -326,20 +326,20 @@ const handleSixthCompDataChanger = (name,value)=>{
           </p>
         </div>
       </div>
-      <SecondComp data={secondCompData} handleInputChange={handleInputChange} />
-      <ThirdComp
+      <DmitOverviewSection data={secondCompData} handleInputChange={handleInputChange} />
+      <BenefitsForAllAges
         data={thirdCompData}
         handleThirdCompData={handleThirdCompData}
         handleThirdCompTitle={handleThirdCompTitle}
       />
-      <FourthComp
+      <TestFeatures
         data={fourthCompData}
         handleForthCompData={handleForthCompData}
         handleFourthCompTitle={handleFourthCompTitle}
         handleFourthCompDescription={handleFourthCompDescription}
       />
-      <FifthComp data={fifthCompData} handleFifthCompHeadingChange={handleFifthCompHeadingChange} handleFifthCopmTextChange={handleFifthCopmTextChange}/>
-      <SixthComp data={sixthCompData} handleSixthCompDataChanger={handleSixthCompDataChanger}/>
+      <DermatoglyphicsMultipleIntelligenceOverviewPanel data={fifthCompData} handleFifthCompHeadingChange={handleFifthCompHeadingChange} handleFifthCopmTextChange={handleFifthCopmTextChange}/>
+      <BrainAndFingerprintPanel data={sixthCompData} handleSixthCompDataChanger={handleSixthCompDataChanger}/>
       <div className="text-center">
         <button className="bg-[#022F46] text-white px-6 py-2 rounded-lg hover:bg-[#022f46d4] mb-6">
           Submit

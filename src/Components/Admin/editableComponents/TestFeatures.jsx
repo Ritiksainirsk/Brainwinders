@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function FourthComp({data,handleForthCompData,handleFourthCompTitle,handleFourthCompDescription}) {
+export default function TestFeatures({data,handleForthCompData,handleFourthCompTitle,handleFourthCompDescription}) {
   
   return (
     <div className="bg-gray-200 py-5 mt-20 md:px-9">

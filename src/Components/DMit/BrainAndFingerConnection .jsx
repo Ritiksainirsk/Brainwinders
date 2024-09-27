@@ -1,23 +1,16 @@
 // src/components/BrainAndFingerConnection.js
 import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AnimatedSection from '../AnimatedSection';
 
 
 const BrainAndFingerConnection = () => {
-
-  useEffect(() => {
-    AOS.init({duration: 2000})
-  }, []);
-
-
-
   return (
-    <div className=" p-8 "  data-aos="fade-up">
-      <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-center mt-10 heading-font text-[#022F46]" style={{fontWeight:"600"}}>BRAIN AND FINGER CONNECTION</h3>
-      <h3 className="md:text-[16px] mb-8 text-center">
+    <div className=" p-8 ">
+      <h3 className="text-2xl md:text-[34px] font-semibold mb-2 text-center mt-10 heading-font text-[#022F46]" style={{fontWeight:"700"}}>BRAIN AND FINGER CONNECTION</h3>
+      <p className="md:text-[17px] mb-8 text-center" style={{fontWeight:'500'}}>
         Right Brain is corresponding to Left Hand and Left Brain is corresponding to Right Hand
-      </h3>
+      </p>
+      <AnimatedSection>
       <div className="flex flex-col lg:flex-row items-center">
         <div className="flex-1 mb-4 md:mb-0 md:mr-4">
           <img 
@@ -43,6 +36,7 @@ const BrainAndFingerConnection = () => {
           </p>
         </div>
       </div>
+      </AnimatedSection>
     </div>
   );
 };
