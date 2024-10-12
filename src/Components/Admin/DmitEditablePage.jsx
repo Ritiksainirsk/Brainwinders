@@ -6,6 +6,7 @@ import BenefitsForAllAges from "./editableComponents/BenefitsForAllAges";
 import TestFeatures from "./editableComponents/TestFeatures";
 import DermatoglyphicsMultipleIntelligenceOverviewPanel from "./editableComponents/DermatoglyphicsMultipleIntelligenceOverviewPanel";
 import BrainAndFingerprintPanel from "./editableComponents/BrainAndFingerprintPanel";
+import Editorr from "./editableComponents/Editor";
 
 export default function DmitEditablePage() {
   // State for each component
@@ -340,6 +341,7 @@ const handleSixthCompDataChanger = (name,value)=>{
       />
       <DermatoglyphicsMultipleIntelligenceOverviewPanel data={fifthCompData} handleFifthCompHeadingChange={handleFifthCompHeadingChange} handleFifthCopmTextChange={handleFifthCopmTextChange}/>
       <BrainAndFingerprintPanel data={sixthCompData} handleSixthCompDataChanger={handleSixthCompDataChanger}/>
+      <Editorr/>
       <div className="text-center">
         <button className="bg-[#022F46] text-white px-6 py-2 rounded-lg hover:bg-[#022f46d4] mb-6">
           Submit

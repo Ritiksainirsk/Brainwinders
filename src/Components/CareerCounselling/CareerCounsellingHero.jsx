@@ -46,7 +46,7 @@ const CareerCounsellingVideo = () => (
     <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
       <div className="text-center lg:text-left">
         <h1
-          className="text-3xl lg:text-[40px] mt-8 md:mt-0 font-thin mb-4 text-shadow heading-font leading-[44px] lg:leading-[62px] text-[#022F46]"
+          className="text-3xl 2xl:text-[40px] mt-8 md:mt-0 font-thin mb-4 text-shadow heading-font 2xl:leading-[62px] text-[#022F46]"
           style={{ fontWeight: "700" }}
         >
           GET THE RIGHT CAREER COUNSELLING TO LEAP THROUGH YOUR CAREER

@@ -9,7 +9,6 @@ import PartnersVideoCard from "../Components/Home/PartnersVideoCard";
 import AwardRecognition from "../Components/Home/AwardRecognition";
 import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
 import Accordion from "../Components/Home/Accordion";
-import CareerCounsellingNavbar from "../Components/CareerCounselling/CareerCounsellingPages/CareerCounsellingNavbar";
 import { useLocation } from "react-router-dom";
 import TestsCard from "../Components/Home/TestsCard";
 import CareerCounselingExpectations from "../Components/CareerCounselling/CareerCounselingExpectations";
@@ -19,6 +18,7 @@ import HowItWorks from "../Components/CareerCounselling/CareerCounsellingPages/C
 import Img1 from '../assets/Curious about how it works/Assessment.webp'
 import Img2 from '../assets/Curious about how it works/Guidance.webp'
 import Img3 from '../assets/Curious about how it works/Strategizing.webp'
+import Editor from "../Components/Admin/editableComponents/Editor";
 
 export default function CareerCounselling() {
   const { pathname } = useLocation();
@@ -134,6 +134,7 @@ export default function CareerCounselling() {
           <AwardRecognition />
           <TestimonialCard />
           <Accordion />
+          {/* <Editor/> */}
         </div>
       </div>
     </>
